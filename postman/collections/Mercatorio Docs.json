@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "8a76cc42-b7d7-4bc2-baad-87557c0ecc9e",
+		"name": "Mercatorio Docs",
+		"description": "The Mercatorio API provides comprehensive access to game world data, player information, and economic systems. This collection contains endpoints for retrieving player and household details, managing businesses and buildings, exploring the game map, and accessing town information.\n\n## **Authentication**\n\nAll requests use Bearer token authentication and a `X-Merc-User` header\n\n### **Base URL**\n\nThe base URL for all API calls is `{{mercUrl}}`",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "17661387-8a76cc42-b7d7-4bc2-baad-87557c0ecc9e"
+	},
+	"item": [
+		{
+			"name": "Player",
+			"id": "b39323fc-a5dc-420d-9aaa-523c1472470d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}player",
+					"host": [
+						"{{mercUrl}}player"
+					]
+				},
+				"description": "This endpoint retrieves comprehensive player and household information from the Mercatorio game. It returns detailed data about the authenticated player's account, including their household details, workers, inventory, specializations, and game settings.\n\n## Response Structure\n\nThe endpoint returns a JSON object with the following main fields:\n\n### Player Information\n\n- **username**: The player's email/username\n    \n- **discord_id**: The player's Discord ID for integration\n    \n- **bonus_points**: Available bonus points for the player\n    \n- **active**: Boolean indicating if the player account is active\n    \n- **activity**: Object containing player activity metrics\n    \n    - `score`: Activity score value\n        \n    - `index`: Activity index\n        \n\n### Household Information\n\nThe `household` object contains detailed information about the player's household:\n\n- **id**: Unique household identifier\n    \n- **name**: Name of the household head\n    \n- **town_id**: ID of the town where the household is located\n    \n- **portrait**: Path to the household portrait image\n    \n- **gender**: Gender of the household head\n    \n- **account_id**: Associated account identifier\n    \n- **business_ids**: Array of business IDs owned by the household\n    \n- **prestige**: Current prestige value\n    \n- **prestige_impacts**: Array of factors affecting prestige\n    \n    - `factor`: The factor name (e.g., \"sustenance\", \"to legacy\")\n        \n    - `impact`: Numerical impact value\n        \n- **legacy**: Legacy points accumulated\n    \n- **workers**: Array of workers in the household\n    \n    - `assignment`: Current work assignment\n        \n    - `capacity`: Worker capacity\n        \n    - `name`: Worker name\n        \n    - `skills`: Object containing skill levels (e.g., weaponry, forging)\n        \n- **specialization**: Household specialization details\n    \n    - `points`: Object with specialization points for different products\n        \n- **operations**: Array of operation IDs the household is involved in\n    \n- **caps**: Limits and capacities\n    \n    - `transports`: Maximum number of transports\n        \n    - `regular_management`: Regular management capacity\n        \n    - `prestige_management`: Prestige management capacity\n        \n    - `tenants`: Maximum number of tenants\n        \n    - `apprentices`: Maximum number of apprentices\n        \n\n### Sustenance System\n\nThe `sustenance` object provides detailed inventory and resource management:\n\n- **reference**: Reference to the household\n    \n- **inventory**: Complete inventory system\n    \n    - **account**: Account details with asset balances\n        \n        - Each asset includes: `balance`, `reserved`, `capacity`, `unit_cost`\n            \n        - Assets include: axes, beer, bellows, blades, books, bread, bricks, candles, cattle, charcoal, cloth, cookware, and many more resources\n            \n- **capacity**: Total capacity value\n    \n- **holdings**: Resource holding configurations with manager settings\n    \n    - Each holding can have: `max_holding`, `buy_volume`, `buy_price`\n        \n- **flows**: Projected resource consumption\n    \n    - `projection`: Contains consumption rates for various resources\n        \n- **previous_flows**: Historical consumption data\n    \n- **provider_id**: ID of the sustenance provider\n    \n\n### Settings\n\nThe `settings` object contains player preferences:\n\n- **sound_volume**: Audio volume setting\n    \n- **notifications**: Notification preferences\n    \n    - `discord`: Discord notifications enabled/disabled\n        \n    - `mutes`: Muted notification types\n        \n- **email**: Email notification preferences\n    \n    - `season_notifications`: Seasonal update emails\n        \n    - `character_export`: Character export notifications\n        \n    - `marketing_emails`: Marketing communication preferences\n        \n\n## Example Use Cases\n\n1. **Player Dashboard**: Display comprehensive player information on a dashboard, including household status, resources, and workers\n    \n2. **Inventory Management**: Access current inventory levels and capacities to manage resources effectively\n    \n3. **Worker Assignment**: View current worker assignments and skills to optimize production\n    \n4. **Resource Planning**: Analyze consumption flows and holdings to plan resource acquisition\n    \n5. **Prestige Tracking**: Monitor prestige levels and factors affecting prestige growth\n    \n6. **Account Settings**: Retrieve and display current player settings for configuration management"
+			},
+			"response": []
+		},
+		{
+			"name": "Businesses",
+			"id": "9b04c5bf-9ec6-4426-afa3-56dadf3e9947",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}businesses/:businessID",
+					"host": [
+						"{{mercUrl}}businesses"
+					],
+					"path": [
+						":businessID"
+					],
+					"variable": [
+						{
+							"key": "businessID",
+							"value": "22676",
+							"description": "The business ID to request information"
+						}
+					]
+				},
+				"description": "This endpoint retrieves detailed information about a specific business in Mercatorio.\n\n## Response\n\nReturns a `200 OK` status with a JSON object containing comprehensive business details:\n\n### Response Structure\n\n- **account**: Account information including:\n    \n    - `id`: Account identifier\n        \n    - `name`: Account owner name\n        \n    - `owner_id`: Owner's unique ID\n        \n    - `assets`: Object containing asset balances and unit costs:\n        \n        - `assets[assetName]balance`: Current amount\n            \n        - `assets[assetName]reserved`: Reserved amount\n            \n        - `assets[assetName]sale`: Sold amount\n            \n        - `assets[assetName]unit_cost`: Unit cost\n            \n    - `_ts`: Timestamp\n        \n- **buildings**: Array of building objects with:\n    \n    - `id`: Building identifier\n        \n    - `type`: Building type (e.g., boardinghouse, stable, warehouse, logging camp, woodshed, charcoal kiln, iron mine, bloomery, etc...)\n        \n- **building_ids**: Array of building ID strings\n    \n- **id**: Business identifier\n    \n- **reference**: Business reference path\n    \n- **name**: Business name\n    \n- **portrait**: Path to business owner's portrait image\n    \n- **account_id**: Associated account ID\n    \n- **owner_id**: Business owner's ID\n    \n- **transport_ids**: Array of transport identifiers"
+			},
+			"response": []
+		},
+		{
+			"name": "Building",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ba13993a-2691-432b-bf4e-2c28a4ca6e42",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7054a836-cf60-47d4-87bc-5d3c6c77887e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "e8569100-39f4-41c0-b28b-7b1f99ccc91d",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}buildings/:buildingID",
+					"host": [
+						"{{mercUrl}}buildings"
+					],
+					"path": [
+						":buildingID"
+					],
+					"variable": [
+						{
+							"key": "buildingID",
+							"value": "362701112003002",
+							"description": "The building ID to request information"
+						}
+					]
+				},
+				"description": "This endpoint retrieves detailed information about a specific building in Mercatorio by its unique building ID. The response includes comprehensive data about the building's properties, production capabilities, inventory, construction status, and associated accounts.\n\n## Response\n\nReturns a JSON object containing detailed building information.\n\n**Building Basic Information:**\n\n- `name` - The name of the building\n    \n- `id` - Unique building identifier\n    \n- `type` - Building type (e.g., \"stable\", \"workshop\", \"farm\")\n    \n- `size` - Current size of the building\n    \n- `capacity` - Maximum capacity of the building\n    \n- `town_id` - ID of the town where the building is located\n    \n- `owner_id` - ID of the building owner\n    \n- `location` - Coordinates object with `x` and `y` properties\n    \n- `sublocation` - Sub-coordinates within the location\n    \n- `land` - Array of land plots occupied by the building\n    \n- `delivery_cost` - Object containing delivery cost information\n    \n\n**Producer Information:**\n\n- `producer.reference` - Reference path to the producer\n    \n- `producer.inventory` - Inventory management details\n    \n    - `account` - Account information with ID, name, owner, and master account\n        \n    - `assets` - Detailed breakdown of all resources with balance, reserved amounts, capacity, and unit costs\n        \n    - `capacity` - Total inventory capacity\n        \n    - `previous_flows` - Resource consumption and production from previous operations\n        \n- `producer.target` - Production target value\n    \n- `producer.recipe` - Current production recipe being used\n    \n- `producer.previous_operation` - Details of the last production operation\n    \n- `producer.manager` - Manager type (e.g., \"static\")\n    \n- `provider_id` - Associated provider identifier\n    \n\n**Construction Information:**\n\n- `construction.reference` - Reference path to the construction\n    \n- `construction.inventory` - Construction inventory with account and asset details\n    \n- `construction.size` - Current construction size\n    \n- `construction.time` - Time remaining for current construction phase\n    \n- `construction.total_time` - Total time required for construction\n    \n- `construction.progress` - Construction progress percentage\n    \n- `construction.stage` - Current construction stage (e.g., \"EXPANSION\")\n    \n- `construction.land` - Land plots used for construction\n    \n- `construction.settings` - Construction configuration settings\n    \n\n**Cost Information:**\n\n- `cost` - Total cost associated with the construction/expansion\n    \n\n## Notes\n\n- All monetary values and resource balances are returned as strings to preserve precision\n    \n- The `assets` object contains comprehensive resource information including current balance, reserved amounts, capacity limits, and unit costs\n    \n- Construction progress is tracked with both time remaining and percentage completion\n    \n- Previous flows show historical consumption and production data for resource management"
+			},
+			"response": []
+		},
+		{
+			"name": "Building Operations",
+			"id": "972b7a54-3dd9-403e-8bcf-25b11db232d1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}buildings/:buildingID/operations",
+					"host": [
+						"{{mercUrl}}buildings"
+					],
+					"path": [
+						":buildingID",
+						"operations"
+					],
+					"variable": [
+						{
+							"key": "buildingID",
+							"value": "362701112003002",
+							"description": "The building ID to request information"
+						}
+					]
+				},
+				"description": "WIP"
+			},
+			"response": []
+		},
+		{
+			"name": "Map Regions",
+			"id": "c3763021-a858-45a9-adae-1e99240840f3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}map/regions",
+					"host": [
+						"{{mercUrl}}map"
+					],
+					"path": [
+						"regions"
+					]
+				},
+				"description": "Retrieves a list of all available map regions in the Mercatorio game world. Each region represents a distinct geographical area with its own center coordinates and size.\n\n## Response\n\nReturns a JSON array of region objects. Each region contains the following properties:\n\n### Region Object Structure\n\n| Property | Type | Description |\n| --- | --- | --- |\n| `id` | integer | Unique identifier for the region |\n| `name` | string | Human-readable name of the region |\n| `center` | object | Center coordinates of the region |\n| `center.x` | integer | X-coordinate of the region's center point |\n| `center.y` | integer | Y-coordinate of the region's center point |\n| `size` | integer | Total size/area of the region |"
+			},
+			"response": []
+		},
+		{
+			"name": "Towns",
+			"id": "450d7b2c-a74a-470a-8a8b-4399b7272b0e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}towns",
+					"host": [
+						"{{mercUrl}}towns"
+					]
+				},
+				"description": "This endpoint returns an array of town objects, each containing detailed information about a town including its location, region, capital status, satisfaction rating, and population.\n\n## Response\n\nThe endpoint returns a JSON array of town objects with the following properties:\n\n| Property | Type | Description |\n| --- | --- | --- |\n| `id` | string | Unique identifier for the town |\n| `name` | string | Name of the town |\n| `location` | object | Geographic coordinates of the town |\n| `location.x` | number | X-coordinate on the map |\n| `location.y` | number | Y-coordinate on the map |\n| `region` | number | Region identifier the town belongs to |\n| `capital` | boolean | Whether the town is a capital city |\n| `satisfaction` | string | Satisfaction rating of the town (decimal value, can exceed 1.0) |\n| `commoners` | number | Population count of commoners in the town |\n\n## Usage Notes\n\n- The satisfaction rating is returned as a string and can exceed 1.0 (e.g., \"1.017\" indicates 101.7% satisfaction, but the in-game scoreboard doesnt show decimal percentage)\n    \n- Capital cities typically have higher satisfaction ratings and larger populations"
+			},
+			"response": []
+		},
+		{
+			"name": "Town",
+			"id": "1a3d402c-cf5f-44a5-8a56-985a745e8d46",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Merc-User",
+						"value": "{{Merc-User}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mercUrl}}towns/:townID",
+					"host": [
+						"{{mercUrl}}towns"
+					],
+					"path": [
+						":townID"
+					],
+					"variable": [
+						{
+							"key": "townID",
+							"value": "362801112",
+							"description": "The town ID to request information"
+						}
+					]
+				},
+				"description": "Retrieves comprehensive information about a specific town in the Mercatorio game world, including geographic data, economic activity, population statistics, and governance details.\n\n## Response\n\nReturns a `200 OK` status with a JSON object containing detailed town information.\n\n#### Basic Town Information\n\n- **id** - Unique town identifier\n    \n- **name** - Town name (e.g., \"Svathveit\")\n    \n- **location** - Coordinates object with `x` and `y` properties\n    \n- **region** - Region identifier the town belongs to\n    \n- **capital_id** - Identifier of the region's capital\n    \n- **center_ids** - Array of center identifiers associated with this town\n    \n\n#### Domain\n\nContains land parcel information indexed by parcel ID. Each parcel may include:\n\n- **owner_id** - ID of the parcel owner\n    \n- **structure** - Building information including:\n    \n    - `id` - Structure identifier\n        \n    - `type` - Building type (e.g., \"gold mine\", \"grain farm\", \"iron mine\")\n        \n    - `tags` - Array of structure attributes (e.g., \"toolshed 1\", \"crane\")\n        \n- **resource** - Resource type identifier (e.g., 5 for iron, 6 for gold)\n    \n- **ask_price** - Asking price for parcels available for purchase\n    \n\n#### Households\n\n- **household_ids** - Array of household identifiers in the town\n    \n- **commoners** - Population data including:\n    \n    - `account_id` - Account identifier\n        \n    - `count` - Total population count\n        \n    - `migration` - Net migration rate\n        \n    - `income` - Income details with migration impact and labor statistics\n        \n    - `spending` - Array of spending categories:\n        \n        - **basic food** - Bread, grain, pasties, flour\n            \n        - **heating** - Firewood, charcoal\n            \n        - **shelter** - Lodging\n            \n        - **clothing** - Garments, dyed cloth, cloth\n            \n        - **drink** - Beer, wine\n            \n        - **household** - Cookware, furniture, glassware\n            \n        - **fine food** - Cured fish, cured meat, cheese, meat, fish\n            \n        - **other** - Donations, candles, honey, medicine\n            \n    - `town_state` - Overall town satisfaction metrics\n        \n\nEach spending category includes:\n\n- `migration` - Impact on migration\n    \n- `budget` - Budget allocation\n    \n- `satisfaction` - Satisfaction level (0-1 scale)\n    \n- `products` - Array of products with desire, request, result, and weight values\n    \n\n#### Government\n\n- **account_id** - Government account identifier\n    \n- **spending** - Government expenditure categories:\n    \n    - **security** - Protection and labor\n        \n    - **administration** - Paper and administrative supplies\n        \n    - **construction** - Timber, bricks, hinges, slaked lime, limestone\n        \n    - **roofing** - Tiles, lead bars\n        \n- **taxes_collected** - Tax revenue breakdown:\n    \n    - `payments` - Direct payments\n        \n    - `land_tax` - Tax from land ownership\n        \n    - `structure_tax` - Tax from structures\n        \n    - `delivery_fees` - Fees from deliveries\n        \n    - `transport_fees` - Transportation fees\n        \n\n## Use Cases\n\n- Monitor town economic health and population trends\n    \n- Analyze resource production and land usage\n    \n- Track government spending and tax revenue\n    \n- Evaluate citizen satisfaction across different needs\n    \n- Plan strategic investments based on town data"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Merc-Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6d99956e-0fa7-4931-99df-95b684e0c03d",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f7098950-046e-4512-b21f-f7dacd3af017",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
