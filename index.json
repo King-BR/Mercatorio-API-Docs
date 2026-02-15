@@ -190,35 +190,6 @@
                     }
                 }
             },
-            "ProductManager": {
-                "type": "object",
-                "properties": {
-                    "max_holding": {
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "min_holding": {
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "buy_volume": {
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "buy_price": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "sell_volume": {
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "sell_price": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "Inventory": {
                 "type": "object",
                 "properties": {
@@ -4404,6 +4375,35 @@
                     },
                     "cost": {
                         "type": "string"
+                    }
+                }
+            },
+            "ProductManager": {
+                "type": "object",
+                "properties": {
+                    "max_holding": {
+                        "type": "number",
+                        "nullable": true
+                    },
+                    "min_holding": {
+                        "type": "number",
+                        "nullable": true
+                    },
+                    "buy_volume": {
+                        "type": "number",
+                        "nullable": true
+                    },
+                    "buy_price": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "sell_volume": {
+                        "type": "number",
+                        "nullable": true
+                    },
+                    "sell_price": {
+                        "type": "string",
+                        "nullable": true
                     }
                 }
             },
