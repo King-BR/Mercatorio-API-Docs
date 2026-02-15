@@ -14,6 +14,8 @@ files[] = {"id":"17661387-8a76cc42-b7d7-4bc2-baad-87557c0ecc9e","path":"Mercator
 [config.relations.collections.metaData]
 
 [config.relations.apiDefinition]
+files[] = {"path":"index.json","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:3
+rootFiles[] = index.json
