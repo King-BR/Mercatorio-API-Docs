@@ -246,7 +246,7 @@
             "type": "integer"
           },
           "holdings": {
-            "$ref": "#/components/schemas/ProductsHoldings"
+            "$ref": "#/components/schemas/Holdings"
           },
           "flows": {
             "type": "object",
@@ -2626,1594 +2626,387 @@
           }
         }
       },
-      "ProductsHoldings": {
+      "ProductHolding": {
+        "type": "object",
+        "nullable": true,
+        "properties": {
+          "managers": {
+            "nullable": true,
+            "$ref": "#/components/schemas/ProductManager"
+          },
+          "capacity": {
+            "type": "number"
+          }
+        }
+      },
+      "Holdings": {
         "type": "object",
         "properties": {
           "alembics": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "arms": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "axes": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "beer": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "bellows": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "bells": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "belts": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "blades": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "books": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "bread": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "bronze ingots": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "butter": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "candles": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "carting": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "casks": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "cattle": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "charcoal": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "cheese": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "chisels": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "clay": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "cloth": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "coats": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "cookware": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "copper ingots": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "copper ore": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "cured fish": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "cured meat": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "dye": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "dyed cloth": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "dyed yarn": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "firewood": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "fish": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "flax fibres": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "flax plants": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "fleece": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "flour": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "furniture": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "garments": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "gears": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "glass": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "glassware": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "gold bars": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "gold ore": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "grain": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "grindstones": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "ham": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "harnesses": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "herbs": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "hides": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "hinges": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "honey": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "hop beer": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "iron ore": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "jewellery": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "labour": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "lathes": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "lead bars": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "lead ore": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "leather": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "light armour": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "limestone": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "lodging": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "logs": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "looms": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "malt": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "manure": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "meat": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "medicine": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "milk": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "mouldboards": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "nails": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "nets": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "ox power": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "paper": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "pasties": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "pickaxes": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "pies": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "plate armour": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "ploughs": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium armour": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium axes": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium cheese": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium cloth": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium dye": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium garments": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium glassware": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium ham": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium sails": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium steel": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "premium swords": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "protection": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "raw cloth": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "resin": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "rope": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "sails": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "salt": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "sculptures": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "scythes": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "silver bars": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "silver ore": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "slaked lime": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "spinning wheels": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "spirits": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "steel ingots": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "stockfish": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "swords": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tackles": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tapestries": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tar": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "thread": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tiles": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "timber": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tin ingots": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tin ore": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "tools": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "wax": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "wheels": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "windows": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "wine": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "wool": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "wrought iron": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           },
           "yarn": {
-            "type": "object",
-            "nullable": true,
-            "properties": {
-              "managers": {
-                "nullable": true,
-                "$ref": "#/components/schemas/ProductManager"
-              },
-              "capacity": {
-                "type": "integer"
-              }
-            }
+            "$ref": "#/components/schemas/ProductHolding"
           }
         }
       },
