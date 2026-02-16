@@ -124,7 +124,7 @@
                         "$ref": "#/components/schemas/PlayerSettings"
                     },
                     "bonus_points": {
-                        "type": "integer"
+                        "type": "number"
                     },
                     "active": {
                         "type": "boolean"
@@ -133,10 +133,10 @@
                         "type": "object",
                         "properties": {
                             "score": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "index": {
-                                "type": "integer"
+                                "type": "number"
                             }
                         }
                     }
@@ -146,15 +146,15 @@
                 "type": "object",
                 "properties": {
                     "max_holding": {
-                        "type": "integer",
+                        "type": "number",
                         "nullable": true
                     },
                     "min_holding": {
-                        "type": "integer",
+                        "type": "number",
                         "nullable": true
                     },
                     "buy_volume": {
-                        "type": "integer",
+                        "type": "number",
                         "nullable": true
                     },
                     "buy_price": {
@@ -162,7 +162,7 @@
                         "nullable": true
                     },
                     "sell_volume": {
-                        "type": "integer",
+                        "type": "number",
                         "nullable": true
                     },
                     "sell_price": {
@@ -2416,7 +2416,7 @@
                 "type": "object",
                 "properties": {
                     "sound_volume": {
-                        "type": "integer"
+                        "type": "number"
                     },
                     "notifications": {
                         "type": "object",
@@ -5044,7 +5044,7 @@
                         "type": "string"
                     },
                     "size": {
-                        "type": "integer"
+                        "type": "number"
                     },
                     "capacity": {
                         "type": "string"
@@ -5059,10 +5059,10 @@
                         "type": "object",
                         "properties": {
                             "x": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "y": {
-                                "type": "integer"
+                                "type": "number"
                             }
                         }
                     },
@@ -5070,10 +5070,10 @@
                         "type": "object",
                         "properties": {
                             "x": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "y": {
-                                "type": "integer"
+                                "type": "number"
                             }
                         }
                     },
@@ -5083,10 +5083,10 @@
                             "type": "object",
                             "properties": {
                                 "x": {
-                                    "type": "integer"
+                                    "type": "number"
                                 },
                                 "y": {
-                                    "type": "integer"
+                                    "type": "number"
                                 }
                             }
                         }
@@ -5095,7 +5095,7 @@
                         "type": "object",
                         "properties": {
                             "land_distance": {
-                                "type": "integer"
+                                "type": "number"
                             }
                         }
                     },
@@ -5131,7 +5131,7 @@
                                         "type": "string"
                                     },
                                     "turns": {
-                                        "type": "integer"
+                                        "type": "number"
                                     }
                                 }
                             },
@@ -5153,16 +5153,16 @@
                                 "$ref": "#/components/schemas/Inventory"
                             },
                             "size": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "time": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "total_time": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "progress": {
-                                "type": "integer"
+                                "type": "number"
                             },
                             "stage": {
                                 "type": "string"
@@ -5173,10 +5173,10 @@
                                     "type": "object",
                                     "properties": {
                                         "x": {
-                                            "type": "integer"
+                                            "type": "number"
                                         },
                                         "y": {
-                                            "type": "integer"
+                                            "type": "number"
                                         }
                                     }
                                 }
@@ -5191,7 +5191,7 @@
                                         "type": "boolean"
                                     },
                                     "pace": {
-                                        "type": "integer"
+                                        "type": "number"
                                     }
                                 }
                             }
