@@ -220,20 +220,7 @@
                         "type": "number"
                     },
                     "holdings": {
-                        "type": "object",
-                        "properties": {
-                            "ProductName": {
-                                "type": "object",
-                                "properties": {
-                                    "managers": {
-                                        "$ref": "#/component/schemas/ProductManager"
-                                    },
-                                    "capacity": {
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
+                        "$ref": "#/components/schemas/ProductsHoldings"
                     },
                     "flows": {
                         "type": "object",
@@ -4421,7 +4408,7 @@
             }
         },
         "securitySchemes": {
-            "Bearer Token": {
+            "Bearer-Token": {
                 "type": "apiKey",
                 "in": "header",
                 "name": "Token"
@@ -4435,7 +4422,7 @@
     },
     "security": [
         {
-            "Bearer Token": [],
+            "Bearer-Token": [],
             "X-Merc-User": []
         }
     ]
