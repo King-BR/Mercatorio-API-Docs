@@ -1,2717 +1,3328 @@
 {
-  "openapi": "3.0.0",
-  "info": {
-    "description": "API to interact with the game of Mercatorio",
-    "title": "Mercatorio API",
-    "version": "1.0.0"
+  "openapi" : "3.0.0",
+  "info" : {
+    "description" : "API to interact with the game of Mercatorio",
+    "title" : "Mercatorio API",
+    "version" : "1.0.0"
   },
-  "servers": [
-    {
-      "description": "Base API URL",
-      "url": "https://play.mercatorio.io/api"
-    }
-  ],
-  "security": [
-    {
-      "Bearer_Token": [],
-      "Merc_User": []
-    }
-  ],
-  "paths": {
-    "/player": {
-      "get": {
-        "operationId": "playerInfo",
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Player"
+  "servers" : [ {
+    "description" : "Base API URL",
+    "url" : "https://play.mercatorio.io/api"
+  } ],
+  "security" : [ {
+    "Bearer_Token" : [ ],
+    "Merc_User" : [ ]
+  } ],
+  "paths" : {
+    "/player" : {
+      "get" : {
+        "operationId" : "playerInfo",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Player"
                 }
               }
             },
-            "description": "The player corresponding to the API key used"
+            "description" : "The player corresponding to the API key used"
           },
-          "404": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
                 }
               }
             },
-            "description": "No player found"
+            "description" : "No player found"
           },
-          "500": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
                 }
               }
             },
-            "description": "Unexpected error"
+            "description" : "Unexpected error"
           }
         },
-        "summary": "Get the player information"
+        "summary" : "Get the player information"
       }
     },
-    "/buildings/{buildingID}": {
-      "get": {
-        "operationId": "buildingInfo",
-        "parameters": [
-          {
-            "explode": false,
-            "in": "path",
-            "name": "buildingID",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "style": "simple"
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Building"
-                }
-              }
-            },
-            "description": "The building corresponding to the buildingID used"
+    "/buildings/{buildingID}" : {
+      "get" : {
+        "operationId" : "buildingInfo",
+        "parameters" : [ {
+          "explode" : false,
+          "in" : "path",
+          "name" : "buildingID",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
           },
-          "404": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
+          "style" : "simple"
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Building"
                 }
               }
             },
-            "description": "No building found"
+            "description" : "The building corresponding to the buildingID used"
           },
-          "500": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
                 }
               }
             },
-            "description": "Unexpected error"
+            "description" : "No building found"
+          },
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "Unexpected error"
           }
         },
-        "summary": "Get the building information"
+        "summary" : "Get the building information"
+      }
+    },
+    "/businesses/{businessID}" : {
+      "get" : {
+        "operationId" : "businessInfo",
+        "parameters" : [ {
+          "explode" : false,
+          "in" : "path",
+          "name" : "businessID",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "simple"
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Business"
+                }
+              }
+            },
+            "description" : "The business corresponding to the businessID used"
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "No business found"
+          },
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "Unexpected error"
+          }
+        },
+        "summary" : "Get the business information"
+      }
+    },
+    "/map/regions" : {
+      "get" : {
+        "operationId" : "mapRegions",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MapRegions"
+                }
+              }
+            },
+            "description" : "The list of all regions on the map, with their corresponding information"
+          },
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "Unexpected error"
+          }
+        },
+        "summary" : "Get the list of all regions on the map, with their corresponding information"
+      }
+    },
+    "/towns" : {
+      "get" : {
+        "operationId" : "towns",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Towns"
+                }
+              }
+            },
+            "description" : "The list of all towns on the map, with their corresponding information"
+          },
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "Unexpected error"
+          }
+        },
+        "summary" : "Get the list of all towns on the map, with their corresponding information"
+      }
+    },
+    "/towns/{townID}" : {
+      "get" : {
+        "operationId" : "townInfo",
+        "parameters" : [ {
+          "explode" : false,
+          "in" : "path",
+          "name" : "townID",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "simple"
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Town"
+                }
+              }
+            },
+            "description" : "The information for a specific town"
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "No town found"
+          },
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            },
+            "description" : "Unexpected error"
+          }
+        },
+        "summary" : "Get the information for a specific town"
       }
     }
   },
-  "components": {
-    "schemas": {
-      "Player": {
-        "properties": {
-          "username": {
-            "type": "string"
+  "components" : {
+    "schemas" : {
+      "Player" : {
+        "properties" : {
+          "username" : {
+            "type" : "string"
           },
-          "household": {
-            "$ref": "#/components/schemas/Household"
+          "household" : {
+            "$ref" : "#/components/schemas/Household"
           },
-          "discord_id": {
-            "nullable": true,
-            "type": "string"
+          "discord_id" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "settings": {
-            "$ref": "#/components/schemas/PlayerSettings"
+          "settings" : {
+            "$ref" : "#/components/schemas/PlayerSettings"
           },
-          "bonus_points": {
-            "type": "number"
+          "bonus_points" : {
+            "type" : "number"
           },
-          "active": {
-            "type": "boolean"
+          "active" : {
+            "type" : "boolean"
           },
-          "activity": {
-            "$ref": "#/components/schemas/PlayerActivity"
+          "activity" : {
+            "$ref" : "#/components/schemas/PlayerActivity"
           }
         },
-        "required": ["active", "household", "username"],
-        "type": "object"
+        "required" : [ "active", "household", "username" ],
+        "type" : "object"
       },
-      "ProductManager": {
-        "properties": {
-          "max_holding": {
-            "nullable": true,
-            "type": "number"
+      "ProductManager" : {
+        "properties" : {
+          "max_holding" : {
+            "nullable" : true,
+            "type" : "number"
           },
-          "min_holding": {
-            "nullable": true,
-            "type": "number"
+          "min_holding" : {
+            "nullable" : true,
+            "type" : "number"
           },
-          "buy_volume": {
-            "nullable": true,
-            "type": "number"
+          "buy_volume" : {
+            "nullable" : true,
+            "type" : "number"
           },
-          "buy_price": {
-            "nullable": true,
-            "type": "string"
+          "buy_price" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "sell_volume": {
-            "nullable": true,
-            "type": "number"
+          "sell_volume" : {
+            "nullable" : true,
+            "type" : "number"
           },
-          "sell_price": {
-            "nullable": true,
-            "type": "string"
+          "sell_price" : {
+            "nullable" : true,
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Worker": {
-        "properties": {
-          "assignment": {
-            "type": "string"
+      "Worker" : {
+        "properties" : {
+          "assignment" : {
+            "type" : "string"
           },
-          "capacity": {
-            "type": "string"
+          "capacity" : {
+            "type" : "string"
           },
-          "name": {
-            "type": "string"
+          "name" : {
+            "type" : "string"
           },
-          "skills": {
-            "$ref": "#/components/schemas/WorkerSkills"
+          "skills" : {
+            "$ref" : "#/components/schemas/WorkerSkills"
           }
         },
-        "required": ["name"],
-        "type": "object"
+        "required" : [ "name" ],
+        "type" : "object"
       },
-      "ProductPastFlow": {
-        "nullable": true,
-        "properties": {
-          "production": {
-            "nullable": true,
-            "type": "string"
+      "ProductPastFlow" : {
+        "nullable" : true,
+        "properties" : {
+          "production" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "production_cost": {
-            "nullable": true,
-            "type": "string"
+          "production_cost" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "consumption": {
-            "nullable": true,
-            "type": "string"
+          "consumption" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "consumption_cost": {
-            "nullable": true,
-            "type": "string"
+          "consumption_cost" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "import": {
-            "description": "The quantity of the product imported via trade routes.",
-            "nullable": true,
-            "type": "string"
+          "import" : {
+            "description" : "The quantity of the product imported via trade routes.",
+            "nullable" : true,
+            "type" : "string"
           },
-          "import_cost": {
-            "nullable": true,
-            "type": "string"
+          "import_cost" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "export": {
-            "description": "The quantity of the product exported via trade routes.",
-            "nullable": true,
-            "type": "string"
+          "export" : {
+            "description" : "The quantity of the product exported via trade routes.",
+            "nullable" : true,
+            "type" : "string"
           },
-          "export_value": {
-            "nullable": true,
-            "type": "string"
+          "export_value" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "export_cost": {
-            "nullable": true,
-            "type": "string"
+          "export_cost" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "inbound": {
-            "description": "The quantity of the product imported via contracts.",
-            "nullable": true,
-            "type": "string"
+          "inbound" : {
+            "description" : "The quantity of the product imported via contracts.",
+            "nullable" : true,
+            "type" : "string"
           },
-          "inbound_cost": {
-            "nullable": true,
-            "type": "string"
+          "inbound_cost" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "outbound": {
-            "description": "The quantity of the product exported via contracts.",
-            "nullable": true,
-            "type": "string"
+          "outbound" : {
+            "description" : "The quantity of the product exported via contracts.",
+            "nullable" : true,
+            "type" : "string"
           },
-          "outbound_value": {
-            "nullable": true,
-            "type": "string"
+          "outbound_value" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "outbound_cost": {
-            "nullable": true,
-            "type": "string"
+          "outbound_cost" : {
+            "nullable" : true,
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "InventoryFlows": {
-        "nullable": true,
-        "properties": {
-          "alembics": {
-            "$ref": "#/components/schemas/ProductFlow"
+      "InventoryFlows" : {
+        "nullable" : true,
+        "properties" : {
+          "alembics" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "arms": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "arms" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "axes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "axes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "beer": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "beer" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bellows": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bellows" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bells": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bells" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "belts": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "belts" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "blades": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "blades" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "books": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "books" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bread": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bread" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bronze ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bronze ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "butter": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "butter" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "candles": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "candles" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "carting": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "carting" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "casks": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "casks" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cattle": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cattle" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "charcoal": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "charcoal" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cheese": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cheese" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "chisels": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "chisels" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "clay": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "clay" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "coats": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "coats" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cookware": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cookware" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "copper ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "copper ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "copper ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "copper ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cured fish": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cured fish" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cured meat": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cured meat" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "dye": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "dye" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "dyed cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "dyed cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "dyed yarn": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "dyed yarn" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "firewood": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "firewood" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "fish": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "fish" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "flax fibres": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "flax fibres" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "flax plants": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "flax plants" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "fleece": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "fleece" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "flour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "flour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "furniture": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "furniture" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "garments": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "garments" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "gears": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "gears" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "glass": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "glass" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "glassware": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "glassware" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "gold bars": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "gold bars" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "gold ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "gold ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "grain": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "grain" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "grindstones": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "grindstones" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "ham": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "ham" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "harnesses": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "harnesses" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "herbs": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "herbs" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "hides": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "hides" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "hinges": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "hinges" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "honey": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "honey" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "hop beer": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "hop beer" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "iron ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "iron ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "jewellery": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "jewellery" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "labour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "labour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lathes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lathes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lead bars": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lead bars" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lead ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lead ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "leather": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "leather" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "light armour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "light armour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "limestone": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "limestone" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lodging": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lodging" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "logs": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "logs" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "looms": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "looms" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "malt": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "malt" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "manure": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "manure" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "meat": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "meat" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "medicine": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "medicine" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "milk": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "milk" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "mouldboards": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "mouldboards" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "nails": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "nails" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "nets": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "nets" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "ox power": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "ox power" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "paper": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "paper" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "pasties": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "pasties" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "pickaxes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "pickaxes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "pies": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "pies" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "plate armour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "plate armour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "ploughs": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "ploughs" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium armour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium armour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium axes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium axes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium cheese": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium cheese" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium dye": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium dye" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium garments": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium garments" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium glassware": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium glassware" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium ham": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium ham" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium sails": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium sails" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium steel": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium steel" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium swords": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium swords" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "protection": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "protection" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "raw cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "raw cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "resin": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "resin" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "rope": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "rope" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "sails": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "sails" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "salt": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "salt" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "sculptures": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "sculptures" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "scythes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "scythes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "silver bars": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "silver bars" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "silver ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "silver ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "slaked lime": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "slaked lime" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "spinning wheels": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "spinning wheels" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "spirits": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "spirits" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "steel ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "steel ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "stockfish": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "stockfish" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "swords": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "swords" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tackles": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tackles" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tapestries": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tapestries" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tar": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tar" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "thread": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "thread" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tiles": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tiles" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "timber": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "timber" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tin ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tin ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tin ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tin ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tools": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tools" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wax": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wax" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wheels": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wheels" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "windows": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "windows" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wine": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wine" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wool": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wool" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wrought iron": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wrought iron" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "yarn": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "yarn" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "InventoryPastFlows": {
-        "nullable": true,
-        "properties": {
-          "alembics": {
-            "$ref": "#/components/schemas/ProductPastFlow"
+      "InventoryPastFlows" : {
+        "nullable" : true,
+        "properties" : {
+          "alembics" : {
+            "$ref" : "#/components/schemas/ProductPastFlow"
           },
-          "arms": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "arms" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "axes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "axes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "beer": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "beer" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bellows": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bellows" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bells": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bells" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "belts": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "belts" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "blades": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "blades" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "books": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "books" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bread": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bread" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "bronze ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "bronze ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "butter": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "butter" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "candles": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "candles" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "carting": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "carting" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "casks": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "casks" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cattle": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cattle" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "charcoal": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "charcoal" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cheese": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cheese" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "chisels": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "chisels" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "clay": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "clay" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "coats": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "coats" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cookware": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cookware" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "copper ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "copper ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "copper ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "copper ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cured fish": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cured fish" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "cured meat": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "cured meat" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "dye": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "dye" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "dyed cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "dyed cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "dyed yarn": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "dyed yarn" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "firewood": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "firewood" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "fish": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "fish" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "flax fibres": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "flax fibres" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "flax plants": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "flax plants" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "fleece": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "fleece" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "flour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "flour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "furniture": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "furniture" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "garments": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "garments" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "gears": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "gears" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "glass": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "glass" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "glassware": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "glassware" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "gold bars": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "gold bars" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "gold ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "gold ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "grain": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "grain" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "grindstones": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "grindstones" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "ham": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "ham" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "harnesses": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "harnesses" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "herbs": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "herbs" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "hides": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "hides" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "hinges": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "hinges" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "honey": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "honey" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "hop beer": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "hop beer" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "iron ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "iron ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "jewellery": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "jewellery" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "labour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "labour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lathes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lathes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lead bars": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lead bars" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lead ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lead ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "leather": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "leather" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "light armour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "light armour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "limestone": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "limestone" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "lodging": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "lodging" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "logs": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "logs" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "looms": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "looms" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "malt": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "malt" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "manure": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "manure" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "meat": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "meat" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "medicine": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "medicine" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "milk": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "milk" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "mouldboards": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "mouldboards" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "nails": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "nails" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "nets": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "nets" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "ox power": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "ox power" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "paper": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "paper" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "pasties": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "pasties" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "pickaxes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "pickaxes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "pies": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "pies" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "plate armour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "plate armour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "ploughs": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "ploughs" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium armour": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium armour" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium axes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium axes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium cheese": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium cheese" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium dye": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium dye" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium garments": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium garments" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium glassware": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium glassware" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium ham": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium ham" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium sails": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium sails" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium steel": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium steel" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "premium swords": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "premium swords" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "protection": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "protection" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "raw cloth": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "raw cloth" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "resin": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "resin" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "rope": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "rope" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "sails": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "sails" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "salt": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "salt" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "sculptures": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "sculptures" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "scythes": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "scythes" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "silver bars": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "silver bars" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "silver ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "silver ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "slaked lime": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "slaked lime" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "spinning wheels": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "spinning wheels" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "spirits": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "spirits" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "steel ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "steel ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "stockfish": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "stockfish" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "swords": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "swords" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tackles": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tackles" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tapestries": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tapestries" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tar": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tar" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "thread": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "thread" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tiles": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tiles" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "timber": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "timber" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tin ingots": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tin ingots" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tin ore": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tin ore" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "tools": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "tools" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wax": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wax" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wheels": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wheels" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "windows": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "windows" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wine": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wine" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wool": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wool" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "wrought iron": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "wrought iron" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           },
-          "yarn": {
-            "$ref": "#/components/schemas/ProductFlow"
+          "yarn" : {
+            "$ref" : "#/components/schemas/ProductFlow"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Inventory": {
-        "properties": {
-          "account": {
-            "$ref": "#/components/schemas/InventoryAccount"
+      "Inventory" : {
+        "properties" : {
+          "account" : {
+            "$ref" : "#/components/schemas/InventoryAccount"
           },
-          "capacity": {
-            "type": "number"
+          "capacity" : {
+            "type" : "number"
           },
-          "reserved": {
-            "nullable": true,
-            "type": "number"
+          "reserved" : {
+            "nullable" : true,
+            "type" : "number"
           },
-          "used": {
-            "nullable": true,
-            "type": "string"
+          "used" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "holdings": {
-            "$ref": "#/components/schemas/Holdings"
+          "holdings" : {
+            "$ref" : "#/components/schemas/Holdings"
           },
-          "flows": {
-            "$ref": "#/components/schemas/InventoryFlows"
+          "flows" : {
+            "$ref" : "#/components/schemas/InventoryFlows"
           },
-          "previous_flows": {
-            "$ref": "#/components/schemas/InventoryPastFlows"
+          "previous_flows" : {
+            "$ref" : "#/components/schemas/InventoryPastFlows"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Specialization": {
-        "properties": {
-          "points": {
-            "$ref": "#/components/schemas/SpecializationPoints"
+      "Specialization" : {
+        "properties" : {
+          "points" : {
+            "$ref" : "#/components/schemas/SpecializationPoints"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Household": {
-        "properties": {
-          "id": {
-            "type": "string"
+      "Household" : {
+        "properties" : {
+          "id" : {
+            "type" : "string"
           },
-          "name": {
-            "type": "string"
+          "name" : {
+            "type" : "string"
           },
-          "town_id": {
-            "type": "string"
+          "town_id" : {
+            "type" : "string"
           },
-          "portrait": {
-            "type": "string"
+          "portrait" : {
+            "type" : "string"
           },
-          "gender": {
-            "type": "string"
+          "gender" : {
+            "type" : "string"
           },
-          "account_id": {
-            "type": "string"
+          "account_id" : {
+            "type" : "string"
           },
-          "business_ids": {
-            "items": {
-              "type": "string"
+          "business_ids" : {
+            "items" : {
+              "type" : "string"
             },
-            "type": "array"
+            "type" : "array"
           },
-          "prestige": {
-            "type": "string"
+          "prestige" : {
+            "type" : "string"
           },
-          "prestige_impacts": {
-            "items": {
-              "$ref": "#/components/schemas/PrestigeImpact"
+          "prestige_impacts" : {
+            "items" : {
+              "$ref" : "#/components/schemas/PrestigeImpact"
             },
-            "type": "array"
+            "type" : "array"
           },
-          "legacy": {
-            "type": "string"
+          "legacy" : {
+            "type" : "string"
           },
-          "workers": {
-            "items": {
-              "$ref": "#/components/schemas/Worker"
+          "workers" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Worker"
             },
-            "type": "array"
+            "type" : "array"
           },
-          "specialization": {
-            "$ref": "#/components/schemas/Specialization"
+          "specialization" : {
+            "$ref" : "#/components/schemas/Specialization"
           },
-          "operations": {
-            "items": {
-              "type": "string"
+          "operations" : {
+            "items" : {
+              "type" : "string"
             },
-            "type": "array"
+            "type" : "array"
           },
-          "caps": {
-            "$ref": "#/components/schemas/HouseholdCaps"
+          "caps" : {
+            "$ref" : "#/components/schemas/HouseholdCaps"
           },
-          "sustenance": {
-            "$ref": "#/components/schemas/HouseholdSustenance"
+          "sustenance" : {
+            "$ref" : "#/components/schemas/HouseholdSustenance"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "PlayerSettings": {
-        "properties": {
-          "sound_volume": {
-            "type": "number"
+      "PlayerSettings" : {
+        "properties" : {
+          "sound_volume" : {
+            "type" : "number"
           },
-          "notifications": {
-            "$ref": "#/components/schemas/PlayerSettingsNotifications"
+          "notifications" : {
+            "$ref" : "#/components/schemas/PlayerSettingsNotifications"
           },
-          "email": {
-            "$ref": "#/components/schemas/PlayerSettingsEmail"
+          "email" : {
+            "$ref" : "#/components/schemas/PlayerSettingsEmail"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "InventoryAssets": {
-        "properties": {
-          "alembics": {
-            "$ref": "#/components/schemas/ProductAsset"
+      "InventoryAssets" : {
+        "properties" : {
+          "alembics" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "arms": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "arms" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "axes": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "axes" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "beer": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "beer" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "bellows": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "bellows" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "bells": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "bells" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "belts": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "belts" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "blades": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "blades" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "books": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "books" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "bread": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "bread" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "bronze ingots": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "bronze ingots" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "butter": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "butter" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "candles": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "candles" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "carting": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "carting" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "casks": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "casks" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "cattle": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "cattle" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "charcoal": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "charcoal" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "cheese": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "cheese" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "chisels": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "chisels" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "clay": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "clay" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "cloth": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "cloth" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "coats": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "coats" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "cookware": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "cookware" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "copper ingots": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "copper ingots" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "copper ore": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "copper ore" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "cured fish": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "cured fish" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "cured meat": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "cured meat" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "dye": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "dye" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "dyed cloth": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "dyed cloth" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "dyed yarn": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "dyed yarn" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "firewood": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "firewood" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "fish": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "fish" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "flax fibres": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "flax fibres" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "flax plants": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "flax plants" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "fleece": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "fleece" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "flour": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "flour" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "furniture": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "furniture" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "garments": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "garments" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "gears": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "gears" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "glass": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "glass" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "glassware": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "glassware" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "gold bars": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "gold bars" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "gold ore": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "gold ore" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "grain": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "grain" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "grindstones": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "grindstones" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "ham": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "ham" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "harnesses": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "harnesses" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "herbs": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "herbs" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "hides": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "hides" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "hinges": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "hinges" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "honey": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "honey" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "hop beer": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "hop beer" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "iron ore": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "iron ore" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "jewellery": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "jewellery" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "labour": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "labour" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "lathes": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "lathes" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "lead bars": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "lead bars" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "lead ore": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "lead ore" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "leather": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "leather" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "light armour": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "light armour" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "limestone": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "limestone" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "lodging": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "lodging" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "logs": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "logs" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "looms": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "looms" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "malt": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "malt" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "manure": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "manure" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "meat": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "meat" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "medicine": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "medicine" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "milk": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "milk" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "mouldboards": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "mouldboards" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "nails": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "nails" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "nets": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "nets" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "ox power": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "ox power" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "paper": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "paper" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "pasties": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "pasties" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "pickaxes": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "pickaxes" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "pies": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "pies" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "plate armour": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "plate armour" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "ploughs": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "ploughs" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium armour": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium armour" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium axes": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium axes" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium cheese": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium cheese" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium cloth": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium cloth" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium dye": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium dye" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium garments": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium garments" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium glassware": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium glassware" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium ham": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium ham" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium sails": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium sails" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium steel": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium steel" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "premium swords": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "premium swords" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "protection": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "protection" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "raw cloth": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "raw cloth" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "resin": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "resin" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "rope": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "rope" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "sails": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "sails" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "salt": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "salt" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "sculptures": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "sculptures" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "scythes": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "scythes" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "silver bars": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "silver bars" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "silver ore": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "silver ore" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "slaked lime": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "slaked lime" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "spinning wheels": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "spinning wheels" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "spirits": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "spirits" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "steel ingots": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "steel ingots" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "stockfish": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "stockfish" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "swords": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "swords" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tackles": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tackles" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tapestries": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tapestries" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tar": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tar" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "thread": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "thread" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tiles": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tiles" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "timber": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "timber" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tin ingots": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tin ingots" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tin ore": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tin ore" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "tools": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "tools" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "wax": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "wax" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "wheels": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "wheels" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "windows": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "windows" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "wine": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "wine" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "wool": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "wool" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "wrought iron": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "wrought iron" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           },
-          "yarn": {
-            "$ref": "#/components/schemas/ProductAsset"
+          "yarn" : {
+            "$ref" : "#/components/schemas/ProductAsset"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "ProductHolding": {
-        "nullable": true,
-        "properties": {
-          "managers": {
-            "$ref": "#/components/schemas/ProductManager"
+      "ProductHolding" : {
+        "nullable" : true,
+        "properties" : {
+          "managers" : {
+            "$ref" : "#/components/schemas/ProductManager"
           },
-          "capacity": {
-            "type": "number"
+          "capacity" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Holdings": {
-        "properties": {
-          "alembics": {
-            "$ref": "#/components/schemas/ProductHolding"
+      "Holdings" : {
+        "properties" : {
+          "alembics" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "arms": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "arms" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "axes": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "axes" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "beer": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "beer" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "bellows": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "bellows" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "bells": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "bells" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "belts": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "belts" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "blades": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "blades" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "books": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "books" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "bread": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "bread" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "bronze ingots": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "bronze ingots" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "butter": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "butter" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "candles": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "candles" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "carting": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "carting" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "casks": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "casks" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "cattle": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "cattle" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "charcoal": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "charcoal" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "cheese": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "cheese" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "chisels": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "chisels" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "clay": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "clay" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "cloth": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "cloth" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "coats": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "coats" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "cookware": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "cookware" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "copper ingots": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "copper ingots" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "copper ore": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "copper ore" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "cured fish": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "cured fish" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "cured meat": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "cured meat" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "dye": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "dye" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "dyed cloth": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "dyed cloth" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "dyed yarn": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "dyed yarn" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "firewood": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "firewood" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "fish": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "fish" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "flax fibres": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "flax fibres" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "flax plants": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "flax plants" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "fleece": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "fleece" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "flour": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "flour" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "furniture": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "furniture" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "garments": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "garments" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "gears": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "gears" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "glass": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "glass" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "glassware": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "glassware" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "gold bars": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "gold bars" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "gold ore": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "gold ore" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "grain": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "grain" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "grindstones": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "grindstones" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "ham": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "ham" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "harnesses": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "harnesses" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "herbs": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "herbs" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "hides": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "hides" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "hinges": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "hinges" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "honey": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "honey" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "hop beer": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "hop beer" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "iron ore": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "iron ore" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "jewellery": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "jewellery" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "labour": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "labour" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "lathes": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "lathes" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "lead bars": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "lead bars" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "lead ore": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "lead ore" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "leather": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "leather" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "light armour": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "light armour" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "limestone": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "limestone" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "lodging": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "lodging" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "logs": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "logs" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "looms": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "looms" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "malt": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "malt" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "manure": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "manure" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "meat": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "meat" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "medicine": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "medicine" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "milk": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "milk" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "mouldboards": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "mouldboards" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "nails": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "nails" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "nets": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "nets" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "ox power": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "ox power" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "paper": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "paper" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "pasties": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "pasties" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "pickaxes": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "pickaxes" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "pies": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "pies" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "plate armour": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "plate armour" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "ploughs": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "ploughs" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium armour": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium armour" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium axes": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium axes" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium cheese": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium cheese" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium cloth": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium cloth" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium dye": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium dye" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium garments": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium garments" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium glassware": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium glassware" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium ham": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium ham" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium sails": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium sails" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium steel": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium steel" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "premium swords": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "premium swords" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "protection": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "protection" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "raw cloth": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "raw cloth" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "resin": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "resin" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "rope": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "rope" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "sails": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "sails" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "salt": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "salt" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "sculptures": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "sculptures" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "scythes": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "scythes" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "silver bars": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "silver bars" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "silver ore": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "silver ore" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "slaked lime": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "slaked lime" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "spinning wheels": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "spinning wheels" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "spirits": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "spirits" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "steel ingots": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "steel ingots" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "stockfish": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "stockfish" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "swords": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "swords" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tackles": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tackles" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tapestries": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tapestries" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tar": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tar" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "thread": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "thread" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tiles": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tiles" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "timber": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "timber" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tin ingots": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tin ingots" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tin ore": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tin ore" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "tools": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "tools" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "wax": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "wax" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "wheels": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "wheels" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "windows": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "windows" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "wine": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "wine" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "wool": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "wool" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "wrought iron": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "wrought iron" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           },
-          "yarn": {
-            "$ref": "#/components/schemas/ProductHolding"
+          "yarn" : {
+            "$ref" : "#/components/schemas/ProductHolding"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Building": {
-        "properties": {
-          "name": {
-            "type": "string"
+      "Building" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
           },
-          "id": {
-            "type": "string"
+          "id" : {
+            "type" : "string"
           },
-          "type": {
-            "type": "string"
+          "type" : {
+            "type" : "string"
           },
-          "size": {
-            "type": "number"
+          "size" : {
+            "type" : "number"
           },
-          "capacity": {
-            "type": "string"
+          "capacity" : {
+            "type" : "string"
           },
-          "town_id": {
-            "type": "string"
+          "town_id" : {
+            "type" : "string"
           },
-          "owner_id": {
-            "type": "string"
+          "owner_id" : {
+            "type" : "string"
           },
-          "location": {
-            "$ref": "#/components/schemas/Location"
+          "location" : {
+            "$ref" : "#/components/schemas/Location"
           },
-          "sublocation": {
-            "$ref": "#/components/schemas/Location"
+          "sublocation" : {
+            "$ref" : "#/components/schemas/Location"
           },
-          "land": {
-            "items": {
-              "$ref": "#/components/schemas/Location"
+          "land" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Location"
             },
-            "type": "array"
+            "type" : "array"
           },
-          "delivery_cost": {
-            "$ref": "#/components/schemas/BuildingDeliveryCost"
+          "delivery_cost" : {
+            "$ref" : "#/components/schemas/BuildingDeliveryCost"
           },
-          "producer": {
-            "$ref": "#/components/schemas/BuildingProducer"
+          "producer" : {
+            "$ref" : "#/components/schemas/BuildingProducer"
           },
-          "construction": {
-            "$ref": "#/components/schemas/BuildingConstruction"
+          "construction" : {
+            "$ref" : "#/components/schemas/BuildingConstruction"
           },
-          "provider_id": {
-            "type": "string"
+          "provider_id" : {
+            "type" : "string"
           },
-          "cost": {
-            "type": "string"
+          "cost" : {
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Error": {
-        "properties": {
-          "message": {
-            "description": "A human readable error message",
-            "type": "string"
+      "Error" : {
+        "properties" : {
+          "message" : {
+            "description" : "A human readable error message",
+            "type" : "string"
           }
         },
-        "required": ["message"],
-        "type": "object"
+        "required" : [ "message" ],
+        "type" : "object"
       },
-      "PlayerActivity": {
-        "properties": {
-          "score": {
-            "type": "number"
+      "PlayerActivity" : {
+        "properties" : {
+          "score" : {
+            "type" : "number"
           },
-          "index": {
-            "type": "number"
+          "index" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "WorkerSkills": {
-        "properties": {
-          "nutrition": {
-            "nullable": true,
-            "type": "string"
+      "WorkerSkills" : {
+        "properties" : {
+          "nutrition" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "textile": {
-            "nullable": true,
-            "type": "string"
+          "textile" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "crafting": {
-            "nullable": true,
-            "type": "string"
+          "crafting" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "forging": {
-            "nullable": true,
-            "type": "string"
+          "forging" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "weaponry": {
-            "nullable": true,
-            "type": "string"
+          "weaponry" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "maritime": {
-            "nullable": true,
-            "type": "string"
+          "maritime" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "mercantile": {
-            "nullable": true,
-            "type": "string"
+          "mercantile" : {
+            "nullable" : true,
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "ProductFlow": {
-        "nullable": true,
-        "properties": {
-          "projection": {
-            "$ref": "#/components/schemas/ProductPastFlow"
+      "ProductFlow" : {
+        "nullable" : true,
+        "properties" : {
+          "projection" : {
+            "$ref" : "#/components/schemas/ProductPastFlow"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "InventoryAccount": {
-        "properties": {
-          "id": {
-            "type": "string"
+      "InventoryAccount" : {
+        "properties" : {
+          "id" : {
+            "type" : "string"
           },
-          "name": {
-            "type": "string"
+          "name" : {
+            "type" : "string"
           },
-          "owner_id": {
-            "type": "string"
+          "owner_id" : {
+            "type" : "string"
           },
-          "master_id": {
-            "nullable": true,
-            "type": "string"
+          "master_id" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "sponsor_id": {
-            "nullable": true,
-            "type": "string"
+          "sponsor_id" : {
+            "nullable" : true,
+            "type" : "string"
           },
-          "assets": {
-            "$ref": "#/components/schemas/InventoryAssets"
+          "assets" : {
+            "$ref" : "#/components/schemas/InventoryAssets"
           },
-          "_ts": {
-            "type": "number"
+          "_ts" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "SpecializationPoints": {
-        "properties": {
-          "alembics": {
-            "nullable": true,
-            "type": "string"
-          },
-          "arms": {
-            "nullable": true,
-            "type": "string"
-          },
-          "axes": {
-            "nullable": true,
-            "type": "string"
-          },
-          "beer": {
-            "nullable": true,
-            "type": "string"
-          },
-          "bellows": {
-            "nullable": true,
-            "type": "string"
-          },
-          "bells": {
-            "nullable": true,
-            "type": "string"
-          },
-          "belts": {
-            "nullable": true,
-            "type": "string"
-          },
-          "blades": {
-            "nullable": true,
-            "type": "string"
-          },
-          "books": {
-            "nullable": true,
-            "type": "string"
-          },
-          "bread": {
-            "nullable": true,
-            "type": "string"
-          },
-          "bronze ingots": {
-            "nullable": true,
-            "type": "string"
-          },
-          "butter": {
-            "nullable": true,
-            "type": "string"
-          },
-          "candles": {
-            "nullable": true,
-            "type": "string"
-          },
-          "carting": {
-            "nullable": true,
-            "type": "string"
-          },
-          "casks": {
-            "nullable": true,
-            "type": "string"
-          },
-          "cattle": {
-            "nullable": true,
-            "type": "string"
-          },
-          "charcoal": {
-            "nullable": true,
-            "type": "string"
-          },
-          "cheese": {
-            "nullable": true,
-            "type": "string"
-          },
-          "chisels": {
-            "nullable": true,
-            "type": "string"
-          },
-          "clay": {
-            "nullable": true,
-            "type": "string"
-          },
-          "cloth": {
-            "nullable": true,
-            "type": "string"
-          },
-          "coats": {
-            "nullable": true,
-            "type": "string"
-          },
-          "cookware": {
-            "nullable": true,
-            "type": "string"
-          },
-          "copper ingots": {
-            "nullable": true,
-            "type": "string"
-          },
-          "copper ore": {
-            "nullable": true,
-            "type": "string"
-          },
-          "cured fish": {
-            "nullable": true,
-            "type": "string"
-          },
-          "cured meat": {
-            "nullable": true,
-            "type": "string"
-          },
-          "dye": {
-            "nullable": true,
-            "type": "string"
-          },
-          "dyed cloth": {
-            "nullable": true,
-            "type": "string"
-          },
-          "dyed yarn": {
-            "nullable": true,
-            "type": "string"
-          },
-          "firewood": {
-            "nullable": true,
-            "type": "string"
-          },
-          "fish": {
-            "nullable": true,
-            "type": "string"
-          },
-          "flax fibres": {
-            "nullable": true,
-            "type": "string"
-          },
-          "flax plants": {
-            "nullable": true,
-            "type": "string"
-          },
-          "fleece": {
-            "nullable": true,
-            "type": "string"
-          },
-          "flour": {
-            "nullable": true,
-            "type": "string"
-          },
-          "furniture": {
-            "nullable": true,
-            "type": "string"
-          },
-          "garments": {
-            "nullable": true,
-            "type": "string"
-          },
-          "gears": {
-            "nullable": true,
-            "type": "string"
-          },
-          "glass": {
-            "nullable": true,
-            "type": "string"
-          },
-          "glassware": {
-            "nullable": true,
-            "type": "string"
-          },
-          "gold bars": {
-            "nullable": true,
-            "type": "string"
-          },
-          "gold ore": {
-            "nullable": true,
-            "type": "string"
-          },
-          "grain": {
-            "nullable": true,
-            "type": "string"
-          },
-          "grindstones": {
-            "nullable": true,
-            "type": "string"
-          },
-          "ham": {
-            "nullable": true,
-            "type": "string"
-          },
-          "harnesses": {
-            "nullable": true,
-            "type": "string"
-          },
-          "herbs": {
-            "nullable": true,
-            "type": "string"
-          },
-          "hides": {
-            "nullable": true,
-            "type": "string"
-          },
-          "hinges": {
-            "nullable": true,
-            "type": "string"
-          },
-          "honey": {
-            "nullable": true,
-            "type": "string"
-          },
-          "hop beer": {
-            "nullable": true,
-            "type": "string"
-          },
-          "iron ore": {
-            "nullable": true,
-            "type": "string"
-          },
-          "jewellery": {
-            "nullable": true,
-            "type": "string"
-          },
-          "labour": {
-            "nullable": true,
-            "type": "string"
-          },
-          "lathes": {
-            "nullable": true,
-            "type": "string"
-          },
-          "lead bars": {
-            "nullable": true,
-            "type": "string"
-          },
-          "lead ore": {
-            "nullable": true,
-            "type": "string"
-          },
-          "leather": {
-            "nullable": true,
-            "type": "string"
-          },
-          "light armour": {
-            "nullable": true,
-            "type": "string"
-          },
-          "limestone": {
-            "nullable": true,
-            "type": "string"
-          },
-          "lodging": {
-            "nullable": true,
-            "type": "string"
-          },
-          "logs": {
-            "nullable": true,
-            "type": "string"
-          },
-          "looms": {
-            "nullable": true,
-            "type": "string"
-          },
-          "malt": {
-            "nullable": true,
-            "type": "string"
-          },
-          "manure": {
-            "nullable": true,
-            "type": "string"
-          },
-          "meat": {
-            "nullable": true,
-            "type": "string"
-          },
-          "medicine": {
-            "nullable": true,
-            "type": "string"
-          },
-          "milk": {
-            "nullable": true,
-            "type": "string"
-          },
-          "mouldboards": {
-            "nullable": true,
-            "type": "string"
-          },
-          "nails": {
-            "nullable": true,
-            "type": "string"
-          },
-          "nets": {
-            "nullable": true,
-            "type": "string"
-          },
-          "ox power": {
-            "nullable": true,
-            "type": "string"
-          },
-          "paper": {
-            "nullable": true,
-            "type": "string"
-          },
-          "pasties": {
-            "nullable": true,
-            "type": "string"
-          },
-          "pickaxes": {
-            "nullable": true,
-            "type": "string"
-          },
-          "pies": {
-            "nullable": true,
-            "type": "string"
-          },
-          "plate armour": {
-            "nullable": true,
-            "type": "string"
-          },
-          "ploughs": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium armour": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium axes": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium cheese": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium cloth": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium dye": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium garments": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium glassware": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium ham": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium sails": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium steel": {
-            "nullable": true,
-            "type": "string"
-          },
-          "premium swords": {
-            "nullable": true,
-            "type": "string"
-          },
-          "protection": {
-            "nullable": true,
-            "type": "string"
-          },
-          "raw cloth": {
-            "nullable": true,
-            "type": "string"
-          },
-          "resin": {
-            "nullable": true,
-            "type": "string"
-          },
-          "rope": {
-            "nullable": true,
-            "type": "string"
-          },
-          "sails": {
-            "nullable": true,
-            "type": "string"
-          },
-          "salt": {
-            "nullable": true,
-            "type": "string"
-          },
-          "sculptures": {
-            "nullable": true,
-            "type": "string"
-          },
-          "scythes": {
-            "nullable": true,
-            "type": "string"
-          },
-          "silver bars": {
-            "nullable": true,
-            "type": "string"
-          },
-          "silver ore": {
-            "nullable": true,
-            "type": "string"
-          },
-          "slaked lime": {
-            "nullable": true,
-            "type": "string"
-          },
-          "spinning wheels": {
-            "nullable": true,
-            "type": "string"
-          },
-          "spirits": {
-            "nullable": true,
-            "type": "string"
-          },
-          "steel ingots": {
-            "nullable": true,
-            "type": "string"
-          },
-          "stockfish": {
-            "nullable": true,
-            "type": "string"
-          },
-          "swords": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tackles": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tapestries": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tar": {
-            "nullable": true,
-            "type": "string"
-          },
-          "thread": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tiles": {
-            "nullable": true,
-            "type": "string"
-          },
-          "timber": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tin ingots": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tin ore": {
-            "nullable": true,
-            "type": "string"
-          },
-          "tools": {
-            "nullable": true,
-            "type": "string"
-          },
-          "wax": {
-            "nullable": true,
-            "type": "string"
-          },
-          "wheels": {
-            "nullable": true,
-            "type": "string"
-          },
-          "windows": {
-            "nullable": true,
-            "type": "string"
-          },
-          "wine": {
-            "nullable": true,
-            "type": "string"
-          },
-          "wool": {
-            "nullable": true,
-            "type": "string"
-          },
-          "wrought iron": {
-            "nullable": true,
-            "type": "string"
-          },
-          "yarn": {
-            "nullable": true,
-            "type": "string"
+      "SpecializationPoints" : {
+        "properties" : {
+          "alembics" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "arms" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "axes" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "beer" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "bellows" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "bells" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "belts" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "blades" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "books" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "bread" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "bronze ingots" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "butter" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "candles" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "carting" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "casks" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "cattle" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "charcoal" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "cheese" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "chisels" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "clay" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "cloth" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "coats" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "cookware" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "copper ingots" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "copper ore" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "cured fish" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "cured meat" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "dye" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "dyed cloth" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "dyed yarn" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "firewood" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "fish" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "flax fibres" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "flax plants" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "fleece" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "flour" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "furniture" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "garments" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "gears" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "glass" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "glassware" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "gold bars" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "gold ore" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "grain" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "grindstones" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "ham" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "harnesses" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "herbs" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "hides" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "hinges" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "honey" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "hop beer" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "iron ore" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "jewellery" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "labour" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "lathes" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "lead bars" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "lead ore" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "leather" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "light armour" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "limestone" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "lodging" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "logs" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "looms" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "malt" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "manure" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "meat" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "medicine" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "milk" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "mouldboards" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "nails" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "nets" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "ox power" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "paper" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "pasties" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "pickaxes" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "pies" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "plate armour" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "ploughs" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium armour" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium axes" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium cheese" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium cloth" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium dye" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium garments" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium glassware" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium ham" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium sails" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium steel" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "premium swords" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "protection" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "raw cloth" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "resin" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "rope" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "sails" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "salt" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "sculptures" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "scythes" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "silver bars" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "silver ore" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "slaked lime" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "spinning wheels" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "spirits" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "steel ingots" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "stockfish" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "swords" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tackles" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tapestries" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tar" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "thread" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tiles" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "timber" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tin ingots" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tin ore" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "tools" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "wax" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "wheels" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "windows" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "wine" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "wool" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "wrought iron" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "yarn" : {
+            "nullable" : true,
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "PrestigeImpact": {
-        "properties": {
-          "factor": {
-            "type": "string"
+      "PrestigeImpact" : {
+        "properties" : {
+          "factor" : {
+            "type" : "string"
           },
-          "impact": {
-            "type": "string"
+          "impact" : {
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "HouseholdCaps": {
-        "properties": {
-          "transports": {
-            "type": "number"
+      "HouseholdCaps" : {
+        "properties" : {
+          "transports" : {
+            "type" : "number"
           },
-          "regular_management": {
-            "type": "number"
+          "regular_management" : {
+            "type" : "number"
           },
-          "prestige_management": {
-            "type": "number"
+          "prestige_management" : {
+            "type" : "number"
           },
-          "tenants": {
-            "type": "number"
+          "tenants" : {
+            "type" : "number"
           },
-          "apprentices": {
-            "type": "number"
+          "apprentices" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "HouseholdSustenance": {
-        "properties": {
-          "reference": {
-            "type": "string"
+      "HouseholdSustenance" : {
+        "properties" : {
+          "reference" : {
+            "type" : "string"
           },
-          "inventory": {
-            "$ref": "#/components/schemas/Inventory"
+          "inventory" : {
+            "$ref" : "#/components/schemas/Inventory"
           },
-          "provider_id": {
-            "type": "string"
+          "provider_id" : {
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "PlayerSettingsNotifications": {
-        "properties": {
-          "discord": {
-            "type": "boolean"
+      "PlayerSettingsNotifications" : {
+        "properties" : {
+          "discord" : {
+            "type" : "boolean"
           },
-          "mutes": {
-            "properties": {},
-            "type": "object"
+          "mutes" : {
+            "properties" : { },
+            "type" : "object"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "PlayerSettingsEmail": {
-        "properties": {
-          "season_notifications": {
-            "type": "boolean"
+      "PlayerSettingsEmail" : {
+        "properties" : {
+          "season_notifications" : {
+            "type" : "boolean"
           },
-          "character_export": {
-            "type": "boolean"
+          "character_export" : {
+            "type" : "boolean"
           },
-          "marketing_emails": {
-            "type": "boolean"
+          "marketing_emails" : {
+            "type" : "boolean"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "ProductAsset": {
-        "nullable": true,
-        "properties": {
-          "balance": {
-            "type": "string"
+      "ProductAsset" : {
+        "nullable" : true,
+        "properties" : {
+          "balance" : {
+            "type" : "string"
           },
-          "reserved": {
-            "type": "string"
+          "reserved" : {
+            "type" : "string"
           },
-          "capacity": {
-            "type": "string"
+          "capacity" : {
+            "type" : "string"
           },
-          "unit_cost": {
-            "type": "string"
+          "unit_cost" : {
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "Location": {
-        "properties": {
-          "x": {
-            "type": "number"
-          },
-          "y": {
-            "type": "number"
+      "BuildingDeliveryCost" : {
+        "properties" : {
+          "land_distance" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "BuildingDeliveryCost": {
-        "properties": {
-          "land_distance": {
-            "type": "number"
+      "BuildingPreviousOperation" : {
+        "properties" : {
+          "target" : {
+            "type" : "string"
+          },
+          "production" : {
+            "type" : "string"
+          },
+          "turns" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "BuildingPreviousOperation": {
-        "properties": {
-          "target": {
-            "type": "string"
+      "BuildingProducer" : {
+        "properties" : {
+          "reference" : {
+            "type" : "string"
           },
-          "production": {
-            "type": "string"
+          "inventory" : {
+            "$ref" : "#/components/schemas/Inventory"
           },
-          "turns": {
-            "type": "number"
+          "target" : {
+            "type" : "string"
+          },
+          "limited" : {
+            "type" : "boolean"
+          },
+          "settings" : {
+            "properties" : { },
+            "type" : "object"
+          },
+          "recipe" : {
+            "type" : "string"
+          },
+          "previous_operation" : {
+            "$ref" : "#/components/schemas/BuildingPreviousOperation"
+          },
+          "manager" : {
+            "type" : "string"
+          },
+          "provider_id" : {
+            "type" : "string"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "BuildingProducer": {
-        "properties": {
-          "reference": {
-            "type": "string"
+      "ConstructionSettings" : {
+        "properties" : {
+          "honour_low_stock" : {
+            "type" : "boolean"
           },
-          "inventory": {
-            "$ref": "#/components/schemas/Inventory"
-          },
-          "target": {
-            "type": "string"
-          },
-          "limited": {
-            "type": "boolean"
-          },
-          "settings": {
-            "properties": {},
-            "type": "object"
-          },
-          "recipe": {
-            "type": "string"
-          },
-          "previous_operation": {
-            "$ref": "#/components/schemas/BuildingPreviousOperation"
-          },
-          "manager": {
-            "type": "string"
-          },
-          "provider_id": {
-            "type": "string"
+          "pace" : {
+            "type" : "number"
           }
         },
-        "type": "object"
+        "type" : "object"
       },
-      "ConstructionSettings": {
-        "properties": {
-          "honour_low_stock": {
-            "type": "boolean"
-          },
-          "pace": {
-            "type": "number"
-          }
+      "MapRegions" : {
+        "items" : {
+          "$ref" : "#/components/schemas/MapRegion"
         },
-        "type": "object"
+        "type" : "array"
       },
-      "BuildingConstruction": {
-        "properties": {
-          "reference": {
-            "type": "string"
+      "Business" : {
+        "properties" : {
+          "account" : {
+            "$ref" : "#/components/schemas/BusinessAccount"
           },
-          "inventory": {
-            "$ref": "#/components/schemas/Inventory"
-          },
-          "size": {
-            "type": "number"
-          },
-          "time": {
-            "type": "number"
-          },
-          "total_time": {
-            "type": "number"
-          },
-          "progress": {
-            "type": "number"
-          },
-          "stage": {
-            "type": "string"
-          },
-          "land": {
-            "items": {
-              "$ref": "#/components/schemas/Location"
+          "buildings" : {
+            "items" : {
+              "$ref" : "#/components/schemas/BusinessBuildings"
             },
-            "type": "array"
+            "type" : "array"
           },
-          "provider_id": {
-            "type": "string"
+          "building_ids" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "settings": {
-            "$ref": "#/components/schemas/ConstructionSettings"
+          "id" : {
+            "type" : "string"
+          },
+          "reference" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "portrait" : {
+            "type" : "string"
+          },
+          "account_id" : {
+            "type" : "string"
+          },
+          "owner_id" : {
+            "type" : "string"
+          },
+          "transport_ids" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           }
         },
-        "type": "object"
+        "type" : "object"
+      },
+      "Towns" : {
+        "items" : {
+          "$ref" : "#/components/schemas/TownSimple"
+        },
+        "type" : "array"
+      },
+      "Town" : {
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "location" : {
+            "$ref" : "#/components/schemas/Location"
+          },
+          "region" : {
+            "type" : "number"
+          },
+          "capital_id" : {
+            "type" : "string"
+          },
+          "center_ids" : {
+            "items" : {
+              "type" : "number"
+            },
+            "type" : "array"
+          },
+          "domain" : {
+            "$ref" : "#/components/schemas/TownDomain"
+          },
+          "household_ids" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "commoners" : {
+            "$ref" : "#/components/schemas/TownCommoners"
+          },
+          "government" : {
+            "$ref" : "#/components/schemas/TownGovernment"
+          },
+          "church" : {
+            "$ref" : "#/components/schemas/TownChurch"
+          },
+          "navigation_zones" : {
+            "$ref" : "#/components/schemas/TownNavigationZones"
+          },
+          "culture" : {
+            "$ref" : "#/components/schemas/TownCulture"
+          },
+          "state" : {
+            "$ref" : "#/components/schemas/TownState"
+          },
+          "_ts" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "BuildingConstruction" : {
+        "properties" : {
+          "reference" : {
+            "type" : "string"
+          },
+          "inventory" : {
+            "$ref" : "#/components/schemas/Inventory"
+          },
+          "size" : {
+            "type" : "number"
+          },
+          "time" : {
+            "type" : "number"
+          },
+          "total_time" : {
+            "type" : "number"
+          },
+          "progress" : {
+            "type" : "number"
+          },
+          "stage" : {
+            "type" : "string"
+          },
+          "land" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Location"
+            },
+            "type" : "array"
+          },
+          "provider_id" : {
+            "type" : "string"
+          },
+          "settings" : {
+            "$ref" : "#/components/schemas/ConstructionSettings"
+          }
+        },
+        "type" : "object"
+      },
+      "Location" : {
+        "properties" : {
+          "x" : {
+            "type" : "number"
+          },
+          "y" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "MapRegion" : {
+        "properties" : {
+          "id" : {
+            "type" : "number"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "center" : {
+            "$ref" : "#/components/schemas/Location"
+          },
+          "size" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "BusinessAccount" : {
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "owner_id" : {
+            "type" : "string"
+          },
+          "assets" : {
+            "$ref" : "#/components/schemas/InventoryAssets"
+          },
+          "_ts" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "BusinessBuildings" : {
+        "properties" : {
+          "id" : {
+            "type" : "number"
+          },
+          "type" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "TownSimple" : {
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "location" : {
+            "$ref" : "#/components/schemas/Location"
+          },
+          "region" : {
+            "type" : "number"
+          },
+          "capital" : {
+            "type" : "boolean"
+          },
+          "satisfaction" : {
+            "type" : "string"
+          },
+          "commoners" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "DomainPlotStructure" : {
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "tags" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "DomainPlot" : {
+        "properties" : {
+          "owner_id" : {
+            "type" : "string"
+          },
+          "structure" : {
+            "$ref" : "#/components/schemas/DomainPlotStructure"
+          },
+          "resource" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "TownDomain" : {
+        "properties" : {
+          "PlotID1" : {
+            "$ref" : "#/components/schemas/DomainPlot"
+          },
+          "PlotID2" : {
+            "$ref" : "#/components/schemas/DomainPlot"
+          },
+          "PlotID3" : {
+            "$ref" : "#/components/schemas/DomainPlot"
+          },
+          "PlotID4" : {
+            "$ref" : "#/components/schemas/DomainPlot"
+          },
+          "PlotID5" : {
+            "$ref" : "#/components/schemas/DomainPlot"
+          }
+        },
+        "type" : "object"
+      },
+      "TownCommonersIncomeItems" : {
+        "properties" : {
+          "product" : {
+            "type" : "string"
+          },
+          "bonus" : {
+            "type" : "string"
+          },
+          "desire" : {
+            "type" : "string"
+          },
+          "request" : {
+            "type" : "string"
+          },
+          "result" : {
+            "type" : "string"
+          },
+          "budget" : {
+            "type" : "string"
+          },
+          "weight" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "TownCommonersIncome" : {
+        "properties" : {
+          "migration" : {
+            "type" : "string"
+          },
+          "items" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TownCommonersIncomeItems"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "TownCommonersSpending" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "budget" : {
+            "type" : "string"
+          },
+          "satisfaction" : {
+            "type" : "string"
+          },
+          "products" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TownCommonersIncomeItems"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "CommonersTownState" : {
+        "properties" : {
+          "migration" : {
+            "type" : "string"
+          },
+          "total" : {
+            "type" : "string"
+          },
+          "prestige" : {
+            "type" : "string"
+          },
+          "health" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "TownCommoners" : {
+        "properties" : {
+          "account_id" : {
+            "type" : "string"
+          },
+          "count" : {
+            "type" : "number"
+          },
+          "migration" : {
+            "type" : "string"
+          },
+          "income" : {
+            "$ref" : "#/components/schemas/TownCommonersIncome"
+          },
+          "spending" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TownCommonersSpending"
+            },
+            "type" : "array"
+          },
+          "town_state" : {
+            "$ref" : "#/components/schemas/CommonersTownState"
+          }
+        },
+        "type" : "object"
+      },
+      "TownGovernmentSpending" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "migration" : {
+            "type" : "string"
+          },
+          "budget" : {
+            "type" : "string"
+          },
+          "satisfaction" : {
+            "type" : "string"
+          },
+          "products" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TownCommonersIncomeItems"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "TownGovernmentTaxesCollected" : {
+        "properties" : {
+          "payments" : {
+            "type" : "string"
+          },
+          "land_tax" : {
+            "type" : "string"
+          },
+          "structure_tax" : {
+            "type" : "string"
+          },
+          "delivery_fees" : {
+            "type" : "string"
+          },
+          "transport_fees" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "TownGovernment" : {
+        "properties" : {
+          "account_id" : {
+            "type" : "string"
+          },
+          "spending" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TownGovernmentSpending"
+            },
+            "type" : "array"
+          },
+          "taxes_collected" : {
+            "$ref" : "#/components/schemas/TownGovernmentTaxesCollected"
+          }
+        },
+        "type" : "object"
+      },
+      "TownChurch" : {
+        "properties" : {
+          "contract_ids" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "TownNavigationZones" : {
+        "properties" : {
+          "NavigationZoneID1" : {
+            "type" : "number"
+          },
+          "NavigationZoneID2" : {
+            "type" : "number"
+          },
+          "NavigationZoneID3" : {
+            "type" : "number"
+          }
+        },
+        "type" : "object"
+      },
+      "TownCulture" : {
+        "properties" : {
+          "nutrition" : {
+            "type" : "string"
+          },
+          "textile" : {
+            "type" : "string"
+          },
+          "crafting" : {
+            "type" : "string"
+          },
+          "forging" : {
+            "type" : "string"
+          },
+          "weaponry" : {
+            "type" : "string"
+          },
+          "maritime" : {
+            "type" : "string"
+          },
+          "mercantile" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "TownState" : {
+        "properties" : {
+          "population" : {
+            "type" : "number"
+          },
+          "total_prestige" : {
+            "type" : "string"
+          },
+          "total_health" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
       }
     },
-    "securitySchemes": {
-      "Bearer_Token": {
-        "in": "header",
-        "name": "Token",
-        "type": "apiKey"
+    "securitySchemes" : {
+      "Bearer_Token" : {
+        "in" : "header",
+        "name" : "Token",
+        "type" : "apiKey"
       },
-      "Merc_User": {
-        "in": "header",
-        "name": "X-Merc-User",
-        "type": "apiKey"
+      "Merc_User" : {
+        "in" : "header",
+        "name" : "X-Merc-User",
+        "type" : "apiKey"
       }
     }
   }
