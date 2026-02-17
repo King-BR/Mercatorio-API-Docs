@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import InventoryFlowsProductName from './InventoryFlowsProductName';
+import InventoryFlowsAlembics from './InventoryFlowsAlembics';
 
 /**
  * The InventoryFlows model module.
@@ -48,8 +48,371 @@ class InventoryFlows {
         if (data) {
             obj = obj || new InventoryFlows();
 
-            if (data.hasOwnProperty('ProductName')) {
-                obj['ProductName'] = InventoryFlowsProductName.constructFromObject(data['ProductName']);
+            if (data.hasOwnProperty('alembics')) {
+                obj['alembics'] = InventoryFlowsAlembics.constructFromObject(data['alembics']);
+            }
+            if (data.hasOwnProperty('arms')) {
+                obj['arms'] = InventoryFlowsAlembics.constructFromObject(data['arms']);
+            }
+            if (data.hasOwnProperty('axes')) {
+                obj['axes'] = InventoryFlowsAlembics.constructFromObject(data['axes']);
+            }
+            if (data.hasOwnProperty('beer')) {
+                obj['beer'] = InventoryFlowsAlembics.constructFromObject(data['beer']);
+            }
+            if (data.hasOwnProperty('bellows')) {
+                obj['bellows'] = InventoryFlowsAlembics.constructFromObject(data['bellows']);
+            }
+            if (data.hasOwnProperty('bells')) {
+                obj['bells'] = InventoryFlowsAlembics.constructFromObject(data['bells']);
+            }
+            if (data.hasOwnProperty('belts')) {
+                obj['belts'] = InventoryFlowsAlembics.constructFromObject(data['belts']);
+            }
+            if (data.hasOwnProperty('blades')) {
+                obj['blades'] = InventoryFlowsAlembics.constructFromObject(data['blades']);
+            }
+            if (data.hasOwnProperty('books')) {
+                obj['books'] = InventoryFlowsAlembics.constructFromObject(data['books']);
+            }
+            if (data.hasOwnProperty('bread')) {
+                obj['bread'] = InventoryFlowsAlembics.constructFromObject(data['bread']);
+            }
+            if (data.hasOwnProperty('bronze ingots')) {
+                obj['bronze ingots'] = InventoryFlowsAlembics.constructFromObject(data['bronze ingots']);
+            }
+            if (data.hasOwnProperty('butter')) {
+                obj['butter'] = InventoryFlowsAlembics.constructFromObject(data['butter']);
+            }
+            if (data.hasOwnProperty('candles')) {
+                obj['candles'] = InventoryFlowsAlembics.constructFromObject(data['candles']);
+            }
+            if (data.hasOwnProperty('carting')) {
+                obj['carting'] = InventoryFlowsAlembics.constructFromObject(data['carting']);
+            }
+            if (data.hasOwnProperty('casks')) {
+                obj['casks'] = InventoryFlowsAlembics.constructFromObject(data['casks']);
+            }
+            if (data.hasOwnProperty('cattle')) {
+                obj['cattle'] = InventoryFlowsAlembics.constructFromObject(data['cattle']);
+            }
+            if (data.hasOwnProperty('charcoal')) {
+                obj['charcoal'] = InventoryFlowsAlembics.constructFromObject(data['charcoal']);
+            }
+            if (data.hasOwnProperty('cheese')) {
+                obj['cheese'] = InventoryFlowsAlembics.constructFromObject(data['cheese']);
+            }
+            if (data.hasOwnProperty('chisels')) {
+                obj['chisels'] = InventoryFlowsAlembics.constructFromObject(data['chisels']);
+            }
+            if (data.hasOwnProperty('clay')) {
+                obj['clay'] = InventoryFlowsAlembics.constructFromObject(data['clay']);
+            }
+            if (data.hasOwnProperty('cloth')) {
+                obj['cloth'] = InventoryFlowsAlembics.constructFromObject(data['cloth']);
+            }
+            if (data.hasOwnProperty('coats')) {
+                obj['coats'] = InventoryFlowsAlembics.constructFromObject(data['coats']);
+            }
+            if (data.hasOwnProperty('cookware')) {
+                obj['cookware'] = InventoryFlowsAlembics.constructFromObject(data['cookware']);
+            }
+            if (data.hasOwnProperty('copper ingots')) {
+                obj['copper ingots'] = InventoryFlowsAlembics.constructFromObject(data['copper ingots']);
+            }
+            if (data.hasOwnProperty('copper ore')) {
+                obj['copper ore'] = InventoryFlowsAlembics.constructFromObject(data['copper ore']);
+            }
+            if (data.hasOwnProperty('cured fish')) {
+                obj['cured fish'] = InventoryFlowsAlembics.constructFromObject(data['cured fish']);
+            }
+            if (data.hasOwnProperty('cured meat')) {
+                obj['cured meat'] = InventoryFlowsAlembics.constructFromObject(data['cured meat']);
+            }
+            if (data.hasOwnProperty('dye')) {
+                obj['dye'] = InventoryFlowsAlembics.constructFromObject(data['dye']);
+            }
+            if (data.hasOwnProperty('dyed cloth')) {
+                obj['dyed cloth'] = InventoryFlowsAlembics.constructFromObject(data['dyed cloth']);
+            }
+            if (data.hasOwnProperty('dyed yarn')) {
+                obj['dyed yarn'] = InventoryFlowsAlembics.constructFromObject(data['dyed yarn']);
+            }
+            if (data.hasOwnProperty('firewood')) {
+                obj['firewood'] = InventoryFlowsAlembics.constructFromObject(data['firewood']);
+            }
+            if (data.hasOwnProperty('fish')) {
+                obj['fish'] = InventoryFlowsAlembics.constructFromObject(data['fish']);
+            }
+            if (data.hasOwnProperty('flax fibres')) {
+                obj['flax fibres'] = InventoryFlowsAlembics.constructFromObject(data['flax fibres']);
+            }
+            if (data.hasOwnProperty('flax plants')) {
+                obj['flax plants'] = InventoryFlowsAlembics.constructFromObject(data['flax plants']);
+            }
+            if (data.hasOwnProperty('fleece')) {
+                obj['fleece'] = InventoryFlowsAlembics.constructFromObject(data['fleece']);
+            }
+            if (data.hasOwnProperty('flour')) {
+                obj['flour'] = InventoryFlowsAlembics.constructFromObject(data['flour']);
+            }
+            if (data.hasOwnProperty('furniture')) {
+                obj['furniture'] = InventoryFlowsAlembics.constructFromObject(data['furniture']);
+            }
+            if (data.hasOwnProperty('garments')) {
+                obj['garments'] = InventoryFlowsAlembics.constructFromObject(data['garments']);
+            }
+            if (data.hasOwnProperty('gears')) {
+                obj['gears'] = InventoryFlowsAlembics.constructFromObject(data['gears']);
+            }
+            if (data.hasOwnProperty('glass')) {
+                obj['glass'] = InventoryFlowsAlembics.constructFromObject(data['glass']);
+            }
+            if (data.hasOwnProperty('glassware')) {
+                obj['glassware'] = InventoryFlowsAlembics.constructFromObject(data['glassware']);
+            }
+            if (data.hasOwnProperty('gold bars')) {
+                obj['gold bars'] = InventoryFlowsAlembics.constructFromObject(data['gold bars']);
+            }
+            if (data.hasOwnProperty('gold ore')) {
+                obj['gold ore'] = InventoryFlowsAlembics.constructFromObject(data['gold ore']);
+            }
+            if (data.hasOwnProperty('grain')) {
+                obj['grain'] = InventoryFlowsAlembics.constructFromObject(data['grain']);
+            }
+            if (data.hasOwnProperty('grindstones')) {
+                obj['grindstones'] = InventoryFlowsAlembics.constructFromObject(data['grindstones']);
+            }
+            if (data.hasOwnProperty('ham')) {
+                obj['ham'] = InventoryFlowsAlembics.constructFromObject(data['ham']);
+            }
+            if (data.hasOwnProperty('harnesses')) {
+                obj['harnesses'] = InventoryFlowsAlembics.constructFromObject(data['harnesses']);
+            }
+            if (data.hasOwnProperty('herbs')) {
+                obj['herbs'] = InventoryFlowsAlembics.constructFromObject(data['herbs']);
+            }
+            if (data.hasOwnProperty('hides')) {
+                obj['hides'] = InventoryFlowsAlembics.constructFromObject(data['hides']);
+            }
+            if (data.hasOwnProperty('hinges')) {
+                obj['hinges'] = InventoryFlowsAlembics.constructFromObject(data['hinges']);
+            }
+            if (data.hasOwnProperty('honey')) {
+                obj['honey'] = InventoryFlowsAlembics.constructFromObject(data['honey']);
+            }
+            if (data.hasOwnProperty('hop beer')) {
+                obj['hop beer'] = InventoryFlowsAlembics.constructFromObject(data['hop beer']);
+            }
+            if (data.hasOwnProperty('iron ore')) {
+                obj['iron ore'] = InventoryFlowsAlembics.constructFromObject(data['iron ore']);
+            }
+            if (data.hasOwnProperty('jewellery')) {
+                obj['jewellery'] = InventoryFlowsAlembics.constructFromObject(data['jewellery']);
+            }
+            if (data.hasOwnProperty('labour')) {
+                obj['labour'] = InventoryFlowsAlembics.constructFromObject(data['labour']);
+            }
+            if (data.hasOwnProperty('lathes')) {
+                obj['lathes'] = InventoryFlowsAlembics.constructFromObject(data['lathes']);
+            }
+            if (data.hasOwnProperty('lead bars')) {
+                obj['lead bars'] = InventoryFlowsAlembics.constructFromObject(data['lead bars']);
+            }
+            if (data.hasOwnProperty('lead ore')) {
+                obj['lead ore'] = InventoryFlowsAlembics.constructFromObject(data['lead ore']);
+            }
+            if (data.hasOwnProperty('leather')) {
+                obj['leather'] = InventoryFlowsAlembics.constructFromObject(data['leather']);
+            }
+            if (data.hasOwnProperty('light armour')) {
+                obj['light armour'] = InventoryFlowsAlembics.constructFromObject(data['light armour']);
+            }
+            if (data.hasOwnProperty('limestone')) {
+                obj['limestone'] = InventoryFlowsAlembics.constructFromObject(data['limestone']);
+            }
+            if (data.hasOwnProperty('lodging')) {
+                obj['lodging'] = InventoryFlowsAlembics.constructFromObject(data['lodging']);
+            }
+            if (data.hasOwnProperty('logs')) {
+                obj['logs'] = InventoryFlowsAlembics.constructFromObject(data['logs']);
+            }
+            if (data.hasOwnProperty('looms')) {
+                obj['looms'] = InventoryFlowsAlembics.constructFromObject(data['looms']);
+            }
+            if (data.hasOwnProperty('malt')) {
+                obj['malt'] = InventoryFlowsAlembics.constructFromObject(data['malt']);
+            }
+            if (data.hasOwnProperty('manure')) {
+                obj['manure'] = InventoryFlowsAlembics.constructFromObject(data['manure']);
+            }
+            if (data.hasOwnProperty('meat')) {
+                obj['meat'] = InventoryFlowsAlembics.constructFromObject(data['meat']);
+            }
+            if (data.hasOwnProperty('medicine')) {
+                obj['medicine'] = InventoryFlowsAlembics.constructFromObject(data['medicine']);
+            }
+            if (data.hasOwnProperty('milk')) {
+                obj['milk'] = InventoryFlowsAlembics.constructFromObject(data['milk']);
+            }
+            if (data.hasOwnProperty('mouldboards')) {
+                obj['mouldboards'] = InventoryFlowsAlembics.constructFromObject(data['mouldboards']);
+            }
+            if (data.hasOwnProperty('nails')) {
+                obj['nails'] = InventoryFlowsAlembics.constructFromObject(data['nails']);
+            }
+            if (data.hasOwnProperty('nets')) {
+                obj['nets'] = InventoryFlowsAlembics.constructFromObject(data['nets']);
+            }
+            if (data.hasOwnProperty('ox power')) {
+                obj['ox power'] = InventoryFlowsAlembics.constructFromObject(data['ox power']);
+            }
+            if (data.hasOwnProperty('paper')) {
+                obj['paper'] = InventoryFlowsAlembics.constructFromObject(data['paper']);
+            }
+            if (data.hasOwnProperty('pasties')) {
+                obj['pasties'] = InventoryFlowsAlembics.constructFromObject(data['pasties']);
+            }
+            if (data.hasOwnProperty('pickaxes')) {
+                obj['pickaxes'] = InventoryFlowsAlembics.constructFromObject(data['pickaxes']);
+            }
+            if (data.hasOwnProperty('pies')) {
+                obj['pies'] = InventoryFlowsAlembics.constructFromObject(data['pies']);
+            }
+            if (data.hasOwnProperty('plate armour')) {
+                obj['plate armour'] = InventoryFlowsAlembics.constructFromObject(data['plate armour']);
+            }
+            if (data.hasOwnProperty('ploughs')) {
+                obj['ploughs'] = InventoryFlowsAlembics.constructFromObject(data['ploughs']);
+            }
+            if (data.hasOwnProperty('premium armour')) {
+                obj['premium armour'] = InventoryFlowsAlembics.constructFromObject(data['premium armour']);
+            }
+            if (data.hasOwnProperty('premium axes')) {
+                obj['premium axes'] = InventoryFlowsAlembics.constructFromObject(data['premium axes']);
+            }
+            if (data.hasOwnProperty('premium cheese')) {
+                obj['premium cheese'] = InventoryFlowsAlembics.constructFromObject(data['premium cheese']);
+            }
+            if (data.hasOwnProperty('premium cloth')) {
+                obj['premium cloth'] = InventoryFlowsAlembics.constructFromObject(data['premium cloth']);
+            }
+            if (data.hasOwnProperty('premium dye')) {
+                obj['premium dye'] = InventoryFlowsAlembics.constructFromObject(data['premium dye']);
+            }
+            if (data.hasOwnProperty('premium garments')) {
+                obj['premium garments'] = InventoryFlowsAlembics.constructFromObject(data['premium garments']);
+            }
+            if (data.hasOwnProperty('premium glassware')) {
+                obj['premium glassware'] = InventoryFlowsAlembics.constructFromObject(data['premium glassware']);
+            }
+            if (data.hasOwnProperty('premium ham')) {
+                obj['premium ham'] = InventoryFlowsAlembics.constructFromObject(data['premium ham']);
+            }
+            if (data.hasOwnProperty('premium sails')) {
+                obj['premium sails'] = InventoryFlowsAlembics.constructFromObject(data['premium sails']);
+            }
+            if (data.hasOwnProperty('premium steel')) {
+                obj['premium steel'] = InventoryFlowsAlembics.constructFromObject(data['premium steel']);
+            }
+            if (data.hasOwnProperty('premium swords')) {
+                obj['premium swords'] = InventoryFlowsAlembics.constructFromObject(data['premium swords']);
+            }
+            if (data.hasOwnProperty('protection')) {
+                obj['protection'] = InventoryFlowsAlembics.constructFromObject(data['protection']);
+            }
+            if (data.hasOwnProperty('raw cloth')) {
+                obj['raw cloth'] = InventoryFlowsAlembics.constructFromObject(data['raw cloth']);
+            }
+            if (data.hasOwnProperty('resin')) {
+                obj['resin'] = InventoryFlowsAlembics.constructFromObject(data['resin']);
+            }
+            if (data.hasOwnProperty('rope')) {
+                obj['rope'] = InventoryFlowsAlembics.constructFromObject(data['rope']);
+            }
+            if (data.hasOwnProperty('sails')) {
+                obj['sails'] = InventoryFlowsAlembics.constructFromObject(data['sails']);
+            }
+            if (data.hasOwnProperty('salt')) {
+                obj['salt'] = InventoryFlowsAlembics.constructFromObject(data['salt']);
+            }
+            if (data.hasOwnProperty('sculptures')) {
+                obj['sculptures'] = InventoryFlowsAlembics.constructFromObject(data['sculptures']);
+            }
+            if (data.hasOwnProperty('scythes')) {
+                obj['scythes'] = InventoryFlowsAlembics.constructFromObject(data['scythes']);
+            }
+            if (data.hasOwnProperty('silver bars')) {
+                obj['silver bars'] = InventoryFlowsAlembics.constructFromObject(data['silver bars']);
+            }
+            if (data.hasOwnProperty('silver ore')) {
+                obj['silver ore'] = InventoryFlowsAlembics.constructFromObject(data['silver ore']);
+            }
+            if (data.hasOwnProperty('slaked lime')) {
+                obj['slaked lime'] = InventoryFlowsAlembics.constructFromObject(data['slaked lime']);
+            }
+            if (data.hasOwnProperty('spinning wheels')) {
+                obj['spinning wheels'] = InventoryFlowsAlembics.constructFromObject(data['spinning wheels']);
+            }
+            if (data.hasOwnProperty('spirits')) {
+                obj['spirits'] = InventoryFlowsAlembics.constructFromObject(data['spirits']);
+            }
+            if (data.hasOwnProperty('steel ingots')) {
+                obj['steel ingots'] = InventoryFlowsAlembics.constructFromObject(data['steel ingots']);
+            }
+            if (data.hasOwnProperty('stockfish')) {
+                obj['stockfish'] = InventoryFlowsAlembics.constructFromObject(data['stockfish']);
+            }
+            if (data.hasOwnProperty('swords')) {
+                obj['swords'] = InventoryFlowsAlembics.constructFromObject(data['swords']);
+            }
+            if (data.hasOwnProperty('tackles')) {
+                obj['tackles'] = InventoryFlowsAlembics.constructFromObject(data['tackles']);
+            }
+            if (data.hasOwnProperty('tapestries')) {
+                obj['tapestries'] = InventoryFlowsAlembics.constructFromObject(data['tapestries']);
+            }
+            if (data.hasOwnProperty('tar')) {
+                obj['tar'] = InventoryFlowsAlembics.constructFromObject(data['tar']);
+            }
+            if (data.hasOwnProperty('thread')) {
+                obj['thread'] = InventoryFlowsAlembics.constructFromObject(data['thread']);
+            }
+            if (data.hasOwnProperty('tiles')) {
+                obj['tiles'] = InventoryFlowsAlembics.constructFromObject(data['tiles']);
+            }
+            if (data.hasOwnProperty('timber')) {
+                obj['timber'] = InventoryFlowsAlembics.constructFromObject(data['timber']);
+            }
+            if (data.hasOwnProperty('tin ingots')) {
+                obj['tin ingots'] = InventoryFlowsAlembics.constructFromObject(data['tin ingots']);
+            }
+            if (data.hasOwnProperty('tin ore')) {
+                obj['tin ore'] = InventoryFlowsAlembics.constructFromObject(data['tin ore']);
+            }
+            if (data.hasOwnProperty('tools')) {
+                obj['tools'] = InventoryFlowsAlembics.constructFromObject(data['tools']);
+            }
+            if (data.hasOwnProperty('wax')) {
+                obj['wax'] = InventoryFlowsAlembics.constructFromObject(data['wax']);
+            }
+            if (data.hasOwnProperty('wheels')) {
+                obj['wheels'] = InventoryFlowsAlembics.constructFromObject(data['wheels']);
+            }
+            if (data.hasOwnProperty('windows')) {
+                obj['windows'] = InventoryFlowsAlembics.constructFromObject(data['windows']);
+            }
+            if (data.hasOwnProperty('wine')) {
+                obj['wine'] = InventoryFlowsAlembics.constructFromObject(data['wine']);
+            }
+            if (data.hasOwnProperty('wool')) {
+                obj['wool'] = InventoryFlowsAlembics.constructFromObject(data['wool']);
+            }
+            if (data.hasOwnProperty('wrought iron')) {
+                obj['wrought iron'] = InventoryFlowsAlembics.constructFromObject(data['wrought iron']);
+            }
+            if (data.hasOwnProperty('yarn')) {
+                obj['yarn'] = InventoryFlowsAlembics.constructFromObject(data['yarn']);
             }
         }
         return obj;
@@ -61,9 +424,493 @@ class InventoryFlows {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>InventoryFlows</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `ProductName`
-        if (data['ProductName']) { // data not null
-          InventoryFlowsProductName.validateJSON(data['ProductName']);
+        // validate the optional field `alembics`
+        if (data['alembics']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['alembics']);
+        }
+        // validate the optional field `arms`
+        if (data['arms']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['arms']);
+        }
+        // validate the optional field `axes`
+        if (data['axes']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['axes']);
+        }
+        // validate the optional field `beer`
+        if (data['beer']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['beer']);
+        }
+        // validate the optional field `bellows`
+        if (data['bellows']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['bellows']);
+        }
+        // validate the optional field `bells`
+        if (data['bells']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['bells']);
+        }
+        // validate the optional field `belts`
+        if (data['belts']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['belts']);
+        }
+        // validate the optional field `blades`
+        if (data['blades']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['blades']);
+        }
+        // validate the optional field `books`
+        if (data['books']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['books']);
+        }
+        // validate the optional field `bread`
+        if (data['bread']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['bread']);
+        }
+        // validate the optional field `bronze ingots`
+        if (data['bronze ingots']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['bronze ingots']);
+        }
+        // validate the optional field `butter`
+        if (data['butter']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['butter']);
+        }
+        // validate the optional field `candles`
+        if (data['candles']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['candles']);
+        }
+        // validate the optional field `carting`
+        if (data['carting']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['carting']);
+        }
+        // validate the optional field `casks`
+        if (data['casks']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['casks']);
+        }
+        // validate the optional field `cattle`
+        if (data['cattle']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['cattle']);
+        }
+        // validate the optional field `charcoal`
+        if (data['charcoal']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['charcoal']);
+        }
+        // validate the optional field `cheese`
+        if (data['cheese']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['cheese']);
+        }
+        // validate the optional field `chisels`
+        if (data['chisels']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['chisels']);
+        }
+        // validate the optional field `clay`
+        if (data['clay']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['clay']);
+        }
+        // validate the optional field `cloth`
+        if (data['cloth']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['cloth']);
+        }
+        // validate the optional field `coats`
+        if (data['coats']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['coats']);
+        }
+        // validate the optional field `cookware`
+        if (data['cookware']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['cookware']);
+        }
+        // validate the optional field `copper ingots`
+        if (data['copper ingots']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['copper ingots']);
+        }
+        // validate the optional field `copper ore`
+        if (data['copper ore']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['copper ore']);
+        }
+        // validate the optional field `cured fish`
+        if (data['cured fish']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['cured fish']);
+        }
+        // validate the optional field `cured meat`
+        if (data['cured meat']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['cured meat']);
+        }
+        // validate the optional field `dye`
+        if (data['dye']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['dye']);
+        }
+        // validate the optional field `dyed cloth`
+        if (data['dyed cloth']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['dyed cloth']);
+        }
+        // validate the optional field `dyed yarn`
+        if (data['dyed yarn']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['dyed yarn']);
+        }
+        // validate the optional field `firewood`
+        if (data['firewood']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['firewood']);
+        }
+        // validate the optional field `fish`
+        if (data['fish']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['fish']);
+        }
+        // validate the optional field `flax fibres`
+        if (data['flax fibres']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['flax fibres']);
+        }
+        // validate the optional field `flax plants`
+        if (data['flax plants']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['flax plants']);
+        }
+        // validate the optional field `fleece`
+        if (data['fleece']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['fleece']);
+        }
+        // validate the optional field `flour`
+        if (data['flour']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['flour']);
+        }
+        // validate the optional field `furniture`
+        if (data['furniture']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['furniture']);
+        }
+        // validate the optional field `garments`
+        if (data['garments']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['garments']);
+        }
+        // validate the optional field `gears`
+        if (data['gears']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['gears']);
+        }
+        // validate the optional field `glass`
+        if (data['glass']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['glass']);
+        }
+        // validate the optional field `glassware`
+        if (data['glassware']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['glassware']);
+        }
+        // validate the optional field `gold bars`
+        if (data['gold bars']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['gold bars']);
+        }
+        // validate the optional field `gold ore`
+        if (data['gold ore']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['gold ore']);
+        }
+        // validate the optional field `grain`
+        if (data['grain']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['grain']);
+        }
+        // validate the optional field `grindstones`
+        if (data['grindstones']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['grindstones']);
+        }
+        // validate the optional field `ham`
+        if (data['ham']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['ham']);
+        }
+        // validate the optional field `harnesses`
+        if (data['harnesses']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['harnesses']);
+        }
+        // validate the optional field `herbs`
+        if (data['herbs']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['herbs']);
+        }
+        // validate the optional field `hides`
+        if (data['hides']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['hides']);
+        }
+        // validate the optional field `hinges`
+        if (data['hinges']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['hinges']);
+        }
+        // validate the optional field `honey`
+        if (data['honey']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['honey']);
+        }
+        // validate the optional field `hop beer`
+        if (data['hop beer']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['hop beer']);
+        }
+        // validate the optional field `iron ore`
+        if (data['iron ore']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['iron ore']);
+        }
+        // validate the optional field `jewellery`
+        if (data['jewellery']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['jewellery']);
+        }
+        // validate the optional field `labour`
+        if (data['labour']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['labour']);
+        }
+        // validate the optional field `lathes`
+        if (data['lathes']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['lathes']);
+        }
+        // validate the optional field `lead bars`
+        if (data['lead bars']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['lead bars']);
+        }
+        // validate the optional field `lead ore`
+        if (data['lead ore']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['lead ore']);
+        }
+        // validate the optional field `leather`
+        if (data['leather']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['leather']);
+        }
+        // validate the optional field `light armour`
+        if (data['light armour']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['light armour']);
+        }
+        // validate the optional field `limestone`
+        if (data['limestone']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['limestone']);
+        }
+        // validate the optional field `lodging`
+        if (data['lodging']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['lodging']);
+        }
+        // validate the optional field `logs`
+        if (data['logs']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['logs']);
+        }
+        // validate the optional field `looms`
+        if (data['looms']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['looms']);
+        }
+        // validate the optional field `malt`
+        if (data['malt']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['malt']);
+        }
+        // validate the optional field `manure`
+        if (data['manure']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['manure']);
+        }
+        // validate the optional field `meat`
+        if (data['meat']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['meat']);
+        }
+        // validate the optional field `medicine`
+        if (data['medicine']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['medicine']);
+        }
+        // validate the optional field `milk`
+        if (data['milk']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['milk']);
+        }
+        // validate the optional field `mouldboards`
+        if (data['mouldboards']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['mouldboards']);
+        }
+        // validate the optional field `nails`
+        if (data['nails']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['nails']);
+        }
+        // validate the optional field `nets`
+        if (data['nets']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['nets']);
+        }
+        // validate the optional field `ox power`
+        if (data['ox power']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['ox power']);
+        }
+        // validate the optional field `paper`
+        if (data['paper']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['paper']);
+        }
+        // validate the optional field `pasties`
+        if (data['pasties']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['pasties']);
+        }
+        // validate the optional field `pickaxes`
+        if (data['pickaxes']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['pickaxes']);
+        }
+        // validate the optional field `pies`
+        if (data['pies']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['pies']);
+        }
+        // validate the optional field `plate armour`
+        if (data['plate armour']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['plate armour']);
+        }
+        // validate the optional field `ploughs`
+        if (data['ploughs']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['ploughs']);
+        }
+        // validate the optional field `premium armour`
+        if (data['premium armour']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium armour']);
+        }
+        // validate the optional field `premium axes`
+        if (data['premium axes']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium axes']);
+        }
+        // validate the optional field `premium cheese`
+        if (data['premium cheese']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium cheese']);
+        }
+        // validate the optional field `premium cloth`
+        if (data['premium cloth']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium cloth']);
+        }
+        // validate the optional field `premium dye`
+        if (data['premium dye']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium dye']);
+        }
+        // validate the optional field `premium garments`
+        if (data['premium garments']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium garments']);
+        }
+        // validate the optional field `premium glassware`
+        if (data['premium glassware']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium glassware']);
+        }
+        // validate the optional field `premium ham`
+        if (data['premium ham']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium ham']);
+        }
+        // validate the optional field `premium sails`
+        if (data['premium sails']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium sails']);
+        }
+        // validate the optional field `premium steel`
+        if (data['premium steel']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium steel']);
+        }
+        // validate the optional field `premium swords`
+        if (data['premium swords']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['premium swords']);
+        }
+        // validate the optional field `protection`
+        if (data['protection']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['protection']);
+        }
+        // validate the optional field `raw cloth`
+        if (data['raw cloth']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['raw cloth']);
+        }
+        // validate the optional field `resin`
+        if (data['resin']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['resin']);
+        }
+        // validate the optional field `rope`
+        if (data['rope']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['rope']);
+        }
+        // validate the optional field `sails`
+        if (data['sails']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['sails']);
+        }
+        // validate the optional field `salt`
+        if (data['salt']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['salt']);
+        }
+        // validate the optional field `sculptures`
+        if (data['sculptures']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['sculptures']);
+        }
+        // validate the optional field `scythes`
+        if (data['scythes']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['scythes']);
+        }
+        // validate the optional field `silver bars`
+        if (data['silver bars']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['silver bars']);
+        }
+        // validate the optional field `silver ore`
+        if (data['silver ore']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['silver ore']);
+        }
+        // validate the optional field `slaked lime`
+        if (data['slaked lime']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['slaked lime']);
+        }
+        // validate the optional field `spinning wheels`
+        if (data['spinning wheels']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['spinning wheels']);
+        }
+        // validate the optional field `spirits`
+        if (data['spirits']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['spirits']);
+        }
+        // validate the optional field `steel ingots`
+        if (data['steel ingots']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['steel ingots']);
+        }
+        // validate the optional field `stockfish`
+        if (data['stockfish']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['stockfish']);
+        }
+        // validate the optional field `swords`
+        if (data['swords']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['swords']);
+        }
+        // validate the optional field `tackles`
+        if (data['tackles']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tackles']);
+        }
+        // validate the optional field `tapestries`
+        if (data['tapestries']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tapestries']);
+        }
+        // validate the optional field `tar`
+        if (data['tar']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tar']);
+        }
+        // validate the optional field `thread`
+        if (data['thread']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['thread']);
+        }
+        // validate the optional field `tiles`
+        if (data['tiles']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tiles']);
+        }
+        // validate the optional field `timber`
+        if (data['timber']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['timber']);
+        }
+        // validate the optional field `tin ingots`
+        if (data['tin ingots']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tin ingots']);
+        }
+        // validate the optional field `tin ore`
+        if (data['tin ore']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tin ore']);
+        }
+        // validate the optional field `tools`
+        if (data['tools']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['tools']);
+        }
+        // validate the optional field `wax`
+        if (data['wax']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['wax']);
+        }
+        // validate the optional field `wheels`
+        if (data['wheels']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['wheels']);
+        }
+        // validate the optional field `windows`
+        if (data['windows']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['windows']);
+        }
+        // validate the optional field `wine`
+        if (data['wine']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['wine']);
+        }
+        // validate the optional field `wool`
+        if (data['wool']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['wool']);
+        }
+        // validate the optional field `wrought iron`
+        if (data['wrought iron']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['wrought iron']);
+        }
+        // validate the optional field `yarn`
+        if (data['yarn']) { // data not null
+          InventoryFlowsAlembics.validateJSON(data['yarn']);
         }
 
         return true;
@@ -75,9 +922,614 @@ class InventoryFlows {
 
 
 /**
- * @member {module:model/InventoryFlowsProductName} ProductName
+ * @member {module:model/InventoryFlowsAlembics} alembics
  */
-InventoryFlows.prototype['ProductName'] = undefined;
+InventoryFlows.prototype['alembics'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} arms
+ */
+InventoryFlows.prototype['arms'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} axes
+ */
+InventoryFlows.prototype['axes'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} beer
+ */
+InventoryFlows.prototype['beer'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} bellows
+ */
+InventoryFlows.prototype['bellows'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} bells
+ */
+InventoryFlows.prototype['bells'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} belts
+ */
+InventoryFlows.prototype['belts'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} blades
+ */
+InventoryFlows.prototype['blades'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} books
+ */
+InventoryFlows.prototype['books'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} bread
+ */
+InventoryFlows.prototype['bread'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} bronze ingots
+ */
+InventoryFlows.prototype['bronze ingots'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} butter
+ */
+InventoryFlows.prototype['butter'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} candles
+ */
+InventoryFlows.prototype['candles'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} carting
+ */
+InventoryFlows.prototype['carting'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} casks
+ */
+InventoryFlows.prototype['casks'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} cattle
+ */
+InventoryFlows.prototype['cattle'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} charcoal
+ */
+InventoryFlows.prototype['charcoal'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} cheese
+ */
+InventoryFlows.prototype['cheese'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} chisels
+ */
+InventoryFlows.prototype['chisels'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} clay
+ */
+InventoryFlows.prototype['clay'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} cloth
+ */
+InventoryFlows.prototype['cloth'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} coats
+ */
+InventoryFlows.prototype['coats'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} cookware
+ */
+InventoryFlows.prototype['cookware'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} copper ingots
+ */
+InventoryFlows.prototype['copper ingots'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} copper ore
+ */
+InventoryFlows.prototype['copper ore'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} cured fish
+ */
+InventoryFlows.prototype['cured fish'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} cured meat
+ */
+InventoryFlows.prototype['cured meat'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} dye
+ */
+InventoryFlows.prototype['dye'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} dyed cloth
+ */
+InventoryFlows.prototype['dyed cloth'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} dyed yarn
+ */
+InventoryFlows.prototype['dyed yarn'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} firewood
+ */
+InventoryFlows.prototype['firewood'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} fish
+ */
+InventoryFlows.prototype['fish'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} flax fibres
+ */
+InventoryFlows.prototype['flax fibres'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} flax plants
+ */
+InventoryFlows.prototype['flax plants'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} fleece
+ */
+InventoryFlows.prototype['fleece'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} flour
+ */
+InventoryFlows.prototype['flour'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} furniture
+ */
+InventoryFlows.prototype['furniture'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} garments
+ */
+InventoryFlows.prototype['garments'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} gears
+ */
+InventoryFlows.prototype['gears'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} glass
+ */
+InventoryFlows.prototype['glass'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} glassware
+ */
+InventoryFlows.prototype['glassware'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} gold bars
+ */
+InventoryFlows.prototype['gold bars'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} gold ore
+ */
+InventoryFlows.prototype['gold ore'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} grain
+ */
+InventoryFlows.prototype['grain'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} grindstones
+ */
+InventoryFlows.prototype['grindstones'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} ham
+ */
+InventoryFlows.prototype['ham'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} harnesses
+ */
+InventoryFlows.prototype['harnesses'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} herbs
+ */
+InventoryFlows.prototype['herbs'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} hides
+ */
+InventoryFlows.prototype['hides'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} hinges
+ */
+InventoryFlows.prototype['hinges'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} honey
+ */
+InventoryFlows.prototype['honey'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} hop beer
+ */
+InventoryFlows.prototype['hop beer'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} iron ore
+ */
+InventoryFlows.prototype['iron ore'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} jewellery
+ */
+InventoryFlows.prototype['jewellery'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} labour
+ */
+InventoryFlows.prototype['labour'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} lathes
+ */
+InventoryFlows.prototype['lathes'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} lead bars
+ */
+InventoryFlows.prototype['lead bars'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} lead ore
+ */
+InventoryFlows.prototype['lead ore'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} leather
+ */
+InventoryFlows.prototype['leather'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} light armour
+ */
+InventoryFlows.prototype['light armour'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} limestone
+ */
+InventoryFlows.prototype['limestone'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} lodging
+ */
+InventoryFlows.prototype['lodging'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} logs
+ */
+InventoryFlows.prototype['logs'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} looms
+ */
+InventoryFlows.prototype['looms'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} malt
+ */
+InventoryFlows.prototype['malt'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} manure
+ */
+InventoryFlows.prototype['manure'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} meat
+ */
+InventoryFlows.prototype['meat'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} medicine
+ */
+InventoryFlows.prototype['medicine'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} milk
+ */
+InventoryFlows.prototype['milk'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} mouldboards
+ */
+InventoryFlows.prototype['mouldboards'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} nails
+ */
+InventoryFlows.prototype['nails'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} nets
+ */
+InventoryFlows.prototype['nets'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} ox power
+ */
+InventoryFlows.prototype['ox power'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} paper
+ */
+InventoryFlows.prototype['paper'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} pasties
+ */
+InventoryFlows.prototype['pasties'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} pickaxes
+ */
+InventoryFlows.prototype['pickaxes'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} pies
+ */
+InventoryFlows.prototype['pies'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} plate armour
+ */
+InventoryFlows.prototype['plate armour'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} ploughs
+ */
+InventoryFlows.prototype['ploughs'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium armour
+ */
+InventoryFlows.prototype['premium armour'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium axes
+ */
+InventoryFlows.prototype['premium axes'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium cheese
+ */
+InventoryFlows.prototype['premium cheese'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium cloth
+ */
+InventoryFlows.prototype['premium cloth'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium dye
+ */
+InventoryFlows.prototype['premium dye'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium garments
+ */
+InventoryFlows.prototype['premium garments'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium glassware
+ */
+InventoryFlows.prototype['premium glassware'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium ham
+ */
+InventoryFlows.prototype['premium ham'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium sails
+ */
+InventoryFlows.prototype['premium sails'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium steel
+ */
+InventoryFlows.prototype['premium steel'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} premium swords
+ */
+InventoryFlows.prototype['premium swords'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} protection
+ */
+InventoryFlows.prototype['protection'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} raw cloth
+ */
+InventoryFlows.prototype['raw cloth'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} resin
+ */
+InventoryFlows.prototype['resin'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} rope
+ */
+InventoryFlows.prototype['rope'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} sails
+ */
+InventoryFlows.prototype['sails'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} salt
+ */
+InventoryFlows.prototype['salt'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} sculptures
+ */
+InventoryFlows.prototype['sculptures'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} scythes
+ */
+InventoryFlows.prototype['scythes'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} silver bars
+ */
+InventoryFlows.prototype['silver bars'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} silver ore
+ */
+InventoryFlows.prototype['silver ore'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} slaked lime
+ */
+InventoryFlows.prototype['slaked lime'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} spinning wheels
+ */
+InventoryFlows.prototype['spinning wheels'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} spirits
+ */
+InventoryFlows.prototype['spirits'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} steel ingots
+ */
+InventoryFlows.prototype['steel ingots'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} stockfish
+ */
+InventoryFlows.prototype['stockfish'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} swords
+ */
+InventoryFlows.prototype['swords'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tackles
+ */
+InventoryFlows.prototype['tackles'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tapestries
+ */
+InventoryFlows.prototype['tapestries'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tar
+ */
+InventoryFlows.prototype['tar'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} thread
+ */
+InventoryFlows.prototype['thread'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tiles
+ */
+InventoryFlows.prototype['tiles'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} timber
+ */
+InventoryFlows.prototype['timber'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tin ingots
+ */
+InventoryFlows.prototype['tin ingots'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tin ore
+ */
+InventoryFlows.prototype['tin ore'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} tools
+ */
+InventoryFlows.prototype['tools'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} wax
+ */
+InventoryFlows.prototype['wax'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} wheels
+ */
+InventoryFlows.prototype['wheels'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} windows
+ */
+InventoryFlows.prototype['windows'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} wine
+ */
+InventoryFlows.prototype['wine'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} wool
+ */
+InventoryFlows.prototype['wool'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} wrought iron
+ */
+InventoryFlows.prototype['wrought iron'] = undefined;
+
+/**
+ * @member {module:model/InventoryFlowsAlembics} yarn
+ */
+InventoryFlows.prototype['yarn'] = undefined;
 
 
 

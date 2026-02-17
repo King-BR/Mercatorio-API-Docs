@@ -1,4 +1,4 @@
-# MercatorioApi.BuildingConstruction
+# mercatorio-js.BuildingConstruction
 
 ## Properties
 

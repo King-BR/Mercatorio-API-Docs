@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.PlayerSettingsEmail();
+    instance = new mercatorio-js.PlayerSettingsEmail();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('PlayerSettingsEmail', function() {
     it('should create an instance of PlayerSettingsEmail', function() {
       // uncomment below and update the code to test PlayerSettingsEmail
-      //var instance = new MercatorioApi.PlayerSettingsEmail();
-      //expect(instance).to.be.a(MercatorioApi.PlayerSettingsEmail);
+      //var instance = new mercatorio-js.PlayerSettingsEmail();
+      //expect(instance).to.be.a(mercatorio-js.PlayerSettingsEmail);
     });
 
     it('should have the property seasonNotifications (base name: "season_notifications")', function() {
       // uncomment below and update the code to test the property seasonNotifications
-      //var instance = new MercatorioApi.PlayerSettingsEmail();
+      //var instance = new mercatorio-js.PlayerSettingsEmail();
       //expect(instance).to.be();
     });
 
     it('should have the property characterExport (base name: "character_export")', function() {
       // uncomment below and update the code to test the property characterExport
-      //var instance = new MercatorioApi.PlayerSettingsEmail();
+      //var instance = new mercatorio-js.PlayerSettingsEmail();
       //expect(instance).to.be();
     });
 
     it('should have the property marketingEmails (base name: "marketing_emails")', function() {
       // uncomment below and update the code to test the property marketingEmails
-      //var instance = new MercatorioApi.PlayerSettingsEmail();
+      //var instance = new mercatorio-js.PlayerSettingsEmail();
       //expect(instance).to.be();
     });
 

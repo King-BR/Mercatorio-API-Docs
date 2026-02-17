@@ -1,4 +1,4 @@
-# MercatorioApi.PlayerSettingsEmail
+# mercatorio-js.PlayerSettingsEmail
 
 ## Properties
 

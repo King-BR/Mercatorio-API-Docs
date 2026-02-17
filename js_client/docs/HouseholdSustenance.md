@@ -1,4 +1,4 @@
-# MercatorioApi.HouseholdSustenance
+# mercatorio-js.HouseholdSustenance
 
 ## Properties
 

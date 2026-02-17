@@ -1,4 +1,4 @@
-# MercatorioApi.Worker
+# mercatorio-js.Worker
 
 ## Properties
 

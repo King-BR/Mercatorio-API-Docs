@@ -1,4 +1,4 @@
-# MercatorioApi.Error
+# mercatorio-js.Error
 
 ## Properties
 

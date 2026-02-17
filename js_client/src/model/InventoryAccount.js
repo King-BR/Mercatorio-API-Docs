@@ -60,6 +60,9 @@ class InventoryAccount {
             if (data.hasOwnProperty('master_id')) {
                 obj['master_id'] = ApiClient.convertToType(data['master_id'], 'String');
             }
+            if (data.hasOwnProperty('sponsor_id')) {
+                obj['sponsor_id'] = ApiClient.convertToType(data['sponsor_id'], 'String');
+            }
             if (data.hasOwnProperty('assets')) {
                 obj['assets'] = InventoryAssets.constructFromObject(data['assets']);
             }
@@ -91,6 +94,10 @@ class InventoryAccount {
         // ensure the json data is a string
         if (data['master_id'] && !(typeof data['master_id'] === 'string' || data['master_id'] instanceof String)) {
             throw new Error("Expected the field `master_id` to be a primitive type in the JSON string but got " + data['master_id']);
+        }
+        // ensure the json data is a string
+        if (data['sponsor_id'] && !(typeof data['sponsor_id'] === 'string' || data['sponsor_id'] instanceof String)) {
+            throw new Error("Expected the field `sponsor_id` to be a primitive type in the JSON string but got " + data['sponsor_id']);
         }
         // validate the optional field `assets`
         if (data['assets']) { // data not null
@@ -124,6 +131,11 @@ InventoryAccount.prototype['owner_id'] = undefined;
  * @member {String} master_id
  */
 InventoryAccount.prototype['master_id'] = undefined;
+
+/**
+ * @member {String} sponsor_id
+ */
+InventoryAccount.prototype['sponsor_id'] = undefined;
 
 /**
  * @member {module:model/InventoryAssets} assets

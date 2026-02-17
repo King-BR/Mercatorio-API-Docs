@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.InventoryAssetsAlembics();
+    instance = new mercatorio-js.InventoryAssetsAlembics();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InventoryAssetsAlembics', function() {
     it('should create an instance of InventoryAssetsAlembics', function() {
       // uncomment below and update the code to test InventoryAssetsAlembics
-      //var instance = new MercatorioApi.InventoryAssetsAlembics();
-      //expect(instance).to.be.a(MercatorioApi.InventoryAssetsAlembics);
+      //var instance = new mercatorio-js.InventoryAssetsAlembics();
+      //expect(instance).to.be.a(mercatorio-js.InventoryAssetsAlembics);
     });
 
     it('should have the property balance (base name: "balance")', function() {
       // uncomment below and update the code to test the property balance
-      //var instance = new MercatorioApi.InventoryAssetsAlembics();
+      //var instance = new mercatorio-js.InventoryAssetsAlembics();
       //expect(instance).to.be();
     });
 
     it('should have the property reserved (base name: "reserved")', function() {
       // uncomment below and update the code to test the property reserved
-      //var instance = new MercatorioApi.InventoryAssetsAlembics();
+      //var instance = new mercatorio-js.InventoryAssetsAlembics();
       //expect(instance).to.be();
     });
 
     it('should have the property capacity (base name: "capacity")', function() {
       // uncomment below and update the code to test the property capacity
-      //var instance = new MercatorioApi.InventoryAssetsAlembics();
+      //var instance = new mercatorio-js.InventoryAssetsAlembics();
       //expect(instance).to.be();
     });
 
     it('should have the property unitCost (base name: "unit_cost")', function() {
       // uncomment below and update the code to test the property unitCost
-      //var instance = new MercatorioApi.InventoryAssetsAlembics();
+      //var instance = new mercatorio-js.InventoryAssetsAlembics();
       //expect(instance).to.be();
     });
 

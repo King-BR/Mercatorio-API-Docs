@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.PlayerSettings();
+    instance = new mercatorio-js.PlayerSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('PlayerSettings', function() {
     it('should create an instance of PlayerSettings', function() {
       // uncomment below and update the code to test PlayerSettings
-      //var instance = new MercatorioApi.PlayerSettings();
-      //expect(instance).to.be.a(MercatorioApi.PlayerSettings);
+      //var instance = new mercatorio-js.PlayerSettings();
+      //expect(instance).to.be.a(mercatorio-js.PlayerSettings);
     });
 
     it('should have the property soundVolume (base name: "sound_volume")', function() {
       // uncomment below and update the code to test the property soundVolume
-      //var instance = new MercatorioApi.PlayerSettings();
+      //var instance = new mercatorio-js.PlayerSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property notifications (base name: "notifications")', function() {
       // uncomment below and update the code to test the property notifications
-      //var instance = new MercatorioApi.PlayerSettings();
+      //var instance = new mercatorio-js.PlayerSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new MercatorioApi.PlayerSettings();
+      //var instance = new mercatorio-js.PlayerSettings();
       //expect(instance).to.be();
     });
 

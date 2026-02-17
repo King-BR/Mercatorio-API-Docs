@@ -1,4 +1,4 @@
-# MercatorioApi.BuildingLocation
+# mercatorio-js.BuildingLocation
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# MercatorioApi.PlayerSettingsNotifications
+# mercatorio-js.PlayerSettingsNotifications
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.BuildingConstructionSettings();
+    instance = new mercatorio-js.BuildingConstructionSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('BuildingConstructionSettings', function() {
     it('should create an instance of BuildingConstructionSettings', function() {
       // uncomment below and update the code to test BuildingConstructionSettings
-      //var instance = new MercatorioApi.BuildingConstructionSettings();
-      //expect(instance).to.be.a(MercatorioApi.BuildingConstructionSettings);
+      //var instance = new mercatorio-js.BuildingConstructionSettings();
+      //expect(instance).to.be.a(mercatorio-js.BuildingConstructionSettings);
     });
 
     it('should have the property honourLowStock (base name: "honour_low_stock")', function() {
       // uncomment below and update the code to test the property honourLowStock
-      //var instance = new MercatorioApi.BuildingConstructionSettings();
+      //var instance = new mercatorio-js.BuildingConstructionSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property pace (base name: "pace")', function() {
       // uncomment below and update the code to test the property pace
-      //var instance = new MercatorioApi.BuildingConstructionSettings();
+      //var instance = new mercatorio-js.BuildingConstructionSettings();
       //expect(instance).to.be();
     });
 

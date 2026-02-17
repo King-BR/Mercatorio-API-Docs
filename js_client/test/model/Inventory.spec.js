@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.Inventory();
+    instance = new mercatorio-js.Inventory();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,49 @@
   describe('Inventory', function() {
     it('should create an instance of Inventory', function() {
       // uncomment below and update the code to test Inventory
-      //var instance = new MercatorioApi.Inventory();
-      //expect(instance).to.be.a(MercatorioApi.Inventory);
+      //var instance = new mercatorio-js.Inventory();
+      //expect(instance).to.be.a(mercatorio-js.Inventory);
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new MercatorioApi.Inventory();
+      //var instance = new mercatorio-js.Inventory();
       //expect(instance).to.be();
     });
 
     it('should have the property capacity (base name: "capacity")', function() {
       // uncomment below and update the code to test the property capacity
-      //var instance = new MercatorioApi.Inventory();
+      //var instance = new mercatorio-js.Inventory();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property reserved (base name: "reserved")', function() {
+      // uncomment below and update the code to test the property reserved
+      //var instance = new mercatorio-js.Inventory();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property used (base name: "used")', function() {
+      // uncomment below and update the code to test the property used
+      //var instance = new mercatorio-js.Inventory();
       //expect(instance).to.be();
     });
 
     it('should have the property holdings (base name: "holdings")', function() {
       // uncomment below and update the code to test the property holdings
-      //var instance = new MercatorioApi.Inventory();
+      //var instance = new mercatorio-js.Inventory();
       //expect(instance).to.be();
     });
 
     it('should have the property flows (base name: "flows")', function() {
       // uncomment below and update the code to test the property flows
-      //var instance = new MercatorioApi.Inventory();
+      //var instance = new mercatorio-js.Inventory();
       //expect(instance).to.be();
     });
 
     it('should have the property previousFlows (base name: "previous_flows")', function() {
       // uncomment below and update the code to test the property previousFlows
-      //var instance = new MercatorioApi.Inventory();
+      //var instance = new mercatorio-js.Inventory();
       //expect(instance).to.be();
     });
 

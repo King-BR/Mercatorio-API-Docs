@@ -1,4 +1,4 @@
-# MercatorioApi.InventoryAssets
+# mercatorio-js.InventoryAssets
 
 ## Properties
 

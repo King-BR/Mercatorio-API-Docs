@@ -1,4 +1,4 @@
-# MercatorioApi.InventoryAssetsAlembics
+# mercatorio-js.InventoryAssetsAlembics
 
 ## Properties
 

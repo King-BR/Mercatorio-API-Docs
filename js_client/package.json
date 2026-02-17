@@ -1,7 +1,7 @@
 {
-  "name": "mercatorio_api",
+  "name": "mercatorio.js",
   "version": "1.0.0",
-  "description": "API to interact with the game of Mercatorio",
+  "description": "Mercatorio.js is a library that provides a easier way to interact with the Mercatorio API, allowing developers to make more third party applications and tools for the Mercatorio ecosystem.",
   "license": "Unlicense",
   "main": "dist/index.js",
   "scripts": {

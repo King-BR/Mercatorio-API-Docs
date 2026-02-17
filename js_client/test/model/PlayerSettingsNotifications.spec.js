@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.PlayerSettingsNotifications();
+    instance = new mercatorio-js.PlayerSettingsNotifications();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('PlayerSettingsNotifications', function() {
     it('should create an instance of PlayerSettingsNotifications', function() {
       // uncomment below and update the code to test PlayerSettingsNotifications
-      //var instance = new MercatorioApi.PlayerSettingsNotifications();
-      //expect(instance).to.be.a(MercatorioApi.PlayerSettingsNotifications);
+      //var instance = new mercatorio-js.PlayerSettingsNotifications();
+      //expect(instance).to.be.a(mercatorio-js.PlayerSettingsNotifications);
     });
 
     it('should have the property discord (base name: "discord")', function() {
       // uncomment below and update the code to test the property discord
-      //var instance = new MercatorioApi.PlayerSettingsNotifications();
+      //var instance = new mercatorio-js.PlayerSettingsNotifications();
       //expect(instance).to.be();
     });
 
     it('should have the property mutes (base name: "mutes")', function() {
       // uncomment below and update the code to test the property mutes
-      //var instance = new MercatorioApi.PlayerSettingsNotifications();
+      //var instance = new mercatorio-js.PlayerSettingsNotifications();
       //expect(instance).to.be();
     });
 

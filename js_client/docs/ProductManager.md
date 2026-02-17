@@ -1,4 +1,4 @@
-# MercatorioApi.ProductManager
+# mercatorio-js.ProductManager
 
 ## Properties
 

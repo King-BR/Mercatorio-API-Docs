@@ -1,4 +1,4 @@
-# MercatorioApi.Household
+# mercatorio-js.Household
 
 ## Properties
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **prestigeImpacts** | [**[HouseholdPrestigeImpactsInner]**](HouseholdPrestigeImpactsInner.md) |  | [optional] 
 **legacy** | **String** |  | [optional] 
 **workers** | [**[Worker]**](Worker.md) |  | [optional] 
-**specialization** | [**HouseholdSpecialization**](HouseholdSpecialization.md) |  | [optional] 
+**specialization** | [**Specialization**](Specialization.md) |  | [optional] 
 **operations** | **[String]** |  | [optional] 
 **caps** | [**HouseholdCaps**](HouseholdCaps.md) |  | [optional] 
 **sustenance** | [**HouseholdSustenance**](HouseholdSustenance.md) |  | [optional] 

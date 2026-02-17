@@ -14,8 +14,8 @@
 import ApiClient from '../ApiClient';
 import HouseholdCaps from './HouseholdCaps';
 import HouseholdPrestigeImpactsInner from './HouseholdPrestigeImpactsInner';
-import HouseholdSpecialization from './HouseholdSpecialization';
 import HouseholdSustenance from './HouseholdSustenance';
+import Specialization from './Specialization';
 import Worker from './Worker';
 
 /**
@@ -86,7 +86,7 @@ class Household {
                 obj['workers'] = ApiClient.convertToType(data['workers'], [Worker]);
             }
             if (data.hasOwnProperty('specialization')) {
-                obj['specialization'] = HouseholdSpecialization.constructFromObject(data['specialization']);
+                obj['specialization'] = Specialization.constructFromObject(data['specialization']);
             }
             if (data.hasOwnProperty('operations')) {
                 obj['operations'] = ApiClient.convertToType(data['operations'], ['String']);
@@ -165,7 +165,7 @@ class Household {
         }
         // validate the optional field `specialization`
         if (data['specialization']) { // data not null
-          HouseholdSpecialization.validateJSON(data['specialization']);
+          Specialization.validateJSON(data['specialization']);
         }
         // ensure the json data is an array
         if (!Array.isArray(data['operations'])) {
@@ -244,7 +244,7 @@ Household.prototype['legacy'] = undefined;
 Household.prototype['workers'] = undefined;
 
 /**
- * @member {module:model/HouseholdSpecialization} specialization
+ * @member {module:model/Specialization} specialization
  */
 Household.prototype['specialization'] = undefined;
 

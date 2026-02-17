@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.InventoryAccount();
+    instance = new mercatorio-js.InventoryAccount();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,49 @@
   describe('InventoryAccount', function() {
     it('should create an instance of InventoryAccount', function() {
       // uncomment below and update the code to test InventoryAccount
-      //var instance = new MercatorioApi.InventoryAccount();
-      //expect(instance).to.be.a(MercatorioApi.InventoryAccount);
+      //var instance = new mercatorio-js.InventoryAccount();
+      //expect(instance).to.be.a(mercatorio-js.InventoryAccount);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new MercatorioApi.InventoryAccount();
+      //var instance = new mercatorio-js.InventoryAccount();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new MercatorioApi.InventoryAccount();
+      //var instance = new mercatorio-js.InventoryAccount();
       //expect(instance).to.be();
     });
 
     it('should have the property ownerId (base name: "owner_id")', function() {
       // uncomment below and update the code to test the property ownerId
-      //var instance = new MercatorioApi.InventoryAccount();
+      //var instance = new mercatorio-js.InventoryAccount();
       //expect(instance).to.be();
     });
 
     it('should have the property masterId (base name: "master_id")', function() {
       // uncomment below and update the code to test the property masterId
-      //var instance = new MercatorioApi.InventoryAccount();
+      //var instance = new mercatorio-js.InventoryAccount();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sponsorId (base name: "sponsor_id")', function() {
+      // uncomment below and update the code to test the property sponsorId
+      //var instance = new mercatorio-js.InventoryAccount();
       //expect(instance).to.be();
     });
 
     it('should have the property assets (base name: "assets")', function() {
       // uncomment below and update the code to test the property assets
-      //var instance = new MercatorioApi.InventoryAccount();
+      //var instance = new mercatorio-js.InventoryAccount();
       //expect(instance).to.be();
     });
 
     it('should have the property ts (base name: "_ts")', function() {
       // uncomment below and update the code to test the property ts
-      //var instance = new MercatorioApi.InventoryAccount();
+      //var instance = new mercatorio-js.InventoryAccount();
       //expect(instance).to.be();
     });
 

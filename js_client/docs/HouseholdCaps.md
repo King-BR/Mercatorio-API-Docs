@@ -1,4 +1,4 @@
-# MercatorioApi.HouseholdCaps
+# mercatorio-js.HouseholdCaps
 
 ## Properties
 

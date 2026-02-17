@@ -1,0 +1,11 @@
+{
+  "additionalProperties": {
+    "moduleName": "mercatorio-js",
+    "projectName": "mercatorio.js",
+    "projectDescription": "Mercatorio.js is a library that provides a easier way to interact with the Mercatorio API, allowing developers to make more third party applications and tools for the Mercatorio ecosystem.",
+    "developerEmail": "fernandopach2017@gmail.com",
+    "authorName": "King-BR",
+    "developerOrganization": "Mercatorio Tools",
+    "developerOrganizationUrl": "https://mercatorio-tools.tech"
+  }
+}

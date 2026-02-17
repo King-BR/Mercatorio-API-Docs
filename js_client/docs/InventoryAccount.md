@@ -1,4 +1,4 @@
-# MercatorioApi.InventoryAccount
+# mercatorio-js.InventoryAccount
 
 ## Properties
 
@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **ownerId** | **String** |  | [optional] 
 **masterId** | **String** |  | [optional] 
+**sponsorId** | **String** |  | [optional] 
 **assets** | [**InventoryAssets**](InventoryAssets.md) |  | [optional] 
 **ts** | **Number** |  | [optional] 
 

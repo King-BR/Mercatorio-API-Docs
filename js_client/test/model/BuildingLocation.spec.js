@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.BuildingLocation();
+    instance = new mercatorio-js.BuildingLocation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('BuildingLocation', function() {
     it('should create an instance of BuildingLocation', function() {
       // uncomment below and update the code to test BuildingLocation
-      //var instance = new MercatorioApi.BuildingLocation();
-      //expect(instance).to.be.a(MercatorioApi.BuildingLocation);
+      //var instance = new mercatorio-js.BuildingLocation();
+      //expect(instance).to.be.a(mercatorio-js.BuildingLocation);
     });
 
     it('should have the property x (base name: "x")', function() {
       // uncomment below and update the code to test the property x
-      //var instance = new MercatorioApi.BuildingLocation();
+      //var instance = new mercatorio-js.BuildingLocation();
       //expect(instance).to.be();
     });
 
     it('should have the property y (base name: "y")', function() {
       // uncomment below and update the code to test the property y
-      //var instance = new MercatorioApi.BuildingLocation();
+      //var instance = new mercatorio-js.BuildingLocation();
       //expect(instance).to.be();
     });
 

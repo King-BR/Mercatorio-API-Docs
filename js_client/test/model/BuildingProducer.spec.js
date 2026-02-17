@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.BuildingProducer();
+    instance = new mercatorio-js.BuildingProducer();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('BuildingProducer', function() {
     it('should create an instance of BuildingProducer', function() {
       // uncomment below and update the code to test BuildingProducer
-      //var instance = new MercatorioApi.BuildingProducer();
-      //expect(instance).to.be.a(MercatorioApi.BuildingProducer);
+      //var instance = new mercatorio-js.BuildingProducer();
+      //expect(instance).to.be.a(mercatorio-js.BuildingProducer);
     });
 
     it('should have the property reference (base name: "reference")', function() {
       // uncomment below and update the code to test the property reference
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property inventory (base name: "inventory")', function() {
       // uncomment below and update the code to test the property inventory
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property target (base name: "target")', function() {
       // uncomment below and update the code to test the property target
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property limited (base name: "limited")', function() {
       // uncomment below and update the code to test the property limited
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property recipe (base name: "recipe")', function() {
       // uncomment below and update the code to test the property recipe
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property previousOperation (base name: "previous_operation")', function() {
       // uncomment below and update the code to test the property previousOperation
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property manager (base name: "manager")', function() {
       // uncomment below and update the code to test the property manager
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 
     it('should have the property providerId (base name: "provider_id")', function() {
       // uncomment below and update the code to test the property providerId
-      //var instance = new MercatorioApi.BuildingProducer();
+      //var instance = new mercatorio-js.BuildingProducer();
       //expect(instance).to.be();
     });
 

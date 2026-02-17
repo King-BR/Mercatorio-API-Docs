@@ -1,4 +1,4 @@
-# MercatorioApi.BuildingDeliveryCost
+# mercatorio-js.BuildingDeliveryCost
 
 ## Properties
 

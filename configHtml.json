@@ -1,0 +1,12 @@
+{
+  "additionalProperties": {
+    "appName": "mercatorio API Documentation",
+    "appDescription": "Documentation for the Mercatorio API, providing developers with all the necessary information to integrate and interact with the Mercatorio ecosystem.",
+    "infoEmail": "fernandopach2017@gmail.com",
+    "infoUrl": "https://mercatorio-tools.tech",
+    "groupId": "org.mercatorio-tools",
+    "artifactId": "mercatorio-api-docs",
+    "javascriptModuleName": "mercatorio.js",
+    "invokerName": "mercatorio-java"
+  }
+}

@@ -1,4 +1,4 @@
-# MercatorioApi.HouseholdPrestigeImpactsInner
+# mercatorio-js.HouseholdPrestigeImpactsInner
 
 ## Properties
 

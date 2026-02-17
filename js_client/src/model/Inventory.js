@@ -12,10 +12,10 @@
  */
 
 import ApiClient from '../ApiClient';
+import Holdings from './Holdings';
 import InventoryAccount from './InventoryAccount';
 import InventoryFlows from './InventoryFlows';
-import InventoryPreviousFlows from './InventoryPreviousFlows';
-import ProductsHoldings from './ProductsHoldings';
+import InventoryPastFlows from './InventoryPastFlows';
 
 /**
  * The Inventory model module.
@@ -57,14 +57,20 @@ class Inventory {
             if (data.hasOwnProperty('capacity')) {
                 obj['capacity'] = ApiClient.convertToType(data['capacity'], 'Number');
             }
+            if (data.hasOwnProperty('reserved')) {
+                obj['reserved'] = ApiClient.convertToType(data['reserved'], 'Number');
+            }
+            if (data.hasOwnProperty('used')) {
+                obj['used'] = ApiClient.convertToType(data['used'], 'String');
+            }
             if (data.hasOwnProperty('holdings')) {
-                obj['holdings'] = ProductsHoldings.constructFromObject(data['holdings']);
+                obj['holdings'] = Holdings.constructFromObject(data['holdings']);
             }
             if (data.hasOwnProperty('flows')) {
                 obj['flows'] = InventoryFlows.constructFromObject(data['flows']);
             }
             if (data.hasOwnProperty('previous_flows')) {
-                obj['previous_flows'] = InventoryPreviousFlows.constructFromObject(data['previous_flows']);
+                obj['previous_flows'] = InventoryPastFlows.constructFromObject(data['previous_flows']);
             }
         }
         return obj;
@@ -80,9 +86,13 @@ class Inventory {
         if (data['account']) { // data not null
           InventoryAccount.validateJSON(data['account']);
         }
+        // ensure the json data is a string
+        if (data['used'] && !(typeof data['used'] === 'string' || data['used'] instanceof String)) {
+            throw new Error("Expected the field `used` to be a primitive type in the JSON string but got " + data['used']);
+        }
         // validate the optional field `holdings`
         if (data['holdings']) { // data not null
-          ProductsHoldings.validateJSON(data['holdings']);
+          Holdings.validateJSON(data['holdings']);
         }
         // validate the optional field `flows`
         if (data['flows']) { // data not null
@@ -90,7 +100,7 @@ class Inventory {
         }
         // validate the optional field `previous_flows`
         if (data['previous_flows']) { // data not null
-          InventoryPreviousFlows.validateJSON(data['previous_flows']);
+          InventoryPastFlows.validateJSON(data['previous_flows']);
         }
 
         return true;
@@ -112,7 +122,17 @@ Inventory.prototype['account'] = undefined;
 Inventory.prototype['capacity'] = undefined;
 
 /**
- * @member {module:model/ProductsHoldings} holdings
+ * @member {Number} reserved
+ */
+Inventory.prototype['reserved'] = undefined;
+
+/**
+ * @member {String} used
+ */
+Inventory.prototype['used'] = undefined;
+
+/**
+ * @member {module:model/Holdings} holdings
  */
 Inventory.prototype['holdings'] = undefined;
 
@@ -122,7 +142,7 @@ Inventory.prototype['holdings'] = undefined;
 Inventory.prototype['flows'] = undefined;
 
 /**
- * @member {module:model/InventoryPreviousFlows} previous_flows
+ * @member {module:model/InventoryPastFlows} previous_flows
  */
 Inventory.prototype['previous_flows'] = undefined;
 

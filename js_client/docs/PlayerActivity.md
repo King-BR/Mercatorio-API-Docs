@@ -1,4 +1,4 @@
-# MercatorioApi.PlayerActivity
+# mercatorio-js.PlayerActivity
 
 ## Properties
 

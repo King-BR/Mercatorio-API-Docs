@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.BuildingConstruction();
+    instance = new mercatorio-js.BuildingConstruction();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,67 +50,67 @@
   describe('BuildingConstruction', function() {
     it('should create an instance of BuildingConstruction', function() {
       // uncomment below and update the code to test BuildingConstruction
-      //var instance = new MercatorioApi.BuildingConstruction();
-      //expect(instance).to.be.a(MercatorioApi.BuildingConstruction);
+      //var instance = new mercatorio-js.BuildingConstruction();
+      //expect(instance).to.be.a(mercatorio-js.BuildingConstruction);
     });
 
     it('should have the property reference (base name: "reference")', function() {
       // uncomment below and update the code to test the property reference
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property inventory (base name: "inventory")', function() {
       // uncomment below and update the code to test the property inventory
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property time (base name: "time")', function() {
       // uncomment below and update the code to test the property time
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property totalTime (base name: "total_time")', function() {
       // uncomment below and update the code to test the property totalTime
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property progress (base name: "progress")', function() {
       // uncomment below and update the code to test the property progress
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property stage (base name: "stage")', function() {
       // uncomment below and update the code to test the property stage
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property land (base name: "land")', function() {
       // uncomment below and update the code to test the property land
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property providerId (base name: "provider_id")', function() {
       // uncomment below and update the code to test the property providerId
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new MercatorioApi.BuildingConstruction();
+      //var instance = new mercatorio-js.BuildingConstruction();
       //expect(instance).to.be();
     });
 

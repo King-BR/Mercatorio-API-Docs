@@ -1,4 +1,4 @@
-# MercatorioApi.BuildingProducer
+# mercatorio-js.BuildingProducer
 
 ## Properties
 

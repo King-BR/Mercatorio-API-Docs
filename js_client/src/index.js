@@ -21,43 +21,42 @@ import BuildingLocation from './model/BuildingLocation';
 import BuildingProducer from './model/BuildingProducer';
 import BuildingProducerPreviousOperation from './model/BuildingProducerPreviousOperation';
 import Error from './model/Error';
+import Holdings from './model/Holdings';
 import Household from './model/Household';
 import HouseholdCaps from './model/HouseholdCaps';
 import HouseholdPrestigeImpactsInner from './model/HouseholdPrestigeImpactsInner';
-import HouseholdSpecialization from './model/HouseholdSpecialization';
-import HouseholdSpecializationPoints from './model/HouseholdSpecializationPoints';
 import HouseholdSustenance from './model/HouseholdSustenance';
 import Inventory from './model/Inventory';
 import InventoryAccount from './model/InventoryAccount';
 import InventoryAssets from './model/InventoryAssets';
 import InventoryAssetsAlembics from './model/InventoryAssetsAlembics';
 import InventoryFlows from './model/InventoryFlows';
-import InventoryFlowsProductName from './model/InventoryFlowsProductName';
-import InventoryFlowsProductNameProjection from './model/InventoryFlowsProductNameProjection';
-import InventoryPreviousFlows from './model/InventoryPreviousFlows';
-import InventoryPreviousFlowsProductName from './model/InventoryPreviousFlowsProductName';
+import InventoryFlowsAlembics from './model/InventoryFlowsAlembics';
+import InventoryPastFlows from './model/InventoryPastFlows';
 import Player from './model/Player';
 import PlayerActivity from './model/PlayerActivity';
 import PlayerSettings from './model/PlayerSettings';
 import PlayerSettingsEmail from './model/PlayerSettingsEmail';
 import PlayerSettingsNotifications from './model/PlayerSettingsNotifications';
+import ProductFlow from './model/ProductFlow';
+import ProductHolding from './model/ProductHolding';
 import ProductManager from './model/ProductManager';
-import ProductsHoldings from './model/ProductsHoldings';
-import ProductsHoldingsAlembics from './model/ProductsHoldingsAlembics';
+import Specialization from './model/Specialization';
+import SpecializationPoints from './model/SpecializationPoints';
 import Worker from './model/Worker';
 import WorkerSkills from './model/WorkerSkills';
 import DefaultApi from './api/DefaultApi';
 
 
 /**
-* API to interact with the game of Mercatorio.<br>
+* Mercatorio.js is a library that provides a easier way to interact with the Mercatorio API, allowing developers to make more third party applications and tools for the Mercatorio ecosystem..<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var MercatorioApi = require('index'); // See note below*.
-* var xxxSvc = new MercatorioApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new MercatorioApi.Yyy(); // Construct a model instance.
+* var mercatorio-js = require('index'); // See note below*.
+* var xxxSvc = new mercatorio-js.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new mercatorio-js.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -69,8 +68,8 @@ import DefaultApi from './api/DefaultApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new MercatorioApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new MercatorioApi.Yyy(); // Construct a model instance.
+* var xxxSvc = new mercatorio-js.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new mercatorio-js.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -136,6 +135,12 @@ export {
     Error,
 
     /**
+     * The Holdings model constructor.
+     * @property {module:model/Holdings}
+     */
+    Holdings,
+
+    /**
      * The Household model constructor.
      * @property {module:model/Household}
      */
@@ -152,18 +157,6 @@ export {
      * @property {module:model/HouseholdPrestigeImpactsInner}
      */
     HouseholdPrestigeImpactsInner,
-
-    /**
-     * The HouseholdSpecialization model constructor.
-     * @property {module:model/HouseholdSpecialization}
-     */
-    HouseholdSpecialization,
-
-    /**
-     * The HouseholdSpecializationPoints model constructor.
-     * @property {module:model/HouseholdSpecializationPoints}
-     */
-    HouseholdSpecializationPoints,
 
     /**
      * The HouseholdSustenance model constructor.
@@ -202,28 +195,16 @@ export {
     InventoryFlows,
 
     /**
-     * The InventoryFlowsProductName model constructor.
-     * @property {module:model/InventoryFlowsProductName}
+     * The InventoryFlowsAlembics model constructor.
+     * @property {module:model/InventoryFlowsAlembics}
      */
-    InventoryFlowsProductName,
+    InventoryFlowsAlembics,
 
     /**
-     * The InventoryFlowsProductNameProjection model constructor.
-     * @property {module:model/InventoryFlowsProductNameProjection}
+     * The InventoryPastFlows model constructor.
+     * @property {module:model/InventoryPastFlows}
      */
-    InventoryFlowsProductNameProjection,
-
-    /**
-     * The InventoryPreviousFlows model constructor.
-     * @property {module:model/InventoryPreviousFlows}
-     */
-    InventoryPreviousFlows,
-
-    /**
-     * The InventoryPreviousFlowsProductName model constructor.
-     * @property {module:model/InventoryPreviousFlowsProductName}
-     */
-    InventoryPreviousFlowsProductName,
+    InventoryPastFlows,
 
     /**
      * The Player model constructor.
@@ -256,22 +237,34 @@ export {
     PlayerSettingsNotifications,
 
     /**
+     * The ProductFlow model constructor.
+     * @property {module:model/ProductFlow}
+     */
+    ProductFlow,
+
+    /**
+     * The ProductHolding model constructor.
+     * @property {module:model/ProductHolding}
+     */
+    ProductHolding,
+
+    /**
      * The ProductManager model constructor.
      * @property {module:model/ProductManager}
      */
     ProductManager,
 
     /**
-     * The ProductsHoldings model constructor.
-     * @property {module:model/ProductsHoldings}
+     * The Specialization model constructor.
+     * @property {module:model/Specialization}
      */
-    ProductsHoldings,
+    Specialization,
 
     /**
-     * The ProductsHoldingsAlembics model constructor.
-     * @property {module:model/ProductsHoldingsAlembics}
+     * The SpecializationPoints model constructor.
+     * @property {module:model/SpecializationPoints}
      */
-    ProductsHoldingsAlembics,
+    SpecializationPoints,
 
     /**
      * The Worker model constructor.

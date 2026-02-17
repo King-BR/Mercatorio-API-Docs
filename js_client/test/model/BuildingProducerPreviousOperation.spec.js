@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MercatorioApi);
+    factory(root.expect, root.mercatorio-js);
   }
-}(this, function(expect, MercatorioApi) {
+}(this, function(expect, mercatorio-js) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MercatorioApi.BuildingProducerPreviousOperation();
+    instance = new mercatorio-js.BuildingProducerPreviousOperation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('BuildingProducerPreviousOperation', function() {
     it('should create an instance of BuildingProducerPreviousOperation', function() {
       // uncomment below and update the code to test BuildingProducerPreviousOperation
-      //var instance = new MercatorioApi.BuildingProducerPreviousOperation();
-      //expect(instance).to.be.a(MercatorioApi.BuildingProducerPreviousOperation);
+      //var instance = new mercatorio-js.BuildingProducerPreviousOperation();
+      //expect(instance).to.be.a(mercatorio-js.BuildingProducerPreviousOperation);
     });
 
     it('should have the property target (base name: "target")', function() {
       // uncomment below and update the code to test the property target
-      //var instance = new MercatorioApi.BuildingProducerPreviousOperation();
+      //var instance = new mercatorio-js.BuildingProducerPreviousOperation();
       //expect(instance).to.be();
     });
 
     it('should have the property production (base name: "production")', function() {
       // uncomment below and update the code to test the property production
-      //var instance = new MercatorioApi.BuildingProducerPreviousOperation();
+      //var instance = new mercatorio-js.BuildingProducerPreviousOperation();
       //expect(instance).to.be();
     });
 
     it('should have the property turns (base name: "turns")', function() {
       // uncomment below and update the code to test the property turns
-      //var instance = new MercatorioApi.BuildingProducerPreviousOperation();
+      //var instance = new mercatorio-js.BuildingProducerPreviousOperation();
       //expect(instance).to.be();
     });
 
