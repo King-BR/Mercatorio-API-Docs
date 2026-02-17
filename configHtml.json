@@ -6,7 +6,6 @@
     "infoUrl": "https://mercatorio-tools.tech",
     "groupId": "org.mercatorio-tools",
     "artifactId": "mercatorio-api-docs",
-    "javascriptModuleName": "mercatorio.js",
-    "invokerName": "mercatorio-java"
+    "javascriptModuleName": "mercatorio.js"
   }
 }

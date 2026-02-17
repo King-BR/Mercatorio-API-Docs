@@ -20,6 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.client.model.ProductPastFlow;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -39,115 +40,11 @@ public class ProductFlowTest {
     }
 
     /**
-     * Test the property 'production'
+     * Test the property 'projection'
      */
     @Test
-    public void productionTest() {
-        // TODO: test production
-    }
-
-    /**
-     * Test the property 'productionCost'
-     */
-    @Test
-    public void productionCostTest() {
-        // TODO: test productionCost
-    }
-
-    /**
-     * Test the property 'consumption'
-     */
-    @Test
-    public void consumptionTest() {
-        // TODO: test consumption
-    }
-
-    /**
-     * Test the property 'consumptionCost'
-     */
-    @Test
-    public void consumptionCostTest() {
-        // TODO: test consumptionCost
-    }
-
-    /**
-     * Test the property '_import'
-     */
-    @Test
-    public void _importTest() {
-        // TODO: test _import
-    }
-
-    /**
-     * Test the property 'importCost'
-     */
-    @Test
-    public void importCostTest() {
-        // TODO: test importCost
-    }
-
-    /**
-     * Test the property 'export'
-     */
-    @Test
-    public void exportTest() {
-        // TODO: test export
-    }
-
-    /**
-     * Test the property 'exportValue'
-     */
-    @Test
-    public void exportValueTest() {
-        // TODO: test exportValue
-    }
-
-    /**
-     * Test the property 'exportCost'
-     */
-    @Test
-    public void exportCostTest() {
-        // TODO: test exportCost
-    }
-
-    /**
-     * Test the property 'inbound'
-     */
-    @Test
-    public void inboundTest() {
-        // TODO: test inbound
-    }
-
-    /**
-     * Test the property 'inboundCost'
-     */
-    @Test
-    public void inboundCostTest() {
-        // TODO: test inboundCost
-    }
-
-    /**
-     * Test the property 'outbound'
-     */
-    @Test
-    public void outboundTest() {
-        // TODO: test outbound
-    }
-
-    /**
-     * Test the property 'outboundValue'
-     */
-    @Test
-    public void outboundValueTest() {
-        // TODO: test outboundValue
-    }
-
-    /**
-     * Test the property 'outboundCost'
-     */
-    @Test
-    public void outboundCostTest() {
-        // TODO: test outboundCost
+    public void projectionTest() {
+        // TODO: test projection
     }
 
 }

@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import BuildingProducerPreviousOperation from './BuildingProducerPreviousOperation';
+import BuildingPreviousOperation from './BuildingPreviousOperation';
 import Inventory from './Inventory';
 
 /**
@@ -68,7 +68,7 @@ class BuildingProducer {
                 obj['recipe'] = ApiClient.convertToType(data['recipe'], 'String');
             }
             if (data.hasOwnProperty('previous_operation')) {
-                obj['previous_operation'] = BuildingProducerPreviousOperation.constructFromObject(data['previous_operation']);
+                obj['previous_operation'] = BuildingPreviousOperation.constructFromObject(data['previous_operation']);
             }
             if (data.hasOwnProperty('manager')) {
                 obj['manager'] = ApiClient.convertToType(data['manager'], 'String');
@@ -104,7 +104,7 @@ class BuildingProducer {
         }
         // validate the optional field `previous_operation`
         if (data['previous_operation']) { // data not null
-          BuildingProducerPreviousOperation.validateJSON(data['previous_operation']);
+          BuildingPreviousOperation.validateJSON(data['previous_operation']);
         }
         // ensure the json data is a string
         if (data['manager'] && !(typeof data['manager'] === 'string' || data['manager'] instanceof String)) {
@@ -154,7 +154,7 @@ BuildingProducer.prototype['settings'] = undefined;
 BuildingProducer.prototype['recipe'] = undefined;
 
 /**
- * @member {module:model/BuildingProducerPreviousOperation} previous_operation
+ * @member {module:model/BuildingPreviousOperation} previous_operation
  */
 BuildingProducer.prototype['previous_operation'] = undefined;
 

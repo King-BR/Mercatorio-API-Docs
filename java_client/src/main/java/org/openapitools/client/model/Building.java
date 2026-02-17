@@ -26,8 +26,8 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.BuildingConstruction;
 import org.openapitools.client.model.BuildingDeliveryCost;
-import org.openapitools.client.model.BuildingLocation;
 import org.openapitools.client.model.BuildingProducer;
+import org.openapitools.client.model.Location;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -55,7 +55,7 @@ import org.openapitools.client.JSON;
 /**
  * Building
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class Building {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -95,17 +95,17 @@ public class Building {
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
   @javax.annotation.Nullable
-  private BuildingLocation location;
+  private Location location;
 
   public static final String SERIALIZED_NAME_SUBLOCATION = "sublocation";
   @SerializedName(SERIALIZED_NAME_SUBLOCATION)
   @javax.annotation.Nullable
-  private BuildingLocation sublocation;
+  private Location sublocation;
 
   public static final String SERIALIZED_NAME_LAND = "land";
   @SerializedName(SERIALIZED_NAME_LAND)
   @javax.annotation.Nullable
-  private List<BuildingLocation> land = new ArrayList<>();
+  private List<Location> land = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DELIVERY_COST = "delivery_cost";
   @SerializedName(SERIALIZED_NAME_DELIVERY_COST)
@@ -268,7 +268,7 @@ public class Building {
   }
 
 
-  public Building location(@javax.annotation.Nullable BuildingLocation location) {
+  public Building location(@javax.annotation.Nullable Location location) {
     this.location = location;
     return this;
   }
@@ -278,16 +278,16 @@ public class Building {
    * @return location
    */
   @javax.annotation.Nullable
-  public BuildingLocation getLocation() {
+  public Location getLocation() {
     return location;
   }
 
-  public void setLocation(@javax.annotation.Nullable BuildingLocation location) {
+  public void setLocation(@javax.annotation.Nullable Location location) {
     this.location = location;
   }
 
 
-  public Building sublocation(@javax.annotation.Nullable BuildingLocation sublocation) {
+  public Building sublocation(@javax.annotation.Nullable Location sublocation) {
     this.sublocation = sublocation;
     return this;
   }
@@ -297,21 +297,21 @@ public class Building {
    * @return sublocation
    */
   @javax.annotation.Nullable
-  public BuildingLocation getSublocation() {
+  public Location getSublocation() {
     return sublocation;
   }
 
-  public void setSublocation(@javax.annotation.Nullable BuildingLocation sublocation) {
+  public void setSublocation(@javax.annotation.Nullable Location sublocation) {
     this.sublocation = sublocation;
   }
 
 
-  public Building land(@javax.annotation.Nullable List<BuildingLocation> land) {
+  public Building land(@javax.annotation.Nullable List<Location> land) {
     this.land = land;
     return this;
   }
 
-  public Building addLandItem(BuildingLocation landItem) {
+  public Building addLandItem(Location landItem) {
     if (this.land == null) {
       this.land = new ArrayList<>();
     }
@@ -324,11 +324,11 @@ public class Building {
    * @return land
    */
   @javax.annotation.Nullable
-  public List<BuildingLocation> getLand() {
+  public List<Location> getLand() {
     return land;
   }
 
-  public void setLand(@javax.annotation.Nullable List<BuildingLocation> land) {
+  public void setLand(@javax.annotation.Nullable List<Location> land) {
     this.land = land;
   }
 
@@ -547,11 +547,11 @@ public class Building {
       }
       // validate the optional field `location`
       if (jsonObj.get("location") != null && !jsonObj.get("location").isJsonNull()) {
-        BuildingLocation.validateJsonElement(jsonObj.get("location"));
+        Location.validateJsonElement(jsonObj.get("location"));
       }
       // validate the optional field `sublocation`
       if (jsonObj.get("sublocation") != null && !jsonObj.get("sublocation").isJsonNull()) {
-        BuildingLocation.validateJsonElement(jsonObj.get("sublocation"));
+        Location.validateJsonElement(jsonObj.get("sublocation"));
       }
       if (jsonObj.get("land") != null && !jsonObj.get("land").isJsonNull()) {
         JsonArray jsonArrayland = jsonObj.getAsJsonArray("land");
@@ -563,7 +563,7 @@ public class Building {
 
           // validate the optional field `land` (array)
           for (int i = 0; i < jsonArrayland.size(); i++) {
-            BuildingLocation.validateJsonElement(jsonArrayland.get(i));
+            Location.validateJsonElement(jsonArrayland.get(i));
           };
         }
       }

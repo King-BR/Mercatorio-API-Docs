@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.WorkerSkills();
+    instance = new mercatoriojs.WorkerSkills();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('WorkerSkills', function() {
     it('should create an instance of WorkerSkills', function() {
       // uncomment below and update the code to test WorkerSkills
-      //var instance = new mercatorio-js.WorkerSkills();
-      //expect(instance).to.be.a(mercatorio-js.WorkerSkills);
+      //var instance = new mercatoriojs.WorkerSkills();
+      //expect(instance).to.be.a(mercatoriojs.WorkerSkills);
     });
 
     it('should have the property nutrition (base name: "nutrition")', function() {
       // uncomment below and update the code to test the property nutrition
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 
     it('should have the property textile (base name: "textile")', function() {
       // uncomment below and update the code to test the property textile
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 
     it('should have the property crafting (base name: "crafting")', function() {
       // uncomment below and update the code to test the property crafting
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 
     it('should have the property forging (base name: "forging")', function() {
       // uncomment below and update the code to test the property forging
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 
     it('should have the property weaponry (base name: "weaponry")', function() {
       // uncomment below and update the code to test the property weaponry
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 
     it('should have the property maritime (base name: "maritime")', function() {
       // uncomment below and update the code to test the property maritime
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 
     it('should have the property mercantile (base name: "mercantile")', function() {
       // uncomment below and update the code to test the property mercantile
-      //var instance = new mercatorio-js.WorkerSkills();
+      //var instance = new mercatoriojs.WorkerSkills();
       //expect(instance).to.be();
     });
 

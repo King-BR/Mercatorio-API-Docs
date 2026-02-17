@@ -1,4 +1,4 @@
-# mercatorio-js.BuildingConstruction
+# mercatoriojs.BuildingConstruction
 
 ## Properties
 
@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **totalTime** | **Number** |  | [optional] 
 **progress** | **Number** |  | [optional] 
 **stage** | **String** |  | [optional] 
-**land** | [**[BuildingLocation]**](BuildingLocation.md) |  | [optional] 
+**land** | [**[Location]**](Location.md) |  | [optional] 
 **providerId** | **String** |  | [optional] 
-**settings** | [**BuildingConstructionSettings**](BuildingConstructionSettings.md) |  | [optional] 
+**settings** | [**ConstructionSettings**](ConstructionSettings.md) |  | [optional] 
 
 

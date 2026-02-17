@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.PlayerActivity();
+    instance = new mercatoriojs.PlayerActivity();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('PlayerActivity', function() {
     it('should create an instance of PlayerActivity', function() {
       // uncomment below and update the code to test PlayerActivity
-      //var instance = new mercatorio-js.PlayerActivity();
-      //expect(instance).to.be.a(mercatorio-js.PlayerActivity);
+      //var instance = new mercatoriojs.PlayerActivity();
+      //expect(instance).to.be.a(mercatoriojs.PlayerActivity);
     });
 
     it('should have the property score (base name: "score")', function() {
       // uncomment below and update the code to test the property score
-      //var instance = new mercatorio-js.PlayerActivity();
+      //var instance = new mercatoriojs.PlayerActivity();
       //expect(instance).to.be();
     });
 
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
-      //var instance = new mercatorio-js.PlayerActivity();
+      //var instance = new mercatoriojs.PlayerActivity();
       //expect(instance).to.be();
     });
 

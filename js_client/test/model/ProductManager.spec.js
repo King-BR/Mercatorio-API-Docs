@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.ProductManager();
+    instance = new mercatoriojs.ProductManager();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('ProductManager', function() {
     it('should create an instance of ProductManager', function() {
       // uncomment below and update the code to test ProductManager
-      //var instance = new mercatorio-js.ProductManager();
-      //expect(instance).to.be.a(mercatorio-js.ProductManager);
+      //var instance = new mercatoriojs.ProductManager();
+      //expect(instance).to.be.a(mercatoriojs.ProductManager);
     });
 
     it('should have the property maxHolding (base name: "max_holding")', function() {
       // uncomment below and update the code to test the property maxHolding
-      //var instance = new mercatorio-js.ProductManager();
+      //var instance = new mercatoriojs.ProductManager();
       //expect(instance).to.be();
     });
 
     it('should have the property minHolding (base name: "min_holding")', function() {
       // uncomment below and update the code to test the property minHolding
-      //var instance = new mercatorio-js.ProductManager();
+      //var instance = new mercatoriojs.ProductManager();
       //expect(instance).to.be();
     });
 
     it('should have the property buyVolume (base name: "buy_volume")', function() {
       // uncomment below and update the code to test the property buyVolume
-      //var instance = new mercatorio-js.ProductManager();
+      //var instance = new mercatoriojs.ProductManager();
       //expect(instance).to.be();
     });
 
     it('should have the property buyPrice (base name: "buy_price")', function() {
       // uncomment below and update the code to test the property buyPrice
-      //var instance = new mercatorio-js.ProductManager();
+      //var instance = new mercatoriojs.ProductManager();
       //expect(instance).to.be();
     });
 
     it('should have the property sellVolume (base name: "sell_volume")', function() {
       // uncomment below and update the code to test the property sellVolume
-      //var instance = new mercatorio-js.ProductManager();
+      //var instance = new mercatoriojs.ProductManager();
       //expect(instance).to.be();
     });
 
     it('should have the property sellPrice (base name: "sell_price")', function() {
       // uncomment below and update the code to test the property sellPrice
-      //var instance = new mercatorio-js.ProductManager();
+      //var instance = new mercatoriojs.ProductManager();
       //expect(instance).to.be();
     });
 

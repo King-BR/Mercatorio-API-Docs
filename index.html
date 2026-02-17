@@ -3459,8 +3459,8 @@ ul.nav-tabs {
                     <li data-group="Default" data-name="buildingInfo" class="">
                       <a href="#api-Default-buildingInfo">buildingInfo</a>
                     </li>
-                    <li data-group="Default" data-name="player info" class="">
-                      <a href="#api-Default-player info">player info</a>
+                    <li data-group="Default" data-name="playerInfo" class="">
+                      <a href="#api-Default-playerInfo">playerInfo</a>
                     </li>
           </ul>
         </nav>
@@ -3504,17 +3504,7 @@ ul.nav-tabs {
                         <ul class="nav nav-tabs nav-tabs-examples">
                           <li class="active"><a href="#examples-Default-buildingInfo-0-curl">Curl</a></li>
                           <li class=""><a href="#examples-Default-buildingInfo-0-java">Java</a></li>
-                          <li class=""><a href="#examples-Default-buildingInfo-0-dart">Dart</a></li>
-                          <li class=""><a href="#examples-Default-buildingInfo-0-android">Android</a></li>
-                          <!--<li class=""><a href="#examples-Default-buildingInfo-0-groovy">Groovy</a></li>-->
-                          <li class=""><a href="#examples-Default-buildingInfo-0-objc">Obj-C</a></li>
                           <li class=""><a href="#examples-Default-buildingInfo-0-javascript">JavaScript</a></li>
-                          <!--<li class=""><a href="#examples-Default-buildingInfo-0-angular">Angular</a></li>-->
-                          <li class=""><a href="#examples-Default-buildingInfo-0-csharp">C#</a></li>
-                          <li class=""><a href="#examples-Default-buildingInfo-0-php">PHP</a></li>
-                          <li class=""><a href="#examples-Default-buildingInfo-0-perl">Perl</a></li>
-                          <li class=""><a href="#examples-Default-buildingInfo-0-python">Python</a></li>
-                          <li class=""><a href="#examples-Default-buildingInfo-0-rust">Rust</a></li>
                         </ul>
 
                         <div class="tab-content">
@@ -3527,10 +3517,10 @@ ul.nav-tabs {
 </code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Default-buildingInfo-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.DefaultApi;
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.*;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
 
 import java.io.File;
 import java.util.*;
@@ -3539,17 +3529,17 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-        // Configure API key authorization: X-Merc-User
-        ApiKeyAuth X-Merc-User = (ApiKeyAuth) defaultClient.getAuthentication("X-Merc-User");
-        X-Merc-User.setApiKey("YOUR API KEY");
+        // Configure API key authorization: Merc_User
+        ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+        Merc_User.setApiKey("YOUR API KEY");
         // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-        //X-Merc-User.setApiKeyPrefix("Token");
+        //Merc_User.setApiKeyPrefix("Token");
 
-        // Configure API key authorization: Bearer-Token
-        ApiKeyAuth Bearer-Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer-Token");
-        Bearer-Token.setApiKey("YOUR API KEY");
+        // Configure API key authorization: Bearer_Token
+        ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+        Bearer_Token.setApiKey("YOUR API KEY");
         // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-        //Bearer-Token.setApiKeyPrefix("Token");
+        //Bearer_Token.setApiKeyPrefix("Token");
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
@@ -3585,7 +3575,7 @@ try {
                           </div>
 
                           <div class="tab-pane" id="examples-Default-buildingInfo-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.DefaultApi;
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
 
 public class DefaultApiExample {
     public static void main(String[] args) {
@@ -3609,12 +3599,12 @@ public class DefaultApiExample {
                             <div class="tab-pane" id="examples-Default-buildingInfo-0-objc">
                               <pre class="prettyprint"><code class="language-cpp">Configuration *apiConfig = [Configuration sharedConfig];
 
-// Configure API key authorization: (authentication scheme: X-Merc-User)
+// Configure API key authorization: (authentication scheme: Merc_User)
 [apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"X-Merc-User"];
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"X-Merc-User"];
 
-// Configure API key authorization: (authentication scheme: Bearer-Token)
+// Configure API key authorization: (authentication scheme: Bearer_Token)
 [apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"Token"];
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"Token"];
@@ -3638,20 +3628,20 @@ String *buildingID = buildingID_example; //  (default to null)
                             </div>
 
                             <div class="tab-pane" id="examples-Default-buildingInfo-0-javascript">
-                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio_api');
+                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio.js');
 var defaultClient = MercatorioApi.ApiClient.instance;
 
-// Configure API key authorization: X-Merc-User
-var X-Merc-User = defaultClient.authentications['X-Merc-User'];
-X-Merc-User.apiKey = "YOUR API KEY";
+// Configure API key authorization: Merc_User
+var Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = "YOUR API KEY";
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Merc-User.apiKeyPrefix['X-Merc-User'] = "Token";
+//Merc_User.apiKeyPrefix['X-Merc-User'] = "Token";
 
-// Configure API key authorization: Bearer-Token
-var Bearer-Token = defaultClient.authentications['Bearer-Token'];
-Bearer-Token.apiKey = "YOUR API KEY";
+// Configure API key authorization: Bearer_Token
+var Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = "YOUR API KEY";
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//Bearer-Token.apiKeyPrefix['Token'] = "Token";
+//Bearer_Token.apiKeyPrefix['Token'] = "Token";
 
 // Create an instance of the API class
 var api = new MercatorioApi.DefaultApi()
@@ -3684,11 +3674,11 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: X-Merc-User
+            // Configure API key authorization: Merc_User
             Configuration.Default.ApiKey.Add("X-Merc-User", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.ApiKeyPrefix.Add("X-Merc-User", "Bearer");
-            // Configure API key authorization: Bearer-Token
+            // Configure API key authorization: Bearer_Token
             Configuration.Default.ApiKey.Add("Token", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.ApiKeyPrefix.Add("Token", "Bearer");
@@ -3714,12 +3704,12 @@ namespace Example
                               <pre class="prettyprint"><code class="language-php"><&#63;php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: X-Merc-User
+// Configure API key authorization: Merc_User
 OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Merc-User', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Merc-User', 'Bearer');
 
-// Configure API key authorization: Bearer-Token
+// Configure API key authorization: Bearer_Token
 OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Token', 'Bearer');
@@ -3742,12 +3732,12 @@ try {
 use WWW::OPenAPIClient::Configuration;
 use WWW::OPenAPIClient::DefaultApi;
 
-# Configure API key authorization: X-Merc-User
+# Configure API key authorization: Merc_User
 $WWW::OPenAPIClient::Configuration::api_key->{'X-Merc-User'} = 'YOUR_API_KEY';
 # uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 #$WWW::OPenAPIClient::Configuration::api_key_prefix->{'X-Merc-User'} = "Bearer";
 
-# Configure API key authorization: Bearer-Token
+# Configure API key authorization: Bearer_Token
 $WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
 # uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 #$WWW::OPenAPIClient::Configuration::api_key_prefix->{'Token'} = "Bearer";
@@ -3772,12 +3762,12 @@ import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
 
-# Configure API key authorization: X-Merc-User
+# Configure API key authorization: Merc_User
 openapi_client.configuration.api_key['X-Merc-User'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # openapi_client.configuration.api_key_prefix['X-Merc-User'] = 'Bearer'
 
-# Configure API key authorization: Bearer-Token
+# Configure API key authorization: Bearer_Token
 openapi_client.configuration.api_key['Token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # openapi_client.configuration.api_key_prefix['Token'] = 'Bearer'
@@ -4080,10 +4070,10 @@ pub fn main() {
                         </article>
                       </div>
                       <hr>
-                    <div id="api-Default-player info">
-                      <article id="api-Default-player info-0" data-group="User" data-name="player info" data-version="0">
+                    <div id="api-Default-playerInfo">
+                      <article id="api-Default-playerInfo-0" data-group="User" data-name="playerInfo" data-version="0">
                         <div class="pull-left">
-                          <h1>player info</h1>
+                          <h1>playerInfo</h1>
                           <p>Get the player information</p>
                         </div>
                         <div class="pull-right"></div>
@@ -4097,23 +4087,13 @@ pub fn main() {
                           <h3>Usage and SDK Samples</h3>
                         </p>
                         <ul class="nav nav-tabs nav-tabs-examples">
-                          <li class="active"><a href="#examples-Default-player info-0-curl">Curl</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-java">Java</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-dart">Dart</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-android">Android</a></li>
-                          <!--<li class=""><a href="#examples-Default-player info-0-groovy">Groovy</a></li>-->
-                          <li class=""><a href="#examples-Default-player info-0-objc">Obj-C</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-javascript">JavaScript</a></li>
-                          <!--<li class=""><a href="#examples-Default-player info-0-angular">Angular</a></li>-->
-                          <li class=""><a href="#examples-Default-player info-0-csharp">C#</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-php">PHP</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-perl">Perl</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-python">Python</a></li>
-                          <li class=""><a href="#examples-Default-player info-0-rust">Rust</a></li>
+                          <li class="active"><a href="#examples-Default-playerInfo-0-curl">Curl</a></li>
+                          <li class=""><a href="#examples-Default-playerInfo-0-java">Java</a></li>
+                          <li class=""><a href="#examples-Default-playerInfo-0-javascript">JavaScript</a></li>
                         </ul>
 
                         <div class="tab-content">
-                          <div class="tab-pane active" id="examples-Default-player info-0-curl">
+                          <div class="tab-pane active" id="examples-Default-playerInfo-0-curl">
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET \
 -H "X-Merc-User: [[apiKey]]" \
 -H "Token: [[apiKey]]" \
@@ -4121,11 +4101,11 @@ pub fn main() {
  "https://play.mercatorio.io/api/player"
 </code></pre>
                           </div>
-                          <div class="tab-pane" id="examples-Default-player info-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.DefaultApi;
+                          <div class="tab-pane" id="examples-Default-playerInfo-0-java">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.*;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
 
 import java.io.File;
 import java.util.*;
@@ -4134,26 +4114,26 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-        // Configure API key authorization: X-Merc-User
-        ApiKeyAuth X-Merc-User = (ApiKeyAuth) defaultClient.getAuthentication("X-Merc-User");
-        X-Merc-User.setApiKey("YOUR API KEY");
+        // Configure API key authorization: Merc_User
+        ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+        Merc_User.setApiKey("YOUR API KEY");
         // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-        //X-Merc-User.setApiKeyPrefix("Token");
+        //Merc_User.setApiKeyPrefix("Token");
 
-        // Configure API key authorization: Bearer-Token
-        ApiKeyAuth Bearer-Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer-Token");
-        Bearer-Token.setApiKey("YOUR API KEY");
+        // Configure API key authorization: Bearer_Token
+        ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+        Bearer_Token.setApiKey("YOUR API KEY");
         // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-        //Bearer-Token.setApiKeyPrefix("Token");
+        //Bearer_Token.setApiKeyPrefix("Token");
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
 
         try {
-            Player result = apiInstance.player info();
+            Player result = apiInstance.playerInfo();
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling DefaultApi#player info");
+            System.err.println("Exception when calling DefaultApi#playerInfo");
             e.printStackTrace();
         }
     }
@@ -4161,52 +4141,52 @@ public class DefaultApiExample {
 </code></pre>
                           </div>
 
-                          <div class="tab-pane" id="examples-Default-player info-0-dart">
+                          <div class="tab-pane" id="examples-Default-playerInfo-0-dart">
                             <pre class="prettyprint"><code class="language-dart">import 'package:openapi/api.dart';
 
 final api_instance = DefaultApi();
 
 
 try {
-    final result = await api_instance.player info();
+    final result = await api_instance.playerInfo();
     print(result);
 } catch (e) {
-    print('Exception when calling DefaultApi->player info: $e\n');
+    print('Exception when calling DefaultApi->playerInfo: $e\n');
 }
 
 </code></pre>
                           </div>
 
-                          <div class="tab-pane" id="examples-Default-player info-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.DefaultApi;
+                          <div class="tab-pane" id="examples-Default-playerInfo-0-android">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
 
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
 
         try {
-            Player result = apiInstance.player info();
+            Player result = apiInstance.playerInfo();
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling DefaultApi#player info");
+            System.err.println("Exception when calling DefaultApi#playerInfo");
             e.printStackTrace();
         }
     }
 }</code></pre>
                           </div>
   <!--
-  <div class="tab-pane" id="examples-Default-player info-0-groovy">
+  <div class="tab-pane" id="examples-Default-playerInfo-0-groovy">
   <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
   </div> -->
-                            <div class="tab-pane" id="examples-Default-player info-0-objc">
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-objc">
                               <pre class="prettyprint"><code class="language-cpp">Configuration *apiConfig = [Configuration sharedConfig];
 
-// Configure API key authorization: (authentication scheme: X-Merc-User)
+// Configure API key authorization: (authentication scheme: Merc_User)
 [apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"X-Merc-User"];
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"X-Merc-User"];
 
-// Configure API key authorization: (authentication scheme: Bearer-Token)
+// Configure API key authorization: (authentication scheme: Bearer_Token)
 [apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"Token"];
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"Token"];
@@ -4216,7 +4196,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
 // Get the player information
-[apiInstance player infoWithCompletionHandler: 
+[apiInstance playerInfoWithCompletionHandler: 
               ^(Player output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -4228,21 +4208,21 @@ DefaultApi *apiInstance = [[DefaultApi alloc] init];
 </code></pre>
                             </div>
 
-                            <div class="tab-pane" id="examples-Default-player info-0-javascript">
-                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio_api');
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-javascript">
+                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio.js');
 var defaultClient = MercatorioApi.ApiClient.instance;
 
-// Configure API key authorization: X-Merc-User
-var X-Merc-User = defaultClient.authentications['X-Merc-User'];
-X-Merc-User.apiKey = "YOUR API KEY";
+// Configure API key authorization: Merc_User
+var Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = "YOUR API KEY";
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Merc-User.apiKeyPrefix['X-Merc-User'] = "Token";
+//Merc_User.apiKeyPrefix['X-Merc-User'] = "Token";
 
-// Configure API key authorization: Bearer-Token
-var Bearer-Token = defaultClient.authentications['Bearer-Token'];
-Bearer-Token.apiKey = "YOUR API KEY";
+// Configure API key authorization: Bearer_Token
+var Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = "YOUR API KEY";
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//Bearer-Token.apiKeyPrefix['Token'] = "Token";
+//Bearer_Token.apiKeyPrefix['Token'] = "Token";
 
 // Create an instance of the API class
 var api = new MercatorioApi.DefaultApi()
@@ -4253,14 +4233,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.player info(callback);
+api.playerInfo(callback);
 </code></pre>
                             </div>
 
-                            <!--<div class="tab-pane" id="examples-Default-player info-0-angular">
+                            <!--<div class="tab-pane" id="examples-Default-playerInfo-0-angular">
               <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
             </div>-->
-                            <div class="tab-pane" id="examples-Default-player info-0-csharp">
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
 using Org.OpenAPITools.Api;
@@ -4269,15 +4249,15 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class player infoExample
+    public class playerInfoExample
     {
         public void main()
         {
-            // Configure API key authorization: X-Merc-User
+            // Configure API key authorization: Merc_User
             Configuration.Default.ApiKey.Add("X-Merc-User", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.ApiKeyPrefix.Add("X-Merc-User", "Bearer");
-            // Configure API key authorization: Bearer-Token
+            // Configure API key authorization: Bearer_Token
             Configuration.Default.ApiKey.Add("Token", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.ApiKeyPrefix.Add("Token", "Bearer");
@@ -4287,10 +4267,10 @@ namespace Example
 
             try {
                 // Get the player information
-                Player result = apiInstance.player info();
+                Player result = apiInstance.playerInfo();
                 Debug.WriteLine(result);
             } catch (Exception e) {
-                Debug.Print("Exception when calling DefaultApi.player info: " + e.Message );
+                Debug.Print("Exception when calling DefaultApi.playerInfo: " + e.Message );
             }
         }
     }
@@ -4298,16 +4278,16 @@ namespace Example
 </code></pre>
                             </div>
 
-                            <div class="tab-pane" id="examples-Default-player info-0-php">
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-php">
                               <pre class="prettyprint"><code class="language-php"><&#63;php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: X-Merc-User
+// Configure API key authorization: Merc_User
 OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Merc-User', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Merc-User', 'Bearer');
 
-// Configure API key authorization: Bearer-Token
+// Configure API key authorization: Bearer_Token
 OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Token', 'Bearer');
@@ -4316,25 +4296,25 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token',
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 
 try {
-    $result = $api_instance->player info();
+    $result = $api_instance->playerInfo();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->player info: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DefaultApi->playerInfo: ', $e->getMessage(), PHP_EOL;
 }
 ?></code></pre>
                             </div>
 
-                            <div class="tab-pane" id="examples-Default-player info-0-perl">
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-perl">
                               <pre class="prettyprint"><code class="language-perl">use Data::Dumper;
 use WWW::OPenAPIClient::Configuration;
 use WWW::OPenAPIClient::DefaultApi;
 
-# Configure API key authorization: X-Merc-User
+# Configure API key authorization: Merc_User
 $WWW::OPenAPIClient::Configuration::api_key->{'X-Merc-User'} = 'YOUR_API_KEY';
 # uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 #$WWW::OPenAPIClient::Configuration::api_key_prefix->{'X-Merc-User'} = "Bearer";
 
-# Configure API key authorization: Bearer-Token
+# Configure API key authorization: Bearer_Token
 $WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
 # uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 #$WWW::OPenAPIClient::Configuration::api_key_prefix->{'Token'} = "Bearer";
@@ -4343,27 +4323,27 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 
 eval {
-    my $result = $api_instance->player info();
+    my $result = $api_instance->playerInfo();
     print Dumper($result);
 };
 if ($@) {
-    warn "Exception when calling DefaultApi->player info: $@\n";
+    warn "Exception when calling DefaultApi->playerInfo: $@\n";
 }</code></pre>
                             </div>
 
-                            <div class="tab-pane" id="examples-Default-player info-0-python">
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-python">
                               <pre class="prettyprint"><code class="language-python">from __future__ import print_statement
 import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
 
-# Configure API key authorization: X-Merc-User
+# Configure API key authorization: Merc_User
 openapi_client.configuration.api_key['X-Merc-User'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # openapi_client.configuration.api_key_prefix['X-Merc-User'] = 'Bearer'
 
-# Configure API key authorization: Bearer-Token
+# Configure API key authorization: Bearer_Token
 openapi_client.configuration.api_key['Token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # openapi_client.configuration.api_key_prefix['Token'] = 'Bearer'
@@ -4376,16 +4356,16 @@ try:
     api_response = api_instance.player_info()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->player info: %s\n" % e)</code></pre>
+    print("Exception when calling DefaultApi->playerInfo: %s\n" % e)</code></pre>
                             </div>
 
-                            <div class="tab-pane" id="examples-Default-player info-0-rust">
+                            <div class="tab-pane" id="examples-Default-playerInfo-0-rust">
                               <pre class="prettyprint"><code class="language-rust">extern crate DefaultApi;
 
 pub fn main() {
 
     let mut context = DefaultApi::Context::default();
-    let result = client.player info(&context).wait();
+    let result = client.playerInfo(&context).wait();
 
     println!("{:?}", result);
 }
@@ -4406,23 +4386,23 @@ pub fn main() {
 
 
                           <h2>Responses</h2>
-                            <h3 id="examples-Default-player info-title-200"></h3>
-                            <p id="examples-Default-player info-description-200" class="marked"></p>
+                            <h3 id="examples-Default-playerInfo-title-200"></h3>
+                            <p id="examples-Default-playerInfo-description-200" class="marked"></p>
                             <script>
                               var responseDefault200_description = `The player corresponding to the API key used`;
                               var responseDefault200_description_break = responseDefault200_description.indexOf('\n');
                               if (responseDefault200_description_break == -1) {
-                                $("#examples-Default-player info-title-200").text("Status: 200 - " + responseDefault200_description);
+                                $("#examples-Default-playerInfo-title-200").text("Status: 200 - " + responseDefault200_description);
                               } else {
-                                $("#examples-Default-player info-title-200").text("Status: 200 - " + responseDefault200_description.substring(0, responseDefault200_description_break));
-                                $("#examples-Default-player info-description-200").html(responseDefault200_description.substring(responseDefault200_description_break));
+                                $("#examples-Default-playerInfo-title-200").text("Status: 200 - " + responseDefault200_description.substring(0, responseDefault200_description_break));
+                                $("#examples-Default-playerInfo-description-200").html(responseDefault200_description.substring(responseDefault200_description_break));
                               }
                             </script>
 
 
-                            <ul id="responses-detail-Default-player info-200" class="nav nav-tabs nav-tabs-examples" >
+                            <ul id="responses-detail-Default-playerInfo-200" class="nav nav-tabs nav-tabs-examples" >
                                 <li class="active">
-                                  <a data-toggle="tab" href="#responses-Default-player info-200-schema">Schema</a>
+                                  <a data-toggle="tab" href="#responses-Default-playerInfo-200-schema">Schema</a>
                                 </li>
 
 
@@ -4431,9 +4411,9 @@ pub fn main() {
                             </ul>
 
 
-                            <div class="tab-content" id="responses-Default-player info-200-wrapper" style='margin-bottom: 10px;'>
-                              <div class="tab-pane active" id="responses-Default-player info-200-schema">
-                                <div id="responses-Default-player info-schema-200" class="exampleStyle">
+                            <div class="tab-content" id="responses-Default-playerInfo-200-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-playerInfo-200-schema">
+                                <div id="responses-Default-playerInfo-schema-200" class="exampleStyle">
                                   <script>
                                     $(document).ready(function() {
                                       var schemaWrapper = {
@@ -4472,33 +4452,33 @@ pub fn main() {
                                       }
 
                                       var view = new JSONSchemaView(schema, 3);
-                                      $('#responses-Default-player info-200-schema-data').val(JSON.stringify(schema));
-                                      var result = $('#responses-Default-player info-schema-200');
+                                      $('#responses-Default-playerInfo-200-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-playerInfo-schema-200');
                                       result.empty();
                                       result.append(view.render());
                                     });
                                   </script>
                                 </div>
-                                <input id='responses-Default-player info-200-schema-data' type='hidden' value=''></input>
+                                <input id='responses-Default-playerInfo-200-schema-data' type='hidden' value=''></input>
                               </div>
                             </div>
-                            <h3 id="examples-Default-player info-title-404"></h3>
-                            <p id="examples-Default-player info-description-404" class="marked"></p>
+                            <h3 id="examples-Default-playerInfo-title-404"></h3>
+                            <p id="examples-Default-playerInfo-description-404" class="marked"></p>
                             <script>
                               var responseDefault404_description = `No player found`;
                               var responseDefault404_description_break = responseDefault404_description.indexOf('\n');
                               if (responseDefault404_description_break == -1) {
-                                $("#examples-Default-player info-title-404").text("Status: 404 - " + responseDefault404_description);
+                                $("#examples-Default-playerInfo-title-404").text("Status: 404 - " + responseDefault404_description);
                               } else {
-                                $("#examples-Default-player info-title-404").text("Status: 404 - " + responseDefault404_description.substring(0, responseDefault404_description_break));
-                                $("#examples-Default-player info-description-404").html(responseDefault404_description.substring(responseDefault404_description_break));
+                                $("#examples-Default-playerInfo-title-404").text("Status: 404 - " + responseDefault404_description.substring(0, responseDefault404_description_break));
+                                $("#examples-Default-playerInfo-description-404").html(responseDefault404_description.substring(responseDefault404_description_break));
                               }
                             </script>
 
 
-                            <ul id="responses-detail-Default-player info-404" class="nav nav-tabs nav-tabs-examples" >
+                            <ul id="responses-detail-Default-playerInfo-404" class="nav nav-tabs nav-tabs-examples" >
                                 <li class="active">
-                                  <a data-toggle="tab" href="#responses-Default-player info-404-schema">Schema</a>
+                                  <a data-toggle="tab" href="#responses-Default-playerInfo-404-schema">Schema</a>
                                 </li>
 
 
@@ -4507,9 +4487,9 @@ pub fn main() {
                             </ul>
 
 
-                            <div class="tab-content" id="responses-Default-player info-404-wrapper" style='margin-bottom: 10px;'>
-                              <div class="tab-pane active" id="responses-Default-player info-404-schema">
-                                <div id="responses-Default-player info-schema-404" class="exampleStyle">
+                            <div class="tab-content" id="responses-Default-playerInfo-404-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-playerInfo-404-schema">
+                                <div id="responses-Default-playerInfo-schema-404" class="exampleStyle">
                                   <script>
                                     $(document).ready(function() {
                                       var schemaWrapper = {
@@ -4548,33 +4528,33 @@ pub fn main() {
                                       }
 
                                       var view = new JSONSchemaView(schema, 3);
-                                      $('#responses-Default-player info-404-schema-data').val(JSON.stringify(schema));
-                                      var result = $('#responses-Default-player info-schema-404');
+                                      $('#responses-Default-playerInfo-404-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-playerInfo-schema-404');
                                       result.empty();
                                       result.append(view.render());
                                     });
                                   </script>
                                 </div>
-                                <input id='responses-Default-player info-404-schema-data' type='hidden' value=''></input>
+                                <input id='responses-Default-playerInfo-404-schema-data' type='hidden' value=''></input>
                               </div>
                             </div>
-                            <h3 id="examples-Default-player info-title-500"></h3>
-                            <p id="examples-Default-player info-description-500" class="marked"></p>
+                            <h3 id="examples-Default-playerInfo-title-500"></h3>
+                            <p id="examples-Default-playerInfo-description-500" class="marked"></p>
                             <script>
                               var responseDefault500_description = `Unexpected error`;
                               var responseDefault500_description_break = responseDefault500_description.indexOf('\n');
                               if (responseDefault500_description_break == -1) {
-                                $("#examples-Default-player info-title-500").text("Status: 500 - " + responseDefault500_description);
+                                $("#examples-Default-playerInfo-title-500").text("Status: 500 - " + responseDefault500_description);
                               } else {
-                                $("#examples-Default-player info-title-500").text("Status: 500 - " + responseDefault500_description.substring(0, responseDefault500_description_break));
-                                $("#examples-Default-player info-description-500").html(responseDefault500_description.substring(responseDefault500_description_break));
+                                $("#examples-Default-playerInfo-title-500").text("Status: 500 - " + responseDefault500_description.substring(0, responseDefault500_description_break));
+                                $("#examples-Default-playerInfo-description-500").html(responseDefault500_description.substring(responseDefault500_description_break));
                               }
                             </script>
 
 
-                            <ul id="responses-detail-Default-player info-500" class="nav nav-tabs nav-tabs-examples" >
+                            <ul id="responses-detail-Default-playerInfo-500" class="nav nav-tabs nav-tabs-examples" >
                                 <li class="active">
-                                  <a data-toggle="tab" href="#responses-Default-player info-500-schema">Schema</a>
+                                  <a data-toggle="tab" href="#responses-Default-playerInfo-500-schema">Schema</a>
                                 </li>
 
 
@@ -4583,9 +4563,9 @@ pub fn main() {
                             </ul>
 
 
-                            <div class="tab-content" id="responses-Default-player info-500-wrapper" style='margin-bottom: 10px;'>
-                              <div class="tab-pane active" id="responses-Default-player info-500-schema">
-                                <div id="responses-Default-player info-schema-500" class="exampleStyle">
+                            <div class="tab-content" id="responses-Default-playerInfo-500-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-playerInfo-500-schema">
+                                <div id="responses-Default-playerInfo-schema-500" class="exampleStyle">
                                   <script>
                                     $(document).ready(function() {
                                       var schemaWrapper = {
@@ -4624,14 +4604,14 @@ pub fn main() {
                                       }
 
                                       var view = new JSONSchemaView(schema, 3);
-                                      $('#responses-Default-player info-500-schema-data').val(JSON.stringify(schema));
-                                      var result = $('#responses-Default-player info-schema-500');
+                                      $('#responses-Default-playerInfo-500-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-playerInfo-schema-500');
                                       result.empty();
                                       result.append(view.render());
                                     });
                                   </script>
                                 </div>
-                                <input id='responses-Default-player info-500-schema-data' type='hidden' value=''></input>
+                                <input id='responses-Default-playerInfo-500-schema-data' type='hidden' value=''></input>
                               </div>
                             </div>
                         </article>

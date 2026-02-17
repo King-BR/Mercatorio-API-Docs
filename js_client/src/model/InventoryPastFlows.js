@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import ProductFlow from './ProductFlow';
+import ProductPastFlow from './ProductPastFlow';
 
 /**
  * The InventoryPastFlows model module.
@@ -49,7 +50,7 @@ class InventoryPastFlows {
             obj = obj || new InventoryPastFlows();
 
             if (data.hasOwnProperty('alembics')) {
-                obj['alembics'] = ProductFlow.constructFromObject(data['alembics']);
+                obj['alembics'] = ProductPastFlow.constructFromObject(data['alembics']);
             }
             if (data.hasOwnProperty('arms')) {
                 obj['arms'] = ProductFlow.constructFromObject(data['arms']);
@@ -426,7 +427,7 @@ class InventoryPastFlows {
     static validateJSON(data) {
         // validate the optional field `alembics`
         if (data['alembics']) { // data not null
-          ProductFlow.validateJSON(data['alembics']);
+          ProductPastFlow.validateJSON(data['alembics']);
         }
         // validate the optional field `arms`
         if (data['arms']) { // data not null
@@ -922,7 +923,7 @@ class InventoryPastFlows {
 
 
 /**
- * @member {module:model/ProductFlow} alembics
+ * @member {module:model/ProductPastFlow} alembics
  */
 InventoryPastFlows.prototype['alembics'] = undefined;
 

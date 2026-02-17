@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import InventoryAssetsAlembics from './InventoryAssetsAlembics';
+import ProductAsset from './ProductAsset';
 
 /**
  * The InventoryAssets model module.
@@ -49,370 +49,370 @@ class InventoryAssets {
             obj = obj || new InventoryAssets();
 
             if (data.hasOwnProperty('alembics')) {
-                obj['alembics'] = InventoryAssetsAlembics.constructFromObject(data['alembics']);
+                obj['alembics'] = ProductAsset.constructFromObject(data['alembics']);
             }
             if (data.hasOwnProperty('arms')) {
-                obj['arms'] = InventoryAssetsAlembics.constructFromObject(data['arms']);
+                obj['arms'] = ProductAsset.constructFromObject(data['arms']);
             }
             if (data.hasOwnProperty('axes')) {
-                obj['axes'] = InventoryAssetsAlembics.constructFromObject(data['axes']);
+                obj['axes'] = ProductAsset.constructFromObject(data['axes']);
             }
             if (data.hasOwnProperty('beer')) {
-                obj['beer'] = InventoryAssetsAlembics.constructFromObject(data['beer']);
+                obj['beer'] = ProductAsset.constructFromObject(data['beer']);
             }
             if (data.hasOwnProperty('bellows')) {
-                obj['bellows'] = InventoryAssetsAlembics.constructFromObject(data['bellows']);
+                obj['bellows'] = ProductAsset.constructFromObject(data['bellows']);
             }
             if (data.hasOwnProperty('bells')) {
-                obj['bells'] = InventoryAssetsAlembics.constructFromObject(data['bells']);
+                obj['bells'] = ProductAsset.constructFromObject(data['bells']);
             }
             if (data.hasOwnProperty('belts')) {
-                obj['belts'] = InventoryAssetsAlembics.constructFromObject(data['belts']);
+                obj['belts'] = ProductAsset.constructFromObject(data['belts']);
             }
             if (data.hasOwnProperty('blades')) {
-                obj['blades'] = InventoryAssetsAlembics.constructFromObject(data['blades']);
+                obj['blades'] = ProductAsset.constructFromObject(data['blades']);
             }
             if (data.hasOwnProperty('books')) {
-                obj['books'] = InventoryAssetsAlembics.constructFromObject(data['books']);
+                obj['books'] = ProductAsset.constructFromObject(data['books']);
             }
             if (data.hasOwnProperty('bread')) {
-                obj['bread'] = InventoryAssetsAlembics.constructFromObject(data['bread']);
+                obj['bread'] = ProductAsset.constructFromObject(data['bread']);
             }
             if (data.hasOwnProperty('bronze ingots')) {
-                obj['bronze ingots'] = InventoryAssetsAlembics.constructFromObject(data['bronze ingots']);
+                obj['bronze ingots'] = ProductAsset.constructFromObject(data['bronze ingots']);
             }
             if (data.hasOwnProperty('butter')) {
-                obj['butter'] = InventoryAssetsAlembics.constructFromObject(data['butter']);
+                obj['butter'] = ProductAsset.constructFromObject(data['butter']);
             }
             if (data.hasOwnProperty('candles')) {
-                obj['candles'] = InventoryAssetsAlembics.constructFromObject(data['candles']);
+                obj['candles'] = ProductAsset.constructFromObject(data['candles']);
             }
             if (data.hasOwnProperty('carting')) {
-                obj['carting'] = InventoryAssetsAlembics.constructFromObject(data['carting']);
+                obj['carting'] = ProductAsset.constructFromObject(data['carting']);
             }
             if (data.hasOwnProperty('casks')) {
-                obj['casks'] = InventoryAssetsAlembics.constructFromObject(data['casks']);
+                obj['casks'] = ProductAsset.constructFromObject(data['casks']);
             }
             if (data.hasOwnProperty('cattle')) {
-                obj['cattle'] = InventoryAssetsAlembics.constructFromObject(data['cattle']);
+                obj['cattle'] = ProductAsset.constructFromObject(data['cattle']);
             }
             if (data.hasOwnProperty('charcoal')) {
-                obj['charcoal'] = InventoryAssetsAlembics.constructFromObject(data['charcoal']);
+                obj['charcoal'] = ProductAsset.constructFromObject(data['charcoal']);
             }
             if (data.hasOwnProperty('cheese')) {
-                obj['cheese'] = InventoryAssetsAlembics.constructFromObject(data['cheese']);
+                obj['cheese'] = ProductAsset.constructFromObject(data['cheese']);
             }
             if (data.hasOwnProperty('chisels')) {
-                obj['chisels'] = InventoryAssetsAlembics.constructFromObject(data['chisels']);
+                obj['chisels'] = ProductAsset.constructFromObject(data['chisels']);
             }
             if (data.hasOwnProperty('clay')) {
-                obj['clay'] = InventoryAssetsAlembics.constructFromObject(data['clay']);
+                obj['clay'] = ProductAsset.constructFromObject(data['clay']);
             }
             if (data.hasOwnProperty('cloth')) {
-                obj['cloth'] = InventoryAssetsAlembics.constructFromObject(data['cloth']);
+                obj['cloth'] = ProductAsset.constructFromObject(data['cloth']);
             }
             if (data.hasOwnProperty('coats')) {
-                obj['coats'] = InventoryAssetsAlembics.constructFromObject(data['coats']);
+                obj['coats'] = ProductAsset.constructFromObject(data['coats']);
             }
             if (data.hasOwnProperty('cookware')) {
-                obj['cookware'] = InventoryAssetsAlembics.constructFromObject(data['cookware']);
+                obj['cookware'] = ProductAsset.constructFromObject(data['cookware']);
             }
             if (data.hasOwnProperty('copper ingots')) {
-                obj['copper ingots'] = InventoryAssetsAlembics.constructFromObject(data['copper ingots']);
+                obj['copper ingots'] = ProductAsset.constructFromObject(data['copper ingots']);
             }
             if (data.hasOwnProperty('copper ore')) {
-                obj['copper ore'] = InventoryAssetsAlembics.constructFromObject(data['copper ore']);
+                obj['copper ore'] = ProductAsset.constructFromObject(data['copper ore']);
             }
             if (data.hasOwnProperty('cured fish')) {
-                obj['cured fish'] = InventoryAssetsAlembics.constructFromObject(data['cured fish']);
+                obj['cured fish'] = ProductAsset.constructFromObject(data['cured fish']);
             }
             if (data.hasOwnProperty('cured meat')) {
-                obj['cured meat'] = InventoryAssetsAlembics.constructFromObject(data['cured meat']);
+                obj['cured meat'] = ProductAsset.constructFromObject(data['cured meat']);
             }
             if (data.hasOwnProperty('dye')) {
-                obj['dye'] = InventoryAssetsAlembics.constructFromObject(data['dye']);
+                obj['dye'] = ProductAsset.constructFromObject(data['dye']);
             }
             if (data.hasOwnProperty('dyed cloth')) {
-                obj['dyed cloth'] = InventoryAssetsAlembics.constructFromObject(data['dyed cloth']);
+                obj['dyed cloth'] = ProductAsset.constructFromObject(data['dyed cloth']);
             }
             if (data.hasOwnProperty('dyed yarn')) {
-                obj['dyed yarn'] = InventoryAssetsAlembics.constructFromObject(data['dyed yarn']);
+                obj['dyed yarn'] = ProductAsset.constructFromObject(data['dyed yarn']);
             }
             if (data.hasOwnProperty('firewood')) {
-                obj['firewood'] = InventoryAssetsAlembics.constructFromObject(data['firewood']);
+                obj['firewood'] = ProductAsset.constructFromObject(data['firewood']);
             }
             if (data.hasOwnProperty('fish')) {
-                obj['fish'] = InventoryAssetsAlembics.constructFromObject(data['fish']);
+                obj['fish'] = ProductAsset.constructFromObject(data['fish']);
             }
             if (data.hasOwnProperty('flax fibres')) {
-                obj['flax fibres'] = InventoryAssetsAlembics.constructFromObject(data['flax fibres']);
+                obj['flax fibres'] = ProductAsset.constructFromObject(data['flax fibres']);
             }
             if (data.hasOwnProperty('flax plants')) {
-                obj['flax plants'] = InventoryAssetsAlembics.constructFromObject(data['flax plants']);
+                obj['flax plants'] = ProductAsset.constructFromObject(data['flax plants']);
             }
             if (data.hasOwnProperty('fleece')) {
-                obj['fleece'] = InventoryAssetsAlembics.constructFromObject(data['fleece']);
+                obj['fleece'] = ProductAsset.constructFromObject(data['fleece']);
             }
             if (data.hasOwnProperty('flour')) {
-                obj['flour'] = InventoryAssetsAlembics.constructFromObject(data['flour']);
+                obj['flour'] = ProductAsset.constructFromObject(data['flour']);
             }
             if (data.hasOwnProperty('furniture')) {
-                obj['furniture'] = InventoryAssetsAlembics.constructFromObject(data['furniture']);
+                obj['furniture'] = ProductAsset.constructFromObject(data['furniture']);
             }
             if (data.hasOwnProperty('garments')) {
-                obj['garments'] = InventoryAssetsAlembics.constructFromObject(data['garments']);
+                obj['garments'] = ProductAsset.constructFromObject(data['garments']);
             }
             if (data.hasOwnProperty('gears')) {
-                obj['gears'] = InventoryAssetsAlembics.constructFromObject(data['gears']);
+                obj['gears'] = ProductAsset.constructFromObject(data['gears']);
             }
             if (data.hasOwnProperty('glass')) {
-                obj['glass'] = InventoryAssetsAlembics.constructFromObject(data['glass']);
+                obj['glass'] = ProductAsset.constructFromObject(data['glass']);
             }
             if (data.hasOwnProperty('glassware')) {
-                obj['glassware'] = InventoryAssetsAlembics.constructFromObject(data['glassware']);
+                obj['glassware'] = ProductAsset.constructFromObject(data['glassware']);
             }
             if (data.hasOwnProperty('gold bars')) {
-                obj['gold bars'] = InventoryAssetsAlembics.constructFromObject(data['gold bars']);
+                obj['gold bars'] = ProductAsset.constructFromObject(data['gold bars']);
             }
             if (data.hasOwnProperty('gold ore')) {
-                obj['gold ore'] = InventoryAssetsAlembics.constructFromObject(data['gold ore']);
+                obj['gold ore'] = ProductAsset.constructFromObject(data['gold ore']);
             }
             if (data.hasOwnProperty('grain')) {
-                obj['grain'] = InventoryAssetsAlembics.constructFromObject(data['grain']);
+                obj['grain'] = ProductAsset.constructFromObject(data['grain']);
             }
             if (data.hasOwnProperty('grindstones')) {
-                obj['grindstones'] = InventoryAssetsAlembics.constructFromObject(data['grindstones']);
+                obj['grindstones'] = ProductAsset.constructFromObject(data['grindstones']);
             }
             if (data.hasOwnProperty('ham')) {
-                obj['ham'] = InventoryAssetsAlembics.constructFromObject(data['ham']);
+                obj['ham'] = ProductAsset.constructFromObject(data['ham']);
             }
             if (data.hasOwnProperty('harnesses')) {
-                obj['harnesses'] = InventoryAssetsAlembics.constructFromObject(data['harnesses']);
+                obj['harnesses'] = ProductAsset.constructFromObject(data['harnesses']);
             }
             if (data.hasOwnProperty('herbs')) {
-                obj['herbs'] = InventoryAssetsAlembics.constructFromObject(data['herbs']);
+                obj['herbs'] = ProductAsset.constructFromObject(data['herbs']);
             }
             if (data.hasOwnProperty('hides')) {
-                obj['hides'] = InventoryAssetsAlembics.constructFromObject(data['hides']);
+                obj['hides'] = ProductAsset.constructFromObject(data['hides']);
             }
             if (data.hasOwnProperty('hinges')) {
-                obj['hinges'] = InventoryAssetsAlembics.constructFromObject(data['hinges']);
+                obj['hinges'] = ProductAsset.constructFromObject(data['hinges']);
             }
             if (data.hasOwnProperty('honey')) {
-                obj['honey'] = InventoryAssetsAlembics.constructFromObject(data['honey']);
+                obj['honey'] = ProductAsset.constructFromObject(data['honey']);
             }
             if (data.hasOwnProperty('hop beer')) {
-                obj['hop beer'] = InventoryAssetsAlembics.constructFromObject(data['hop beer']);
+                obj['hop beer'] = ProductAsset.constructFromObject(data['hop beer']);
             }
             if (data.hasOwnProperty('iron ore')) {
-                obj['iron ore'] = InventoryAssetsAlembics.constructFromObject(data['iron ore']);
+                obj['iron ore'] = ProductAsset.constructFromObject(data['iron ore']);
             }
             if (data.hasOwnProperty('jewellery')) {
-                obj['jewellery'] = InventoryAssetsAlembics.constructFromObject(data['jewellery']);
+                obj['jewellery'] = ProductAsset.constructFromObject(data['jewellery']);
             }
             if (data.hasOwnProperty('labour')) {
-                obj['labour'] = InventoryAssetsAlembics.constructFromObject(data['labour']);
+                obj['labour'] = ProductAsset.constructFromObject(data['labour']);
             }
             if (data.hasOwnProperty('lathes')) {
-                obj['lathes'] = InventoryAssetsAlembics.constructFromObject(data['lathes']);
+                obj['lathes'] = ProductAsset.constructFromObject(data['lathes']);
             }
             if (data.hasOwnProperty('lead bars')) {
-                obj['lead bars'] = InventoryAssetsAlembics.constructFromObject(data['lead bars']);
+                obj['lead bars'] = ProductAsset.constructFromObject(data['lead bars']);
             }
             if (data.hasOwnProperty('lead ore')) {
-                obj['lead ore'] = InventoryAssetsAlembics.constructFromObject(data['lead ore']);
+                obj['lead ore'] = ProductAsset.constructFromObject(data['lead ore']);
             }
             if (data.hasOwnProperty('leather')) {
-                obj['leather'] = InventoryAssetsAlembics.constructFromObject(data['leather']);
+                obj['leather'] = ProductAsset.constructFromObject(data['leather']);
             }
             if (data.hasOwnProperty('light armour')) {
-                obj['light armour'] = InventoryAssetsAlembics.constructFromObject(data['light armour']);
+                obj['light armour'] = ProductAsset.constructFromObject(data['light armour']);
             }
             if (data.hasOwnProperty('limestone')) {
-                obj['limestone'] = InventoryAssetsAlembics.constructFromObject(data['limestone']);
+                obj['limestone'] = ProductAsset.constructFromObject(data['limestone']);
             }
             if (data.hasOwnProperty('lodging')) {
-                obj['lodging'] = InventoryAssetsAlembics.constructFromObject(data['lodging']);
+                obj['lodging'] = ProductAsset.constructFromObject(data['lodging']);
             }
             if (data.hasOwnProperty('logs')) {
-                obj['logs'] = InventoryAssetsAlembics.constructFromObject(data['logs']);
+                obj['logs'] = ProductAsset.constructFromObject(data['logs']);
             }
             if (data.hasOwnProperty('looms')) {
-                obj['looms'] = InventoryAssetsAlembics.constructFromObject(data['looms']);
+                obj['looms'] = ProductAsset.constructFromObject(data['looms']);
             }
             if (data.hasOwnProperty('malt')) {
-                obj['malt'] = InventoryAssetsAlembics.constructFromObject(data['malt']);
+                obj['malt'] = ProductAsset.constructFromObject(data['malt']);
             }
             if (data.hasOwnProperty('manure')) {
-                obj['manure'] = InventoryAssetsAlembics.constructFromObject(data['manure']);
+                obj['manure'] = ProductAsset.constructFromObject(data['manure']);
             }
             if (data.hasOwnProperty('meat')) {
-                obj['meat'] = InventoryAssetsAlembics.constructFromObject(data['meat']);
+                obj['meat'] = ProductAsset.constructFromObject(data['meat']);
             }
             if (data.hasOwnProperty('medicine')) {
-                obj['medicine'] = InventoryAssetsAlembics.constructFromObject(data['medicine']);
+                obj['medicine'] = ProductAsset.constructFromObject(data['medicine']);
             }
             if (data.hasOwnProperty('milk')) {
-                obj['milk'] = InventoryAssetsAlembics.constructFromObject(data['milk']);
+                obj['milk'] = ProductAsset.constructFromObject(data['milk']);
             }
             if (data.hasOwnProperty('mouldboards')) {
-                obj['mouldboards'] = InventoryAssetsAlembics.constructFromObject(data['mouldboards']);
+                obj['mouldboards'] = ProductAsset.constructFromObject(data['mouldboards']);
             }
             if (data.hasOwnProperty('nails')) {
-                obj['nails'] = InventoryAssetsAlembics.constructFromObject(data['nails']);
+                obj['nails'] = ProductAsset.constructFromObject(data['nails']);
             }
             if (data.hasOwnProperty('nets')) {
-                obj['nets'] = InventoryAssetsAlembics.constructFromObject(data['nets']);
+                obj['nets'] = ProductAsset.constructFromObject(data['nets']);
             }
             if (data.hasOwnProperty('ox power')) {
-                obj['ox power'] = InventoryAssetsAlembics.constructFromObject(data['ox power']);
+                obj['ox power'] = ProductAsset.constructFromObject(data['ox power']);
             }
             if (data.hasOwnProperty('paper')) {
-                obj['paper'] = InventoryAssetsAlembics.constructFromObject(data['paper']);
+                obj['paper'] = ProductAsset.constructFromObject(data['paper']);
             }
             if (data.hasOwnProperty('pasties')) {
-                obj['pasties'] = InventoryAssetsAlembics.constructFromObject(data['pasties']);
+                obj['pasties'] = ProductAsset.constructFromObject(data['pasties']);
             }
             if (data.hasOwnProperty('pickaxes')) {
-                obj['pickaxes'] = InventoryAssetsAlembics.constructFromObject(data['pickaxes']);
+                obj['pickaxes'] = ProductAsset.constructFromObject(data['pickaxes']);
             }
             if (data.hasOwnProperty('pies')) {
-                obj['pies'] = InventoryAssetsAlembics.constructFromObject(data['pies']);
+                obj['pies'] = ProductAsset.constructFromObject(data['pies']);
             }
             if (data.hasOwnProperty('plate armour')) {
-                obj['plate armour'] = InventoryAssetsAlembics.constructFromObject(data['plate armour']);
+                obj['plate armour'] = ProductAsset.constructFromObject(data['plate armour']);
             }
             if (data.hasOwnProperty('ploughs')) {
-                obj['ploughs'] = InventoryAssetsAlembics.constructFromObject(data['ploughs']);
+                obj['ploughs'] = ProductAsset.constructFromObject(data['ploughs']);
             }
             if (data.hasOwnProperty('premium armour')) {
-                obj['premium armour'] = InventoryAssetsAlembics.constructFromObject(data['premium armour']);
+                obj['premium armour'] = ProductAsset.constructFromObject(data['premium armour']);
             }
             if (data.hasOwnProperty('premium axes')) {
-                obj['premium axes'] = InventoryAssetsAlembics.constructFromObject(data['premium axes']);
+                obj['premium axes'] = ProductAsset.constructFromObject(data['premium axes']);
             }
             if (data.hasOwnProperty('premium cheese')) {
-                obj['premium cheese'] = InventoryAssetsAlembics.constructFromObject(data['premium cheese']);
+                obj['premium cheese'] = ProductAsset.constructFromObject(data['premium cheese']);
             }
             if (data.hasOwnProperty('premium cloth')) {
-                obj['premium cloth'] = InventoryAssetsAlembics.constructFromObject(data['premium cloth']);
+                obj['premium cloth'] = ProductAsset.constructFromObject(data['premium cloth']);
             }
             if (data.hasOwnProperty('premium dye')) {
-                obj['premium dye'] = InventoryAssetsAlembics.constructFromObject(data['premium dye']);
+                obj['premium dye'] = ProductAsset.constructFromObject(data['premium dye']);
             }
             if (data.hasOwnProperty('premium garments')) {
-                obj['premium garments'] = InventoryAssetsAlembics.constructFromObject(data['premium garments']);
+                obj['premium garments'] = ProductAsset.constructFromObject(data['premium garments']);
             }
             if (data.hasOwnProperty('premium glassware')) {
-                obj['premium glassware'] = InventoryAssetsAlembics.constructFromObject(data['premium glassware']);
+                obj['premium glassware'] = ProductAsset.constructFromObject(data['premium glassware']);
             }
             if (data.hasOwnProperty('premium ham')) {
-                obj['premium ham'] = InventoryAssetsAlembics.constructFromObject(data['premium ham']);
+                obj['premium ham'] = ProductAsset.constructFromObject(data['premium ham']);
             }
             if (data.hasOwnProperty('premium sails')) {
-                obj['premium sails'] = InventoryAssetsAlembics.constructFromObject(data['premium sails']);
+                obj['premium sails'] = ProductAsset.constructFromObject(data['premium sails']);
             }
             if (data.hasOwnProperty('premium steel')) {
-                obj['premium steel'] = InventoryAssetsAlembics.constructFromObject(data['premium steel']);
+                obj['premium steel'] = ProductAsset.constructFromObject(data['premium steel']);
             }
             if (data.hasOwnProperty('premium swords')) {
-                obj['premium swords'] = InventoryAssetsAlembics.constructFromObject(data['premium swords']);
+                obj['premium swords'] = ProductAsset.constructFromObject(data['premium swords']);
             }
             if (data.hasOwnProperty('protection')) {
-                obj['protection'] = InventoryAssetsAlembics.constructFromObject(data['protection']);
+                obj['protection'] = ProductAsset.constructFromObject(data['protection']);
             }
             if (data.hasOwnProperty('raw cloth')) {
-                obj['raw cloth'] = InventoryAssetsAlembics.constructFromObject(data['raw cloth']);
+                obj['raw cloth'] = ProductAsset.constructFromObject(data['raw cloth']);
             }
             if (data.hasOwnProperty('resin')) {
-                obj['resin'] = InventoryAssetsAlembics.constructFromObject(data['resin']);
+                obj['resin'] = ProductAsset.constructFromObject(data['resin']);
             }
             if (data.hasOwnProperty('rope')) {
-                obj['rope'] = InventoryAssetsAlembics.constructFromObject(data['rope']);
+                obj['rope'] = ProductAsset.constructFromObject(data['rope']);
             }
             if (data.hasOwnProperty('sails')) {
-                obj['sails'] = InventoryAssetsAlembics.constructFromObject(data['sails']);
+                obj['sails'] = ProductAsset.constructFromObject(data['sails']);
             }
             if (data.hasOwnProperty('salt')) {
-                obj['salt'] = InventoryAssetsAlembics.constructFromObject(data['salt']);
+                obj['salt'] = ProductAsset.constructFromObject(data['salt']);
             }
             if (data.hasOwnProperty('sculptures')) {
-                obj['sculptures'] = InventoryAssetsAlembics.constructFromObject(data['sculptures']);
+                obj['sculptures'] = ProductAsset.constructFromObject(data['sculptures']);
             }
             if (data.hasOwnProperty('scythes')) {
-                obj['scythes'] = InventoryAssetsAlembics.constructFromObject(data['scythes']);
+                obj['scythes'] = ProductAsset.constructFromObject(data['scythes']);
             }
             if (data.hasOwnProperty('silver bars')) {
-                obj['silver bars'] = InventoryAssetsAlembics.constructFromObject(data['silver bars']);
+                obj['silver bars'] = ProductAsset.constructFromObject(data['silver bars']);
             }
             if (data.hasOwnProperty('silver ore')) {
-                obj['silver ore'] = InventoryAssetsAlembics.constructFromObject(data['silver ore']);
+                obj['silver ore'] = ProductAsset.constructFromObject(data['silver ore']);
             }
             if (data.hasOwnProperty('slaked lime')) {
-                obj['slaked lime'] = InventoryAssetsAlembics.constructFromObject(data['slaked lime']);
+                obj['slaked lime'] = ProductAsset.constructFromObject(data['slaked lime']);
             }
             if (data.hasOwnProperty('spinning wheels')) {
-                obj['spinning wheels'] = InventoryAssetsAlembics.constructFromObject(data['spinning wheels']);
+                obj['spinning wheels'] = ProductAsset.constructFromObject(data['spinning wheels']);
             }
             if (data.hasOwnProperty('spirits')) {
-                obj['spirits'] = InventoryAssetsAlembics.constructFromObject(data['spirits']);
+                obj['spirits'] = ProductAsset.constructFromObject(data['spirits']);
             }
             if (data.hasOwnProperty('steel ingots')) {
-                obj['steel ingots'] = InventoryAssetsAlembics.constructFromObject(data['steel ingots']);
+                obj['steel ingots'] = ProductAsset.constructFromObject(data['steel ingots']);
             }
             if (data.hasOwnProperty('stockfish')) {
-                obj['stockfish'] = InventoryAssetsAlembics.constructFromObject(data['stockfish']);
+                obj['stockfish'] = ProductAsset.constructFromObject(data['stockfish']);
             }
             if (data.hasOwnProperty('swords')) {
-                obj['swords'] = InventoryAssetsAlembics.constructFromObject(data['swords']);
+                obj['swords'] = ProductAsset.constructFromObject(data['swords']);
             }
             if (data.hasOwnProperty('tackles')) {
-                obj['tackles'] = InventoryAssetsAlembics.constructFromObject(data['tackles']);
+                obj['tackles'] = ProductAsset.constructFromObject(data['tackles']);
             }
             if (data.hasOwnProperty('tapestries')) {
-                obj['tapestries'] = InventoryAssetsAlembics.constructFromObject(data['tapestries']);
+                obj['tapestries'] = ProductAsset.constructFromObject(data['tapestries']);
             }
             if (data.hasOwnProperty('tar')) {
-                obj['tar'] = InventoryAssetsAlembics.constructFromObject(data['tar']);
+                obj['tar'] = ProductAsset.constructFromObject(data['tar']);
             }
             if (data.hasOwnProperty('thread')) {
-                obj['thread'] = InventoryAssetsAlembics.constructFromObject(data['thread']);
+                obj['thread'] = ProductAsset.constructFromObject(data['thread']);
             }
             if (data.hasOwnProperty('tiles')) {
-                obj['tiles'] = InventoryAssetsAlembics.constructFromObject(data['tiles']);
+                obj['tiles'] = ProductAsset.constructFromObject(data['tiles']);
             }
             if (data.hasOwnProperty('timber')) {
-                obj['timber'] = InventoryAssetsAlembics.constructFromObject(data['timber']);
+                obj['timber'] = ProductAsset.constructFromObject(data['timber']);
             }
             if (data.hasOwnProperty('tin ingots')) {
-                obj['tin ingots'] = InventoryAssetsAlembics.constructFromObject(data['tin ingots']);
+                obj['tin ingots'] = ProductAsset.constructFromObject(data['tin ingots']);
             }
             if (data.hasOwnProperty('tin ore')) {
-                obj['tin ore'] = InventoryAssetsAlembics.constructFromObject(data['tin ore']);
+                obj['tin ore'] = ProductAsset.constructFromObject(data['tin ore']);
             }
             if (data.hasOwnProperty('tools')) {
-                obj['tools'] = InventoryAssetsAlembics.constructFromObject(data['tools']);
+                obj['tools'] = ProductAsset.constructFromObject(data['tools']);
             }
             if (data.hasOwnProperty('wax')) {
-                obj['wax'] = InventoryAssetsAlembics.constructFromObject(data['wax']);
+                obj['wax'] = ProductAsset.constructFromObject(data['wax']);
             }
             if (data.hasOwnProperty('wheels')) {
-                obj['wheels'] = InventoryAssetsAlembics.constructFromObject(data['wheels']);
+                obj['wheels'] = ProductAsset.constructFromObject(data['wheels']);
             }
             if (data.hasOwnProperty('windows')) {
-                obj['windows'] = InventoryAssetsAlembics.constructFromObject(data['windows']);
+                obj['windows'] = ProductAsset.constructFromObject(data['windows']);
             }
             if (data.hasOwnProperty('wine')) {
-                obj['wine'] = InventoryAssetsAlembics.constructFromObject(data['wine']);
+                obj['wine'] = ProductAsset.constructFromObject(data['wine']);
             }
             if (data.hasOwnProperty('wool')) {
-                obj['wool'] = InventoryAssetsAlembics.constructFromObject(data['wool']);
+                obj['wool'] = ProductAsset.constructFromObject(data['wool']);
             }
             if (data.hasOwnProperty('wrought iron')) {
-                obj['wrought iron'] = InventoryAssetsAlembics.constructFromObject(data['wrought iron']);
+                obj['wrought iron'] = ProductAsset.constructFromObject(data['wrought iron']);
             }
             if (data.hasOwnProperty('yarn')) {
-                obj['yarn'] = InventoryAssetsAlembics.constructFromObject(data['yarn']);
+                obj['yarn'] = ProductAsset.constructFromObject(data['yarn']);
             }
         }
         return obj;
@@ -426,491 +426,491 @@ class InventoryAssets {
     static validateJSON(data) {
         // validate the optional field `alembics`
         if (data['alembics']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['alembics']);
+          ProductAsset.validateJSON(data['alembics']);
         }
         // validate the optional field `arms`
         if (data['arms']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['arms']);
+          ProductAsset.validateJSON(data['arms']);
         }
         // validate the optional field `axes`
         if (data['axes']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['axes']);
+          ProductAsset.validateJSON(data['axes']);
         }
         // validate the optional field `beer`
         if (data['beer']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['beer']);
+          ProductAsset.validateJSON(data['beer']);
         }
         // validate the optional field `bellows`
         if (data['bellows']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['bellows']);
+          ProductAsset.validateJSON(data['bellows']);
         }
         // validate the optional field `bells`
         if (data['bells']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['bells']);
+          ProductAsset.validateJSON(data['bells']);
         }
         // validate the optional field `belts`
         if (data['belts']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['belts']);
+          ProductAsset.validateJSON(data['belts']);
         }
         // validate the optional field `blades`
         if (data['blades']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['blades']);
+          ProductAsset.validateJSON(data['blades']);
         }
         // validate the optional field `books`
         if (data['books']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['books']);
+          ProductAsset.validateJSON(data['books']);
         }
         // validate the optional field `bread`
         if (data['bread']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['bread']);
+          ProductAsset.validateJSON(data['bread']);
         }
         // validate the optional field `bronze ingots`
         if (data['bronze ingots']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['bronze ingots']);
+          ProductAsset.validateJSON(data['bronze ingots']);
         }
         // validate the optional field `butter`
         if (data['butter']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['butter']);
+          ProductAsset.validateJSON(data['butter']);
         }
         // validate the optional field `candles`
         if (data['candles']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['candles']);
+          ProductAsset.validateJSON(data['candles']);
         }
         // validate the optional field `carting`
         if (data['carting']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['carting']);
+          ProductAsset.validateJSON(data['carting']);
         }
         // validate the optional field `casks`
         if (data['casks']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['casks']);
+          ProductAsset.validateJSON(data['casks']);
         }
         // validate the optional field `cattle`
         if (data['cattle']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['cattle']);
+          ProductAsset.validateJSON(data['cattle']);
         }
         // validate the optional field `charcoal`
         if (data['charcoal']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['charcoal']);
+          ProductAsset.validateJSON(data['charcoal']);
         }
         // validate the optional field `cheese`
         if (data['cheese']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['cheese']);
+          ProductAsset.validateJSON(data['cheese']);
         }
         // validate the optional field `chisels`
         if (data['chisels']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['chisels']);
+          ProductAsset.validateJSON(data['chisels']);
         }
         // validate the optional field `clay`
         if (data['clay']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['clay']);
+          ProductAsset.validateJSON(data['clay']);
         }
         // validate the optional field `cloth`
         if (data['cloth']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['cloth']);
+          ProductAsset.validateJSON(data['cloth']);
         }
         // validate the optional field `coats`
         if (data['coats']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['coats']);
+          ProductAsset.validateJSON(data['coats']);
         }
         // validate the optional field `cookware`
         if (data['cookware']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['cookware']);
+          ProductAsset.validateJSON(data['cookware']);
         }
         // validate the optional field `copper ingots`
         if (data['copper ingots']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['copper ingots']);
+          ProductAsset.validateJSON(data['copper ingots']);
         }
         // validate the optional field `copper ore`
         if (data['copper ore']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['copper ore']);
+          ProductAsset.validateJSON(data['copper ore']);
         }
         // validate the optional field `cured fish`
         if (data['cured fish']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['cured fish']);
+          ProductAsset.validateJSON(data['cured fish']);
         }
         // validate the optional field `cured meat`
         if (data['cured meat']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['cured meat']);
+          ProductAsset.validateJSON(data['cured meat']);
         }
         // validate the optional field `dye`
         if (data['dye']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['dye']);
+          ProductAsset.validateJSON(data['dye']);
         }
         // validate the optional field `dyed cloth`
         if (data['dyed cloth']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['dyed cloth']);
+          ProductAsset.validateJSON(data['dyed cloth']);
         }
         // validate the optional field `dyed yarn`
         if (data['dyed yarn']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['dyed yarn']);
+          ProductAsset.validateJSON(data['dyed yarn']);
         }
         // validate the optional field `firewood`
         if (data['firewood']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['firewood']);
+          ProductAsset.validateJSON(data['firewood']);
         }
         // validate the optional field `fish`
         if (data['fish']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['fish']);
+          ProductAsset.validateJSON(data['fish']);
         }
         // validate the optional field `flax fibres`
         if (data['flax fibres']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['flax fibres']);
+          ProductAsset.validateJSON(data['flax fibres']);
         }
         // validate the optional field `flax plants`
         if (data['flax plants']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['flax plants']);
+          ProductAsset.validateJSON(data['flax plants']);
         }
         // validate the optional field `fleece`
         if (data['fleece']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['fleece']);
+          ProductAsset.validateJSON(data['fleece']);
         }
         // validate the optional field `flour`
         if (data['flour']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['flour']);
+          ProductAsset.validateJSON(data['flour']);
         }
         // validate the optional field `furniture`
         if (data['furniture']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['furniture']);
+          ProductAsset.validateJSON(data['furniture']);
         }
         // validate the optional field `garments`
         if (data['garments']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['garments']);
+          ProductAsset.validateJSON(data['garments']);
         }
         // validate the optional field `gears`
         if (data['gears']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['gears']);
+          ProductAsset.validateJSON(data['gears']);
         }
         // validate the optional field `glass`
         if (data['glass']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['glass']);
+          ProductAsset.validateJSON(data['glass']);
         }
         // validate the optional field `glassware`
         if (data['glassware']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['glassware']);
+          ProductAsset.validateJSON(data['glassware']);
         }
         // validate the optional field `gold bars`
         if (data['gold bars']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['gold bars']);
+          ProductAsset.validateJSON(data['gold bars']);
         }
         // validate the optional field `gold ore`
         if (data['gold ore']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['gold ore']);
+          ProductAsset.validateJSON(data['gold ore']);
         }
         // validate the optional field `grain`
         if (data['grain']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['grain']);
+          ProductAsset.validateJSON(data['grain']);
         }
         // validate the optional field `grindstones`
         if (data['grindstones']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['grindstones']);
+          ProductAsset.validateJSON(data['grindstones']);
         }
         // validate the optional field `ham`
         if (data['ham']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['ham']);
+          ProductAsset.validateJSON(data['ham']);
         }
         // validate the optional field `harnesses`
         if (data['harnesses']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['harnesses']);
+          ProductAsset.validateJSON(data['harnesses']);
         }
         // validate the optional field `herbs`
         if (data['herbs']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['herbs']);
+          ProductAsset.validateJSON(data['herbs']);
         }
         // validate the optional field `hides`
         if (data['hides']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['hides']);
+          ProductAsset.validateJSON(data['hides']);
         }
         // validate the optional field `hinges`
         if (data['hinges']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['hinges']);
+          ProductAsset.validateJSON(data['hinges']);
         }
         // validate the optional field `honey`
         if (data['honey']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['honey']);
+          ProductAsset.validateJSON(data['honey']);
         }
         // validate the optional field `hop beer`
         if (data['hop beer']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['hop beer']);
+          ProductAsset.validateJSON(data['hop beer']);
         }
         // validate the optional field `iron ore`
         if (data['iron ore']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['iron ore']);
+          ProductAsset.validateJSON(data['iron ore']);
         }
         // validate the optional field `jewellery`
         if (data['jewellery']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['jewellery']);
+          ProductAsset.validateJSON(data['jewellery']);
         }
         // validate the optional field `labour`
         if (data['labour']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['labour']);
+          ProductAsset.validateJSON(data['labour']);
         }
         // validate the optional field `lathes`
         if (data['lathes']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['lathes']);
+          ProductAsset.validateJSON(data['lathes']);
         }
         // validate the optional field `lead bars`
         if (data['lead bars']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['lead bars']);
+          ProductAsset.validateJSON(data['lead bars']);
         }
         // validate the optional field `lead ore`
         if (data['lead ore']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['lead ore']);
+          ProductAsset.validateJSON(data['lead ore']);
         }
         // validate the optional field `leather`
         if (data['leather']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['leather']);
+          ProductAsset.validateJSON(data['leather']);
         }
         // validate the optional field `light armour`
         if (data['light armour']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['light armour']);
+          ProductAsset.validateJSON(data['light armour']);
         }
         // validate the optional field `limestone`
         if (data['limestone']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['limestone']);
+          ProductAsset.validateJSON(data['limestone']);
         }
         // validate the optional field `lodging`
         if (data['lodging']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['lodging']);
+          ProductAsset.validateJSON(data['lodging']);
         }
         // validate the optional field `logs`
         if (data['logs']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['logs']);
+          ProductAsset.validateJSON(data['logs']);
         }
         // validate the optional field `looms`
         if (data['looms']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['looms']);
+          ProductAsset.validateJSON(data['looms']);
         }
         // validate the optional field `malt`
         if (data['malt']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['malt']);
+          ProductAsset.validateJSON(data['malt']);
         }
         // validate the optional field `manure`
         if (data['manure']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['manure']);
+          ProductAsset.validateJSON(data['manure']);
         }
         // validate the optional field `meat`
         if (data['meat']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['meat']);
+          ProductAsset.validateJSON(data['meat']);
         }
         // validate the optional field `medicine`
         if (data['medicine']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['medicine']);
+          ProductAsset.validateJSON(data['medicine']);
         }
         // validate the optional field `milk`
         if (data['milk']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['milk']);
+          ProductAsset.validateJSON(data['milk']);
         }
         // validate the optional field `mouldboards`
         if (data['mouldboards']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['mouldboards']);
+          ProductAsset.validateJSON(data['mouldboards']);
         }
         // validate the optional field `nails`
         if (data['nails']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['nails']);
+          ProductAsset.validateJSON(data['nails']);
         }
         // validate the optional field `nets`
         if (data['nets']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['nets']);
+          ProductAsset.validateJSON(data['nets']);
         }
         // validate the optional field `ox power`
         if (data['ox power']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['ox power']);
+          ProductAsset.validateJSON(data['ox power']);
         }
         // validate the optional field `paper`
         if (data['paper']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['paper']);
+          ProductAsset.validateJSON(data['paper']);
         }
         // validate the optional field `pasties`
         if (data['pasties']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['pasties']);
+          ProductAsset.validateJSON(data['pasties']);
         }
         // validate the optional field `pickaxes`
         if (data['pickaxes']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['pickaxes']);
+          ProductAsset.validateJSON(data['pickaxes']);
         }
         // validate the optional field `pies`
         if (data['pies']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['pies']);
+          ProductAsset.validateJSON(data['pies']);
         }
         // validate the optional field `plate armour`
         if (data['plate armour']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['plate armour']);
+          ProductAsset.validateJSON(data['plate armour']);
         }
         // validate the optional field `ploughs`
         if (data['ploughs']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['ploughs']);
+          ProductAsset.validateJSON(data['ploughs']);
         }
         // validate the optional field `premium armour`
         if (data['premium armour']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium armour']);
+          ProductAsset.validateJSON(data['premium armour']);
         }
         // validate the optional field `premium axes`
         if (data['premium axes']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium axes']);
+          ProductAsset.validateJSON(data['premium axes']);
         }
         // validate the optional field `premium cheese`
         if (data['premium cheese']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium cheese']);
+          ProductAsset.validateJSON(data['premium cheese']);
         }
         // validate the optional field `premium cloth`
         if (data['premium cloth']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium cloth']);
+          ProductAsset.validateJSON(data['premium cloth']);
         }
         // validate the optional field `premium dye`
         if (data['premium dye']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium dye']);
+          ProductAsset.validateJSON(data['premium dye']);
         }
         // validate the optional field `premium garments`
         if (data['premium garments']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium garments']);
+          ProductAsset.validateJSON(data['premium garments']);
         }
         // validate the optional field `premium glassware`
         if (data['premium glassware']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium glassware']);
+          ProductAsset.validateJSON(data['premium glassware']);
         }
         // validate the optional field `premium ham`
         if (data['premium ham']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium ham']);
+          ProductAsset.validateJSON(data['premium ham']);
         }
         // validate the optional field `premium sails`
         if (data['premium sails']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium sails']);
+          ProductAsset.validateJSON(data['premium sails']);
         }
         // validate the optional field `premium steel`
         if (data['premium steel']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium steel']);
+          ProductAsset.validateJSON(data['premium steel']);
         }
         // validate the optional field `premium swords`
         if (data['premium swords']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['premium swords']);
+          ProductAsset.validateJSON(data['premium swords']);
         }
         // validate the optional field `protection`
         if (data['protection']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['protection']);
+          ProductAsset.validateJSON(data['protection']);
         }
         // validate the optional field `raw cloth`
         if (data['raw cloth']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['raw cloth']);
+          ProductAsset.validateJSON(data['raw cloth']);
         }
         // validate the optional field `resin`
         if (data['resin']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['resin']);
+          ProductAsset.validateJSON(data['resin']);
         }
         // validate the optional field `rope`
         if (data['rope']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['rope']);
+          ProductAsset.validateJSON(data['rope']);
         }
         // validate the optional field `sails`
         if (data['sails']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['sails']);
+          ProductAsset.validateJSON(data['sails']);
         }
         // validate the optional field `salt`
         if (data['salt']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['salt']);
+          ProductAsset.validateJSON(data['salt']);
         }
         // validate the optional field `sculptures`
         if (data['sculptures']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['sculptures']);
+          ProductAsset.validateJSON(data['sculptures']);
         }
         // validate the optional field `scythes`
         if (data['scythes']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['scythes']);
+          ProductAsset.validateJSON(data['scythes']);
         }
         // validate the optional field `silver bars`
         if (data['silver bars']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['silver bars']);
+          ProductAsset.validateJSON(data['silver bars']);
         }
         // validate the optional field `silver ore`
         if (data['silver ore']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['silver ore']);
+          ProductAsset.validateJSON(data['silver ore']);
         }
         // validate the optional field `slaked lime`
         if (data['slaked lime']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['slaked lime']);
+          ProductAsset.validateJSON(data['slaked lime']);
         }
         // validate the optional field `spinning wheels`
         if (data['spinning wheels']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['spinning wheels']);
+          ProductAsset.validateJSON(data['spinning wheels']);
         }
         // validate the optional field `spirits`
         if (data['spirits']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['spirits']);
+          ProductAsset.validateJSON(data['spirits']);
         }
         // validate the optional field `steel ingots`
         if (data['steel ingots']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['steel ingots']);
+          ProductAsset.validateJSON(data['steel ingots']);
         }
         // validate the optional field `stockfish`
         if (data['stockfish']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['stockfish']);
+          ProductAsset.validateJSON(data['stockfish']);
         }
         // validate the optional field `swords`
         if (data['swords']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['swords']);
+          ProductAsset.validateJSON(data['swords']);
         }
         // validate the optional field `tackles`
         if (data['tackles']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tackles']);
+          ProductAsset.validateJSON(data['tackles']);
         }
         // validate the optional field `tapestries`
         if (data['tapestries']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tapestries']);
+          ProductAsset.validateJSON(data['tapestries']);
         }
         // validate the optional field `tar`
         if (data['tar']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tar']);
+          ProductAsset.validateJSON(data['tar']);
         }
         // validate the optional field `thread`
         if (data['thread']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['thread']);
+          ProductAsset.validateJSON(data['thread']);
         }
         // validate the optional field `tiles`
         if (data['tiles']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tiles']);
+          ProductAsset.validateJSON(data['tiles']);
         }
         // validate the optional field `timber`
         if (data['timber']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['timber']);
+          ProductAsset.validateJSON(data['timber']);
         }
         // validate the optional field `tin ingots`
         if (data['tin ingots']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tin ingots']);
+          ProductAsset.validateJSON(data['tin ingots']);
         }
         // validate the optional field `tin ore`
         if (data['tin ore']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tin ore']);
+          ProductAsset.validateJSON(data['tin ore']);
         }
         // validate the optional field `tools`
         if (data['tools']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['tools']);
+          ProductAsset.validateJSON(data['tools']);
         }
         // validate the optional field `wax`
         if (data['wax']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['wax']);
+          ProductAsset.validateJSON(data['wax']);
         }
         // validate the optional field `wheels`
         if (data['wheels']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['wheels']);
+          ProductAsset.validateJSON(data['wheels']);
         }
         // validate the optional field `windows`
         if (data['windows']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['windows']);
+          ProductAsset.validateJSON(data['windows']);
         }
         // validate the optional field `wine`
         if (data['wine']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['wine']);
+          ProductAsset.validateJSON(data['wine']);
         }
         // validate the optional field `wool`
         if (data['wool']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['wool']);
+          ProductAsset.validateJSON(data['wool']);
         }
         // validate the optional field `wrought iron`
         if (data['wrought iron']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['wrought iron']);
+          ProductAsset.validateJSON(data['wrought iron']);
         }
         // validate the optional field `yarn`
         if (data['yarn']) { // data not null
-          InventoryAssetsAlembics.validateJSON(data['yarn']);
+          ProductAsset.validateJSON(data['yarn']);
         }
 
         return true;
@@ -922,612 +922,612 @@ class InventoryAssets {
 
 
 /**
- * @member {module:model/InventoryAssetsAlembics} alembics
+ * @member {module:model/ProductAsset} alembics
  */
 InventoryAssets.prototype['alembics'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} arms
+ * @member {module:model/ProductAsset} arms
  */
 InventoryAssets.prototype['arms'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} axes
+ * @member {module:model/ProductAsset} axes
  */
 InventoryAssets.prototype['axes'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} beer
+ * @member {module:model/ProductAsset} beer
  */
 InventoryAssets.prototype['beer'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} bellows
+ * @member {module:model/ProductAsset} bellows
  */
 InventoryAssets.prototype['bellows'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} bells
+ * @member {module:model/ProductAsset} bells
  */
 InventoryAssets.prototype['bells'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} belts
+ * @member {module:model/ProductAsset} belts
  */
 InventoryAssets.prototype['belts'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} blades
+ * @member {module:model/ProductAsset} blades
  */
 InventoryAssets.prototype['blades'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} books
+ * @member {module:model/ProductAsset} books
  */
 InventoryAssets.prototype['books'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} bread
+ * @member {module:model/ProductAsset} bread
  */
 InventoryAssets.prototype['bread'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} bronze ingots
+ * @member {module:model/ProductAsset} bronze ingots
  */
 InventoryAssets.prototype['bronze ingots'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} butter
+ * @member {module:model/ProductAsset} butter
  */
 InventoryAssets.prototype['butter'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} candles
+ * @member {module:model/ProductAsset} candles
  */
 InventoryAssets.prototype['candles'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} carting
+ * @member {module:model/ProductAsset} carting
  */
 InventoryAssets.prototype['carting'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} casks
+ * @member {module:model/ProductAsset} casks
  */
 InventoryAssets.prototype['casks'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} cattle
+ * @member {module:model/ProductAsset} cattle
  */
 InventoryAssets.prototype['cattle'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} charcoal
+ * @member {module:model/ProductAsset} charcoal
  */
 InventoryAssets.prototype['charcoal'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} cheese
+ * @member {module:model/ProductAsset} cheese
  */
 InventoryAssets.prototype['cheese'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} chisels
+ * @member {module:model/ProductAsset} chisels
  */
 InventoryAssets.prototype['chisels'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} clay
+ * @member {module:model/ProductAsset} clay
  */
 InventoryAssets.prototype['clay'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} cloth
+ * @member {module:model/ProductAsset} cloth
  */
 InventoryAssets.prototype['cloth'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} coats
+ * @member {module:model/ProductAsset} coats
  */
 InventoryAssets.prototype['coats'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} cookware
+ * @member {module:model/ProductAsset} cookware
  */
 InventoryAssets.prototype['cookware'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} copper ingots
+ * @member {module:model/ProductAsset} copper ingots
  */
 InventoryAssets.prototype['copper ingots'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} copper ore
+ * @member {module:model/ProductAsset} copper ore
  */
 InventoryAssets.prototype['copper ore'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} cured fish
+ * @member {module:model/ProductAsset} cured fish
  */
 InventoryAssets.prototype['cured fish'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} cured meat
+ * @member {module:model/ProductAsset} cured meat
  */
 InventoryAssets.prototype['cured meat'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} dye
+ * @member {module:model/ProductAsset} dye
  */
 InventoryAssets.prototype['dye'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} dyed cloth
+ * @member {module:model/ProductAsset} dyed cloth
  */
 InventoryAssets.prototype['dyed cloth'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} dyed yarn
+ * @member {module:model/ProductAsset} dyed yarn
  */
 InventoryAssets.prototype['dyed yarn'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} firewood
+ * @member {module:model/ProductAsset} firewood
  */
 InventoryAssets.prototype['firewood'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} fish
+ * @member {module:model/ProductAsset} fish
  */
 InventoryAssets.prototype['fish'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} flax fibres
+ * @member {module:model/ProductAsset} flax fibres
  */
 InventoryAssets.prototype['flax fibres'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} flax plants
+ * @member {module:model/ProductAsset} flax plants
  */
 InventoryAssets.prototype['flax plants'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} fleece
+ * @member {module:model/ProductAsset} fleece
  */
 InventoryAssets.prototype['fleece'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} flour
+ * @member {module:model/ProductAsset} flour
  */
 InventoryAssets.prototype['flour'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} furniture
+ * @member {module:model/ProductAsset} furniture
  */
 InventoryAssets.prototype['furniture'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} garments
+ * @member {module:model/ProductAsset} garments
  */
 InventoryAssets.prototype['garments'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} gears
+ * @member {module:model/ProductAsset} gears
  */
 InventoryAssets.prototype['gears'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} glass
+ * @member {module:model/ProductAsset} glass
  */
 InventoryAssets.prototype['glass'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} glassware
+ * @member {module:model/ProductAsset} glassware
  */
 InventoryAssets.prototype['glassware'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} gold bars
+ * @member {module:model/ProductAsset} gold bars
  */
 InventoryAssets.prototype['gold bars'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} gold ore
+ * @member {module:model/ProductAsset} gold ore
  */
 InventoryAssets.prototype['gold ore'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} grain
+ * @member {module:model/ProductAsset} grain
  */
 InventoryAssets.prototype['grain'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} grindstones
+ * @member {module:model/ProductAsset} grindstones
  */
 InventoryAssets.prototype['grindstones'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} ham
+ * @member {module:model/ProductAsset} ham
  */
 InventoryAssets.prototype['ham'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} harnesses
+ * @member {module:model/ProductAsset} harnesses
  */
 InventoryAssets.prototype['harnesses'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} herbs
+ * @member {module:model/ProductAsset} herbs
  */
 InventoryAssets.prototype['herbs'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} hides
+ * @member {module:model/ProductAsset} hides
  */
 InventoryAssets.prototype['hides'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} hinges
+ * @member {module:model/ProductAsset} hinges
  */
 InventoryAssets.prototype['hinges'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} honey
+ * @member {module:model/ProductAsset} honey
  */
 InventoryAssets.prototype['honey'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} hop beer
+ * @member {module:model/ProductAsset} hop beer
  */
 InventoryAssets.prototype['hop beer'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} iron ore
+ * @member {module:model/ProductAsset} iron ore
  */
 InventoryAssets.prototype['iron ore'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} jewellery
+ * @member {module:model/ProductAsset} jewellery
  */
 InventoryAssets.prototype['jewellery'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} labour
+ * @member {module:model/ProductAsset} labour
  */
 InventoryAssets.prototype['labour'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} lathes
+ * @member {module:model/ProductAsset} lathes
  */
 InventoryAssets.prototype['lathes'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} lead bars
+ * @member {module:model/ProductAsset} lead bars
  */
 InventoryAssets.prototype['lead bars'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} lead ore
+ * @member {module:model/ProductAsset} lead ore
  */
 InventoryAssets.prototype['lead ore'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} leather
+ * @member {module:model/ProductAsset} leather
  */
 InventoryAssets.prototype['leather'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} light armour
+ * @member {module:model/ProductAsset} light armour
  */
 InventoryAssets.prototype['light armour'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} limestone
+ * @member {module:model/ProductAsset} limestone
  */
 InventoryAssets.prototype['limestone'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} lodging
+ * @member {module:model/ProductAsset} lodging
  */
 InventoryAssets.prototype['lodging'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} logs
+ * @member {module:model/ProductAsset} logs
  */
 InventoryAssets.prototype['logs'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} looms
+ * @member {module:model/ProductAsset} looms
  */
 InventoryAssets.prototype['looms'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} malt
+ * @member {module:model/ProductAsset} malt
  */
 InventoryAssets.prototype['malt'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} manure
+ * @member {module:model/ProductAsset} manure
  */
 InventoryAssets.prototype['manure'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} meat
+ * @member {module:model/ProductAsset} meat
  */
 InventoryAssets.prototype['meat'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} medicine
+ * @member {module:model/ProductAsset} medicine
  */
 InventoryAssets.prototype['medicine'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} milk
+ * @member {module:model/ProductAsset} milk
  */
 InventoryAssets.prototype['milk'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} mouldboards
+ * @member {module:model/ProductAsset} mouldboards
  */
 InventoryAssets.prototype['mouldboards'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} nails
+ * @member {module:model/ProductAsset} nails
  */
 InventoryAssets.prototype['nails'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} nets
+ * @member {module:model/ProductAsset} nets
  */
 InventoryAssets.prototype['nets'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} ox power
+ * @member {module:model/ProductAsset} ox power
  */
 InventoryAssets.prototype['ox power'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} paper
+ * @member {module:model/ProductAsset} paper
  */
 InventoryAssets.prototype['paper'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} pasties
+ * @member {module:model/ProductAsset} pasties
  */
 InventoryAssets.prototype['pasties'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} pickaxes
+ * @member {module:model/ProductAsset} pickaxes
  */
 InventoryAssets.prototype['pickaxes'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} pies
+ * @member {module:model/ProductAsset} pies
  */
 InventoryAssets.prototype['pies'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} plate armour
+ * @member {module:model/ProductAsset} plate armour
  */
 InventoryAssets.prototype['plate armour'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} ploughs
+ * @member {module:model/ProductAsset} ploughs
  */
 InventoryAssets.prototype['ploughs'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium armour
+ * @member {module:model/ProductAsset} premium armour
  */
 InventoryAssets.prototype['premium armour'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium axes
+ * @member {module:model/ProductAsset} premium axes
  */
 InventoryAssets.prototype['premium axes'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium cheese
+ * @member {module:model/ProductAsset} premium cheese
  */
 InventoryAssets.prototype['premium cheese'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium cloth
+ * @member {module:model/ProductAsset} premium cloth
  */
 InventoryAssets.prototype['premium cloth'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium dye
+ * @member {module:model/ProductAsset} premium dye
  */
 InventoryAssets.prototype['premium dye'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium garments
+ * @member {module:model/ProductAsset} premium garments
  */
 InventoryAssets.prototype['premium garments'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium glassware
+ * @member {module:model/ProductAsset} premium glassware
  */
 InventoryAssets.prototype['premium glassware'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium ham
+ * @member {module:model/ProductAsset} premium ham
  */
 InventoryAssets.prototype['premium ham'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium sails
+ * @member {module:model/ProductAsset} premium sails
  */
 InventoryAssets.prototype['premium sails'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium steel
+ * @member {module:model/ProductAsset} premium steel
  */
 InventoryAssets.prototype['premium steel'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} premium swords
+ * @member {module:model/ProductAsset} premium swords
  */
 InventoryAssets.prototype['premium swords'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} protection
+ * @member {module:model/ProductAsset} protection
  */
 InventoryAssets.prototype['protection'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} raw cloth
+ * @member {module:model/ProductAsset} raw cloth
  */
 InventoryAssets.prototype['raw cloth'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} resin
+ * @member {module:model/ProductAsset} resin
  */
 InventoryAssets.prototype['resin'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} rope
+ * @member {module:model/ProductAsset} rope
  */
 InventoryAssets.prototype['rope'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} sails
+ * @member {module:model/ProductAsset} sails
  */
 InventoryAssets.prototype['sails'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} salt
+ * @member {module:model/ProductAsset} salt
  */
 InventoryAssets.prototype['salt'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} sculptures
+ * @member {module:model/ProductAsset} sculptures
  */
 InventoryAssets.prototype['sculptures'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} scythes
+ * @member {module:model/ProductAsset} scythes
  */
 InventoryAssets.prototype['scythes'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} silver bars
+ * @member {module:model/ProductAsset} silver bars
  */
 InventoryAssets.prototype['silver bars'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} silver ore
+ * @member {module:model/ProductAsset} silver ore
  */
 InventoryAssets.prototype['silver ore'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} slaked lime
+ * @member {module:model/ProductAsset} slaked lime
  */
 InventoryAssets.prototype['slaked lime'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} spinning wheels
+ * @member {module:model/ProductAsset} spinning wheels
  */
 InventoryAssets.prototype['spinning wheels'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} spirits
+ * @member {module:model/ProductAsset} spirits
  */
 InventoryAssets.prototype['spirits'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} steel ingots
+ * @member {module:model/ProductAsset} steel ingots
  */
 InventoryAssets.prototype['steel ingots'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} stockfish
+ * @member {module:model/ProductAsset} stockfish
  */
 InventoryAssets.prototype['stockfish'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} swords
+ * @member {module:model/ProductAsset} swords
  */
 InventoryAssets.prototype['swords'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tackles
+ * @member {module:model/ProductAsset} tackles
  */
 InventoryAssets.prototype['tackles'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tapestries
+ * @member {module:model/ProductAsset} tapestries
  */
 InventoryAssets.prototype['tapestries'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tar
+ * @member {module:model/ProductAsset} tar
  */
 InventoryAssets.prototype['tar'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} thread
+ * @member {module:model/ProductAsset} thread
  */
 InventoryAssets.prototype['thread'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tiles
+ * @member {module:model/ProductAsset} tiles
  */
 InventoryAssets.prototype['tiles'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} timber
+ * @member {module:model/ProductAsset} timber
  */
 InventoryAssets.prototype['timber'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tin ingots
+ * @member {module:model/ProductAsset} tin ingots
  */
 InventoryAssets.prototype['tin ingots'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tin ore
+ * @member {module:model/ProductAsset} tin ore
  */
 InventoryAssets.prototype['tin ore'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} tools
+ * @member {module:model/ProductAsset} tools
  */
 InventoryAssets.prototype['tools'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} wax
+ * @member {module:model/ProductAsset} wax
  */
 InventoryAssets.prototype['wax'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} wheels
+ * @member {module:model/ProductAsset} wheels
  */
 InventoryAssets.prototype['wheels'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} windows
+ * @member {module:model/ProductAsset} windows
  */
 InventoryAssets.prototype['windows'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} wine
+ * @member {module:model/ProductAsset} wine
  */
 InventoryAssets.prototype['wine'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} wool
+ * @member {module:model/ProductAsset} wool
  */
 InventoryAssets.prototype['wool'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} wrought iron
+ * @member {module:model/ProductAsset} wrought iron
  */
 InventoryAssets.prototype['wrought iron'] = undefined;
 
 /**
- * @member {module:model/InventoryAssetsAlembics} yarn
+ * @member {module:model/ProductAsset} yarn
  */
 InventoryAssets.prototype['yarn'] = undefined;
 

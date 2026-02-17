@@ -1,4 +1,4 @@
-# mercatorio-js.SpecializationPoints
+# mercatoriojs.SpecializationPoints
 
 ## Properties
 

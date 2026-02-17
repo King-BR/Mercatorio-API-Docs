@@ -1,4 +1,4 @@
-# mercatorio-js.DefaultApi
+# mercatoriojs.DefaultApi
 
 All URIs are relative to *https://play.mercatorio.io/api*
 
@@ -18,20 +18,20 @@ Get the building information
 ### Example
 
 ```javascript
-import mercatorio-js from 'mercatorio.js';
-let defaultClient = mercatorio-js.ApiClient.instance;
-// Configure API key authorization: X-Merc-User
-let X-Merc-User = defaultClient.authentications['X-Merc-User'];
-X-Merc-User.apiKey = 'YOUR API KEY';
+import mercatoriojs from 'mercatorio.js';
+let defaultClient = mercatoriojs.ApiClient.instance;
+// Configure API key authorization: Merc_User
+let Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Merc-User.apiKeyPrefix = 'Token';
-// Configure API key authorization: Bearer-Token
-let Bearer-Token = defaultClient.authentications['Bearer-Token'];
-Bearer-Token.apiKey = 'YOUR API KEY';
+//Merc_User.apiKeyPrefix = 'Token';
+// Configure API key authorization: Bearer_Token
+let Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//Bearer-Token.apiKeyPrefix = 'Token';
+//Bearer_Token.apiKeyPrefix = 'Token';
 
-let apiInstance = new mercatorio-js.DefaultApi();
+let apiInstance = new mercatoriojs.DefaultApi();
 let buildingID = "buildingID_example"; // String | 
 apiInstance.buildingInfo(buildingID, (error, data, response) => {
   if (error) {
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[X-Merc-User](../README.md#X-Merc-User), [Bearer-Token](../README.md#Bearer-Token)
+[Merc_User](../README.md#Merc_User), [Bearer_Token](../README.md#Bearer_Token)
 
 ### HTTP request headers
 
@@ -72,20 +72,20 @@ Get the player information
 ### Example
 
 ```javascript
-import mercatorio-js from 'mercatorio.js';
-let defaultClient = mercatorio-js.ApiClient.instance;
-// Configure API key authorization: X-Merc-User
-let X-Merc-User = defaultClient.authentications['X-Merc-User'];
-X-Merc-User.apiKey = 'YOUR API KEY';
+import mercatoriojs from 'mercatorio.js';
+let defaultClient = mercatoriojs.ApiClient.instance;
+// Configure API key authorization: Merc_User
+let Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Merc-User.apiKeyPrefix = 'Token';
-// Configure API key authorization: Bearer-Token
-let Bearer-Token = defaultClient.authentications['Bearer-Token'];
-Bearer-Token.apiKey = 'YOUR API KEY';
+//Merc_User.apiKeyPrefix = 'Token';
+// Configure API key authorization: Bearer_Token
+let Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//Bearer-Token.apiKeyPrefix = 'Token';
+//Bearer_Token.apiKeyPrefix = 'Token';
 
-let apiInstance = new mercatorio-js.DefaultApi();
+let apiInstance = new mercatoriojs.DefaultApi();
 apiInstance.playerInfo((error, data, response) => {
   if (error) {
     console.error(error);
@@ -105,7 +105,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[X-Merc-User](../README.md#X-Merc-User), [Bearer-Token](../README.md#Bearer-Token)
+[Merc_User](../README.md#Merc_User), [Bearer_Token](../README.md#Bearer_Token)
 
 ### HTTP request headers
 

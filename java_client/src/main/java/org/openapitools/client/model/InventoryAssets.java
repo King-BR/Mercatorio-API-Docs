@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.InventoryAssetsAlembics;
+import org.openapitools.client.model.ProductAsset;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -50,622 +50,622 @@ import org.openapitools.client.JSON;
 /**
  * InventoryAssets
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class InventoryAssets {
   public static final String SERIALIZED_NAME_ALEMBICS = "alembics";
   @SerializedName(SERIALIZED_NAME_ALEMBICS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics alembics;
+  private ProductAsset alembics;
 
   public static final String SERIALIZED_NAME_ARMS = "arms";
   @SerializedName(SERIALIZED_NAME_ARMS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics arms;
+  private ProductAsset arms;
 
   public static final String SERIALIZED_NAME_AXES = "axes";
   @SerializedName(SERIALIZED_NAME_AXES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics axes;
+  private ProductAsset axes;
 
   public static final String SERIALIZED_NAME_BEER = "beer";
   @SerializedName(SERIALIZED_NAME_BEER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics beer;
+  private ProductAsset beer;
 
   public static final String SERIALIZED_NAME_BELLOWS = "bellows";
   @SerializedName(SERIALIZED_NAME_BELLOWS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics bellows;
+  private ProductAsset bellows;
 
   public static final String SERIALIZED_NAME_BELLS = "bells";
   @SerializedName(SERIALIZED_NAME_BELLS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics bells;
+  private ProductAsset bells;
 
   public static final String SERIALIZED_NAME_BELTS = "belts";
   @SerializedName(SERIALIZED_NAME_BELTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics belts;
+  private ProductAsset belts;
 
   public static final String SERIALIZED_NAME_BLADES = "blades";
   @SerializedName(SERIALIZED_NAME_BLADES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics blades;
+  private ProductAsset blades;
 
   public static final String SERIALIZED_NAME_BOOKS = "books";
   @SerializedName(SERIALIZED_NAME_BOOKS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics books;
+  private ProductAsset books;
 
   public static final String SERIALIZED_NAME_BREAD = "bread";
   @SerializedName(SERIALIZED_NAME_BREAD)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics bread;
+  private ProductAsset bread;
 
   public static final String SERIALIZED_NAME_BRONZE_INGOTS = "bronze ingots";
   @SerializedName(SERIALIZED_NAME_BRONZE_INGOTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics bronzeIngots;
+  private ProductAsset bronzeIngots;
 
   public static final String SERIALIZED_NAME_BUTTER = "butter";
   @SerializedName(SERIALIZED_NAME_BUTTER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics butter;
+  private ProductAsset butter;
 
   public static final String SERIALIZED_NAME_CANDLES = "candles";
   @SerializedName(SERIALIZED_NAME_CANDLES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics candles;
+  private ProductAsset candles;
 
   public static final String SERIALIZED_NAME_CARTING = "carting";
   @SerializedName(SERIALIZED_NAME_CARTING)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics carting;
+  private ProductAsset carting;
 
   public static final String SERIALIZED_NAME_CASKS = "casks";
   @SerializedName(SERIALIZED_NAME_CASKS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics casks;
+  private ProductAsset casks;
 
   public static final String SERIALIZED_NAME_CATTLE = "cattle";
   @SerializedName(SERIALIZED_NAME_CATTLE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics cattle;
+  private ProductAsset cattle;
 
   public static final String SERIALIZED_NAME_CHARCOAL = "charcoal";
   @SerializedName(SERIALIZED_NAME_CHARCOAL)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics charcoal;
+  private ProductAsset charcoal;
 
   public static final String SERIALIZED_NAME_CHEESE = "cheese";
   @SerializedName(SERIALIZED_NAME_CHEESE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics cheese;
+  private ProductAsset cheese;
 
   public static final String SERIALIZED_NAME_CHISELS = "chisels";
   @SerializedName(SERIALIZED_NAME_CHISELS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics chisels;
+  private ProductAsset chisels;
 
   public static final String SERIALIZED_NAME_CLAY = "clay";
   @SerializedName(SERIALIZED_NAME_CLAY)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics clay;
+  private ProductAsset clay;
 
   public static final String SERIALIZED_NAME_CLOTH = "cloth";
   @SerializedName(SERIALIZED_NAME_CLOTH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics cloth;
+  private ProductAsset cloth;
 
   public static final String SERIALIZED_NAME_COATS = "coats";
   @SerializedName(SERIALIZED_NAME_COATS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics coats;
+  private ProductAsset coats;
 
   public static final String SERIALIZED_NAME_COOKWARE = "cookware";
   @SerializedName(SERIALIZED_NAME_COOKWARE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics cookware;
+  private ProductAsset cookware;
 
   public static final String SERIALIZED_NAME_COPPER_INGOTS = "copper ingots";
   @SerializedName(SERIALIZED_NAME_COPPER_INGOTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics copperIngots;
+  private ProductAsset copperIngots;
 
   public static final String SERIALIZED_NAME_COPPER_ORE = "copper ore";
   @SerializedName(SERIALIZED_NAME_COPPER_ORE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics copperOre;
+  private ProductAsset copperOre;
 
   public static final String SERIALIZED_NAME_CURED_FISH = "cured fish";
   @SerializedName(SERIALIZED_NAME_CURED_FISH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics curedFish;
+  private ProductAsset curedFish;
 
   public static final String SERIALIZED_NAME_CURED_MEAT = "cured meat";
   @SerializedName(SERIALIZED_NAME_CURED_MEAT)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics curedMeat;
+  private ProductAsset curedMeat;
 
   public static final String SERIALIZED_NAME_DYE = "dye";
   @SerializedName(SERIALIZED_NAME_DYE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics dye;
+  private ProductAsset dye;
 
   public static final String SERIALIZED_NAME_DYED_CLOTH = "dyed cloth";
   @SerializedName(SERIALIZED_NAME_DYED_CLOTH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics dyedCloth;
+  private ProductAsset dyedCloth;
 
   public static final String SERIALIZED_NAME_DYED_YARN = "dyed yarn";
   @SerializedName(SERIALIZED_NAME_DYED_YARN)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics dyedYarn;
+  private ProductAsset dyedYarn;
 
   public static final String SERIALIZED_NAME_FIREWOOD = "firewood";
   @SerializedName(SERIALIZED_NAME_FIREWOOD)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics firewood;
+  private ProductAsset firewood;
 
   public static final String SERIALIZED_NAME_FISH = "fish";
   @SerializedName(SERIALIZED_NAME_FISH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics fish;
+  private ProductAsset fish;
 
   public static final String SERIALIZED_NAME_FLAX_FIBRES = "flax fibres";
   @SerializedName(SERIALIZED_NAME_FLAX_FIBRES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics flaxFibres;
+  private ProductAsset flaxFibres;
 
   public static final String SERIALIZED_NAME_FLAX_PLANTS = "flax plants";
   @SerializedName(SERIALIZED_NAME_FLAX_PLANTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics flaxPlants;
+  private ProductAsset flaxPlants;
 
   public static final String SERIALIZED_NAME_FLEECE = "fleece";
   @SerializedName(SERIALIZED_NAME_FLEECE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics fleece;
+  private ProductAsset fleece;
 
   public static final String SERIALIZED_NAME_FLOUR = "flour";
   @SerializedName(SERIALIZED_NAME_FLOUR)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics flour;
+  private ProductAsset flour;
 
   public static final String SERIALIZED_NAME_FURNITURE = "furniture";
   @SerializedName(SERIALIZED_NAME_FURNITURE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics furniture;
+  private ProductAsset furniture;
 
   public static final String SERIALIZED_NAME_GARMENTS = "garments";
   @SerializedName(SERIALIZED_NAME_GARMENTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics garments;
+  private ProductAsset garments;
 
   public static final String SERIALIZED_NAME_GEARS = "gears";
   @SerializedName(SERIALIZED_NAME_GEARS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics gears;
+  private ProductAsset gears;
 
   public static final String SERIALIZED_NAME_GLASS = "glass";
   @SerializedName(SERIALIZED_NAME_GLASS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics glass;
+  private ProductAsset glass;
 
   public static final String SERIALIZED_NAME_GLASSWARE = "glassware";
   @SerializedName(SERIALIZED_NAME_GLASSWARE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics glassware;
+  private ProductAsset glassware;
 
   public static final String SERIALIZED_NAME_GOLD_BARS = "gold bars";
   @SerializedName(SERIALIZED_NAME_GOLD_BARS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics goldBars;
+  private ProductAsset goldBars;
 
   public static final String SERIALIZED_NAME_GOLD_ORE = "gold ore";
   @SerializedName(SERIALIZED_NAME_GOLD_ORE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics goldOre;
+  private ProductAsset goldOre;
 
   public static final String SERIALIZED_NAME_GRAIN = "grain";
   @SerializedName(SERIALIZED_NAME_GRAIN)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics grain;
+  private ProductAsset grain;
 
   public static final String SERIALIZED_NAME_GRINDSTONES = "grindstones";
   @SerializedName(SERIALIZED_NAME_GRINDSTONES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics grindstones;
+  private ProductAsset grindstones;
 
   public static final String SERIALIZED_NAME_HAM = "ham";
   @SerializedName(SERIALIZED_NAME_HAM)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics ham;
+  private ProductAsset ham;
 
   public static final String SERIALIZED_NAME_HARNESSES = "harnesses";
   @SerializedName(SERIALIZED_NAME_HARNESSES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics harnesses;
+  private ProductAsset harnesses;
 
   public static final String SERIALIZED_NAME_HERBS = "herbs";
   @SerializedName(SERIALIZED_NAME_HERBS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics herbs;
+  private ProductAsset herbs;
 
   public static final String SERIALIZED_NAME_HIDES = "hides";
   @SerializedName(SERIALIZED_NAME_HIDES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics hides;
+  private ProductAsset hides;
 
   public static final String SERIALIZED_NAME_HINGES = "hinges";
   @SerializedName(SERIALIZED_NAME_HINGES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics hinges;
+  private ProductAsset hinges;
 
   public static final String SERIALIZED_NAME_HONEY = "honey";
   @SerializedName(SERIALIZED_NAME_HONEY)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics honey;
+  private ProductAsset honey;
 
   public static final String SERIALIZED_NAME_HOP_BEER = "hop beer";
   @SerializedName(SERIALIZED_NAME_HOP_BEER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics hopBeer;
+  private ProductAsset hopBeer;
 
   public static final String SERIALIZED_NAME_IRON_ORE = "iron ore";
   @SerializedName(SERIALIZED_NAME_IRON_ORE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics ironOre;
+  private ProductAsset ironOre;
 
   public static final String SERIALIZED_NAME_JEWELLERY = "jewellery";
   @SerializedName(SERIALIZED_NAME_JEWELLERY)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics jewellery;
+  private ProductAsset jewellery;
 
   public static final String SERIALIZED_NAME_LABOUR = "labour";
   @SerializedName(SERIALIZED_NAME_LABOUR)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics labour;
+  private ProductAsset labour;
 
   public static final String SERIALIZED_NAME_LATHES = "lathes";
   @SerializedName(SERIALIZED_NAME_LATHES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics lathes;
+  private ProductAsset lathes;
 
   public static final String SERIALIZED_NAME_LEAD_BARS = "lead bars";
   @SerializedName(SERIALIZED_NAME_LEAD_BARS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics leadBars;
+  private ProductAsset leadBars;
 
   public static final String SERIALIZED_NAME_LEAD_ORE = "lead ore";
   @SerializedName(SERIALIZED_NAME_LEAD_ORE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics leadOre;
+  private ProductAsset leadOre;
 
   public static final String SERIALIZED_NAME_LEATHER = "leather";
   @SerializedName(SERIALIZED_NAME_LEATHER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics leather;
+  private ProductAsset leather;
 
   public static final String SERIALIZED_NAME_LIGHT_ARMOUR = "light armour";
   @SerializedName(SERIALIZED_NAME_LIGHT_ARMOUR)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics lightArmour;
+  private ProductAsset lightArmour;
 
   public static final String SERIALIZED_NAME_LIMESTONE = "limestone";
   @SerializedName(SERIALIZED_NAME_LIMESTONE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics limestone;
+  private ProductAsset limestone;
 
   public static final String SERIALIZED_NAME_LODGING = "lodging";
   @SerializedName(SERIALIZED_NAME_LODGING)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics lodging;
+  private ProductAsset lodging;
 
   public static final String SERIALIZED_NAME_LOGS = "logs";
   @SerializedName(SERIALIZED_NAME_LOGS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics logs;
+  private ProductAsset logs;
 
   public static final String SERIALIZED_NAME_LOOMS = "looms";
   @SerializedName(SERIALIZED_NAME_LOOMS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics looms;
+  private ProductAsset looms;
 
   public static final String SERIALIZED_NAME_MALT = "malt";
   @SerializedName(SERIALIZED_NAME_MALT)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics malt;
+  private ProductAsset malt;
 
   public static final String SERIALIZED_NAME_MANURE = "manure";
   @SerializedName(SERIALIZED_NAME_MANURE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics manure;
+  private ProductAsset manure;
 
   public static final String SERIALIZED_NAME_MEAT = "meat";
   @SerializedName(SERIALIZED_NAME_MEAT)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics meat;
+  private ProductAsset meat;
 
   public static final String SERIALIZED_NAME_MEDICINE = "medicine";
   @SerializedName(SERIALIZED_NAME_MEDICINE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics medicine;
+  private ProductAsset medicine;
 
   public static final String SERIALIZED_NAME_MILK = "milk";
   @SerializedName(SERIALIZED_NAME_MILK)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics milk;
+  private ProductAsset milk;
 
   public static final String SERIALIZED_NAME_MOULDBOARDS = "mouldboards";
   @SerializedName(SERIALIZED_NAME_MOULDBOARDS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics mouldboards;
+  private ProductAsset mouldboards;
 
   public static final String SERIALIZED_NAME_NAILS = "nails";
   @SerializedName(SERIALIZED_NAME_NAILS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics nails;
+  private ProductAsset nails;
 
   public static final String SERIALIZED_NAME_NETS = "nets";
   @SerializedName(SERIALIZED_NAME_NETS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics nets;
+  private ProductAsset nets;
 
   public static final String SERIALIZED_NAME_OX_POWER = "ox power";
   @SerializedName(SERIALIZED_NAME_OX_POWER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics oxPower;
+  private ProductAsset oxPower;
 
   public static final String SERIALIZED_NAME_PAPER = "paper";
   @SerializedName(SERIALIZED_NAME_PAPER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics paper;
+  private ProductAsset paper;
 
   public static final String SERIALIZED_NAME_PASTIES = "pasties";
   @SerializedName(SERIALIZED_NAME_PASTIES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics pasties;
+  private ProductAsset pasties;
 
   public static final String SERIALIZED_NAME_PICKAXES = "pickaxes";
   @SerializedName(SERIALIZED_NAME_PICKAXES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics pickaxes;
+  private ProductAsset pickaxes;
 
   public static final String SERIALIZED_NAME_PIES = "pies";
   @SerializedName(SERIALIZED_NAME_PIES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics pies;
+  private ProductAsset pies;
 
   public static final String SERIALIZED_NAME_PLATE_ARMOUR = "plate armour";
   @SerializedName(SERIALIZED_NAME_PLATE_ARMOUR)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics plateArmour;
+  private ProductAsset plateArmour;
 
   public static final String SERIALIZED_NAME_PLOUGHS = "ploughs";
   @SerializedName(SERIALIZED_NAME_PLOUGHS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics ploughs;
+  private ProductAsset ploughs;
 
   public static final String SERIALIZED_NAME_PREMIUM_ARMOUR = "premium armour";
   @SerializedName(SERIALIZED_NAME_PREMIUM_ARMOUR)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumArmour;
+  private ProductAsset premiumArmour;
 
   public static final String SERIALIZED_NAME_PREMIUM_AXES = "premium axes";
   @SerializedName(SERIALIZED_NAME_PREMIUM_AXES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumAxes;
+  private ProductAsset premiumAxes;
 
   public static final String SERIALIZED_NAME_PREMIUM_CHEESE = "premium cheese";
   @SerializedName(SERIALIZED_NAME_PREMIUM_CHEESE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumCheese;
+  private ProductAsset premiumCheese;
 
   public static final String SERIALIZED_NAME_PREMIUM_CLOTH = "premium cloth";
   @SerializedName(SERIALIZED_NAME_PREMIUM_CLOTH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumCloth;
+  private ProductAsset premiumCloth;
 
   public static final String SERIALIZED_NAME_PREMIUM_DYE = "premium dye";
   @SerializedName(SERIALIZED_NAME_PREMIUM_DYE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumDye;
+  private ProductAsset premiumDye;
 
   public static final String SERIALIZED_NAME_PREMIUM_GARMENTS = "premium garments";
   @SerializedName(SERIALIZED_NAME_PREMIUM_GARMENTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumGarments;
+  private ProductAsset premiumGarments;
 
   public static final String SERIALIZED_NAME_PREMIUM_GLASSWARE = "premium glassware";
   @SerializedName(SERIALIZED_NAME_PREMIUM_GLASSWARE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumGlassware;
+  private ProductAsset premiumGlassware;
 
   public static final String SERIALIZED_NAME_PREMIUM_HAM = "premium ham";
   @SerializedName(SERIALIZED_NAME_PREMIUM_HAM)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumHam;
+  private ProductAsset premiumHam;
 
   public static final String SERIALIZED_NAME_PREMIUM_SAILS = "premium sails";
   @SerializedName(SERIALIZED_NAME_PREMIUM_SAILS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumSails;
+  private ProductAsset premiumSails;
 
   public static final String SERIALIZED_NAME_PREMIUM_STEEL = "premium steel";
   @SerializedName(SERIALIZED_NAME_PREMIUM_STEEL)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumSteel;
+  private ProductAsset premiumSteel;
 
   public static final String SERIALIZED_NAME_PREMIUM_SWORDS = "premium swords";
   @SerializedName(SERIALIZED_NAME_PREMIUM_SWORDS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics premiumSwords;
+  private ProductAsset premiumSwords;
 
   public static final String SERIALIZED_NAME_PROTECTION = "protection";
   @SerializedName(SERIALIZED_NAME_PROTECTION)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics protection;
+  private ProductAsset protection;
 
   public static final String SERIALIZED_NAME_RAW_CLOTH = "raw cloth";
   @SerializedName(SERIALIZED_NAME_RAW_CLOTH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics rawCloth;
+  private ProductAsset rawCloth;
 
   public static final String SERIALIZED_NAME_RESIN = "resin";
   @SerializedName(SERIALIZED_NAME_RESIN)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics resin;
+  private ProductAsset resin;
 
   public static final String SERIALIZED_NAME_ROPE = "rope";
   @SerializedName(SERIALIZED_NAME_ROPE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics rope;
+  private ProductAsset rope;
 
   public static final String SERIALIZED_NAME_SAILS = "sails";
   @SerializedName(SERIALIZED_NAME_SAILS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics sails;
+  private ProductAsset sails;
 
   public static final String SERIALIZED_NAME_SALT = "salt";
   @SerializedName(SERIALIZED_NAME_SALT)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics salt;
+  private ProductAsset salt;
 
   public static final String SERIALIZED_NAME_SCULPTURES = "sculptures";
   @SerializedName(SERIALIZED_NAME_SCULPTURES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics sculptures;
+  private ProductAsset sculptures;
 
   public static final String SERIALIZED_NAME_SCYTHES = "scythes";
   @SerializedName(SERIALIZED_NAME_SCYTHES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics scythes;
+  private ProductAsset scythes;
 
   public static final String SERIALIZED_NAME_SILVER_BARS = "silver bars";
   @SerializedName(SERIALIZED_NAME_SILVER_BARS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics silverBars;
+  private ProductAsset silverBars;
 
   public static final String SERIALIZED_NAME_SILVER_ORE = "silver ore";
   @SerializedName(SERIALIZED_NAME_SILVER_ORE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics silverOre;
+  private ProductAsset silverOre;
 
   public static final String SERIALIZED_NAME_SLAKED_LIME = "slaked lime";
   @SerializedName(SERIALIZED_NAME_SLAKED_LIME)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics slakedLime;
+  private ProductAsset slakedLime;
 
   public static final String SERIALIZED_NAME_SPINNING_WHEELS = "spinning wheels";
   @SerializedName(SERIALIZED_NAME_SPINNING_WHEELS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics spinningWheels;
+  private ProductAsset spinningWheels;
 
   public static final String SERIALIZED_NAME_SPIRITS = "spirits";
   @SerializedName(SERIALIZED_NAME_SPIRITS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics spirits;
+  private ProductAsset spirits;
 
   public static final String SERIALIZED_NAME_STEEL_INGOTS = "steel ingots";
   @SerializedName(SERIALIZED_NAME_STEEL_INGOTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics steelIngots;
+  private ProductAsset steelIngots;
 
   public static final String SERIALIZED_NAME_STOCKFISH = "stockfish";
   @SerializedName(SERIALIZED_NAME_STOCKFISH)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics stockfish;
+  private ProductAsset stockfish;
 
   public static final String SERIALIZED_NAME_SWORDS = "swords";
   @SerializedName(SERIALIZED_NAME_SWORDS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics swords;
+  private ProductAsset swords;
 
   public static final String SERIALIZED_NAME_TACKLES = "tackles";
   @SerializedName(SERIALIZED_NAME_TACKLES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tackles;
+  private ProductAsset tackles;
 
   public static final String SERIALIZED_NAME_TAPESTRIES = "tapestries";
   @SerializedName(SERIALIZED_NAME_TAPESTRIES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tapestries;
+  private ProductAsset tapestries;
 
   public static final String SERIALIZED_NAME_TAR = "tar";
   @SerializedName(SERIALIZED_NAME_TAR)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tar;
+  private ProductAsset tar;
 
   public static final String SERIALIZED_NAME_THREAD = "thread";
   @SerializedName(SERIALIZED_NAME_THREAD)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics thread;
+  private ProductAsset thread;
 
   public static final String SERIALIZED_NAME_TILES = "tiles";
   @SerializedName(SERIALIZED_NAME_TILES)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tiles;
+  private ProductAsset tiles;
 
   public static final String SERIALIZED_NAME_TIMBER = "timber";
   @SerializedName(SERIALIZED_NAME_TIMBER)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics timber;
+  private ProductAsset timber;
 
   public static final String SERIALIZED_NAME_TIN_INGOTS = "tin ingots";
   @SerializedName(SERIALIZED_NAME_TIN_INGOTS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tinIngots;
+  private ProductAsset tinIngots;
 
   public static final String SERIALIZED_NAME_TIN_ORE = "tin ore";
   @SerializedName(SERIALIZED_NAME_TIN_ORE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tinOre;
+  private ProductAsset tinOre;
 
   public static final String SERIALIZED_NAME_TOOLS = "tools";
   @SerializedName(SERIALIZED_NAME_TOOLS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics tools;
+  private ProductAsset tools;
 
   public static final String SERIALIZED_NAME_WAX = "wax";
   @SerializedName(SERIALIZED_NAME_WAX)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics wax;
+  private ProductAsset wax;
 
   public static final String SERIALIZED_NAME_WHEELS = "wheels";
   @SerializedName(SERIALIZED_NAME_WHEELS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics wheels;
+  private ProductAsset wheels;
 
   public static final String SERIALIZED_NAME_WINDOWS = "windows";
   @SerializedName(SERIALIZED_NAME_WINDOWS)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics windows;
+  private ProductAsset windows;
 
   public static final String SERIALIZED_NAME_WINE = "wine";
   @SerializedName(SERIALIZED_NAME_WINE)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics wine;
+  private ProductAsset wine;
 
   public static final String SERIALIZED_NAME_WOOL = "wool";
   @SerializedName(SERIALIZED_NAME_WOOL)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics wool;
+  private ProductAsset wool;
 
   public static final String SERIALIZED_NAME_WROUGHT_IRON = "wrought iron";
   @SerializedName(SERIALIZED_NAME_WROUGHT_IRON)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics wroughtIron;
+  private ProductAsset wroughtIron;
 
   public static final String SERIALIZED_NAME_YARN = "yarn";
   @SerializedName(SERIALIZED_NAME_YARN)
   @javax.annotation.Nullable
-  private InventoryAssetsAlembics yarn;
+  private ProductAsset yarn;
 
   public InventoryAssets() {
   }
 
-  public InventoryAssets alembics(@javax.annotation.Nullable InventoryAssetsAlembics alembics) {
+  public InventoryAssets alembics(@javax.annotation.Nullable ProductAsset alembics) {
     this.alembics = alembics;
     return this;
   }
@@ -675,16 +675,16 @@ public class InventoryAssets {
    * @return alembics
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getAlembics() {
+  public ProductAsset getAlembics() {
     return alembics;
   }
 
-  public void setAlembics(@javax.annotation.Nullable InventoryAssetsAlembics alembics) {
+  public void setAlembics(@javax.annotation.Nullable ProductAsset alembics) {
     this.alembics = alembics;
   }
 
 
-  public InventoryAssets arms(@javax.annotation.Nullable InventoryAssetsAlembics arms) {
+  public InventoryAssets arms(@javax.annotation.Nullable ProductAsset arms) {
     this.arms = arms;
     return this;
   }
@@ -694,16 +694,16 @@ public class InventoryAssets {
    * @return arms
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getArms() {
+  public ProductAsset getArms() {
     return arms;
   }
 
-  public void setArms(@javax.annotation.Nullable InventoryAssetsAlembics arms) {
+  public void setArms(@javax.annotation.Nullable ProductAsset arms) {
     this.arms = arms;
   }
 
 
-  public InventoryAssets axes(@javax.annotation.Nullable InventoryAssetsAlembics axes) {
+  public InventoryAssets axes(@javax.annotation.Nullable ProductAsset axes) {
     this.axes = axes;
     return this;
   }
@@ -713,16 +713,16 @@ public class InventoryAssets {
    * @return axes
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getAxes() {
+  public ProductAsset getAxes() {
     return axes;
   }
 
-  public void setAxes(@javax.annotation.Nullable InventoryAssetsAlembics axes) {
+  public void setAxes(@javax.annotation.Nullable ProductAsset axes) {
     this.axes = axes;
   }
 
 
-  public InventoryAssets beer(@javax.annotation.Nullable InventoryAssetsAlembics beer) {
+  public InventoryAssets beer(@javax.annotation.Nullable ProductAsset beer) {
     this.beer = beer;
     return this;
   }
@@ -732,16 +732,16 @@ public class InventoryAssets {
    * @return beer
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBeer() {
+  public ProductAsset getBeer() {
     return beer;
   }
 
-  public void setBeer(@javax.annotation.Nullable InventoryAssetsAlembics beer) {
+  public void setBeer(@javax.annotation.Nullable ProductAsset beer) {
     this.beer = beer;
   }
 
 
-  public InventoryAssets bellows(@javax.annotation.Nullable InventoryAssetsAlembics bellows) {
+  public InventoryAssets bellows(@javax.annotation.Nullable ProductAsset bellows) {
     this.bellows = bellows;
     return this;
   }
@@ -751,16 +751,16 @@ public class InventoryAssets {
    * @return bellows
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBellows() {
+  public ProductAsset getBellows() {
     return bellows;
   }
 
-  public void setBellows(@javax.annotation.Nullable InventoryAssetsAlembics bellows) {
+  public void setBellows(@javax.annotation.Nullable ProductAsset bellows) {
     this.bellows = bellows;
   }
 
 
-  public InventoryAssets bells(@javax.annotation.Nullable InventoryAssetsAlembics bells) {
+  public InventoryAssets bells(@javax.annotation.Nullable ProductAsset bells) {
     this.bells = bells;
     return this;
   }
@@ -770,16 +770,16 @@ public class InventoryAssets {
    * @return bells
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBells() {
+  public ProductAsset getBells() {
     return bells;
   }
 
-  public void setBells(@javax.annotation.Nullable InventoryAssetsAlembics bells) {
+  public void setBells(@javax.annotation.Nullable ProductAsset bells) {
     this.bells = bells;
   }
 
 
-  public InventoryAssets belts(@javax.annotation.Nullable InventoryAssetsAlembics belts) {
+  public InventoryAssets belts(@javax.annotation.Nullable ProductAsset belts) {
     this.belts = belts;
     return this;
   }
@@ -789,16 +789,16 @@ public class InventoryAssets {
    * @return belts
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBelts() {
+  public ProductAsset getBelts() {
     return belts;
   }
 
-  public void setBelts(@javax.annotation.Nullable InventoryAssetsAlembics belts) {
+  public void setBelts(@javax.annotation.Nullable ProductAsset belts) {
     this.belts = belts;
   }
 
 
-  public InventoryAssets blades(@javax.annotation.Nullable InventoryAssetsAlembics blades) {
+  public InventoryAssets blades(@javax.annotation.Nullable ProductAsset blades) {
     this.blades = blades;
     return this;
   }
@@ -808,16 +808,16 @@ public class InventoryAssets {
    * @return blades
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBlades() {
+  public ProductAsset getBlades() {
     return blades;
   }
 
-  public void setBlades(@javax.annotation.Nullable InventoryAssetsAlembics blades) {
+  public void setBlades(@javax.annotation.Nullable ProductAsset blades) {
     this.blades = blades;
   }
 
 
-  public InventoryAssets books(@javax.annotation.Nullable InventoryAssetsAlembics books) {
+  public InventoryAssets books(@javax.annotation.Nullable ProductAsset books) {
     this.books = books;
     return this;
   }
@@ -827,16 +827,16 @@ public class InventoryAssets {
    * @return books
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBooks() {
+  public ProductAsset getBooks() {
     return books;
   }
 
-  public void setBooks(@javax.annotation.Nullable InventoryAssetsAlembics books) {
+  public void setBooks(@javax.annotation.Nullable ProductAsset books) {
     this.books = books;
   }
 
 
-  public InventoryAssets bread(@javax.annotation.Nullable InventoryAssetsAlembics bread) {
+  public InventoryAssets bread(@javax.annotation.Nullable ProductAsset bread) {
     this.bread = bread;
     return this;
   }
@@ -846,16 +846,16 @@ public class InventoryAssets {
    * @return bread
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBread() {
+  public ProductAsset getBread() {
     return bread;
   }
 
-  public void setBread(@javax.annotation.Nullable InventoryAssetsAlembics bread) {
+  public void setBread(@javax.annotation.Nullable ProductAsset bread) {
     this.bread = bread;
   }
 
 
-  public InventoryAssets bronzeIngots(@javax.annotation.Nullable InventoryAssetsAlembics bronzeIngots) {
+  public InventoryAssets bronzeIngots(@javax.annotation.Nullable ProductAsset bronzeIngots) {
     this.bronzeIngots = bronzeIngots;
     return this;
   }
@@ -865,16 +865,16 @@ public class InventoryAssets {
    * @return bronzeIngots
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getBronzeIngots() {
+  public ProductAsset getBronzeIngots() {
     return bronzeIngots;
   }
 
-  public void setBronzeIngots(@javax.annotation.Nullable InventoryAssetsAlembics bronzeIngots) {
+  public void setBronzeIngots(@javax.annotation.Nullable ProductAsset bronzeIngots) {
     this.bronzeIngots = bronzeIngots;
   }
 
 
-  public InventoryAssets butter(@javax.annotation.Nullable InventoryAssetsAlembics butter) {
+  public InventoryAssets butter(@javax.annotation.Nullable ProductAsset butter) {
     this.butter = butter;
     return this;
   }
@@ -884,16 +884,16 @@ public class InventoryAssets {
    * @return butter
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getButter() {
+  public ProductAsset getButter() {
     return butter;
   }
 
-  public void setButter(@javax.annotation.Nullable InventoryAssetsAlembics butter) {
+  public void setButter(@javax.annotation.Nullable ProductAsset butter) {
     this.butter = butter;
   }
 
 
-  public InventoryAssets candles(@javax.annotation.Nullable InventoryAssetsAlembics candles) {
+  public InventoryAssets candles(@javax.annotation.Nullable ProductAsset candles) {
     this.candles = candles;
     return this;
   }
@@ -903,16 +903,16 @@ public class InventoryAssets {
    * @return candles
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCandles() {
+  public ProductAsset getCandles() {
     return candles;
   }
 
-  public void setCandles(@javax.annotation.Nullable InventoryAssetsAlembics candles) {
+  public void setCandles(@javax.annotation.Nullable ProductAsset candles) {
     this.candles = candles;
   }
 
 
-  public InventoryAssets carting(@javax.annotation.Nullable InventoryAssetsAlembics carting) {
+  public InventoryAssets carting(@javax.annotation.Nullable ProductAsset carting) {
     this.carting = carting;
     return this;
   }
@@ -922,16 +922,16 @@ public class InventoryAssets {
    * @return carting
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCarting() {
+  public ProductAsset getCarting() {
     return carting;
   }
 
-  public void setCarting(@javax.annotation.Nullable InventoryAssetsAlembics carting) {
+  public void setCarting(@javax.annotation.Nullable ProductAsset carting) {
     this.carting = carting;
   }
 
 
-  public InventoryAssets casks(@javax.annotation.Nullable InventoryAssetsAlembics casks) {
+  public InventoryAssets casks(@javax.annotation.Nullable ProductAsset casks) {
     this.casks = casks;
     return this;
   }
@@ -941,16 +941,16 @@ public class InventoryAssets {
    * @return casks
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCasks() {
+  public ProductAsset getCasks() {
     return casks;
   }
 
-  public void setCasks(@javax.annotation.Nullable InventoryAssetsAlembics casks) {
+  public void setCasks(@javax.annotation.Nullable ProductAsset casks) {
     this.casks = casks;
   }
 
 
-  public InventoryAssets cattle(@javax.annotation.Nullable InventoryAssetsAlembics cattle) {
+  public InventoryAssets cattle(@javax.annotation.Nullable ProductAsset cattle) {
     this.cattle = cattle;
     return this;
   }
@@ -960,16 +960,16 @@ public class InventoryAssets {
    * @return cattle
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCattle() {
+  public ProductAsset getCattle() {
     return cattle;
   }
 
-  public void setCattle(@javax.annotation.Nullable InventoryAssetsAlembics cattle) {
+  public void setCattle(@javax.annotation.Nullable ProductAsset cattle) {
     this.cattle = cattle;
   }
 
 
-  public InventoryAssets charcoal(@javax.annotation.Nullable InventoryAssetsAlembics charcoal) {
+  public InventoryAssets charcoal(@javax.annotation.Nullable ProductAsset charcoal) {
     this.charcoal = charcoal;
     return this;
   }
@@ -979,16 +979,16 @@ public class InventoryAssets {
    * @return charcoal
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCharcoal() {
+  public ProductAsset getCharcoal() {
     return charcoal;
   }
 
-  public void setCharcoal(@javax.annotation.Nullable InventoryAssetsAlembics charcoal) {
+  public void setCharcoal(@javax.annotation.Nullable ProductAsset charcoal) {
     this.charcoal = charcoal;
   }
 
 
-  public InventoryAssets cheese(@javax.annotation.Nullable InventoryAssetsAlembics cheese) {
+  public InventoryAssets cheese(@javax.annotation.Nullable ProductAsset cheese) {
     this.cheese = cheese;
     return this;
   }
@@ -998,16 +998,16 @@ public class InventoryAssets {
    * @return cheese
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCheese() {
+  public ProductAsset getCheese() {
     return cheese;
   }
 
-  public void setCheese(@javax.annotation.Nullable InventoryAssetsAlembics cheese) {
+  public void setCheese(@javax.annotation.Nullable ProductAsset cheese) {
     this.cheese = cheese;
   }
 
 
-  public InventoryAssets chisels(@javax.annotation.Nullable InventoryAssetsAlembics chisels) {
+  public InventoryAssets chisels(@javax.annotation.Nullable ProductAsset chisels) {
     this.chisels = chisels;
     return this;
   }
@@ -1017,16 +1017,16 @@ public class InventoryAssets {
    * @return chisels
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getChisels() {
+  public ProductAsset getChisels() {
     return chisels;
   }
 
-  public void setChisels(@javax.annotation.Nullable InventoryAssetsAlembics chisels) {
+  public void setChisels(@javax.annotation.Nullable ProductAsset chisels) {
     this.chisels = chisels;
   }
 
 
-  public InventoryAssets clay(@javax.annotation.Nullable InventoryAssetsAlembics clay) {
+  public InventoryAssets clay(@javax.annotation.Nullable ProductAsset clay) {
     this.clay = clay;
     return this;
   }
@@ -1036,16 +1036,16 @@ public class InventoryAssets {
    * @return clay
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getClay() {
+  public ProductAsset getClay() {
     return clay;
   }
 
-  public void setClay(@javax.annotation.Nullable InventoryAssetsAlembics clay) {
+  public void setClay(@javax.annotation.Nullable ProductAsset clay) {
     this.clay = clay;
   }
 
 
-  public InventoryAssets cloth(@javax.annotation.Nullable InventoryAssetsAlembics cloth) {
+  public InventoryAssets cloth(@javax.annotation.Nullable ProductAsset cloth) {
     this.cloth = cloth;
     return this;
   }
@@ -1055,16 +1055,16 @@ public class InventoryAssets {
    * @return cloth
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCloth() {
+  public ProductAsset getCloth() {
     return cloth;
   }
 
-  public void setCloth(@javax.annotation.Nullable InventoryAssetsAlembics cloth) {
+  public void setCloth(@javax.annotation.Nullable ProductAsset cloth) {
     this.cloth = cloth;
   }
 
 
-  public InventoryAssets coats(@javax.annotation.Nullable InventoryAssetsAlembics coats) {
+  public InventoryAssets coats(@javax.annotation.Nullable ProductAsset coats) {
     this.coats = coats;
     return this;
   }
@@ -1074,16 +1074,16 @@ public class InventoryAssets {
    * @return coats
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCoats() {
+  public ProductAsset getCoats() {
     return coats;
   }
 
-  public void setCoats(@javax.annotation.Nullable InventoryAssetsAlembics coats) {
+  public void setCoats(@javax.annotation.Nullable ProductAsset coats) {
     this.coats = coats;
   }
 
 
-  public InventoryAssets cookware(@javax.annotation.Nullable InventoryAssetsAlembics cookware) {
+  public InventoryAssets cookware(@javax.annotation.Nullable ProductAsset cookware) {
     this.cookware = cookware;
     return this;
   }
@@ -1093,16 +1093,16 @@ public class InventoryAssets {
    * @return cookware
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCookware() {
+  public ProductAsset getCookware() {
     return cookware;
   }
 
-  public void setCookware(@javax.annotation.Nullable InventoryAssetsAlembics cookware) {
+  public void setCookware(@javax.annotation.Nullable ProductAsset cookware) {
     this.cookware = cookware;
   }
 
 
-  public InventoryAssets copperIngots(@javax.annotation.Nullable InventoryAssetsAlembics copperIngots) {
+  public InventoryAssets copperIngots(@javax.annotation.Nullable ProductAsset copperIngots) {
     this.copperIngots = copperIngots;
     return this;
   }
@@ -1112,16 +1112,16 @@ public class InventoryAssets {
    * @return copperIngots
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCopperIngots() {
+  public ProductAsset getCopperIngots() {
     return copperIngots;
   }
 
-  public void setCopperIngots(@javax.annotation.Nullable InventoryAssetsAlembics copperIngots) {
+  public void setCopperIngots(@javax.annotation.Nullable ProductAsset copperIngots) {
     this.copperIngots = copperIngots;
   }
 
 
-  public InventoryAssets copperOre(@javax.annotation.Nullable InventoryAssetsAlembics copperOre) {
+  public InventoryAssets copperOre(@javax.annotation.Nullable ProductAsset copperOre) {
     this.copperOre = copperOre;
     return this;
   }
@@ -1131,16 +1131,16 @@ public class InventoryAssets {
    * @return copperOre
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCopperOre() {
+  public ProductAsset getCopperOre() {
     return copperOre;
   }
 
-  public void setCopperOre(@javax.annotation.Nullable InventoryAssetsAlembics copperOre) {
+  public void setCopperOre(@javax.annotation.Nullable ProductAsset copperOre) {
     this.copperOre = copperOre;
   }
 
 
-  public InventoryAssets curedFish(@javax.annotation.Nullable InventoryAssetsAlembics curedFish) {
+  public InventoryAssets curedFish(@javax.annotation.Nullable ProductAsset curedFish) {
     this.curedFish = curedFish;
     return this;
   }
@@ -1150,16 +1150,16 @@ public class InventoryAssets {
    * @return curedFish
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCuredFish() {
+  public ProductAsset getCuredFish() {
     return curedFish;
   }
 
-  public void setCuredFish(@javax.annotation.Nullable InventoryAssetsAlembics curedFish) {
+  public void setCuredFish(@javax.annotation.Nullable ProductAsset curedFish) {
     this.curedFish = curedFish;
   }
 
 
-  public InventoryAssets curedMeat(@javax.annotation.Nullable InventoryAssetsAlembics curedMeat) {
+  public InventoryAssets curedMeat(@javax.annotation.Nullable ProductAsset curedMeat) {
     this.curedMeat = curedMeat;
     return this;
   }
@@ -1169,16 +1169,16 @@ public class InventoryAssets {
    * @return curedMeat
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getCuredMeat() {
+  public ProductAsset getCuredMeat() {
     return curedMeat;
   }
 
-  public void setCuredMeat(@javax.annotation.Nullable InventoryAssetsAlembics curedMeat) {
+  public void setCuredMeat(@javax.annotation.Nullable ProductAsset curedMeat) {
     this.curedMeat = curedMeat;
   }
 
 
-  public InventoryAssets dye(@javax.annotation.Nullable InventoryAssetsAlembics dye) {
+  public InventoryAssets dye(@javax.annotation.Nullable ProductAsset dye) {
     this.dye = dye;
     return this;
   }
@@ -1188,16 +1188,16 @@ public class InventoryAssets {
    * @return dye
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getDye() {
+  public ProductAsset getDye() {
     return dye;
   }
 
-  public void setDye(@javax.annotation.Nullable InventoryAssetsAlembics dye) {
+  public void setDye(@javax.annotation.Nullable ProductAsset dye) {
     this.dye = dye;
   }
 
 
-  public InventoryAssets dyedCloth(@javax.annotation.Nullable InventoryAssetsAlembics dyedCloth) {
+  public InventoryAssets dyedCloth(@javax.annotation.Nullable ProductAsset dyedCloth) {
     this.dyedCloth = dyedCloth;
     return this;
   }
@@ -1207,16 +1207,16 @@ public class InventoryAssets {
    * @return dyedCloth
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getDyedCloth() {
+  public ProductAsset getDyedCloth() {
     return dyedCloth;
   }
 
-  public void setDyedCloth(@javax.annotation.Nullable InventoryAssetsAlembics dyedCloth) {
+  public void setDyedCloth(@javax.annotation.Nullable ProductAsset dyedCloth) {
     this.dyedCloth = dyedCloth;
   }
 
 
-  public InventoryAssets dyedYarn(@javax.annotation.Nullable InventoryAssetsAlembics dyedYarn) {
+  public InventoryAssets dyedYarn(@javax.annotation.Nullable ProductAsset dyedYarn) {
     this.dyedYarn = dyedYarn;
     return this;
   }
@@ -1226,16 +1226,16 @@ public class InventoryAssets {
    * @return dyedYarn
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getDyedYarn() {
+  public ProductAsset getDyedYarn() {
     return dyedYarn;
   }
 
-  public void setDyedYarn(@javax.annotation.Nullable InventoryAssetsAlembics dyedYarn) {
+  public void setDyedYarn(@javax.annotation.Nullable ProductAsset dyedYarn) {
     this.dyedYarn = dyedYarn;
   }
 
 
-  public InventoryAssets firewood(@javax.annotation.Nullable InventoryAssetsAlembics firewood) {
+  public InventoryAssets firewood(@javax.annotation.Nullable ProductAsset firewood) {
     this.firewood = firewood;
     return this;
   }
@@ -1245,16 +1245,16 @@ public class InventoryAssets {
    * @return firewood
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFirewood() {
+  public ProductAsset getFirewood() {
     return firewood;
   }
 
-  public void setFirewood(@javax.annotation.Nullable InventoryAssetsAlembics firewood) {
+  public void setFirewood(@javax.annotation.Nullable ProductAsset firewood) {
     this.firewood = firewood;
   }
 
 
-  public InventoryAssets fish(@javax.annotation.Nullable InventoryAssetsAlembics fish) {
+  public InventoryAssets fish(@javax.annotation.Nullable ProductAsset fish) {
     this.fish = fish;
     return this;
   }
@@ -1264,16 +1264,16 @@ public class InventoryAssets {
    * @return fish
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFish() {
+  public ProductAsset getFish() {
     return fish;
   }
 
-  public void setFish(@javax.annotation.Nullable InventoryAssetsAlembics fish) {
+  public void setFish(@javax.annotation.Nullable ProductAsset fish) {
     this.fish = fish;
   }
 
 
-  public InventoryAssets flaxFibres(@javax.annotation.Nullable InventoryAssetsAlembics flaxFibres) {
+  public InventoryAssets flaxFibres(@javax.annotation.Nullable ProductAsset flaxFibres) {
     this.flaxFibres = flaxFibres;
     return this;
   }
@@ -1283,16 +1283,16 @@ public class InventoryAssets {
    * @return flaxFibres
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFlaxFibres() {
+  public ProductAsset getFlaxFibres() {
     return flaxFibres;
   }
 
-  public void setFlaxFibres(@javax.annotation.Nullable InventoryAssetsAlembics flaxFibres) {
+  public void setFlaxFibres(@javax.annotation.Nullable ProductAsset flaxFibres) {
     this.flaxFibres = flaxFibres;
   }
 
 
-  public InventoryAssets flaxPlants(@javax.annotation.Nullable InventoryAssetsAlembics flaxPlants) {
+  public InventoryAssets flaxPlants(@javax.annotation.Nullable ProductAsset flaxPlants) {
     this.flaxPlants = flaxPlants;
     return this;
   }
@@ -1302,16 +1302,16 @@ public class InventoryAssets {
    * @return flaxPlants
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFlaxPlants() {
+  public ProductAsset getFlaxPlants() {
     return flaxPlants;
   }
 
-  public void setFlaxPlants(@javax.annotation.Nullable InventoryAssetsAlembics flaxPlants) {
+  public void setFlaxPlants(@javax.annotation.Nullable ProductAsset flaxPlants) {
     this.flaxPlants = flaxPlants;
   }
 
 
-  public InventoryAssets fleece(@javax.annotation.Nullable InventoryAssetsAlembics fleece) {
+  public InventoryAssets fleece(@javax.annotation.Nullable ProductAsset fleece) {
     this.fleece = fleece;
     return this;
   }
@@ -1321,16 +1321,16 @@ public class InventoryAssets {
    * @return fleece
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFleece() {
+  public ProductAsset getFleece() {
     return fleece;
   }
 
-  public void setFleece(@javax.annotation.Nullable InventoryAssetsAlembics fleece) {
+  public void setFleece(@javax.annotation.Nullable ProductAsset fleece) {
     this.fleece = fleece;
   }
 
 
-  public InventoryAssets flour(@javax.annotation.Nullable InventoryAssetsAlembics flour) {
+  public InventoryAssets flour(@javax.annotation.Nullable ProductAsset flour) {
     this.flour = flour;
     return this;
   }
@@ -1340,16 +1340,16 @@ public class InventoryAssets {
    * @return flour
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFlour() {
+  public ProductAsset getFlour() {
     return flour;
   }
 
-  public void setFlour(@javax.annotation.Nullable InventoryAssetsAlembics flour) {
+  public void setFlour(@javax.annotation.Nullable ProductAsset flour) {
     this.flour = flour;
   }
 
 
-  public InventoryAssets furniture(@javax.annotation.Nullable InventoryAssetsAlembics furniture) {
+  public InventoryAssets furniture(@javax.annotation.Nullable ProductAsset furniture) {
     this.furniture = furniture;
     return this;
   }
@@ -1359,16 +1359,16 @@ public class InventoryAssets {
    * @return furniture
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getFurniture() {
+  public ProductAsset getFurniture() {
     return furniture;
   }
 
-  public void setFurniture(@javax.annotation.Nullable InventoryAssetsAlembics furniture) {
+  public void setFurniture(@javax.annotation.Nullable ProductAsset furniture) {
     this.furniture = furniture;
   }
 
 
-  public InventoryAssets garments(@javax.annotation.Nullable InventoryAssetsAlembics garments) {
+  public InventoryAssets garments(@javax.annotation.Nullable ProductAsset garments) {
     this.garments = garments;
     return this;
   }
@@ -1378,16 +1378,16 @@ public class InventoryAssets {
    * @return garments
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGarments() {
+  public ProductAsset getGarments() {
     return garments;
   }
 
-  public void setGarments(@javax.annotation.Nullable InventoryAssetsAlembics garments) {
+  public void setGarments(@javax.annotation.Nullable ProductAsset garments) {
     this.garments = garments;
   }
 
 
-  public InventoryAssets gears(@javax.annotation.Nullable InventoryAssetsAlembics gears) {
+  public InventoryAssets gears(@javax.annotation.Nullable ProductAsset gears) {
     this.gears = gears;
     return this;
   }
@@ -1397,16 +1397,16 @@ public class InventoryAssets {
    * @return gears
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGears() {
+  public ProductAsset getGears() {
     return gears;
   }
 
-  public void setGears(@javax.annotation.Nullable InventoryAssetsAlembics gears) {
+  public void setGears(@javax.annotation.Nullable ProductAsset gears) {
     this.gears = gears;
   }
 
 
-  public InventoryAssets glass(@javax.annotation.Nullable InventoryAssetsAlembics glass) {
+  public InventoryAssets glass(@javax.annotation.Nullable ProductAsset glass) {
     this.glass = glass;
     return this;
   }
@@ -1416,16 +1416,16 @@ public class InventoryAssets {
    * @return glass
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGlass() {
+  public ProductAsset getGlass() {
     return glass;
   }
 
-  public void setGlass(@javax.annotation.Nullable InventoryAssetsAlembics glass) {
+  public void setGlass(@javax.annotation.Nullable ProductAsset glass) {
     this.glass = glass;
   }
 
 
-  public InventoryAssets glassware(@javax.annotation.Nullable InventoryAssetsAlembics glassware) {
+  public InventoryAssets glassware(@javax.annotation.Nullable ProductAsset glassware) {
     this.glassware = glassware;
     return this;
   }
@@ -1435,16 +1435,16 @@ public class InventoryAssets {
    * @return glassware
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGlassware() {
+  public ProductAsset getGlassware() {
     return glassware;
   }
 
-  public void setGlassware(@javax.annotation.Nullable InventoryAssetsAlembics glassware) {
+  public void setGlassware(@javax.annotation.Nullable ProductAsset glassware) {
     this.glassware = glassware;
   }
 
 
-  public InventoryAssets goldBars(@javax.annotation.Nullable InventoryAssetsAlembics goldBars) {
+  public InventoryAssets goldBars(@javax.annotation.Nullable ProductAsset goldBars) {
     this.goldBars = goldBars;
     return this;
   }
@@ -1454,16 +1454,16 @@ public class InventoryAssets {
    * @return goldBars
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGoldBars() {
+  public ProductAsset getGoldBars() {
     return goldBars;
   }
 
-  public void setGoldBars(@javax.annotation.Nullable InventoryAssetsAlembics goldBars) {
+  public void setGoldBars(@javax.annotation.Nullable ProductAsset goldBars) {
     this.goldBars = goldBars;
   }
 
 
-  public InventoryAssets goldOre(@javax.annotation.Nullable InventoryAssetsAlembics goldOre) {
+  public InventoryAssets goldOre(@javax.annotation.Nullable ProductAsset goldOre) {
     this.goldOre = goldOre;
     return this;
   }
@@ -1473,16 +1473,16 @@ public class InventoryAssets {
    * @return goldOre
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGoldOre() {
+  public ProductAsset getGoldOre() {
     return goldOre;
   }
 
-  public void setGoldOre(@javax.annotation.Nullable InventoryAssetsAlembics goldOre) {
+  public void setGoldOre(@javax.annotation.Nullable ProductAsset goldOre) {
     this.goldOre = goldOre;
   }
 
 
-  public InventoryAssets grain(@javax.annotation.Nullable InventoryAssetsAlembics grain) {
+  public InventoryAssets grain(@javax.annotation.Nullable ProductAsset grain) {
     this.grain = grain;
     return this;
   }
@@ -1492,16 +1492,16 @@ public class InventoryAssets {
    * @return grain
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGrain() {
+  public ProductAsset getGrain() {
     return grain;
   }
 
-  public void setGrain(@javax.annotation.Nullable InventoryAssetsAlembics grain) {
+  public void setGrain(@javax.annotation.Nullable ProductAsset grain) {
     this.grain = grain;
   }
 
 
-  public InventoryAssets grindstones(@javax.annotation.Nullable InventoryAssetsAlembics grindstones) {
+  public InventoryAssets grindstones(@javax.annotation.Nullable ProductAsset grindstones) {
     this.grindstones = grindstones;
     return this;
   }
@@ -1511,16 +1511,16 @@ public class InventoryAssets {
    * @return grindstones
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getGrindstones() {
+  public ProductAsset getGrindstones() {
     return grindstones;
   }
 
-  public void setGrindstones(@javax.annotation.Nullable InventoryAssetsAlembics grindstones) {
+  public void setGrindstones(@javax.annotation.Nullable ProductAsset grindstones) {
     this.grindstones = grindstones;
   }
 
 
-  public InventoryAssets ham(@javax.annotation.Nullable InventoryAssetsAlembics ham) {
+  public InventoryAssets ham(@javax.annotation.Nullable ProductAsset ham) {
     this.ham = ham;
     return this;
   }
@@ -1530,16 +1530,16 @@ public class InventoryAssets {
    * @return ham
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHam() {
+  public ProductAsset getHam() {
     return ham;
   }
 
-  public void setHam(@javax.annotation.Nullable InventoryAssetsAlembics ham) {
+  public void setHam(@javax.annotation.Nullable ProductAsset ham) {
     this.ham = ham;
   }
 
 
-  public InventoryAssets harnesses(@javax.annotation.Nullable InventoryAssetsAlembics harnesses) {
+  public InventoryAssets harnesses(@javax.annotation.Nullable ProductAsset harnesses) {
     this.harnesses = harnesses;
     return this;
   }
@@ -1549,16 +1549,16 @@ public class InventoryAssets {
    * @return harnesses
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHarnesses() {
+  public ProductAsset getHarnesses() {
     return harnesses;
   }
 
-  public void setHarnesses(@javax.annotation.Nullable InventoryAssetsAlembics harnesses) {
+  public void setHarnesses(@javax.annotation.Nullable ProductAsset harnesses) {
     this.harnesses = harnesses;
   }
 
 
-  public InventoryAssets herbs(@javax.annotation.Nullable InventoryAssetsAlembics herbs) {
+  public InventoryAssets herbs(@javax.annotation.Nullable ProductAsset herbs) {
     this.herbs = herbs;
     return this;
   }
@@ -1568,16 +1568,16 @@ public class InventoryAssets {
    * @return herbs
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHerbs() {
+  public ProductAsset getHerbs() {
     return herbs;
   }
 
-  public void setHerbs(@javax.annotation.Nullable InventoryAssetsAlembics herbs) {
+  public void setHerbs(@javax.annotation.Nullable ProductAsset herbs) {
     this.herbs = herbs;
   }
 
 
-  public InventoryAssets hides(@javax.annotation.Nullable InventoryAssetsAlembics hides) {
+  public InventoryAssets hides(@javax.annotation.Nullable ProductAsset hides) {
     this.hides = hides;
     return this;
   }
@@ -1587,16 +1587,16 @@ public class InventoryAssets {
    * @return hides
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHides() {
+  public ProductAsset getHides() {
     return hides;
   }
 
-  public void setHides(@javax.annotation.Nullable InventoryAssetsAlembics hides) {
+  public void setHides(@javax.annotation.Nullable ProductAsset hides) {
     this.hides = hides;
   }
 
 
-  public InventoryAssets hinges(@javax.annotation.Nullable InventoryAssetsAlembics hinges) {
+  public InventoryAssets hinges(@javax.annotation.Nullable ProductAsset hinges) {
     this.hinges = hinges;
     return this;
   }
@@ -1606,16 +1606,16 @@ public class InventoryAssets {
    * @return hinges
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHinges() {
+  public ProductAsset getHinges() {
     return hinges;
   }
 
-  public void setHinges(@javax.annotation.Nullable InventoryAssetsAlembics hinges) {
+  public void setHinges(@javax.annotation.Nullable ProductAsset hinges) {
     this.hinges = hinges;
   }
 
 
-  public InventoryAssets honey(@javax.annotation.Nullable InventoryAssetsAlembics honey) {
+  public InventoryAssets honey(@javax.annotation.Nullable ProductAsset honey) {
     this.honey = honey;
     return this;
   }
@@ -1625,16 +1625,16 @@ public class InventoryAssets {
    * @return honey
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHoney() {
+  public ProductAsset getHoney() {
     return honey;
   }
 
-  public void setHoney(@javax.annotation.Nullable InventoryAssetsAlembics honey) {
+  public void setHoney(@javax.annotation.Nullable ProductAsset honey) {
     this.honey = honey;
   }
 
 
-  public InventoryAssets hopBeer(@javax.annotation.Nullable InventoryAssetsAlembics hopBeer) {
+  public InventoryAssets hopBeer(@javax.annotation.Nullable ProductAsset hopBeer) {
     this.hopBeer = hopBeer;
     return this;
   }
@@ -1644,16 +1644,16 @@ public class InventoryAssets {
    * @return hopBeer
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getHopBeer() {
+  public ProductAsset getHopBeer() {
     return hopBeer;
   }
 
-  public void setHopBeer(@javax.annotation.Nullable InventoryAssetsAlembics hopBeer) {
+  public void setHopBeer(@javax.annotation.Nullable ProductAsset hopBeer) {
     this.hopBeer = hopBeer;
   }
 
 
-  public InventoryAssets ironOre(@javax.annotation.Nullable InventoryAssetsAlembics ironOre) {
+  public InventoryAssets ironOre(@javax.annotation.Nullable ProductAsset ironOre) {
     this.ironOre = ironOre;
     return this;
   }
@@ -1663,16 +1663,16 @@ public class InventoryAssets {
    * @return ironOre
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getIronOre() {
+  public ProductAsset getIronOre() {
     return ironOre;
   }
 
-  public void setIronOre(@javax.annotation.Nullable InventoryAssetsAlembics ironOre) {
+  public void setIronOre(@javax.annotation.Nullable ProductAsset ironOre) {
     this.ironOre = ironOre;
   }
 
 
-  public InventoryAssets jewellery(@javax.annotation.Nullable InventoryAssetsAlembics jewellery) {
+  public InventoryAssets jewellery(@javax.annotation.Nullable ProductAsset jewellery) {
     this.jewellery = jewellery;
     return this;
   }
@@ -1682,16 +1682,16 @@ public class InventoryAssets {
    * @return jewellery
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getJewellery() {
+  public ProductAsset getJewellery() {
     return jewellery;
   }
 
-  public void setJewellery(@javax.annotation.Nullable InventoryAssetsAlembics jewellery) {
+  public void setJewellery(@javax.annotation.Nullable ProductAsset jewellery) {
     this.jewellery = jewellery;
   }
 
 
-  public InventoryAssets labour(@javax.annotation.Nullable InventoryAssetsAlembics labour) {
+  public InventoryAssets labour(@javax.annotation.Nullable ProductAsset labour) {
     this.labour = labour;
     return this;
   }
@@ -1701,16 +1701,16 @@ public class InventoryAssets {
    * @return labour
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLabour() {
+  public ProductAsset getLabour() {
     return labour;
   }
 
-  public void setLabour(@javax.annotation.Nullable InventoryAssetsAlembics labour) {
+  public void setLabour(@javax.annotation.Nullable ProductAsset labour) {
     this.labour = labour;
   }
 
 
-  public InventoryAssets lathes(@javax.annotation.Nullable InventoryAssetsAlembics lathes) {
+  public InventoryAssets lathes(@javax.annotation.Nullable ProductAsset lathes) {
     this.lathes = lathes;
     return this;
   }
@@ -1720,16 +1720,16 @@ public class InventoryAssets {
    * @return lathes
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLathes() {
+  public ProductAsset getLathes() {
     return lathes;
   }
 
-  public void setLathes(@javax.annotation.Nullable InventoryAssetsAlembics lathes) {
+  public void setLathes(@javax.annotation.Nullable ProductAsset lathes) {
     this.lathes = lathes;
   }
 
 
-  public InventoryAssets leadBars(@javax.annotation.Nullable InventoryAssetsAlembics leadBars) {
+  public InventoryAssets leadBars(@javax.annotation.Nullable ProductAsset leadBars) {
     this.leadBars = leadBars;
     return this;
   }
@@ -1739,16 +1739,16 @@ public class InventoryAssets {
    * @return leadBars
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLeadBars() {
+  public ProductAsset getLeadBars() {
     return leadBars;
   }
 
-  public void setLeadBars(@javax.annotation.Nullable InventoryAssetsAlembics leadBars) {
+  public void setLeadBars(@javax.annotation.Nullable ProductAsset leadBars) {
     this.leadBars = leadBars;
   }
 
 
-  public InventoryAssets leadOre(@javax.annotation.Nullable InventoryAssetsAlembics leadOre) {
+  public InventoryAssets leadOre(@javax.annotation.Nullable ProductAsset leadOre) {
     this.leadOre = leadOre;
     return this;
   }
@@ -1758,16 +1758,16 @@ public class InventoryAssets {
    * @return leadOre
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLeadOre() {
+  public ProductAsset getLeadOre() {
     return leadOre;
   }
 
-  public void setLeadOre(@javax.annotation.Nullable InventoryAssetsAlembics leadOre) {
+  public void setLeadOre(@javax.annotation.Nullable ProductAsset leadOre) {
     this.leadOre = leadOre;
   }
 
 
-  public InventoryAssets leather(@javax.annotation.Nullable InventoryAssetsAlembics leather) {
+  public InventoryAssets leather(@javax.annotation.Nullable ProductAsset leather) {
     this.leather = leather;
     return this;
   }
@@ -1777,16 +1777,16 @@ public class InventoryAssets {
    * @return leather
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLeather() {
+  public ProductAsset getLeather() {
     return leather;
   }
 
-  public void setLeather(@javax.annotation.Nullable InventoryAssetsAlembics leather) {
+  public void setLeather(@javax.annotation.Nullable ProductAsset leather) {
     this.leather = leather;
   }
 
 
-  public InventoryAssets lightArmour(@javax.annotation.Nullable InventoryAssetsAlembics lightArmour) {
+  public InventoryAssets lightArmour(@javax.annotation.Nullable ProductAsset lightArmour) {
     this.lightArmour = lightArmour;
     return this;
   }
@@ -1796,16 +1796,16 @@ public class InventoryAssets {
    * @return lightArmour
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLightArmour() {
+  public ProductAsset getLightArmour() {
     return lightArmour;
   }
 
-  public void setLightArmour(@javax.annotation.Nullable InventoryAssetsAlembics lightArmour) {
+  public void setLightArmour(@javax.annotation.Nullable ProductAsset lightArmour) {
     this.lightArmour = lightArmour;
   }
 
 
-  public InventoryAssets limestone(@javax.annotation.Nullable InventoryAssetsAlembics limestone) {
+  public InventoryAssets limestone(@javax.annotation.Nullable ProductAsset limestone) {
     this.limestone = limestone;
     return this;
   }
@@ -1815,16 +1815,16 @@ public class InventoryAssets {
    * @return limestone
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLimestone() {
+  public ProductAsset getLimestone() {
     return limestone;
   }
 
-  public void setLimestone(@javax.annotation.Nullable InventoryAssetsAlembics limestone) {
+  public void setLimestone(@javax.annotation.Nullable ProductAsset limestone) {
     this.limestone = limestone;
   }
 
 
-  public InventoryAssets lodging(@javax.annotation.Nullable InventoryAssetsAlembics lodging) {
+  public InventoryAssets lodging(@javax.annotation.Nullable ProductAsset lodging) {
     this.lodging = lodging;
     return this;
   }
@@ -1834,16 +1834,16 @@ public class InventoryAssets {
    * @return lodging
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLodging() {
+  public ProductAsset getLodging() {
     return lodging;
   }
 
-  public void setLodging(@javax.annotation.Nullable InventoryAssetsAlembics lodging) {
+  public void setLodging(@javax.annotation.Nullable ProductAsset lodging) {
     this.lodging = lodging;
   }
 
 
-  public InventoryAssets logs(@javax.annotation.Nullable InventoryAssetsAlembics logs) {
+  public InventoryAssets logs(@javax.annotation.Nullable ProductAsset logs) {
     this.logs = logs;
     return this;
   }
@@ -1853,16 +1853,16 @@ public class InventoryAssets {
    * @return logs
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLogs() {
+  public ProductAsset getLogs() {
     return logs;
   }
 
-  public void setLogs(@javax.annotation.Nullable InventoryAssetsAlembics logs) {
+  public void setLogs(@javax.annotation.Nullable ProductAsset logs) {
     this.logs = logs;
   }
 
 
-  public InventoryAssets looms(@javax.annotation.Nullable InventoryAssetsAlembics looms) {
+  public InventoryAssets looms(@javax.annotation.Nullable ProductAsset looms) {
     this.looms = looms;
     return this;
   }
@@ -1872,16 +1872,16 @@ public class InventoryAssets {
    * @return looms
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getLooms() {
+  public ProductAsset getLooms() {
     return looms;
   }
 
-  public void setLooms(@javax.annotation.Nullable InventoryAssetsAlembics looms) {
+  public void setLooms(@javax.annotation.Nullable ProductAsset looms) {
     this.looms = looms;
   }
 
 
-  public InventoryAssets malt(@javax.annotation.Nullable InventoryAssetsAlembics malt) {
+  public InventoryAssets malt(@javax.annotation.Nullable ProductAsset malt) {
     this.malt = malt;
     return this;
   }
@@ -1891,16 +1891,16 @@ public class InventoryAssets {
    * @return malt
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getMalt() {
+  public ProductAsset getMalt() {
     return malt;
   }
 
-  public void setMalt(@javax.annotation.Nullable InventoryAssetsAlembics malt) {
+  public void setMalt(@javax.annotation.Nullable ProductAsset malt) {
     this.malt = malt;
   }
 
 
-  public InventoryAssets manure(@javax.annotation.Nullable InventoryAssetsAlembics manure) {
+  public InventoryAssets manure(@javax.annotation.Nullable ProductAsset manure) {
     this.manure = manure;
     return this;
   }
@@ -1910,16 +1910,16 @@ public class InventoryAssets {
    * @return manure
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getManure() {
+  public ProductAsset getManure() {
     return manure;
   }
 
-  public void setManure(@javax.annotation.Nullable InventoryAssetsAlembics manure) {
+  public void setManure(@javax.annotation.Nullable ProductAsset manure) {
     this.manure = manure;
   }
 
 
-  public InventoryAssets meat(@javax.annotation.Nullable InventoryAssetsAlembics meat) {
+  public InventoryAssets meat(@javax.annotation.Nullable ProductAsset meat) {
     this.meat = meat;
     return this;
   }
@@ -1929,16 +1929,16 @@ public class InventoryAssets {
    * @return meat
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getMeat() {
+  public ProductAsset getMeat() {
     return meat;
   }
 
-  public void setMeat(@javax.annotation.Nullable InventoryAssetsAlembics meat) {
+  public void setMeat(@javax.annotation.Nullable ProductAsset meat) {
     this.meat = meat;
   }
 
 
-  public InventoryAssets medicine(@javax.annotation.Nullable InventoryAssetsAlembics medicine) {
+  public InventoryAssets medicine(@javax.annotation.Nullable ProductAsset medicine) {
     this.medicine = medicine;
     return this;
   }
@@ -1948,16 +1948,16 @@ public class InventoryAssets {
    * @return medicine
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getMedicine() {
+  public ProductAsset getMedicine() {
     return medicine;
   }
 
-  public void setMedicine(@javax.annotation.Nullable InventoryAssetsAlembics medicine) {
+  public void setMedicine(@javax.annotation.Nullable ProductAsset medicine) {
     this.medicine = medicine;
   }
 
 
-  public InventoryAssets milk(@javax.annotation.Nullable InventoryAssetsAlembics milk) {
+  public InventoryAssets milk(@javax.annotation.Nullable ProductAsset milk) {
     this.milk = milk;
     return this;
   }
@@ -1967,16 +1967,16 @@ public class InventoryAssets {
    * @return milk
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getMilk() {
+  public ProductAsset getMilk() {
     return milk;
   }
 
-  public void setMilk(@javax.annotation.Nullable InventoryAssetsAlembics milk) {
+  public void setMilk(@javax.annotation.Nullable ProductAsset milk) {
     this.milk = milk;
   }
 
 
-  public InventoryAssets mouldboards(@javax.annotation.Nullable InventoryAssetsAlembics mouldboards) {
+  public InventoryAssets mouldboards(@javax.annotation.Nullable ProductAsset mouldboards) {
     this.mouldboards = mouldboards;
     return this;
   }
@@ -1986,16 +1986,16 @@ public class InventoryAssets {
    * @return mouldboards
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getMouldboards() {
+  public ProductAsset getMouldboards() {
     return mouldboards;
   }
 
-  public void setMouldboards(@javax.annotation.Nullable InventoryAssetsAlembics mouldboards) {
+  public void setMouldboards(@javax.annotation.Nullable ProductAsset mouldboards) {
     this.mouldboards = mouldboards;
   }
 
 
-  public InventoryAssets nails(@javax.annotation.Nullable InventoryAssetsAlembics nails) {
+  public InventoryAssets nails(@javax.annotation.Nullable ProductAsset nails) {
     this.nails = nails;
     return this;
   }
@@ -2005,16 +2005,16 @@ public class InventoryAssets {
    * @return nails
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getNails() {
+  public ProductAsset getNails() {
     return nails;
   }
 
-  public void setNails(@javax.annotation.Nullable InventoryAssetsAlembics nails) {
+  public void setNails(@javax.annotation.Nullable ProductAsset nails) {
     this.nails = nails;
   }
 
 
-  public InventoryAssets nets(@javax.annotation.Nullable InventoryAssetsAlembics nets) {
+  public InventoryAssets nets(@javax.annotation.Nullable ProductAsset nets) {
     this.nets = nets;
     return this;
   }
@@ -2024,16 +2024,16 @@ public class InventoryAssets {
    * @return nets
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getNets() {
+  public ProductAsset getNets() {
     return nets;
   }
 
-  public void setNets(@javax.annotation.Nullable InventoryAssetsAlembics nets) {
+  public void setNets(@javax.annotation.Nullable ProductAsset nets) {
     this.nets = nets;
   }
 
 
-  public InventoryAssets oxPower(@javax.annotation.Nullable InventoryAssetsAlembics oxPower) {
+  public InventoryAssets oxPower(@javax.annotation.Nullable ProductAsset oxPower) {
     this.oxPower = oxPower;
     return this;
   }
@@ -2043,16 +2043,16 @@ public class InventoryAssets {
    * @return oxPower
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getOxPower() {
+  public ProductAsset getOxPower() {
     return oxPower;
   }
 
-  public void setOxPower(@javax.annotation.Nullable InventoryAssetsAlembics oxPower) {
+  public void setOxPower(@javax.annotation.Nullable ProductAsset oxPower) {
     this.oxPower = oxPower;
   }
 
 
-  public InventoryAssets paper(@javax.annotation.Nullable InventoryAssetsAlembics paper) {
+  public InventoryAssets paper(@javax.annotation.Nullable ProductAsset paper) {
     this.paper = paper;
     return this;
   }
@@ -2062,16 +2062,16 @@ public class InventoryAssets {
    * @return paper
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPaper() {
+  public ProductAsset getPaper() {
     return paper;
   }
 
-  public void setPaper(@javax.annotation.Nullable InventoryAssetsAlembics paper) {
+  public void setPaper(@javax.annotation.Nullable ProductAsset paper) {
     this.paper = paper;
   }
 
 
-  public InventoryAssets pasties(@javax.annotation.Nullable InventoryAssetsAlembics pasties) {
+  public InventoryAssets pasties(@javax.annotation.Nullable ProductAsset pasties) {
     this.pasties = pasties;
     return this;
   }
@@ -2081,16 +2081,16 @@ public class InventoryAssets {
    * @return pasties
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPasties() {
+  public ProductAsset getPasties() {
     return pasties;
   }
 
-  public void setPasties(@javax.annotation.Nullable InventoryAssetsAlembics pasties) {
+  public void setPasties(@javax.annotation.Nullable ProductAsset pasties) {
     this.pasties = pasties;
   }
 
 
-  public InventoryAssets pickaxes(@javax.annotation.Nullable InventoryAssetsAlembics pickaxes) {
+  public InventoryAssets pickaxes(@javax.annotation.Nullable ProductAsset pickaxes) {
     this.pickaxes = pickaxes;
     return this;
   }
@@ -2100,16 +2100,16 @@ public class InventoryAssets {
    * @return pickaxes
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPickaxes() {
+  public ProductAsset getPickaxes() {
     return pickaxes;
   }
 
-  public void setPickaxes(@javax.annotation.Nullable InventoryAssetsAlembics pickaxes) {
+  public void setPickaxes(@javax.annotation.Nullable ProductAsset pickaxes) {
     this.pickaxes = pickaxes;
   }
 
 
-  public InventoryAssets pies(@javax.annotation.Nullable InventoryAssetsAlembics pies) {
+  public InventoryAssets pies(@javax.annotation.Nullable ProductAsset pies) {
     this.pies = pies;
     return this;
   }
@@ -2119,16 +2119,16 @@ public class InventoryAssets {
    * @return pies
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPies() {
+  public ProductAsset getPies() {
     return pies;
   }
 
-  public void setPies(@javax.annotation.Nullable InventoryAssetsAlembics pies) {
+  public void setPies(@javax.annotation.Nullable ProductAsset pies) {
     this.pies = pies;
   }
 
 
-  public InventoryAssets plateArmour(@javax.annotation.Nullable InventoryAssetsAlembics plateArmour) {
+  public InventoryAssets plateArmour(@javax.annotation.Nullable ProductAsset plateArmour) {
     this.plateArmour = plateArmour;
     return this;
   }
@@ -2138,16 +2138,16 @@ public class InventoryAssets {
    * @return plateArmour
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPlateArmour() {
+  public ProductAsset getPlateArmour() {
     return plateArmour;
   }
 
-  public void setPlateArmour(@javax.annotation.Nullable InventoryAssetsAlembics plateArmour) {
+  public void setPlateArmour(@javax.annotation.Nullable ProductAsset plateArmour) {
     this.plateArmour = plateArmour;
   }
 
 
-  public InventoryAssets ploughs(@javax.annotation.Nullable InventoryAssetsAlembics ploughs) {
+  public InventoryAssets ploughs(@javax.annotation.Nullable ProductAsset ploughs) {
     this.ploughs = ploughs;
     return this;
   }
@@ -2157,16 +2157,16 @@ public class InventoryAssets {
    * @return ploughs
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPloughs() {
+  public ProductAsset getPloughs() {
     return ploughs;
   }
 
-  public void setPloughs(@javax.annotation.Nullable InventoryAssetsAlembics ploughs) {
+  public void setPloughs(@javax.annotation.Nullable ProductAsset ploughs) {
     this.ploughs = ploughs;
   }
 
 
-  public InventoryAssets premiumArmour(@javax.annotation.Nullable InventoryAssetsAlembics premiumArmour) {
+  public InventoryAssets premiumArmour(@javax.annotation.Nullable ProductAsset premiumArmour) {
     this.premiumArmour = premiumArmour;
     return this;
   }
@@ -2176,16 +2176,16 @@ public class InventoryAssets {
    * @return premiumArmour
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumArmour() {
+  public ProductAsset getPremiumArmour() {
     return premiumArmour;
   }
 
-  public void setPremiumArmour(@javax.annotation.Nullable InventoryAssetsAlembics premiumArmour) {
+  public void setPremiumArmour(@javax.annotation.Nullable ProductAsset premiumArmour) {
     this.premiumArmour = premiumArmour;
   }
 
 
-  public InventoryAssets premiumAxes(@javax.annotation.Nullable InventoryAssetsAlembics premiumAxes) {
+  public InventoryAssets premiumAxes(@javax.annotation.Nullable ProductAsset premiumAxes) {
     this.premiumAxes = premiumAxes;
     return this;
   }
@@ -2195,16 +2195,16 @@ public class InventoryAssets {
    * @return premiumAxes
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumAxes() {
+  public ProductAsset getPremiumAxes() {
     return premiumAxes;
   }
 
-  public void setPremiumAxes(@javax.annotation.Nullable InventoryAssetsAlembics premiumAxes) {
+  public void setPremiumAxes(@javax.annotation.Nullable ProductAsset premiumAxes) {
     this.premiumAxes = premiumAxes;
   }
 
 
-  public InventoryAssets premiumCheese(@javax.annotation.Nullable InventoryAssetsAlembics premiumCheese) {
+  public InventoryAssets premiumCheese(@javax.annotation.Nullable ProductAsset premiumCheese) {
     this.premiumCheese = premiumCheese;
     return this;
   }
@@ -2214,16 +2214,16 @@ public class InventoryAssets {
    * @return premiumCheese
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumCheese() {
+  public ProductAsset getPremiumCheese() {
     return premiumCheese;
   }
 
-  public void setPremiumCheese(@javax.annotation.Nullable InventoryAssetsAlembics premiumCheese) {
+  public void setPremiumCheese(@javax.annotation.Nullable ProductAsset premiumCheese) {
     this.premiumCheese = premiumCheese;
   }
 
 
-  public InventoryAssets premiumCloth(@javax.annotation.Nullable InventoryAssetsAlembics premiumCloth) {
+  public InventoryAssets premiumCloth(@javax.annotation.Nullable ProductAsset premiumCloth) {
     this.premiumCloth = premiumCloth;
     return this;
   }
@@ -2233,16 +2233,16 @@ public class InventoryAssets {
    * @return premiumCloth
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumCloth() {
+  public ProductAsset getPremiumCloth() {
     return premiumCloth;
   }
 
-  public void setPremiumCloth(@javax.annotation.Nullable InventoryAssetsAlembics premiumCloth) {
+  public void setPremiumCloth(@javax.annotation.Nullable ProductAsset premiumCloth) {
     this.premiumCloth = premiumCloth;
   }
 
 
-  public InventoryAssets premiumDye(@javax.annotation.Nullable InventoryAssetsAlembics premiumDye) {
+  public InventoryAssets premiumDye(@javax.annotation.Nullable ProductAsset premiumDye) {
     this.premiumDye = premiumDye;
     return this;
   }
@@ -2252,16 +2252,16 @@ public class InventoryAssets {
    * @return premiumDye
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumDye() {
+  public ProductAsset getPremiumDye() {
     return premiumDye;
   }
 
-  public void setPremiumDye(@javax.annotation.Nullable InventoryAssetsAlembics premiumDye) {
+  public void setPremiumDye(@javax.annotation.Nullable ProductAsset premiumDye) {
     this.premiumDye = premiumDye;
   }
 
 
-  public InventoryAssets premiumGarments(@javax.annotation.Nullable InventoryAssetsAlembics premiumGarments) {
+  public InventoryAssets premiumGarments(@javax.annotation.Nullable ProductAsset premiumGarments) {
     this.premiumGarments = premiumGarments;
     return this;
   }
@@ -2271,16 +2271,16 @@ public class InventoryAssets {
    * @return premiumGarments
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumGarments() {
+  public ProductAsset getPremiumGarments() {
     return premiumGarments;
   }
 
-  public void setPremiumGarments(@javax.annotation.Nullable InventoryAssetsAlembics premiumGarments) {
+  public void setPremiumGarments(@javax.annotation.Nullable ProductAsset premiumGarments) {
     this.premiumGarments = premiumGarments;
   }
 
 
-  public InventoryAssets premiumGlassware(@javax.annotation.Nullable InventoryAssetsAlembics premiumGlassware) {
+  public InventoryAssets premiumGlassware(@javax.annotation.Nullable ProductAsset premiumGlassware) {
     this.premiumGlassware = premiumGlassware;
     return this;
   }
@@ -2290,16 +2290,16 @@ public class InventoryAssets {
    * @return premiumGlassware
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumGlassware() {
+  public ProductAsset getPremiumGlassware() {
     return premiumGlassware;
   }
 
-  public void setPremiumGlassware(@javax.annotation.Nullable InventoryAssetsAlembics premiumGlassware) {
+  public void setPremiumGlassware(@javax.annotation.Nullable ProductAsset premiumGlassware) {
     this.premiumGlassware = premiumGlassware;
   }
 
 
-  public InventoryAssets premiumHam(@javax.annotation.Nullable InventoryAssetsAlembics premiumHam) {
+  public InventoryAssets premiumHam(@javax.annotation.Nullable ProductAsset premiumHam) {
     this.premiumHam = premiumHam;
     return this;
   }
@@ -2309,16 +2309,16 @@ public class InventoryAssets {
    * @return premiumHam
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumHam() {
+  public ProductAsset getPremiumHam() {
     return premiumHam;
   }
 
-  public void setPremiumHam(@javax.annotation.Nullable InventoryAssetsAlembics premiumHam) {
+  public void setPremiumHam(@javax.annotation.Nullable ProductAsset premiumHam) {
     this.premiumHam = premiumHam;
   }
 
 
-  public InventoryAssets premiumSails(@javax.annotation.Nullable InventoryAssetsAlembics premiumSails) {
+  public InventoryAssets premiumSails(@javax.annotation.Nullable ProductAsset premiumSails) {
     this.premiumSails = premiumSails;
     return this;
   }
@@ -2328,16 +2328,16 @@ public class InventoryAssets {
    * @return premiumSails
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumSails() {
+  public ProductAsset getPremiumSails() {
     return premiumSails;
   }
 
-  public void setPremiumSails(@javax.annotation.Nullable InventoryAssetsAlembics premiumSails) {
+  public void setPremiumSails(@javax.annotation.Nullable ProductAsset premiumSails) {
     this.premiumSails = premiumSails;
   }
 
 
-  public InventoryAssets premiumSteel(@javax.annotation.Nullable InventoryAssetsAlembics premiumSteel) {
+  public InventoryAssets premiumSteel(@javax.annotation.Nullable ProductAsset premiumSteel) {
     this.premiumSteel = premiumSteel;
     return this;
   }
@@ -2347,16 +2347,16 @@ public class InventoryAssets {
    * @return premiumSteel
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumSteel() {
+  public ProductAsset getPremiumSteel() {
     return premiumSteel;
   }
 
-  public void setPremiumSteel(@javax.annotation.Nullable InventoryAssetsAlembics premiumSteel) {
+  public void setPremiumSteel(@javax.annotation.Nullable ProductAsset premiumSteel) {
     this.premiumSteel = premiumSteel;
   }
 
 
-  public InventoryAssets premiumSwords(@javax.annotation.Nullable InventoryAssetsAlembics premiumSwords) {
+  public InventoryAssets premiumSwords(@javax.annotation.Nullable ProductAsset premiumSwords) {
     this.premiumSwords = premiumSwords;
     return this;
   }
@@ -2366,16 +2366,16 @@ public class InventoryAssets {
    * @return premiumSwords
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getPremiumSwords() {
+  public ProductAsset getPremiumSwords() {
     return premiumSwords;
   }
 
-  public void setPremiumSwords(@javax.annotation.Nullable InventoryAssetsAlembics premiumSwords) {
+  public void setPremiumSwords(@javax.annotation.Nullable ProductAsset premiumSwords) {
     this.premiumSwords = premiumSwords;
   }
 
 
-  public InventoryAssets protection(@javax.annotation.Nullable InventoryAssetsAlembics protection) {
+  public InventoryAssets protection(@javax.annotation.Nullable ProductAsset protection) {
     this.protection = protection;
     return this;
   }
@@ -2385,16 +2385,16 @@ public class InventoryAssets {
    * @return protection
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getProtection() {
+  public ProductAsset getProtection() {
     return protection;
   }
 
-  public void setProtection(@javax.annotation.Nullable InventoryAssetsAlembics protection) {
+  public void setProtection(@javax.annotation.Nullable ProductAsset protection) {
     this.protection = protection;
   }
 
 
-  public InventoryAssets rawCloth(@javax.annotation.Nullable InventoryAssetsAlembics rawCloth) {
+  public InventoryAssets rawCloth(@javax.annotation.Nullable ProductAsset rawCloth) {
     this.rawCloth = rawCloth;
     return this;
   }
@@ -2404,16 +2404,16 @@ public class InventoryAssets {
    * @return rawCloth
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getRawCloth() {
+  public ProductAsset getRawCloth() {
     return rawCloth;
   }
 
-  public void setRawCloth(@javax.annotation.Nullable InventoryAssetsAlembics rawCloth) {
+  public void setRawCloth(@javax.annotation.Nullable ProductAsset rawCloth) {
     this.rawCloth = rawCloth;
   }
 
 
-  public InventoryAssets resin(@javax.annotation.Nullable InventoryAssetsAlembics resin) {
+  public InventoryAssets resin(@javax.annotation.Nullable ProductAsset resin) {
     this.resin = resin;
     return this;
   }
@@ -2423,16 +2423,16 @@ public class InventoryAssets {
    * @return resin
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getResin() {
+  public ProductAsset getResin() {
     return resin;
   }
 
-  public void setResin(@javax.annotation.Nullable InventoryAssetsAlembics resin) {
+  public void setResin(@javax.annotation.Nullable ProductAsset resin) {
     this.resin = resin;
   }
 
 
-  public InventoryAssets rope(@javax.annotation.Nullable InventoryAssetsAlembics rope) {
+  public InventoryAssets rope(@javax.annotation.Nullable ProductAsset rope) {
     this.rope = rope;
     return this;
   }
@@ -2442,16 +2442,16 @@ public class InventoryAssets {
    * @return rope
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getRope() {
+  public ProductAsset getRope() {
     return rope;
   }
 
-  public void setRope(@javax.annotation.Nullable InventoryAssetsAlembics rope) {
+  public void setRope(@javax.annotation.Nullable ProductAsset rope) {
     this.rope = rope;
   }
 
 
-  public InventoryAssets sails(@javax.annotation.Nullable InventoryAssetsAlembics sails) {
+  public InventoryAssets sails(@javax.annotation.Nullable ProductAsset sails) {
     this.sails = sails;
     return this;
   }
@@ -2461,16 +2461,16 @@ public class InventoryAssets {
    * @return sails
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSails() {
+  public ProductAsset getSails() {
     return sails;
   }
 
-  public void setSails(@javax.annotation.Nullable InventoryAssetsAlembics sails) {
+  public void setSails(@javax.annotation.Nullable ProductAsset sails) {
     this.sails = sails;
   }
 
 
-  public InventoryAssets salt(@javax.annotation.Nullable InventoryAssetsAlembics salt) {
+  public InventoryAssets salt(@javax.annotation.Nullable ProductAsset salt) {
     this.salt = salt;
     return this;
   }
@@ -2480,16 +2480,16 @@ public class InventoryAssets {
    * @return salt
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSalt() {
+  public ProductAsset getSalt() {
     return salt;
   }
 
-  public void setSalt(@javax.annotation.Nullable InventoryAssetsAlembics salt) {
+  public void setSalt(@javax.annotation.Nullable ProductAsset salt) {
     this.salt = salt;
   }
 
 
-  public InventoryAssets sculptures(@javax.annotation.Nullable InventoryAssetsAlembics sculptures) {
+  public InventoryAssets sculptures(@javax.annotation.Nullable ProductAsset sculptures) {
     this.sculptures = sculptures;
     return this;
   }
@@ -2499,16 +2499,16 @@ public class InventoryAssets {
    * @return sculptures
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSculptures() {
+  public ProductAsset getSculptures() {
     return sculptures;
   }
 
-  public void setSculptures(@javax.annotation.Nullable InventoryAssetsAlembics sculptures) {
+  public void setSculptures(@javax.annotation.Nullable ProductAsset sculptures) {
     this.sculptures = sculptures;
   }
 
 
-  public InventoryAssets scythes(@javax.annotation.Nullable InventoryAssetsAlembics scythes) {
+  public InventoryAssets scythes(@javax.annotation.Nullable ProductAsset scythes) {
     this.scythes = scythes;
     return this;
   }
@@ -2518,16 +2518,16 @@ public class InventoryAssets {
    * @return scythes
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getScythes() {
+  public ProductAsset getScythes() {
     return scythes;
   }
 
-  public void setScythes(@javax.annotation.Nullable InventoryAssetsAlembics scythes) {
+  public void setScythes(@javax.annotation.Nullable ProductAsset scythes) {
     this.scythes = scythes;
   }
 
 
-  public InventoryAssets silverBars(@javax.annotation.Nullable InventoryAssetsAlembics silverBars) {
+  public InventoryAssets silverBars(@javax.annotation.Nullable ProductAsset silverBars) {
     this.silverBars = silverBars;
     return this;
   }
@@ -2537,16 +2537,16 @@ public class InventoryAssets {
    * @return silverBars
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSilverBars() {
+  public ProductAsset getSilverBars() {
     return silverBars;
   }
 
-  public void setSilverBars(@javax.annotation.Nullable InventoryAssetsAlembics silverBars) {
+  public void setSilverBars(@javax.annotation.Nullable ProductAsset silverBars) {
     this.silverBars = silverBars;
   }
 
 
-  public InventoryAssets silverOre(@javax.annotation.Nullable InventoryAssetsAlembics silverOre) {
+  public InventoryAssets silverOre(@javax.annotation.Nullable ProductAsset silverOre) {
     this.silverOre = silverOre;
     return this;
   }
@@ -2556,16 +2556,16 @@ public class InventoryAssets {
    * @return silverOre
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSilverOre() {
+  public ProductAsset getSilverOre() {
     return silverOre;
   }
 
-  public void setSilverOre(@javax.annotation.Nullable InventoryAssetsAlembics silverOre) {
+  public void setSilverOre(@javax.annotation.Nullable ProductAsset silverOre) {
     this.silverOre = silverOre;
   }
 
 
-  public InventoryAssets slakedLime(@javax.annotation.Nullable InventoryAssetsAlembics slakedLime) {
+  public InventoryAssets slakedLime(@javax.annotation.Nullable ProductAsset slakedLime) {
     this.slakedLime = slakedLime;
     return this;
   }
@@ -2575,16 +2575,16 @@ public class InventoryAssets {
    * @return slakedLime
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSlakedLime() {
+  public ProductAsset getSlakedLime() {
     return slakedLime;
   }
 
-  public void setSlakedLime(@javax.annotation.Nullable InventoryAssetsAlembics slakedLime) {
+  public void setSlakedLime(@javax.annotation.Nullable ProductAsset slakedLime) {
     this.slakedLime = slakedLime;
   }
 
 
-  public InventoryAssets spinningWheels(@javax.annotation.Nullable InventoryAssetsAlembics spinningWheels) {
+  public InventoryAssets spinningWheels(@javax.annotation.Nullable ProductAsset spinningWheels) {
     this.spinningWheels = spinningWheels;
     return this;
   }
@@ -2594,16 +2594,16 @@ public class InventoryAssets {
    * @return spinningWheels
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSpinningWheels() {
+  public ProductAsset getSpinningWheels() {
     return spinningWheels;
   }
 
-  public void setSpinningWheels(@javax.annotation.Nullable InventoryAssetsAlembics spinningWheels) {
+  public void setSpinningWheels(@javax.annotation.Nullable ProductAsset spinningWheels) {
     this.spinningWheels = spinningWheels;
   }
 
 
-  public InventoryAssets spirits(@javax.annotation.Nullable InventoryAssetsAlembics spirits) {
+  public InventoryAssets spirits(@javax.annotation.Nullable ProductAsset spirits) {
     this.spirits = spirits;
     return this;
   }
@@ -2613,16 +2613,16 @@ public class InventoryAssets {
    * @return spirits
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSpirits() {
+  public ProductAsset getSpirits() {
     return spirits;
   }
 
-  public void setSpirits(@javax.annotation.Nullable InventoryAssetsAlembics spirits) {
+  public void setSpirits(@javax.annotation.Nullable ProductAsset spirits) {
     this.spirits = spirits;
   }
 
 
-  public InventoryAssets steelIngots(@javax.annotation.Nullable InventoryAssetsAlembics steelIngots) {
+  public InventoryAssets steelIngots(@javax.annotation.Nullable ProductAsset steelIngots) {
     this.steelIngots = steelIngots;
     return this;
   }
@@ -2632,16 +2632,16 @@ public class InventoryAssets {
    * @return steelIngots
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSteelIngots() {
+  public ProductAsset getSteelIngots() {
     return steelIngots;
   }
 
-  public void setSteelIngots(@javax.annotation.Nullable InventoryAssetsAlembics steelIngots) {
+  public void setSteelIngots(@javax.annotation.Nullable ProductAsset steelIngots) {
     this.steelIngots = steelIngots;
   }
 
 
-  public InventoryAssets stockfish(@javax.annotation.Nullable InventoryAssetsAlembics stockfish) {
+  public InventoryAssets stockfish(@javax.annotation.Nullable ProductAsset stockfish) {
     this.stockfish = stockfish;
     return this;
   }
@@ -2651,16 +2651,16 @@ public class InventoryAssets {
    * @return stockfish
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getStockfish() {
+  public ProductAsset getStockfish() {
     return stockfish;
   }
 
-  public void setStockfish(@javax.annotation.Nullable InventoryAssetsAlembics stockfish) {
+  public void setStockfish(@javax.annotation.Nullable ProductAsset stockfish) {
     this.stockfish = stockfish;
   }
 
 
-  public InventoryAssets swords(@javax.annotation.Nullable InventoryAssetsAlembics swords) {
+  public InventoryAssets swords(@javax.annotation.Nullable ProductAsset swords) {
     this.swords = swords;
     return this;
   }
@@ -2670,16 +2670,16 @@ public class InventoryAssets {
    * @return swords
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getSwords() {
+  public ProductAsset getSwords() {
     return swords;
   }
 
-  public void setSwords(@javax.annotation.Nullable InventoryAssetsAlembics swords) {
+  public void setSwords(@javax.annotation.Nullable ProductAsset swords) {
     this.swords = swords;
   }
 
 
-  public InventoryAssets tackles(@javax.annotation.Nullable InventoryAssetsAlembics tackles) {
+  public InventoryAssets tackles(@javax.annotation.Nullable ProductAsset tackles) {
     this.tackles = tackles;
     return this;
   }
@@ -2689,16 +2689,16 @@ public class InventoryAssets {
    * @return tackles
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTackles() {
+  public ProductAsset getTackles() {
     return tackles;
   }
 
-  public void setTackles(@javax.annotation.Nullable InventoryAssetsAlembics tackles) {
+  public void setTackles(@javax.annotation.Nullable ProductAsset tackles) {
     this.tackles = tackles;
   }
 
 
-  public InventoryAssets tapestries(@javax.annotation.Nullable InventoryAssetsAlembics tapestries) {
+  public InventoryAssets tapestries(@javax.annotation.Nullable ProductAsset tapestries) {
     this.tapestries = tapestries;
     return this;
   }
@@ -2708,16 +2708,16 @@ public class InventoryAssets {
    * @return tapestries
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTapestries() {
+  public ProductAsset getTapestries() {
     return tapestries;
   }
 
-  public void setTapestries(@javax.annotation.Nullable InventoryAssetsAlembics tapestries) {
+  public void setTapestries(@javax.annotation.Nullable ProductAsset tapestries) {
     this.tapestries = tapestries;
   }
 
 
-  public InventoryAssets tar(@javax.annotation.Nullable InventoryAssetsAlembics tar) {
+  public InventoryAssets tar(@javax.annotation.Nullable ProductAsset tar) {
     this.tar = tar;
     return this;
   }
@@ -2727,16 +2727,16 @@ public class InventoryAssets {
    * @return tar
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTar() {
+  public ProductAsset getTar() {
     return tar;
   }
 
-  public void setTar(@javax.annotation.Nullable InventoryAssetsAlembics tar) {
+  public void setTar(@javax.annotation.Nullable ProductAsset tar) {
     this.tar = tar;
   }
 
 
-  public InventoryAssets thread(@javax.annotation.Nullable InventoryAssetsAlembics thread) {
+  public InventoryAssets thread(@javax.annotation.Nullable ProductAsset thread) {
     this.thread = thread;
     return this;
   }
@@ -2746,16 +2746,16 @@ public class InventoryAssets {
    * @return thread
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getThread() {
+  public ProductAsset getThread() {
     return thread;
   }
 
-  public void setThread(@javax.annotation.Nullable InventoryAssetsAlembics thread) {
+  public void setThread(@javax.annotation.Nullable ProductAsset thread) {
     this.thread = thread;
   }
 
 
-  public InventoryAssets tiles(@javax.annotation.Nullable InventoryAssetsAlembics tiles) {
+  public InventoryAssets tiles(@javax.annotation.Nullable ProductAsset tiles) {
     this.tiles = tiles;
     return this;
   }
@@ -2765,16 +2765,16 @@ public class InventoryAssets {
    * @return tiles
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTiles() {
+  public ProductAsset getTiles() {
     return tiles;
   }
 
-  public void setTiles(@javax.annotation.Nullable InventoryAssetsAlembics tiles) {
+  public void setTiles(@javax.annotation.Nullable ProductAsset tiles) {
     this.tiles = tiles;
   }
 
 
-  public InventoryAssets timber(@javax.annotation.Nullable InventoryAssetsAlembics timber) {
+  public InventoryAssets timber(@javax.annotation.Nullable ProductAsset timber) {
     this.timber = timber;
     return this;
   }
@@ -2784,16 +2784,16 @@ public class InventoryAssets {
    * @return timber
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTimber() {
+  public ProductAsset getTimber() {
     return timber;
   }
 
-  public void setTimber(@javax.annotation.Nullable InventoryAssetsAlembics timber) {
+  public void setTimber(@javax.annotation.Nullable ProductAsset timber) {
     this.timber = timber;
   }
 
 
-  public InventoryAssets tinIngots(@javax.annotation.Nullable InventoryAssetsAlembics tinIngots) {
+  public InventoryAssets tinIngots(@javax.annotation.Nullable ProductAsset tinIngots) {
     this.tinIngots = tinIngots;
     return this;
   }
@@ -2803,16 +2803,16 @@ public class InventoryAssets {
    * @return tinIngots
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTinIngots() {
+  public ProductAsset getTinIngots() {
     return tinIngots;
   }
 
-  public void setTinIngots(@javax.annotation.Nullable InventoryAssetsAlembics tinIngots) {
+  public void setTinIngots(@javax.annotation.Nullable ProductAsset tinIngots) {
     this.tinIngots = tinIngots;
   }
 
 
-  public InventoryAssets tinOre(@javax.annotation.Nullable InventoryAssetsAlembics tinOre) {
+  public InventoryAssets tinOre(@javax.annotation.Nullable ProductAsset tinOre) {
     this.tinOre = tinOre;
     return this;
   }
@@ -2822,16 +2822,16 @@ public class InventoryAssets {
    * @return tinOre
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTinOre() {
+  public ProductAsset getTinOre() {
     return tinOre;
   }
 
-  public void setTinOre(@javax.annotation.Nullable InventoryAssetsAlembics tinOre) {
+  public void setTinOre(@javax.annotation.Nullable ProductAsset tinOre) {
     this.tinOre = tinOre;
   }
 
 
-  public InventoryAssets tools(@javax.annotation.Nullable InventoryAssetsAlembics tools) {
+  public InventoryAssets tools(@javax.annotation.Nullable ProductAsset tools) {
     this.tools = tools;
     return this;
   }
@@ -2841,16 +2841,16 @@ public class InventoryAssets {
    * @return tools
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getTools() {
+  public ProductAsset getTools() {
     return tools;
   }
 
-  public void setTools(@javax.annotation.Nullable InventoryAssetsAlembics tools) {
+  public void setTools(@javax.annotation.Nullable ProductAsset tools) {
     this.tools = tools;
   }
 
 
-  public InventoryAssets wax(@javax.annotation.Nullable InventoryAssetsAlembics wax) {
+  public InventoryAssets wax(@javax.annotation.Nullable ProductAsset wax) {
     this.wax = wax;
     return this;
   }
@@ -2860,16 +2860,16 @@ public class InventoryAssets {
    * @return wax
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getWax() {
+  public ProductAsset getWax() {
     return wax;
   }
 
-  public void setWax(@javax.annotation.Nullable InventoryAssetsAlembics wax) {
+  public void setWax(@javax.annotation.Nullable ProductAsset wax) {
     this.wax = wax;
   }
 
 
-  public InventoryAssets wheels(@javax.annotation.Nullable InventoryAssetsAlembics wheels) {
+  public InventoryAssets wheels(@javax.annotation.Nullable ProductAsset wheels) {
     this.wheels = wheels;
     return this;
   }
@@ -2879,16 +2879,16 @@ public class InventoryAssets {
    * @return wheels
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getWheels() {
+  public ProductAsset getWheels() {
     return wheels;
   }
 
-  public void setWheels(@javax.annotation.Nullable InventoryAssetsAlembics wheels) {
+  public void setWheels(@javax.annotation.Nullable ProductAsset wheels) {
     this.wheels = wheels;
   }
 
 
-  public InventoryAssets windows(@javax.annotation.Nullable InventoryAssetsAlembics windows) {
+  public InventoryAssets windows(@javax.annotation.Nullable ProductAsset windows) {
     this.windows = windows;
     return this;
   }
@@ -2898,16 +2898,16 @@ public class InventoryAssets {
    * @return windows
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getWindows() {
+  public ProductAsset getWindows() {
     return windows;
   }
 
-  public void setWindows(@javax.annotation.Nullable InventoryAssetsAlembics windows) {
+  public void setWindows(@javax.annotation.Nullable ProductAsset windows) {
     this.windows = windows;
   }
 
 
-  public InventoryAssets wine(@javax.annotation.Nullable InventoryAssetsAlembics wine) {
+  public InventoryAssets wine(@javax.annotation.Nullable ProductAsset wine) {
     this.wine = wine;
     return this;
   }
@@ -2917,16 +2917,16 @@ public class InventoryAssets {
    * @return wine
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getWine() {
+  public ProductAsset getWine() {
     return wine;
   }
 
-  public void setWine(@javax.annotation.Nullable InventoryAssetsAlembics wine) {
+  public void setWine(@javax.annotation.Nullable ProductAsset wine) {
     this.wine = wine;
   }
 
 
-  public InventoryAssets wool(@javax.annotation.Nullable InventoryAssetsAlembics wool) {
+  public InventoryAssets wool(@javax.annotation.Nullable ProductAsset wool) {
     this.wool = wool;
     return this;
   }
@@ -2936,16 +2936,16 @@ public class InventoryAssets {
    * @return wool
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getWool() {
+  public ProductAsset getWool() {
     return wool;
   }
 
-  public void setWool(@javax.annotation.Nullable InventoryAssetsAlembics wool) {
+  public void setWool(@javax.annotation.Nullable ProductAsset wool) {
     this.wool = wool;
   }
 
 
-  public InventoryAssets wroughtIron(@javax.annotation.Nullable InventoryAssetsAlembics wroughtIron) {
+  public InventoryAssets wroughtIron(@javax.annotation.Nullable ProductAsset wroughtIron) {
     this.wroughtIron = wroughtIron;
     return this;
   }
@@ -2955,16 +2955,16 @@ public class InventoryAssets {
    * @return wroughtIron
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getWroughtIron() {
+  public ProductAsset getWroughtIron() {
     return wroughtIron;
   }
 
-  public void setWroughtIron(@javax.annotation.Nullable InventoryAssetsAlembics wroughtIron) {
+  public void setWroughtIron(@javax.annotation.Nullable ProductAsset wroughtIron) {
     this.wroughtIron = wroughtIron;
   }
 
 
-  public InventoryAssets yarn(@javax.annotation.Nullable InventoryAssetsAlembics yarn) {
+  public InventoryAssets yarn(@javax.annotation.Nullable ProductAsset yarn) {
     this.yarn = yarn;
     return this;
   }
@@ -2974,11 +2974,11 @@ public class InventoryAssets {
    * @return yarn
    */
   @javax.annotation.Nullable
-  public InventoryAssetsAlembics getYarn() {
+  public ProductAsset getYarn() {
     return yarn;
   }
 
-  public void setYarn(@javax.annotation.Nullable InventoryAssetsAlembics yarn) {
+  public void setYarn(@javax.annotation.Nullable ProductAsset yarn) {
     this.yarn = yarn;
   }
 
@@ -3309,491 +3309,491 @@ public class InventoryAssets {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `alembics`
       if (jsonObj.get("alembics") != null && !jsonObj.get("alembics").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("alembics"));
+        ProductAsset.validateJsonElement(jsonObj.get("alembics"));
       }
       // validate the optional field `arms`
       if (jsonObj.get("arms") != null && !jsonObj.get("arms").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("arms"));
+        ProductAsset.validateJsonElement(jsonObj.get("arms"));
       }
       // validate the optional field `axes`
       if (jsonObj.get("axes") != null && !jsonObj.get("axes").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("axes"));
+        ProductAsset.validateJsonElement(jsonObj.get("axes"));
       }
       // validate the optional field `beer`
       if (jsonObj.get("beer") != null && !jsonObj.get("beer").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("beer"));
+        ProductAsset.validateJsonElement(jsonObj.get("beer"));
       }
       // validate the optional field `bellows`
       if (jsonObj.get("bellows") != null && !jsonObj.get("bellows").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("bellows"));
+        ProductAsset.validateJsonElement(jsonObj.get("bellows"));
       }
       // validate the optional field `bells`
       if (jsonObj.get("bells") != null && !jsonObj.get("bells").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("bells"));
+        ProductAsset.validateJsonElement(jsonObj.get("bells"));
       }
       // validate the optional field `belts`
       if (jsonObj.get("belts") != null && !jsonObj.get("belts").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("belts"));
+        ProductAsset.validateJsonElement(jsonObj.get("belts"));
       }
       // validate the optional field `blades`
       if (jsonObj.get("blades") != null && !jsonObj.get("blades").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("blades"));
+        ProductAsset.validateJsonElement(jsonObj.get("blades"));
       }
       // validate the optional field `books`
       if (jsonObj.get("books") != null && !jsonObj.get("books").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("books"));
+        ProductAsset.validateJsonElement(jsonObj.get("books"));
       }
       // validate the optional field `bread`
       if (jsonObj.get("bread") != null && !jsonObj.get("bread").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("bread"));
+        ProductAsset.validateJsonElement(jsonObj.get("bread"));
       }
       // validate the optional field `bronze ingots`
       if (jsonObj.get("bronze ingots") != null && !jsonObj.get("bronze ingots").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("bronze ingots"));
+        ProductAsset.validateJsonElement(jsonObj.get("bronze ingots"));
       }
       // validate the optional field `butter`
       if (jsonObj.get("butter") != null && !jsonObj.get("butter").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("butter"));
+        ProductAsset.validateJsonElement(jsonObj.get("butter"));
       }
       // validate the optional field `candles`
       if (jsonObj.get("candles") != null && !jsonObj.get("candles").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("candles"));
+        ProductAsset.validateJsonElement(jsonObj.get("candles"));
       }
       // validate the optional field `carting`
       if (jsonObj.get("carting") != null && !jsonObj.get("carting").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("carting"));
+        ProductAsset.validateJsonElement(jsonObj.get("carting"));
       }
       // validate the optional field `casks`
       if (jsonObj.get("casks") != null && !jsonObj.get("casks").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("casks"));
+        ProductAsset.validateJsonElement(jsonObj.get("casks"));
       }
       // validate the optional field `cattle`
       if (jsonObj.get("cattle") != null && !jsonObj.get("cattle").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("cattle"));
+        ProductAsset.validateJsonElement(jsonObj.get("cattle"));
       }
       // validate the optional field `charcoal`
       if (jsonObj.get("charcoal") != null && !jsonObj.get("charcoal").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("charcoal"));
+        ProductAsset.validateJsonElement(jsonObj.get("charcoal"));
       }
       // validate the optional field `cheese`
       if (jsonObj.get("cheese") != null && !jsonObj.get("cheese").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("cheese"));
+        ProductAsset.validateJsonElement(jsonObj.get("cheese"));
       }
       // validate the optional field `chisels`
       if (jsonObj.get("chisels") != null && !jsonObj.get("chisels").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("chisels"));
+        ProductAsset.validateJsonElement(jsonObj.get("chisels"));
       }
       // validate the optional field `clay`
       if (jsonObj.get("clay") != null && !jsonObj.get("clay").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("clay"));
+        ProductAsset.validateJsonElement(jsonObj.get("clay"));
       }
       // validate the optional field `cloth`
       if (jsonObj.get("cloth") != null && !jsonObj.get("cloth").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("cloth"));
+        ProductAsset.validateJsonElement(jsonObj.get("cloth"));
       }
       // validate the optional field `coats`
       if (jsonObj.get("coats") != null && !jsonObj.get("coats").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("coats"));
+        ProductAsset.validateJsonElement(jsonObj.get("coats"));
       }
       // validate the optional field `cookware`
       if (jsonObj.get("cookware") != null && !jsonObj.get("cookware").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("cookware"));
+        ProductAsset.validateJsonElement(jsonObj.get("cookware"));
       }
       // validate the optional field `copper ingots`
       if (jsonObj.get("copper ingots") != null && !jsonObj.get("copper ingots").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("copper ingots"));
+        ProductAsset.validateJsonElement(jsonObj.get("copper ingots"));
       }
       // validate the optional field `copper ore`
       if (jsonObj.get("copper ore") != null && !jsonObj.get("copper ore").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("copper ore"));
+        ProductAsset.validateJsonElement(jsonObj.get("copper ore"));
       }
       // validate the optional field `cured fish`
       if (jsonObj.get("cured fish") != null && !jsonObj.get("cured fish").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("cured fish"));
+        ProductAsset.validateJsonElement(jsonObj.get("cured fish"));
       }
       // validate the optional field `cured meat`
       if (jsonObj.get("cured meat") != null && !jsonObj.get("cured meat").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("cured meat"));
+        ProductAsset.validateJsonElement(jsonObj.get("cured meat"));
       }
       // validate the optional field `dye`
       if (jsonObj.get("dye") != null && !jsonObj.get("dye").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("dye"));
+        ProductAsset.validateJsonElement(jsonObj.get("dye"));
       }
       // validate the optional field `dyed cloth`
       if (jsonObj.get("dyed cloth") != null && !jsonObj.get("dyed cloth").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("dyed cloth"));
+        ProductAsset.validateJsonElement(jsonObj.get("dyed cloth"));
       }
       // validate the optional field `dyed yarn`
       if (jsonObj.get("dyed yarn") != null && !jsonObj.get("dyed yarn").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("dyed yarn"));
+        ProductAsset.validateJsonElement(jsonObj.get("dyed yarn"));
       }
       // validate the optional field `firewood`
       if (jsonObj.get("firewood") != null && !jsonObj.get("firewood").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("firewood"));
+        ProductAsset.validateJsonElement(jsonObj.get("firewood"));
       }
       // validate the optional field `fish`
       if (jsonObj.get("fish") != null && !jsonObj.get("fish").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("fish"));
+        ProductAsset.validateJsonElement(jsonObj.get("fish"));
       }
       // validate the optional field `flax fibres`
       if (jsonObj.get("flax fibres") != null && !jsonObj.get("flax fibres").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("flax fibres"));
+        ProductAsset.validateJsonElement(jsonObj.get("flax fibres"));
       }
       // validate the optional field `flax plants`
       if (jsonObj.get("flax plants") != null && !jsonObj.get("flax plants").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("flax plants"));
+        ProductAsset.validateJsonElement(jsonObj.get("flax plants"));
       }
       // validate the optional field `fleece`
       if (jsonObj.get("fleece") != null && !jsonObj.get("fleece").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("fleece"));
+        ProductAsset.validateJsonElement(jsonObj.get("fleece"));
       }
       // validate the optional field `flour`
       if (jsonObj.get("flour") != null && !jsonObj.get("flour").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("flour"));
+        ProductAsset.validateJsonElement(jsonObj.get("flour"));
       }
       // validate the optional field `furniture`
       if (jsonObj.get("furniture") != null && !jsonObj.get("furniture").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("furniture"));
+        ProductAsset.validateJsonElement(jsonObj.get("furniture"));
       }
       // validate the optional field `garments`
       if (jsonObj.get("garments") != null && !jsonObj.get("garments").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("garments"));
+        ProductAsset.validateJsonElement(jsonObj.get("garments"));
       }
       // validate the optional field `gears`
       if (jsonObj.get("gears") != null && !jsonObj.get("gears").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("gears"));
+        ProductAsset.validateJsonElement(jsonObj.get("gears"));
       }
       // validate the optional field `glass`
       if (jsonObj.get("glass") != null && !jsonObj.get("glass").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("glass"));
+        ProductAsset.validateJsonElement(jsonObj.get("glass"));
       }
       // validate the optional field `glassware`
       if (jsonObj.get("glassware") != null && !jsonObj.get("glassware").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("glassware"));
+        ProductAsset.validateJsonElement(jsonObj.get("glassware"));
       }
       // validate the optional field `gold bars`
       if (jsonObj.get("gold bars") != null && !jsonObj.get("gold bars").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("gold bars"));
+        ProductAsset.validateJsonElement(jsonObj.get("gold bars"));
       }
       // validate the optional field `gold ore`
       if (jsonObj.get("gold ore") != null && !jsonObj.get("gold ore").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("gold ore"));
+        ProductAsset.validateJsonElement(jsonObj.get("gold ore"));
       }
       // validate the optional field `grain`
       if (jsonObj.get("grain") != null && !jsonObj.get("grain").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("grain"));
+        ProductAsset.validateJsonElement(jsonObj.get("grain"));
       }
       // validate the optional field `grindstones`
       if (jsonObj.get("grindstones") != null && !jsonObj.get("grindstones").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("grindstones"));
+        ProductAsset.validateJsonElement(jsonObj.get("grindstones"));
       }
       // validate the optional field `ham`
       if (jsonObj.get("ham") != null && !jsonObj.get("ham").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("ham"));
+        ProductAsset.validateJsonElement(jsonObj.get("ham"));
       }
       // validate the optional field `harnesses`
       if (jsonObj.get("harnesses") != null && !jsonObj.get("harnesses").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("harnesses"));
+        ProductAsset.validateJsonElement(jsonObj.get("harnesses"));
       }
       // validate the optional field `herbs`
       if (jsonObj.get("herbs") != null && !jsonObj.get("herbs").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("herbs"));
+        ProductAsset.validateJsonElement(jsonObj.get("herbs"));
       }
       // validate the optional field `hides`
       if (jsonObj.get("hides") != null && !jsonObj.get("hides").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("hides"));
+        ProductAsset.validateJsonElement(jsonObj.get("hides"));
       }
       // validate the optional field `hinges`
       if (jsonObj.get("hinges") != null && !jsonObj.get("hinges").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("hinges"));
+        ProductAsset.validateJsonElement(jsonObj.get("hinges"));
       }
       // validate the optional field `honey`
       if (jsonObj.get("honey") != null && !jsonObj.get("honey").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("honey"));
+        ProductAsset.validateJsonElement(jsonObj.get("honey"));
       }
       // validate the optional field `hop beer`
       if (jsonObj.get("hop beer") != null && !jsonObj.get("hop beer").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("hop beer"));
+        ProductAsset.validateJsonElement(jsonObj.get("hop beer"));
       }
       // validate the optional field `iron ore`
       if (jsonObj.get("iron ore") != null && !jsonObj.get("iron ore").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("iron ore"));
+        ProductAsset.validateJsonElement(jsonObj.get("iron ore"));
       }
       // validate the optional field `jewellery`
       if (jsonObj.get("jewellery") != null && !jsonObj.get("jewellery").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("jewellery"));
+        ProductAsset.validateJsonElement(jsonObj.get("jewellery"));
       }
       // validate the optional field `labour`
       if (jsonObj.get("labour") != null && !jsonObj.get("labour").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("labour"));
+        ProductAsset.validateJsonElement(jsonObj.get("labour"));
       }
       // validate the optional field `lathes`
       if (jsonObj.get("lathes") != null && !jsonObj.get("lathes").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("lathes"));
+        ProductAsset.validateJsonElement(jsonObj.get("lathes"));
       }
       // validate the optional field `lead bars`
       if (jsonObj.get("lead bars") != null && !jsonObj.get("lead bars").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("lead bars"));
+        ProductAsset.validateJsonElement(jsonObj.get("lead bars"));
       }
       // validate the optional field `lead ore`
       if (jsonObj.get("lead ore") != null && !jsonObj.get("lead ore").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("lead ore"));
+        ProductAsset.validateJsonElement(jsonObj.get("lead ore"));
       }
       // validate the optional field `leather`
       if (jsonObj.get("leather") != null && !jsonObj.get("leather").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("leather"));
+        ProductAsset.validateJsonElement(jsonObj.get("leather"));
       }
       // validate the optional field `light armour`
       if (jsonObj.get("light armour") != null && !jsonObj.get("light armour").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("light armour"));
+        ProductAsset.validateJsonElement(jsonObj.get("light armour"));
       }
       // validate the optional field `limestone`
       if (jsonObj.get("limestone") != null && !jsonObj.get("limestone").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("limestone"));
+        ProductAsset.validateJsonElement(jsonObj.get("limestone"));
       }
       // validate the optional field `lodging`
       if (jsonObj.get("lodging") != null && !jsonObj.get("lodging").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("lodging"));
+        ProductAsset.validateJsonElement(jsonObj.get("lodging"));
       }
       // validate the optional field `logs`
       if (jsonObj.get("logs") != null && !jsonObj.get("logs").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("logs"));
+        ProductAsset.validateJsonElement(jsonObj.get("logs"));
       }
       // validate the optional field `looms`
       if (jsonObj.get("looms") != null && !jsonObj.get("looms").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("looms"));
+        ProductAsset.validateJsonElement(jsonObj.get("looms"));
       }
       // validate the optional field `malt`
       if (jsonObj.get("malt") != null && !jsonObj.get("malt").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("malt"));
+        ProductAsset.validateJsonElement(jsonObj.get("malt"));
       }
       // validate the optional field `manure`
       if (jsonObj.get("manure") != null && !jsonObj.get("manure").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("manure"));
+        ProductAsset.validateJsonElement(jsonObj.get("manure"));
       }
       // validate the optional field `meat`
       if (jsonObj.get("meat") != null && !jsonObj.get("meat").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("meat"));
+        ProductAsset.validateJsonElement(jsonObj.get("meat"));
       }
       // validate the optional field `medicine`
       if (jsonObj.get("medicine") != null && !jsonObj.get("medicine").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("medicine"));
+        ProductAsset.validateJsonElement(jsonObj.get("medicine"));
       }
       // validate the optional field `milk`
       if (jsonObj.get("milk") != null && !jsonObj.get("milk").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("milk"));
+        ProductAsset.validateJsonElement(jsonObj.get("milk"));
       }
       // validate the optional field `mouldboards`
       if (jsonObj.get("mouldboards") != null && !jsonObj.get("mouldboards").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("mouldboards"));
+        ProductAsset.validateJsonElement(jsonObj.get("mouldboards"));
       }
       // validate the optional field `nails`
       if (jsonObj.get("nails") != null && !jsonObj.get("nails").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("nails"));
+        ProductAsset.validateJsonElement(jsonObj.get("nails"));
       }
       // validate the optional field `nets`
       if (jsonObj.get("nets") != null && !jsonObj.get("nets").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("nets"));
+        ProductAsset.validateJsonElement(jsonObj.get("nets"));
       }
       // validate the optional field `ox power`
       if (jsonObj.get("ox power") != null && !jsonObj.get("ox power").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("ox power"));
+        ProductAsset.validateJsonElement(jsonObj.get("ox power"));
       }
       // validate the optional field `paper`
       if (jsonObj.get("paper") != null && !jsonObj.get("paper").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("paper"));
+        ProductAsset.validateJsonElement(jsonObj.get("paper"));
       }
       // validate the optional field `pasties`
       if (jsonObj.get("pasties") != null && !jsonObj.get("pasties").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("pasties"));
+        ProductAsset.validateJsonElement(jsonObj.get("pasties"));
       }
       // validate the optional field `pickaxes`
       if (jsonObj.get("pickaxes") != null && !jsonObj.get("pickaxes").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("pickaxes"));
+        ProductAsset.validateJsonElement(jsonObj.get("pickaxes"));
       }
       // validate the optional field `pies`
       if (jsonObj.get("pies") != null && !jsonObj.get("pies").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("pies"));
+        ProductAsset.validateJsonElement(jsonObj.get("pies"));
       }
       // validate the optional field `plate armour`
       if (jsonObj.get("plate armour") != null && !jsonObj.get("plate armour").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("plate armour"));
+        ProductAsset.validateJsonElement(jsonObj.get("plate armour"));
       }
       // validate the optional field `ploughs`
       if (jsonObj.get("ploughs") != null && !jsonObj.get("ploughs").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("ploughs"));
+        ProductAsset.validateJsonElement(jsonObj.get("ploughs"));
       }
       // validate the optional field `premium armour`
       if (jsonObj.get("premium armour") != null && !jsonObj.get("premium armour").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium armour"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium armour"));
       }
       // validate the optional field `premium axes`
       if (jsonObj.get("premium axes") != null && !jsonObj.get("premium axes").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium axes"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium axes"));
       }
       // validate the optional field `premium cheese`
       if (jsonObj.get("premium cheese") != null && !jsonObj.get("premium cheese").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium cheese"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium cheese"));
       }
       // validate the optional field `premium cloth`
       if (jsonObj.get("premium cloth") != null && !jsonObj.get("premium cloth").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium cloth"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium cloth"));
       }
       // validate the optional field `premium dye`
       if (jsonObj.get("premium dye") != null && !jsonObj.get("premium dye").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium dye"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium dye"));
       }
       // validate the optional field `premium garments`
       if (jsonObj.get("premium garments") != null && !jsonObj.get("premium garments").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium garments"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium garments"));
       }
       // validate the optional field `premium glassware`
       if (jsonObj.get("premium glassware") != null && !jsonObj.get("premium glassware").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium glassware"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium glassware"));
       }
       // validate the optional field `premium ham`
       if (jsonObj.get("premium ham") != null && !jsonObj.get("premium ham").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium ham"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium ham"));
       }
       // validate the optional field `premium sails`
       if (jsonObj.get("premium sails") != null && !jsonObj.get("premium sails").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium sails"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium sails"));
       }
       // validate the optional field `premium steel`
       if (jsonObj.get("premium steel") != null && !jsonObj.get("premium steel").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium steel"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium steel"));
       }
       // validate the optional field `premium swords`
       if (jsonObj.get("premium swords") != null && !jsonObj.get("premium swords").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("premium swords"));
+        ProductAsset.validateJsonElement(jsonObj.get("premium swords"));
       }
       // validate the optional field `protection`
       if (jsonObj.get("protection") != null && !jsonObj.get("protection").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("protection"));
+        ProductAsset.validateJsonElement(jsonObj.get("protection"));
       }
       // validate the optional field `raw cloth`
       if (jsonObj.get("raw cloth") != null && !jsonObj.get("raw cloth").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("raw cloth"));
+        ProductAsset.validateJsonElement(jsonObj.get("raw cloth"));
       }
       // validate the optional field `resin`
       if (jsonObj.get("resin") != null && !jsonObj.get("resin").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("resin"));
+        ProductAsset.validateJsonElement(jsonObj.get("resin"));
       }
       // validate the optional field `rope`
       if (jsonObj.get("rope") != null && !jsonObj.get("rope").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("rope"));
+        ProductAsset.validateJsonElement(jsonObj.get("rope"));
       }
       // validate the optional field `sails`
       if (jsonObj.get("sails") != null && !jsonObj.get("sails").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("sails"));
+        ProductAsset.validateJsonElement(jsonObj.get("sails"));
       }
       // validate the optional field `salt`
       if (jsonObj.get("salt") != null && !jsonObj.get("salt").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("salt"));
+        ProductAsset.validateJsonElement(jsonObj.get("salt"));
       }
       // validate the optional field `sculptures`
       if (jsonObj.get("sculptures") != null && !jsonObj.get("sculptures").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("sculptures"));
+        ProductAsset.validateJsonElement(jsonObj.get("sculptures"));
       }
       // validate the optional field `scythes`
       if (jsonObj.get("scythes") != null && !jsonObj.get("scythes").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("scythes"));
+        ProductAsset.validateJsonElement(jsonObj.get("scythes"));
       }
       // validate the optional field `silver bars`
       if (jsonObj.get("silver bars") != null && !jsonObj.get("silver bars").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("silver bars"));
+        ProductAsset.validateJsonElement(jsonObj.get("silver bars"));
       }
       // validate the optional field `silver ore`
       if (jsonObj.get("silver ore") != null && !jsonObj.get("silver ore").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("silver ore"));
+        ProductAsset.validateJsonElement(jsonObj.get("silver ore"));
       }
       // validate the optional field `slaked lime`
       if (jsonObj.get("slaked lime") != null && !jsonObj.get("slaked lime").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("slaked lime"));
+        ProductAsset.validateJsonElement(jsonObj.get("slaked lime"));
       }
       // validate the optional field `spinning wheels`
       if (jsonObj.get("spinning wheels") != null && !jsonObj.get("spinning wheels").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("spinning wheels"));
+        ProductAsset.validateJsonElement(jsonObj.get("spinning wheels"));
       }
       // validate the optional field `spirits`
       if (jsonObj.get("spirits") != null && !jsonObj.get("spirits").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("spirits"));
+        ProductAsset.validateJsonElement(jsonObj.get("spirits"));
       }
       // validate the optional field `steel ingots`
       if (jsonObj.get("steel ingots") != null && !jsonObj.get("steel ingots").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("steel ingots"));
+        ProductAsset.validateJsonElement(jsonObj.get("steel ingots"));
       }
       // validate the optional field `stockfish`
       if (jsonObj.get("stockfish") != null && !jsonObj.get("stockfish").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("stockfish"));
+        ProductAsset.validateJsonElement(jsonObj.get("stockfish"));
       }
       // validate the optional field `swords`
       if (jsonObj.get("swords") != null && !jsonObj.get("swords").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("swords"));
+        ProductAsset.validateJsonElement(jsonObj.get("swords"));
       }
       // validate the optional field `tackles`
       if (jsonObj.get("tackles") != null && !jsonObj.get("tackles").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tackles"));
+        ProductAsset.validateJsonElement(jsonObj.get("tackles"));
       }
       // validate the optional field `tapestries`
       if (jsonObj.get("tapestries") != null && !jsonObj.get("tapestries").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tapestries"));
+        ProductAsset.validateJsonElement(jsonObj.get("tapestries"));
       }
       // validate the optional field `tar`
       if (jsonObj.get("tar") != null && !jsonObj.get("tar").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tar"));
+        ProductAsset.validateJsonElement(jsonObj.get("tar"));
       }
       // validate the optional field `thread`
       if (jsonObj.get("thread") != null && !jsonObj.get("thread").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("thread"));
+        ProductAsset.validateJsonElement(jsonObj.get("thread"));
       }
       // validate the optional field `tiles`
       if (jsonObj.get("tiles") != null && !jsonObj.get("tiles").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tiles"));
+        ProductAsset.validateJsonElement(jsonObj.get("tiles"));
       }
       // validate the optional field `timber`
       if (jsonObj.get("timber") != null && !jsonObj.get("timber").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("timber"));
+        ProductAsset.validateJsonElement(jsonObj.get("timber"));
       }
       // validate the optional field `tin ingots`
       if (jsonObj.get("tin ingots") != null && !jsonObj.get("tin ingots").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tin ingots"));
+        ProductAsset.validateJsonElement(jsonObj.get("tin ingots"));
       }
       // validate the optional field `tin ore`
       if (jsonObj.get("tin ore") != null && !jsonObj.get("tin ore").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tin ore"));
+        ProductAsset.validateJsonElement(jsonObj.get("tin ore"));
       }
       // validate the optional field `tools`
       if (jsonObj.get("tools") != null && !jsonObj.get("tools").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("tools"));
+        ProductAsset.validateJsonElement(jsonObj.get("tools"));
       }
       // validate the optional field `wax`
       if (jsonObj.get("wax") != null && !jsonObj.get("wax").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("wax"));
+        ProductAsset.validateJsonElement(jsonObj.get("wax"));
       }
       // validate the optional field `wheels`
       if (jsonObj.get("wheels") != null && !jsonObj.get("wheels").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("wheels"));
+        ProductAsset.validateJsonElement(jsonObj.get("wheels"));
       }
       // validate the optional field `windows`
       if (jsonObj.get("windows") != null && !jsonObj.get("windows").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("windows"));
+        ProductAsset.validateJsonElement(jsonObj.get("windows"));
       }
       // validate the optional field `wine`
       if (jsonObj.get("wine") != null && !jsonObj.get("wine").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("wine"));
+        ProductAsset.validateJsonElement(jsonObj.get("wine"));
       }
       // validate the optional field `wool`
       if (jsonObj.get("wool") != null && !jsonObj.get("wool").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("wool"));
+        ProductAsset.validateJsonElement(jsonObj.get("wool"));
       }
       // validate the optional field `wrought iron`
       if (jsonObj.get("wrought iron") != null && !jsonObj.get("wrought iron").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("wrought iron"));
+        ProductAsset.validateJsonElement(jsonObj.get("wrought iron"));
       }
       // validate the optional field `yarn`
       if (jsonObj.get("yarn") != null && !jsonObj.get("yarn").isJsonNull()) {
-        InventoryAssetsAlembics.validateJsonElement(jsonObj.get("yarn"));
+        ProductAsset.validateJsonElement(jsonObj.get("yarn"));
       }
   }
 

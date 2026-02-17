@@ -13,14 +13,14 @@
   ],
   "security": [
     {
-      "Bearer-Token": [],
-      "X-Merc-User": []
+      "Bearer_Token": [],
+      "Merc_User": []
     }
   ],
   "paths": {
     "/player": {
       "get": {
-        "operationId": "player info",
+        "operationId": "playerInfo",
         "responses": {
           "200": {
             "content": {
@@ -58,7 +58,7 @@
     },
     "/buildings/{buildingID}": {
       "get": {
-        "operationId": "building info",
+        "operationId": "buildingInfo",
         "parameters": [
           {
             "explode": false,
@@ -2703,12 +2703,12 @@
       }
     },
     "securitySchemes": {
-      "Bearer-Token": {
+      "Bearer_Token": {
         "in": "header",
         "name": "Token",
         "type": "apiKey"
       },
-      "X-Merc-User": {
+      "Merc_User": {
         "in": "header",
         "name": "X-Merc-User",
         "type": "apiKey"

@@ -1,8 +1,8 @@
-# mercatorio-java
+# mercatorio_java
 
 Mercatorio API
 - API version: 1.0.0
-  - Build date: 2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]
+  - Build date: 2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]
   - Generator version: 7.19.0
 
 API to interact with the game of Mercatorio
@@ -39,8 +39,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.mercatorio-tools</groupId>
-  <artifactId>mercatorio-java</artifactId>
+  <groupId>org.mercatorio_tools</groupId>
+  <artifactId>mercatorio_java</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
@@ -52,12 +52,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'mercatorio-java' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'mercatorio-java' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'mercatorio_java' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'mercatorio_java' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "org.mercatorio-tools:mercatorio-java:1.0.0"
+     implementation "org.mercatorio_tools:mercatorio_java:1.0.0"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/mercatorio-java-1.0.0.jar`
+* `target/mercatorio_java-1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -81,29 +81,29 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```java
 
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.DefaultApi;
+import org.mercatorio_tools.mercatorio_java.ApiClient;
+import org.mercatorio_tools.mercatorio_java.ApiException;
+import org.mercatorio_tools.mercatorio_java.Configuration;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://play.mercatorio.io/api");
     
-    // Configure API key authorization: X-Merc-User
-    ApiKeyAuth X-Merc-User = (ApiKeyAuth) defaultClient.getAuthentication("X-Merc-User");
-    X-Merc-User.setApiKey("YOUR API KEY");
+    // Configure API key authorization: Merc_User
+    ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+    Merc_User.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //X-Merc-User.setApiKeyPrefix("Token");
+    //Merc_User.setApiKeyPrefix("Token");
 
-    // Configure API key authorization: Bearer-Token
-    ApiKeyAuth Bearer-Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer-Token");
-    Bearer-Token.setApiKey("YOUR API KEY");
+    // Configure API key authorization: Bearer_Token
+    ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+    Bearer_Token.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //Bearer-Token.setApiKeyPrefix("Token");
+    //Bearer_Token.setApiKeyPrefix("Token");
 
     DefaultApi apiInstance = new DefaultApi(defaultClient);
     String buildingID = "buildingID_example"; // String | 
@@ -136,32 +136,32 @@ Class | Method | HTTP request | Description
 
  - [Building](docs/Building.md)
  - [BuildingConstruction](docs/BuildingConstruction.md)
- - [BuildingConstructionSettings](docs/BuildingConstructionSettings.md)
  - [BuildingDeliveryCost](docs/BuildingDeliveryCost.md)
- - [BuildingLocation](docs/BuildingLocation.md)
+ - [BuildingPreviousOperation](docs/BuildingPreviousOperation.md)
  - [BuildingProducer](docs/BuildingProducer.md)
- - [BuildingProducerPreviousOperation](docs/BuildingProducerPreviousOperation.md)
+ - [ConstructionSettings](docs/ConstructionSettings.md)
  - [Error](docs/Error.md)
  - [Holdings](docs/Holdings.md)
  - [Household](docs/Household.md)
  - [HouseholdCaps](docs/HouseholdCaps.md)
- - [HouseholdPrestigeImpactsInner](docs/HouseholdPrestigeImpactsInner.md)
  - [HouseholdSustenance](docs/HouseholdSustenance.md)
  - [Inventory](docs/Inventory.md)
  - [InventoryAccount](docs/InventoryAccount.md)
  - [InventoryAssets](docs/InventoryAssets.md)
- - [InventoryAssetsAlembics](docs/InventoryAssetsAlembics.md)
  - [InventoryFlows](docs/InventoryFlows.md)
- - [InventoryFlowsAlembics](docs/InventoryFlowsAlembics.md)
  - [InventoryPastFlows](docs/InventoryPastFlows.md)
+ - [Location](docs/Location.md)
  - [Player](docs/Player.md)
  - [PlayerActivity](docs/PlayerActivity.md)
  - [PlayerSettings](docs/PlayerSettings.md)
  - [PlayerSettingsEmail](docs/PlayerSettingsEmail.md)
  - [PlayerSettingsNotifications](docs/PlayerSettingsNotifications.md)
+ - [PrestigeImpact](docs/PrestigeImpact.md)
+ - [ProductAsset](docs/ProductAsset.md)
  - [ProductFlow](docs/ProductFlow.md)
  - [ProductHolding](docs/ProductHolding.md)
  - [ProductManager](docs/ProductManager.md)
+ - [ProductPastFlow](docs/ProductPastFlow.md)
  - [Specialization](docs/Specialization.md)
  - [SpecializationPoints](docs/SpecializationPoints.md)
  - [Worker](docs/Worker.md)
@@ -173,15 +173,15 @@ Class | Method | HTTP request | Description
 
 
 Authentication schemes defined for the API:
-<a id="Bearer-Token"></a>
-### Bearer-Token
+<a id="Bearer_Token"></a>
+### Bearer_Token
 
 - **Type**: API key
 - **API key parameter name**: Token
 - **Location**: HTTP header
 
-<a id="X-Merc-User"></a>
-### X-Merc-User
+<a id="Merc_User"></a>
+### Merc_User
 
 - **Type**: API key
 - **API key parameter name**: X-Merc-User

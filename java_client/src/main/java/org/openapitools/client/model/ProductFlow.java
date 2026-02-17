@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.client.model.ProductPastFlow;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -49,344 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * ProductFlow
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class ProductFlow {
-  public static final String SERIALIZED_NAME_PRODUCTION = "production";
-  @SerializedName(SERIALIZED_NAME_PRODUCTION)
+  public static final String SERIALIZED_NAME_PROJECTION = "projection";
+  @SerializedName(SERIALIZED_NAME_PROJECTION)
   @javax.annotation.Nullable
-  private String production;
-
-  public static final String SERIALIZED_NAME_PRODUCTION_COST = "production_cost";
-  @SerializedName(SERIALIZED_NAME_PRODUCTION_COST)
-  @javax.annotation.Nullable
-  private String productionCost;
-
-  public static final String SERIALIZED_NAME_CONSUMPTION = "consumption";
-  @SerializedName(SERIALIZED_NAME_CONSUMPTION)
-  @javax.annotation.Nullable
-  private String consumption;
-
-  public static final String SERIALIZED_NAME_CONSUMPTION_COST = "consumption_cost";
-  @SerializedName(SERIALIZED_NAME_CONSUMPTION_COST)
-  @javax.annotation.Nullable
-  private String consumptionCost;
-
-  public static final String SERIALIZED_NAME_IMPORT = "import";
-  @SerializedName(SERIALIZED_NAME_IMPORT)
-  @javax.annotation.Nullable
-  private String _import;
-
-  public static final String SERIALIZED_NAME_IMPORT_COST = "import_cost";
-  @SerializedName(SERIALIZED_NAME_IMPORT_COST)
-  @javax.annotation.Nullable
-  private String importCost;
-
-  public static final String SERIALIZED_NAME_EXPORT = "export";
-  @SerializedName(SERIALIZED_NAME_EXPORT)
-  @javax.annotation.Nullable
-  private String export;
-
-  public static final String SERIALIZED_NAME_EXPORT_VALUE = "export_value";
-  @SerializedName(SERIALIZED_NAME_EXPORT_VALUE)
-  @javax.annotation.Nullable
-  private String exportValue;
-
-  public static final String SERIALIZED_NAME_EXPORT_COST = "export_cost";
-  @SerializedName(SERIALIZED_NAME_EXPORT_COST)
-  @javax.annotation.Nullable
-  private String exportCost;
-
-  public static final String SERIALIZED_NAME_INBOUND = "inbound";
-  @SerializedName(SERIALIZED_NAME_INBOUND)
-  @javax.annotation.Nullable
-  private String inbound;
-
-  public static final String SERIALIZED_NAME_INBOUND_COST = "inbound_cost";
-  @SerializedName(SERIALIZED_NAME_INBOUND_COST)
-  @javax.annotation.Nullable
-  private String inboundCost;
-
-  public static final String SERIALIZED_NAME_OUTBOUND = "outbound";
-  @SerializedName(SERIALIZED_NAME_OUTBOUND)
-  @javax.annotation.Nullable
-  private String outbound;
-
-  public static final String SERIALIZED_NAME_OUTBOUND_VALUE = "outbound_value";
-  @SerializedName(SERIALIZED_NAME_OUTBOUND_VALUE)
-  @javax.annotation.Nullable
-  private String outboundValue;
-
-  public static final String SERIALIZED_NAME_OUTBOUND_COST = "outbound_cost";
-  @SerializedName(SERIALIZED_NAME_OUTBOUND_COST)
-  @javax.annotation.Nullable
-  private String outboundCost;
+  private ProductPastFlow projection;
 
   public ProductFlow() {
   }
 
-  public ProductFlow production(@javax.annotation.Nullable String production) {
-    this.production = production;
+  public ProductFlow projection(@javax.annotation.Nullable ProductPastFlow projection) {
+    this.projection = projection;
     return this;
   }
 
   /**
-   * Get production
-   * @return production
+   * Get projection
+   * @return projection
    */
   @javax.annotation.Nullable
-  public String getProduction() {
-    return production;
+  public ProductPastFlow getProjection() {
+    return projection;
   }
 
-  public void setProduction(@javax.annotation.Nullable String production) {
-    this.production = production;
-  }
-
-
-  public ProductFlow productionCost(@javax.annotation.Nullable String productionCost) {
-    this.productionCost = productionCost;
-    return this;
-  }
-
-  /**
-   * Get productionCost
-   * @return productionCost
-   */
-  @javax.annotation.Nullable
-  public String getProductionCost() {
-    return productionCost;
-  }
-
-  public void setProductionCost(@javax.annotation.Nullable String productionCost) {
-    this.productionCost = productionCost;
-  }
-
-
-  public ProductFlow consumption(@javax.annotation.Nullable String consumption) {
-    this.consumption = consumption;
-    return this;
-  }
-
-  /**
-   * Get consumption
-   * @return consumption
-   */
-  @javax.annotation.Nullable
-  public String getConsumption() {
-    return consumption;
-  }
-
-  public void setConsumption(@javax.annotation.Nullable String consumption) {
-    this.consumption = consumption;
-  }
-
-
-  public ProductFlow consumptionCost(@javax.annotation.Nullable String consumptionCost) {
-    this.consumptionCost = consumptionCost;
-    return this;
-  }
-
-  /**
-   * Get consumptionCost
-   * @return consumptionCost
-   */
-  @javax.annotation.Nullable
-  public String getConsumptionCost() {
-    return consumptionCost;
-  }
-
-  public void setConsumptionCost(@javax.annotation.Nullable String consumptionCost) {
-    this.consumptionCost = consumptionCost;
-  }
-
-
-  public ProductFlow _import(@javax.annotation.Nullable String _import) {
-    this._import = _import;
-    return this;
-  }
-
-  /**
-   * The quantity of the product imported via trade routes.
-   * @return _import
-   */
-  @javax.annotation.Nullable
-  public String getImport() {
-    return _import;
-  }
-
-  public void setImport(@javax.annotation.Nullable String _import) {
-    this._import = _import;
-  }
-
-
-  public ProductFlow importCost(@javax.annotation.Nullable String importCost) {
-    this.importCost = importCost;
-    return this;
-  }
-
-  /**
-   * Get importCost
-   * @return importCost
-   */
-  @javax.annotation.Nullable
-  public String getImportCost() {
-    return importCost;
-  }
-
-  public void setImportCost(@javax.annotation.Nullable String importCost) {
-    this.importCost = importCost;
-  }
-
-
-  public ProductFlow export(@javax.annotation.Nullable String export) {
-    this.export = export;
-    return this;
-  }
-
-  /**
-   * The quantity of the product exported via trade routes.
-   * @return export
-   */
-  @javax.annotation.Nullable
-  public String getExport() {
-    return export;
-  }
-
-  public void setExport(@javax.annotation.Nullable String export) {
-    this.export = export;
-  }
-
-
-  public ProductFlow exportValue(@javax.annotation.Nullable String exportValue) {
-    this.exportValue = exportValue;
-    return this;
-  }
-
-  /**
-   * Get exportValue
-   * @return exportValue
-   */
-  @javax.annotation.Nullable
-  public String getExportValue() {
-    return exportValue;
-  }
-
-  public void setExportValue(@javax.annotation.Nullable String exportValue) {
-    this.exportValue = exportValue;
-  }
-
-
-  public ProductFlow exportCost(@javax.annotation.Nullable String exportCost) {
-    this.exportCost = exportCost;
-    return this;
-  }
-
-  /**
-   * Get exportCost
-   * @return exportCost
-   */
-  @javax.annotation.Nullable
-  public String getExportCost() {
-    return exportCost;
-  }
-
-  public void setExportCost(@javax.annotation.Nullable String exportCost) {
-    this.exportCost = exportCost;
-  }
-
-
-  public ProductFlow inbound(@javax.annotation.Nullable String inbound) {
-    this.inbound = inbound;
-    return this;
-  }
-
-  /**
-   * The quantity of the product imported via contracts.
-   * @return inbound
-   */
-  @javax.annotation.Nullable
-  public String getInbound() {
-    return inbound;
-  }
-
-  public void setInbound(@javax.annotation.Nullable String inbound) {
-    this.inbound = inbound;
-  }
-
-
-  public ProductFlow inboundCost(@javax.annotation.Nullable String inboundCost) {
-    this.inboundCost = inboundCost;
-    return this;
-  }
-
-  /**
-   * Get inboundCost
-   * @return inboundCost
-   */
-  @javax.annotation.Nullable
-  public String getInboundCost() {
-    return inboundCost;
-  }
-
-  public void setInboundCost(@javax.annotation.Nullable String inboundCost) {
-    this.inboundCost = inboundCost;
-  }
-
-
-  public ProductFlow outbound(@javax.annotation.Nullable String outbound) {
-    this.outbound = outbound;
-    return this;
-  }
-
-  /**
-   * The quantity of the product exported via contracts.
-   * @return outbound
-   */
-  @javax.annotation.Nullable
-  public String getOutbound() {
-    return outbound;
-  }
-
-  public void setOutbound(@javax.annotation.Nullable String outbound) {
-    this.outbound = outbound;
-  }
-
-
-  public ProductFlow outboundValue(@javax.annotation.Nullable String outboundValue) {
-    this.outboundValue = outboundValue;
-    return this;
-  }
-
-  /**
-   * Get outboundValue
-   * @return outboundValue
-   */
-  @javax.annotation.Nullable
-  public String getOutboundValue() {
-    return outboundValue;
-  }
-
-  public void setOutboundValue(@javax.annotation.Nullable String outboundValue) {
-    this.outboundValue = outboundValue;
-  }
-
-
-  public ProductFlow outboundCost(@javax.annotation.Nullable String outboundCost) {
-    this.outboundCost = outboundCost;
-    return this;
-  }
-
-  /**
-   * Get outboundCost
-   * @return outboundCost
-   */
-  @javax.annotation.Nullable
-  public String getOutboundCost() {
-    return outboundCost;
-  }
-
-  public void setOutboundCost(@javax.annotation.Nullable String outboundCost) {
-    this.outboundCost = outboundCost;
+  public void setProjection(@javax.annotation.Nullable ProductPastFlow projection) {
+    this.projection = projection;
   }
 
 
@@ -400,20 +89,7 @@ public class ProductFlow {
       return false;
     }
     ProductFlow productFlow = (ProductFlow) o;
-    return Objects.equals(this.production, productFlow.production) &&
-        Objects.equals(this.productionCost, productFlow.productionCost) &&
-        Objects.equals(this.consumption, productFlow.consumption) &&
-        Objects.equals(this.consumptionCost, productFlow.consumptionCost) &&
-        Objects.equals(this._import, productFlow._import) &&
-        Objects.equals(this.importCost, productFlow.importCost) &&
-        Objects.equals(this.export, productFlow.export) &&
-        Objects.equals(this.exportValue, productFlow.exportValue) &&
-        Objects.equals(this.exportCost, productFlow.exportCost) &&
-        Objects.equals(this.inbound, productFlow.inbound) &&
-        Objects.equals(this.inboundCost, productFlow.inboundCost) &&
-        Objects.equals(this.outbound, productFlow.outbound) &&
-        Objects.equals(this.outboundValue, productFlow.outboundValue) &&
-        Objects.equals(this.outboundCost, productFlow.outboundCost);
+    return Objects.equals(this.projection, productFlow.projection);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -422,7 +98,7 @@ public class ProductFlow {
 
   @Override
   public int hashCode() {
-    return Objects.hash(production, productionCost, consumption, consumptionCost, _import, importCost, export, exportValue, exportCost, inbound, inboundCost, outbound, outboundValue, outboundCost);
+    return Objects.hash(projection);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -436,20 +112,7 @@ public class ProductFlow {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProductFlow {\n");
-    sb.append("    production: ").append(toIndentedString(production)).append("\n");
-    sb.append("    productionCost: ").append(toIndentedString(productionCost)).append("\n");
-    sb.append("    consumption: ").append(toIndentedString(consumption)).append("\n");
-    sb.append("    consumptionCost: ").append(toIndentedString(consumptionCost)).append("\n");
-    sb.append("    _import: ").append(toIndentedString(_import)).append("\n");
-    sb.append("    importCost: ").append(toIndentedString(importCost)).append("\n");
-    sb.append("    export: ").append(toIndentedString(export)).append("\n");
-    sb.append("    exportValue: ").append(toIndentedString(exportValue)).append("\n");
-    sb.append("    exportCost: ").append(toIndentedString(exportCost)).append("\n");
-    sb.append("    inbound: ").append(toIndentedString(inbound)).append("\n");
-    sb.append("    inboundCost: ").append(toIndentedString(inboundCost)).append("\n");
-    sb.append("    outbound: ").append(toIndentedString(outbound)).append("\n");
-    sb.append("    outboundValue: ").append(toIndentedString(outboundValue)).append("\n");
-    sb.append("    outboundCost: ").append(toIndentedString(outboundCost)).append("\n");
+    sb.append("    projection: ").append(toIndentedString(projection)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -471,7 +134,7 @@ public class ProductFlow {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("production", "production_cost", "consumption", "consumption_cost", "import", "import_cost", "export", "export_value", "export_cost", "inbound", "inbound_cost", "outbound", "outbound_value", "outbound_cost"));
+    openapiFields = new HashSet<String>(Arrays.asList("projection"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -498,47 +161,9 @@ public class ProductFlow {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("production") != null && !jsonObj.get("production").isJsonNull()) && !jsonObj.get("production").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `production` to be a primitive type in the JSON string but got `%s`", jsonObj.get("production").toString()));
-      }
-      if ((jsonObj.get("production_cost") != null && !jsonObj.get("production_cost").isJsonNull()) && !jsonObj.get("production_cost").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `production_cost` to be a primitive type in the JSON string but got `%s`", jsonObj.get("production_cost").toString()));
-      }
-      if ((jsonObj.get("consumption") != null && !jsonObj.get("consumption").isJsonNull()) && !jsonObj.get("consumption").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `consumption` to be a primitive type in the JSON string but got `%s`", jsonObj.get("consumption").toString()));
-      }
-      if ((jsonObj.get("consumption_cost") != null && !jsonObj.get("consumption_cost").isJsonNull()) && !jsonObj.get("consumption_cost").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `consumption_cost` to be a primitive type in the JSON string but got `%s`", jsonObj.get("consumption_cost").toString()));
-      }
-      if ((jsonObj.get("import") != null && !jsonObj.get("import").isJsonNull()) && !jsonObj.get("import").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `import` to be a primitive type in the JSON string but got `%s`", jsonObj.get("import").toString()));
-      }
-      if ((jsonObj.get("import_cost") != null && !jsonObj.get("import_cost").isJsonNull()) && !jsonObj.get("import_cost").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `import_cost` to be a primitive type in the JSON string but got `%s`", jsonObj.get("import_cost").toString()));
-      }
-      if ((jsonObj.get("export") != null && !jsonObj.get("export").isJsonNull()) && !jsonObj.get("export").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `export` to be a primitive type in the JSON string but got `%s`", jsonObj.get("export").toString()));
-      }
-      if ((jsonObj.get("export_value") != null && !jsonObj.get("export_value").isJsonNull()) && !jsonObj.get("export_value").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `export_value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("export_value").toString()));
-      }
-      if ((jsonObj.get("export_cost") != null && !jsonObj.get("export_cost").isJsonNull()) && !jsonObj.get("export_cost").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `export_cost` to be a primitive type in the JSON string but got `%s`", jsonObj.get("export_cost").toString()));
-      }
-      if ((jsonObj.get("inbound") != null && !jsonObj.get("inbound").isJsonNull()) && !jsonObj.get("inbound").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `inbound` to be a primitive type in the JSON string but got `%s`", jsonObj.get("inbound").toString()));
-      }
-      if ((jsonObj.get("inbound_cost") != null && !jsonObj.get("inbound_cost").isJsonNull()) && !jsonObj.get("inbound_cost").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `inbound_cost` to be a primitive type in the JSON string but got `%s`", jsonObj.get("inbound_cost").toString()));
-      }
-      if ((jsonObj.get("outbound") != null && !jsonObj.get("outbound").isJsonNull()) && !jsonObj.get("outbound").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `outbound` to be a primitive type in the JSON string but got `%s`", jsonObj.get("outbound").toString()));
-      }
-      if ((jsonObj.get("outbound_value") != null && !jsonObj.get("outbound_value").isJsonNull()) && !jsonObj.get("outbound_value").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `outbound_value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("outbound_value").toString()));
-      }
-      if ((jsonObj.get("outbound_cost") != null && !jsonObj.get("outbound_cost").isJsonNull()) && !jsonObj.get("outbound_cost").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `outbound_cost` to be a primitive type in the JSON string but got `%s`", jsonObj.get("outbound_cost").toString()));
+      // validate the optional field `projection`
+      if (jsonObj.get("projection") != null && !jsonObj.get("projection").isJsonNull()) {
+        ProductPastFlow.validateJsonElement(jsonObj.get("projection"));
       }
   }
 

@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.InventoryFlowsAlembics;
+import org.openapitools.client.model.ProductFlow;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -50,622 +50,622 @@ import org.openapitools.client.JSON;
 /**
  * InventoryFlows
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class InventoryFlows {
   public static final String SERIALIZED_NAME_ALEMBICS = "alembics";
   @SerializedName(SERIALIZED_NAME_ALEMBICS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics alembics;
+  private ProductFlow alembics;
 
   public static final String SERIALIZED_NAME_ARMS = "arms";
   @SerializedName(SERIALIZED_NAME_ARMS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics arms;
+  private ProductFlow arms;
 
   public static final String SERIALIZED_NAME_AXES = "axes";
   @SerializedName(SERIALIZED_NAME_AXES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics axes;
+  private ProductFlow axes;
 
   public static final String SERIALIZED_NAME_BEER = "beer";
   @SerializedName(SERIALIZED_NAME_BEER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics beer;
+  private ProductFlow beer;
 
   public static final String SERIALIZED_NAME_BELLOWS = "bellows";
   @SerializedName(SERIALIZED_NAME_BELLOWS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics bellows;
+  private ProductFlow bellows;
 
   public static final String SERIALIZED_NAME_BELLS = "bells";
   @SerializedName(SERIALIZED_NAME_BELLS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics bells;
+  private ProductFlow bells;
 
   public static final String SERIALIZED_NAME_BELTS = "belts";
   @SerializedName(SERIALIZED_NAME_BELTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics belts;
+  private ProductFlow belts;
 
   public static final String SERIALIZED_NAME_BLADES = "blades";
   @SerializedName(SERIALIZED_NAME_BLADES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics blades;
+  private ProductFlow blades;
 
   public static final String SERIALIZED_NAME_BOOKS = "books";
   @SerializedName(SERIALIZED_NAME_BOOKS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics books;
+  private ProductFlow books;
 
   public static final String SERIALIZED_NAME_BREAD = "bread";
   @SerializedName(SERIALIZED_NAME_BREAD)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics bread;
+  private ProductFlow bread;
 
   public static final String SERIALIZED_NAME_BRONZE_INGOTS = "bronze ingots";
   @SerializedName(SERIALIZED_NAME_BRONZE_INGOTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics bronzeIngots;
+  private ProductFlow bronzeIngots;
 
   public static final String SERIALIZED_NAME_BUTTER = "butter";
   @SerializedName(SERIALIZED_NAME_BUTTER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics butter;
+  private ProductFlow butter;
 
   public static final String SERIALIZED_NAME_CANDLES = "candles";
   @SerializedName(SERIALIZED_NAME_CANDLES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics candles;
+  private ProductFlow candles;
 
   public static final String SERIALIZED_NAME_CARTING = "carting";
   @SerializedName(SERIALIZED_NAME_CARTING)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics carting;
+  private ProductFlow carting;
 
   public static final String SERIALIZED_NAME_CASKS = "casks";
   @SerializedName(SERIALIZED_NAME_CASKS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics casks;
+  private ProductFlow casks;
 
   public static final String SERIALIZED_NAME_CATTLE = "cattle";
   @SerializedName(SERIALIZED_NAME_CATTLE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics cattle;
+  private ProductFlow cattle;
 
   public static final String SERIALIZED_NAME_CHARCOAL = "charcoal";
   @SerializedName(SERIALIZED_NAME_CHARCOAL)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics charcoal;
+  private ProductFlow charcoal;
 
   public static final String SERIALIZED_NAME_CHEESE = "cheese";
   @SerializedName(SERIALIZED_NAME_CHEESE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics cheese;
+  private ProductFlow cheese;
 
   public static final String SERIALIZED_NAME_CHISELS = "chisels";
   @SerializedName(SERIALIZED_NAME_CHISELS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics chisels;
+  private ProductFlow chisels;
 
   public static final String SERIALIZED_NAME_CLAY = "clay";
   @SerializedName(SERIALIZED_NAME_CLAY)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics clay;
+  private ProductFlow clay;
 
   public static final String SERIALIZED_NAME_CLOTH = "cloth";
   @SerializedName(SERIALIZED_NAME_CLOTH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics cloth;
+  private ProductFlow cloth;
 
   public static final String SERIALIZED_NAME_COATS = "coats";
   @SerializedName(SERIALIZED_NAME_COATS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics coats;
+  private ProductFlow coats;
 
   public static final String SERIALIZED_NAME_COOKWARE = "cookware";
   @SerializedName(SERIALIZED_NAME_COOKWARE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics cookware;
+  private ProductFlow cookware;
 
   public static final String SERIALIZED_NAME_COPPER_INGOTS = "copper ingots";
   @SerializedName(SERIALIZED_NAME_COPPER_INGOTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics copperIngots;
+  private ProductFlow copperIngots;
 
   public static final String SERIALIZED_NAME_COPPER_ORE = "copper ore";
   @SerializedName(SERIALIZED_NAME_COPPER_ORE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics copperOre;
+  private ProductFlow copperOre;
 
   public static final String SERIALIZED_NAME_CURED_FISH = "cured fish";
   @SerializedName(SERIALIZED_NAME_CURED_FISH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics curedFish;
+  private ProductFlow curedFish;
 
   public static final String SERIALIZED_NAME_CURED_MEAT = "cured meat";
   @SerializedName(SERIALIZED_NAME_CURED_MEAT)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics curedMeat;
+  private ProductFlow curedMeat;
 
   public static final String SERIALIZED_NAME_DYE = "dye";
   @SerializedName(SERIALIZED_NAME_DYE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics dye;
+  private ProductFlow dye;
 
   public static final String SERIALIZED_NAME_DYED_CLOTH = "dyed cloth";
   @SerializedName(SERIALIZED_NAME_DYED_CLOTH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics dyedCloth;
+  private ProductFlow dyedCloth;
 
   public static final String SERIALIZED_NAME_DYED_YARN = "dyed yarn";
   @SerializedName(SERIALIZED_NAME_DYED_YARN)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics dyedYarn;
+  private ProductFlow dyedYarn;
 
   public static final String SERIALIZED_NAME_FIREWOOD = "firewood";
   @SerializedName(SERIALIZED_NAME_FIREWOOD)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics firewood;
+  private ProductFlow firewood;
 
   public static final String SERIALIZED_NAME_FISH = "fish";
   @SerializedName(SERIALIZED_NAME_FISH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics fish;
+  private ProductFlow fish;
 
   public static final String SERIALIZED_NAME_FLAX_FIBRES = "flax fibres";
   @SerializedName(SERIALIZED_NAME_FLAX_FIBRES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics flaxFibres;
+  private ProductFlow flaxFibres;
 
   public static final String SERIALIZED_NAME_FLAX_PLANTS = "flax plants";
   @SerializedName(SERIALIZED_NAME_FLAX_PLANTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics flaxPlants;
+  private ProductFlow flaxPlants;
 
   public static final String SERIALIZED_NAME_FLEECE = "fleece";
   @SerializedName(SERIALIZED_NAME_FLEECE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics fleece;
+  private ProductFlow fleece;
 
   public static final String SERIALIZED_NAME_FLOUR = "flour";
   @SerializedName(SERIALIZED_NAME_FLOUR)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics flour;
+  private ProductFlow flour;
 
   public static final String SERIALIZED_NAME_FURNITURE = "furniture";
   @SerializedName(SERIALIZED_NAME_FURNITURE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics furniture;
+  private ProductFlow furniture;
 
   public static final String SERIALIZED_NAME_GARMENTS = "garments";
   @SerializedName(SERIALIZED_NAME_GARMENTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics garments;
+  private ProductFlow garments;
 
   public static final String SERIALIZED_NAME_GEARS = "gears";
   @SerializedName(SERIALIZED_NAME_GEARS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics gears;
+  private ProductFlow gears;
 
   public static final String SERIALIZED_NAME_GLASS = "glass";
   @SerializedName(SERIALIZED_NAME_GLASS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics glass;
+  private ProductFlow glass;
 
   public static final String SERIALIZED_NAME_GLASSWARE = "glassware";
   @SerializedName(SERIALIZED_NAME_GLASSWARE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics glassware;
+  private ProductFlow glassware;
 
   public static final String SERIALIZED_NAME_GOLD_BARS = "gold bars";
   @SerializedName(SERIALIZED_NAME_GOLD_BARS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics goldBars;
+  private ProductFlow goldBars;
 
   public static final String SERIALIZED_NAME_GOLD_ORE = "gold ore";
   @SerializedName(SERIALIZED_NAME_GOLD_ORE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics goldOre;
+  private ProductFlow goldOre;
 
   public static final String SERIALIZED_NAME_GRAIN = "grain";
   @SerializedName(SERIALIZED_NAME_GRAIN)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics grain;
+  private ProductFlow grain;
 
   public static final String SERIALIZED_NAME_GRINDSTONES = "grindstones";
   @SerializedName(SERIALIZED_NAME_GRINDSTONES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics grindstones;
+  private ProductFlow grindstones;
 
   public static final String SERIALIZED_NAME_HAM = "ham";
   @SerializedName(SERIALIZED_NAME_HAM)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics ham;
+  private ProductFlow ham;
 
   public static final String SERIALIZED_NAME_HARNESSES = "harnesses";
   @SerializedName(SERIALIZED_NAME_HARNESSES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics harnesses;
+  private ProductFlow harnesses;
 
   public static final String SERIALIZED_NAME_HERBS = "herbs";
   @SerializedName(SERIALIZED_NAME_HERBS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics herbs;
+  private ProductFlow herbs;
 
   public static final String SERIALIZED_NAME_HIDES = "hides";
   @SerializedName(SERIALIZED_NAME_HIDES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics hides;
+  private ProductFlow hides;
 
   public static final String SERIALIZED_NAME_HINGES = "hinges";
   @SerializedName(SERIALIZED_NAME_HINGES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics hinges;
+  private ProductFlow hinges;
 
   public static final String SERIALIZED_NAME_HONEY = "honey";
   @SerializedName(SERIALIZED_NAME_HONEY)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics honey;
+  private ProductFlow honey;
 
   public static final String SERIALIZED_NAME_HOP_BEER = "hop beer";
   @SerializedName(SERIALIZED_NAME_HOP_BEER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics hopBeer;
+  private ProductFlow hopBeer;
 
   public static final String SERIALIZED_NAME_IRON_ORE = "iron ore";
   @SerializedName(SERIALIZED_NAME_IRON_ORE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics ironOre;
+  private ProductFlow ironOre;
 
   public static final String SERIALIZED_NAME_JEWELLERY = "jewellery";
   @SerializedName(SERIALIZED_NAME_JEWELLERY)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics jewellery;
+  private ProductFlow jewellery;
 
   public static final String SERIALIZED_NAME_LABOUR = "labour";
   @SerializedName(SERIALIZED_NAME_LABOUR)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics labour;
+  private ProductFlow labour;
 
   public static final String SERIALIZED_NAME_LATHES = "lathes";
   @SerializedName(SERIALIZED_NAME_LATHES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics lathes;
+  private ProductFlow lathes;
 
   public static final String SERIALIZED_NAME_LEAD_BARS = "lead bars";
   @SerializedName(SERIALIZED_NAME_LEAD_BARS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics leadBars;
+  private ProductFlow leadBars;
 
   public static final String SERIALIZED_NAME_LEAD_ORE = "lead ore";
   @SerializedName(SERIALIZED_NAME_LEAD_ORE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics leadOre;
+  private ProductFlow leadOre;
 
   public static final String SERIALIZED_NAME_LEATHER = "leather";
   @SerializedName(SERIALIZED_NAME_LEATHER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics leather;
+  private ProductFlow leather;
 
   public static final String SERIALIZED_NAME_LIGHT_ARMOUR = "light armour";
   @SerializedName(SERIALIZED_NAME_LIGHT_ARMOUR)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics lightArmour;
+  private ProductFlow lightArmour;
 
   public static final String SERIALIZED_NAME_LIMESTONE = "limestone";
   @SerializedName(SERIALIZED_NAME_LIMESTONE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics limestone;
+  private ProductFlow limestone;
 
   public static final String SERIALIZED_NAME_LODGING = "lodging";
   @SerializedName(SERIALIZED_NAME_LODGING)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics lodging;
+  private ProductFlow lodging;
 
   public static final String SERIALIZED_NAME_LOGS = "logs";
   @SerializedName(SERIALIZED_NAME_LOGS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics logs;
+  private ProductFlow logs;
 
   public static final String SERIALIZED_NAME_LOOMS = "looms";
   @SerializedName(SERIALIZED_NAME_LOOMS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics looms;
+  private ProductFlow looms;
 
   public static final String SERIALIZED_NAME_MALT = "malt";
   @SerializedName(SERIALIZED_NAME_MALT)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics malt;
+  private ProductFlow malt;
 
   public static final String SERIALIZED_NAME_MANURE = "manure";
   @SerializedName(SERIALIZED_NAME_MANURE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics manure;
+  private ProductFlow manure;
 
   public static final String SERIALIZED_NAME_MEAT = "meat";
   @SerializedName(SERIALIZED_NAME_MEAT)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics meat;
+  private ProductFlow meat;
 
   public static final String SERIALIZED_NAME_MEDICINE = "medicine";
   @SerializedName(SERIALIZED_NAME_MEDICINE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics medicine;
+  private ProductFlow medicine;
 
   public static final String SERIALIZED_NAME_MILK = "milk";
   @SerializedName(SERIALIZED_NAME_MILK)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics milk;
+  private ProductFlow milk;
 
   public static final String SERIALIZED_NAME_MOULDBOARDS = "mouldboards";
   @SerializedName(SERIALIZED_NAME_MOULDBOARDS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics mouldboards;
+  private ProductFlow mouldboards;
 
   public static final String SERIALIZED_NAME_NAILS = "nails";
   @SerializedName(SERIALIZED_NAME_NAILS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics nails;
+  private ProductFlow nails;
 
   public static final String SERIALIZED_NAME_NETS = "nets";
   @SerializedName(SERIALIZED_NAME_NETS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics nets;
+  private ProductFlow nets;
 
   public static final String SERIALIZED_NAME_OX_POWER = "ox power";
   @SerializedName(SERIALIZED_NAME_OX_POWER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics oxPower;
+  private ProductFlow oxPower;
 
   public static final String SERIALIZED_NAME_PAPER = "paper";
   @SerializedName(SERIALIZED_NAME_PAPER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics paper;
+  private ProductFlow paper;
 
   public static final String SERIALIZED_NAME_PASTIES = "pasties";
   @SerializedName(SERIALIZED_NAME_PASTIES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics pasties;
+  private ProductFlow pasties;
 
   public static final String SERIALIZED_NAME_PICKAXES = "pickaxes";
   @SerializedName(SERIALIZED_NAME_PICKAXES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics pickaxes;
+  private ProductFlow pickaxes;
 
   public static final String SERIALIZED_NAME_PIES = "pies";
   @SerializedName(SERIALIZED_NAME_PIES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics pies;
+  private ProductFlow pies;
 
   public static final String SERIALIZED_NAME_PLATE_ARMOUR = "plate armour";
   @SerializedName(SERIALIZED_NAME_PLATE_ARMOUR)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics plateArmour;
+  private ProductFlow plateArmour;
 
   public static final String SERIALIZED_NAME_PLOUGHS = "ploughs";
   @SerializedName(SERIALIZED_NAME_PLOUGHS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics ploughs;
+  private ProductFlow ploughs;
 
   public static final String SERIALIZED_NAME_PREMIUM_ARMOUR = "premium armour";
   @SerializedName(SERIALIZED_NAME_PREMIUM_ARMOUR)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumArmour;
+  private ProductFlow premiumArmour;
 
   public static final String SERIALIZED_NAME_PREMIUM_AXES = "premium axes";
   @SerializedName(SERIALIZED_NAME_PREMIUM_AXES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumAxes;
+  private ProductFlow premiumAxes;
 
   public static final String SERIALIZED_NAME_PREMIUM_CHEESE = "premium cheese";
   @SerializedName(SERIALIZED_NAME_PREMIUM_CHEESE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumCheese;
+  private ProductFlow premiumCheese;
 
   public static final String SERIALIZED_NAME_PREMIUM_CLOTH = "premium cloth";
   @SerializedName(SERIALIZED_NAME_PREMIUM_CLOTH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumCloth;
+  private ProductFlow premiumCloth;
 
   public static final String SERIALIZED_NAME_PREMIUM_DYE = "premium dye";
   @SerializedName(SERIALIZED_NAME_PREMIUM_DYE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumDye;
+  private ProductFlow premiumDye;
 
   public static final String SERIALIZED_NAME_PREMIUM_GARMENTS = "premium garments";
   @SerializedName(SERIALIZED_NAME_PREMIUM_GARMENTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumGarments;
+  private ProductFlow premiumGarments;
 
   public static final String SERIALIZED_NAME_PREMIUM_GLASSWARE = "premium glassware";
   @SerializedName(SERIALIZED_NAME_PREMIUM_GLASSWARE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumGlassware;
+  private ProductFlow premiumGlassware;
 
   public static final String SERIALIZED_NAME_PREMIUM_HAM = "premium ham";
   @SerializedName(SERIALIZED_NAME_PREMIUM_HAM)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumHam;
+  private ProductFlow premiumHam;
 
   public static final String SERIALIZED_NAME_PREMIUM_SAILS = "premium sails";
   @SerializedName(SERIALIZED_NAME_PREMIUM_SAILS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumSails;
+  private ProductFlow premiumSails;
 
   public static final String SERIALIZED_NAME_PREMIUM_STEEL = "premium steel";
   @SerializedName(SERIALIZED_NAME_PREMIUM_STEEL)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumSteel;
+  private ProductFlow premiumSteel;
 
   public static final String SERIALIZED_NAME_PREMIUM_SWORDS = "premium swords";
   @SerializedName(SERIALIZED_NAME_PREMIUM_SWORDS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics premiumSwords;
+  private ProductFlow premiumSwords;
 
   public static final String SERIALIZED_NAME_PROTECTION = "protection";
   @SerializedName(SERIALIZED_NAME_PROTECTION)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics protection;
+  private ProductFlow protection;
 
   public static final String SERIALIZED_NAME_RAW_CLOTH = "raw cloth";
   @SerializedName(SERIALIZED_NAME_RAW_CLOTH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics rawCloth;
+  private ProductFlow rawCloth;
 
   public static final String SERIALIZED_NAME_RESIN = "resin";
   @SerializedName(SERIALIZED_NAME_RESIN)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics resin;
+  private ProductFlow resin;
 
   public static final String SERIALIZED_NAME_ROPE = "rope";
   @SerializedName(SERIALIZED_NAME_ROPE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics rope;
+  private ProductFlow rope;
 
   public static final String SERIALIZED_NAME_SAILS = "sails";
   @SerializedName(SERIALIZED_NAME_SAILS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics sails;
+  private ProductFlow sails;
 
   public static final String SERIALIZED_NAME_SALT = "salt";
   @SerializedName(SERIALIZED_NAME_SALT)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics salt;
+  private ProductFlow salt;
 
   public static final String SERIALIZED_NAME_SCULPTURES = "sculptures";
   @SerializedName(SERIALIZED_NAME_SCULPTURES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics sculptures;
+  private ProductFlow sculptures;
 
   public static final String SERIALIZED_NAME_SCYTHES = "scythes";
   @SerializedName(SERIALIZED_NAME_SCYTHES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics scythes;
+  private ProductFlow scythes;
 
   public static final String SERIALIZED_NAME_SILVER_BARS = "silver bars";
   @SerializedName(SERIALIZED_NAME_SILVER_BARS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics silverBars;
+  private ProductFlow silverBars;
 
   public static final String SERIALIZED_NAME_SILVER_ORE = "silver ore";
   @SerializedName(SERIALIZED_NAME_SILVER_ORE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics silverOre;
+  private ProductFlow silverOre;
 
   public static final String SERIALIZED_NAME_SLAKED_LIME = "slaked lime";
   @SerializedName(SERIALIZED_NAME_SLAKED_LIME)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics slakedLime;
+  private ProductFlow slakedLime;
 
   public static final String SERIALIZED_NAME_SPINNING_WHEELS = "spinning wheels";
   @SerializedName(SERIALIZED_NAME_SPINNING_WHEELS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics spinningWheels;
+  private ProductFlow spinningWheels;
 
   public static final String SERIALIZED_NAME_SPIRITS = "spirits";
   @SerializedName(SERIALIZED_NAME_SPIRITS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics spirits;
+  private ProductFlow spirits;
 
   public static final String SERIALIZED_NAME_STEEL_INGOTS = "steel ingots";
   @SerializedName(SERIALIZED_NAME_STEEL_INGOTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics steelIngots;
+  private ProductFlow steelIngots;
 
   public static final String SERIALIZED_NAME_STOCKFISH = "stockfish";
   @SerializedName(SERIALIZED_NAME_STOCKFISH)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics stockfish;
+  private ProductFlow stockfish;
 
   public static final String SERIALIZED_NAME_SWORDS = "swords";
   @SerializedName(SERIALIZED_NAME_SWORDS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics swords;
+  private ProductFlow swords;
 
   public static final String SERIALIZED_NAME_TACKLES = "tackles";
   @SerializedName(SERIALIZED_NAME_TACKLES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tackles;
+  private ProductFlow tackles;
 
   public static final String SERIALIZED_NAME_TAPESTRIES = "tapestries";
   @SerializedName(SERIALIZED_NAME_TAPESTRIES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tapestries;
+  private ProductFlow tapestries;
 
   public static final String SERIALIZED_NAME_TAR = "tar";
   @SerializedName(SERIALIZED_NAME_TAR)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tar;
+  private ProductFlow tar;
 
   public static final String SERIALIZED_NAME_THREAD = "thread";
   @SerializedName(SERIALIZED_NAME_THREAD)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics thread;
+  private ProductFlow thread;
 
   public static final String SERIALIZED_NAME_TILES = "tiles";
   @SerializedName(SERIALIZED_NAME_TILES)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tiles;
+  private ProductFlow tiles;
 
   public static final String SERIALIZED_NAME_TIMBER = "timber";
   @SerializedName(SERIALIZED_NAME_TIMBER)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics timber;
+  private ProductFlow timber;
 
   public static final String SERIALIZED_NAME_TIN_INGOTS = "tin ingots";
   @SerializedName(SERIALIZED_NAME_TIN_INGOTS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tinIngots;
+  private ProductFlow tinIngots;
 
   public static final String SERIALIZED_NAME_TIN_ORE = "tin ore";
   @SerializedName(SERIALIZED_NAME_TIN_ORE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tinOre;
+  private ProductFlow tinOre;
 
   public static final String SERIALIZED_NAME_TOOLS = "tools";
   @SerializedName(SERIALIZED_NAME_TOOLS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics tools;
+  private ProductFlow tools;
 
   public static final String SERIALIZED_NAME_WAX = "wax";
   @SerializedName(SERIALIZED_NAME_WAX)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics wax;
+  private ProductFlow wax;
 
   public static final String SERIALIZED_NAME_WHEELS = "wheels";
   @SerializedName(SERIALIZED_NAME_WHEELS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics wheels;
+  private ProductFlow wheels;
 
   public static final String SERIALIZED_NAME_WINDOWS = "windows";
   @SerializedName(SERIALIZED_NAME_WINDOWS)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics windows;
+  private ProductFlow windows;
 
   public static final String SERIALIZED_NAME_WINE = "wine";
   @SerializedName(SERIALIZED_NAME_WINE)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics wine;
+  private ProductFlow wine;
 
   public static final String SERIALIZED_NAME_WOOL = "wool";
   @SerializedName(SERIALIZED_NAME_WOOL)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics wool;
+  private ProductFlow wool;
 
   public static final String SERIALIZED_NAME_WROUGHT_IRON = "wrought iron";
   @SerializedName(SERIALIZED_NAME_WROUGHT_IRON)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics wroughtIron;
+  private ProductFlow wroughtIron;
 
   public static final String SERIALIZED_NAME_YARN = "yarn";
   @SerializedName(SERIALIZED_NAME_YARN)
   @javax.annotation.Nullable
-  private InventoryFlowsAlembics yarn;
+  private ProductFlow yarn;
 
   public InventoryFlows() {
   }
 
-  public InventoryFlows alembics(@javax.annotation.Nullable InventoryFlowsAlembics alembics) {
+  public InventoryFlows alembics(@javax.annotation.Nullable ProductFlow alembics) {
     this.alembics = alembics;
     return this;
   }
@@ -675,16 +675,16 @@ public class InventoryFlows {
    * @return alembics
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getAlembics() {
+  public ProductFlow getAlembics() {
     return alembics;
   }
 
-  public void setAlembics(@javax.annotation.Nullable InventoryFlowsAlembics alembics) {
+  public void setAlembics(@javax.annotation.Nullable ProductFlow alembics) {
     this.alembics = alembics;
   }
 
 
-  public InventoryFlows arms(@javax.annotation.Nullable InventoryFlowsAlembics arms) {
+  public InventoryFlows arms(@javax.annotation.Nullable ProductFlow arms) {
     this.arms = arms;
     return this;
   }
@@ -694,16 +694,16 @@ public class InventoryFlows {
    * @return arms
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getArms() {
+  public ProductFlow getArms() {
     return arms;
   }
 
-  public void setArms(@javax.annotation.Nullable InventoryFlowsAlembics arms) {
+  public void setArms(@javax.annotation.Nullable ProductFlow arms) {
     this.arms = arms;
   }
 
 
-  public InventoryFlows axes(@javax.annotation.Nullable InventoryFlowsAlembics axes) {
+  public InventoryFlows axes(@javax.annotation.Nullable ProductFlow axes) {
     this.axes = axes;
     return this;
   }
@@ -713,16 +713,16 @@ public class InventoryFlows {
    * @return axes
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getAxes() {
+  public ProductFlow getAxes() {
     return axes;
   }
 
-  public void setAxes(@javax.annotation.Nullable InventoryFlowsAlembics axes) {
+  public void setAxes(@javax.annotation.Nullable ProductFlow axes) {
     this.axes = axes;
   }
 
 
-  public InventoryFlows beer(@javax.annotation.Nullable InventoryFlowsAlembics beer) {
+  public InventoryFlows beer(@javax.annotation.Nullable ProductFlow beer) {
     this.beer = beer;
     return this;
   }
@@ -732,16 +732,16 @@ public class InventoryFlows {
    * @return beer
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBeer() {
+  public ProductFlow getBeer() {
     return beer;
   }
 
-  public void setBeer(@javax.annotation.Nullable InventoryFlowsAlembics beer) {
+  public void setBeer(@javax.annotation.Nullable ProductFlow beer) {
     this.beer = beer;
   }
 
 
-  public InventoryFlows bellows(@javax.annotation.Nullable InventoryFlowsAlembics bellows) {
+  public InventoryFlows bellows(@javax.annotation.Nullable ProductFlow bellows) {
     this.bellows = bellows;
     return this;
   }
@@ -751,16 +751,16 @@ public class InventoryFlows {
    * @return bellows
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBellows() {
+  public ProductFlow getBellows() {
     return bellows;
   }
 
-  public void setBellows(@javax.annotation.Nullable InventoryFlowsAlembics bellows) {
+  public void setBellows(@javax.annotation.Nullable ProductFlow bellows) {
     this.bellows = bellows;
   }
 
 
-  public InventoryFlows bells(@javax.annotation.Nullable InventoryFlowsAlembics bells) {
+  public InventoryFlows bells(@javax.annotation.Nullable ProductFlow bells) {
     this.bells = bells;
     return this;
   }
@@ -770,16 +770,16 @@ public class InventoryFlows {
    * @return bells
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBells() {
+  public ProductFlow getBells() {
     return bells;
   }
 
-  public void setBells(@javax.annotation.Nullable InventoryFlowsAlembics bells) {
+  public void setBells(@javax.annotation.Nullable ProductFlow bells) {
     this.bells = bells;
   }
 
 
-  public InventoryFlows belts(@javax.annotation.Nullable InventoryFlowsAlembics belts) {
+  public InventoryFlows belts(@javax.annotation.Nullable ProductFlow belts) {
     this.belts = belts;
     return this;
   }
@@ -789,16 +789,16 @@ public class InventoryFlows {
    * @return belts
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBelts() {
+  public ProductFlow getBelts() {
     return belts;
   }
 
-  public void setBelts(@javax.annotation.Nullable InventoryFlowsAlembics belts) {
+  public void setBelts(@javax.annotation.Nullable ProductFlow belts) {
     this.belts = belts;
   }
 
 
-  public InventoryFlows blades(@javax.annotation.Nullable InventoryFlowsAlembics blades) {
+  public InventoryFlows blades(@javax.annotation.Nullable ProductFlow blades) {
     this.blades = blades;
     return this;
   }
@@ -808,16 +808,16 @@ public class InventoryFlows {
    * @return blades
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBlades() {
+  public ProductFlow getBlades() {
     return blades;
   }
 
-  public void setBlades(@javax.annotation.Nullable InventoryFlowsAlembics blades) {
+  public void setBlades(@javax.annotation.Nullable ProductFlow blades) {
     this.blades = blades;
   }
 
 
-  public InventoryFlows books(@javax.annotation.Nullable InventoryFlowsAlembics books) {
+  public InventoryFlows books(@javax.annotation.Nullable ProductFlow books) {
     this.books = books;
     return this;
   }
@@ -827,16 +827,16 @@ public class InventoryFlows {
    * @return books
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBooks() {
+  public ProductFlow getBooks() {
     return books;
   }
 
-  public void setBooks(@javax.annotation.Nullable InventoryFlowsAlembics books) {
+  public void setBooks(@javax.annotation.Nullable ProductFlow books) {
     this.books = books;
   }
 
 
-  public InventoryFlows bread(@javax.annotation.Nullable InventoryFlowsAlembics bread) {
+  public InventoryFlows bread(@javax.annotation.Nullable ProductFlow bread) {
     this.bread = bread;
     return this;
   }
@@ -846,16 +846,16 @@ public class InventoryFlows {
    * @return bread
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBread() {
+  public ProductFlow getBread() {
     return bread;
   }
 
-  public void setBread(@javax.annotation.Nullable InventoryFlowsAlembics bread) {
+  public void setBread(@javax.annotation.Nullable ProductFlow bread) {
     this.bread = bread;
   }
 
 
-  public InventoryFlows bronzeIngots(@javax.annotation.Nullable InventoryFlowsAlembics bronzeIngots) {
+  public InventoryFlows bronzeIngots(@javax.annotation.Nullable ProductFlow bronzeIngots) {
     this.bronzeIngots = bronzeIngots;
     return this;
   }
@@ -865,16 +865,16 @@ public class InventoryFlows {
    * @return bronzeIngots
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getBronzeIngots() {
+  public ProductFlow getBronzeIngots() {
     return bronzeIngots;
   }
 
-  public void setBronzeIngots(@javax.annotation.Nullable InventoryFlowsAlembics bronzeIngots) {
+  public void setBronzeIngots(@javax.annotation.Nullable ProductFlow bronzeIngots) {
     this.bronzeIngots = bronzeIngots;
   }
 
 
-  public InventoryFlows butter(@javax.annotation.Nullable InventoryFlowsAlembics butter) {
+  public InventoryFlows butter(@javax.annotation.Nullable ProductFlow butter) {
     this.butter = butter;
     return this;
   }
@@ -884,16 +884,16 @@ public class InventoryFlows {
    * @return butter
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getButter() {
+  public ProductFlow getButter() {
     return butter;
   }
 
-  public void setButter(@javax.annotation.Nullable InventoryFlowsAlembics butter) {
+  public void setButter(@javax.annotation.Nullable ProductFlow butter) {
     this.butter = butter;
   }
 
 
-  public InventoryFlows candles(@javax.annotation.Nullable InventoryFlowsAlembics candles) {
+  public InventoryFlows candles(@javax.annotation.Nullable ProductFlow candles) {
     this.candles = candles;
     return this;
   }
@@ -903,16 +903,16 @@ public class InventoryFlows {
    * @return candles
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCandles() {
+  public ProductFlow getCandles() {
     return candles;
   }
 
-  public void setCandles(@javax.annotation.Nullable InventoryFlowsAlembics candles) {
+  public void setCandles(@javax.annotation.Nullable ProductFlow candles) {
     this.candles = candles;
   }
 
 
-  public InventoryFlows carting(@javax.annotation.Nullable InventoryFlowsAlembics carting) {
+  public InventoryFlows carting(@javax.annotation.Nullable ProductFlow carting) {
     this.carting = carting;
     return this;
   }
@@ -922,16 +922,16 @@ public class InventoryFlows {
    * @return carting
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCarting() {
+  public ProductFlow getCarting() {
     return carting;
   }
 
-  public void setCarting(@javax.annotation.Nullable InventoryFlowsAlembics carting) {
+  public void setCarting(@javax.annotation.Nullable ProductFlow carting) {
     this.carting = carting;
   }
 
 
-  public InventoryFlows casks(@javax.annotation.Nullable InventoryFlowsAlembics casks) {
+  public InventoryFlows casks(@javax.annotation.Nullable ProductFlow casks) {
     this.casks = casks;
     return this;
   }
@@ -941,16 +941,16 @@ public class InventoryFlows {
    * @return casks
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCasks() {
+  public ProductFlow getCasks() {
     return casks;
   }
 
-  public void setCasks(@javax.annotation.Nullable InventoryFlowsAlembics casks) {
+  public void setCasks(@javax.annotation.Nullable ProductFlow casks) {
     this.casks = casks;
   }
 
 
-  public InventoryFlows cattle(@javax.annotation.Nullable InventoryFlowsAlembics cattle) {
+  public InventoryFlows cattle(@javax.annotation.Nullable ProductFlow cattle) {
     this.cattle = cattle;
     return this;
   }
@@ -960,16 +960,16 @@ public class InventoryFlows {
    * @return cattle
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCattle() {
+  public ProductFlow getCattle() {
     return cattle;
   }
 
-  public void setCattle(@javax.annotation.Nullable InventoryFlowsAlembics cattle) {
+  public void setCattle(@javax.annotation.Nullable ProductFlow cattle) {
     this.cattle = cattle;
   }
 
 
-  public InventoryFlows charcoal(@javax.annotation.Nullable InventoryFlowsAlembics charcoal) {
+  public InventoryFlows charcoal(@javax.annotation.Nullable ProductFlow charcoal) {
     this.charcoal = charcoal;
     return this;
   }
@@ -979,16 +979,16 @@ public class InventoryFlows {
    * @return charcoal
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCharcoal() {
+  public ProductFlow getCharcoal() {
     return charcoal;
   }
 
-  public void setCharcoal(@javax.annotation.Nullable InventoryFlowsAlembics charcoal) {
+  public void setCharcoal(@javax.annotation.Nullable ProductFlow charcoal) {
     this.charcoal = charcoal;
   }
 
 
-  public InventoryFlows cheese(@javax.annotation.Nullable InventoryFlowsAlembics cheese) {
+  public InventoryFlows cheese(@javax.annotation.Nullable ProductFlow cheese) {
     this.cheese = cheese;
     return this;
   }
@@ -998,16 +998,16 @@ public class InventoryFlows {
    * @return cheese
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCheese() {
+  public ProductFlow getCheese() {
     return cheese;
   }
 
-  public void setCheese(@javax.annotation.Nullable InventoryFlowsAlembics cheese) {
+  public void setCheese(@javax.annotation.Nullable ProductFlow cheese) {
     this.cheese = cheese;
   }
 
 
-  public InventoryFlows chisels(@javax.annotation.Nullable InventoryFlowsAlembics chisels) {
+  public InventoryFlows chisels(@javax.annotation.Nullable ProductFlow chisels) {
     this.chisels = chisels;
     return this;
   }
@@ -1017,16 +1017,16 @@ public class InventoryFlows {
    * @return chisels
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getChisels() {
+  public ProductFlow getChisels() {
     return chisels;
   }
 
-  public void setChisels(@javax.annotation.Nullable InventoryFlowsAlembics chisels) {
+  public void setChisels(@javax.annotation.Nullable ProductFlow chisels) {
     this.chisels = chisels;
   }
 
 
-  public InventoryFlows clay(@javax.annotation.Nullable InventoryFlowsAlembics clay) {
+  public InventoryFlows clay(@javax.annotation.Nullable ProductFlow clay) {
     this.clay = clay;
     return this;
   }
@@ -1036,16 +1036,16 @@ public class InventoryFlows {
    * @return clay
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getClay() {
+  public ProductFlow getClay() {
     return clay;
   }
 
-  public void setClay(@javax.annotation.Nullable InventoryFlowsAlembics clay) {
+  public void setClay(@javax.annotation.Nullable ProductFlow clay) {
     this.clay = clay;
   }
 
 
-  public InventoryFlows cloth(@javax.annotation.Nullable InventoryFlowsAlembics cloth) {
+  public InventoryFlows cloth(@javax.annotation.Nullable ProductFlow cloth) {
     this.cloth = cloth;
     return this;
   }
@@ -1055,16 +1055,16 @@ public class InventoryFlows {
    * @return cloth
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCloth() {
+  public ProductFlow getCloth() {
     return cloth;
   }
 
-  public void setCloth(@javax.annotation.Nullable InventoryFlowsAlembics cloth) {
+  public void setCloth(@javax.annotation.Nullable ProductFlow cloth) {
     this.cloth = cloth;
   }
 
 
-  public InventoryFlows coats(@javax.annotation.Nullable InventoryFlowsAlembics coats) {
+  public InventoryFlows coats(@javax.annotation.Nullable ProductFlow coats) {
     this.coats = coats;
     return this;
   }
@@ -1074,16 +1074,16 @@ public class InventoryFlows {
    * @return coats
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCoats() {
+  public ProductFlow getCoats() {
     return coats;
   }
 
-  public void setCoats(@javax.annotation.Nullable InventoryFlowsAlembics coats) {
+  public void setCoats(@javax.annotation.Nullable ProductFlow coats) {
     this.coats = coats;
   }
 
 
-  public InventoryFlows cookware(@javax.annotation.Nullable InventoryFlowsAlembics cookware) {
+  public InventoryFlows cookware(@javax.annotation.Nullable ProductFlow cookware) {
     this.cookware = cookware;
     return this;
   }
@@ -1093,16 +1093,16 @@ public class InventoryFlows {
    * @return cookware
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCookware() {
+  public ProductFlow getCookware() {
     return cookware;
   }
 
-  public void setCookware(@javax.annotation.Nullable InventoryFlowsAlembics cookware) {
+  public void setCookware(@javax.annotation.Nullable ProductFlow cookware) {
     this.cookware = cookware;
   }
 
 
-  public InventoryFlows copperIngots(@javax.annotation.Nullable InventoryFlowsAlembics copperIngots) {
+  public InventoryFlows copperIngots(@javax.annotation.Nullable ProductFlow copperIngots) {
     this.copperIngots = copperIngots;
     return this;
   }
@@ -1112,16 +1112,16 @@ public class InventoryFlows {
    * @return copperIngots
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCopperIngots() {
+  public ProductFlow getCopperIngots() {
     return copperIngots;
   }
 
-  public void setCopperIngots(@javax.annotation.Nullable InventoryFlowsAlembics copperIngots) {
+  public void setCopperIngots(@javax.annotation.Nullable ProductFlow copperIngots) {
     this.copperIngots = copperIngots;
   }
 
 
-  public InventoryFlows copperOre(@javax.annotation.Nullable InventoryFlowsAlembics copperOre) {
+  public InventoryFlows copperOre(@javax.annotation.Nullable ProductFlow copperOre) {
     this.copperOre = copperOre;
     return this;
   }
@@ -1131,16 +1131,16 @@ public class InventoryFlows {
    * @return copperOre
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCopperOre() {
+  public ProductFlow getCopperOre() {
     return copperOre;
   }
 
-  public void setCopperOre(@javax.annotation.Nullable InventoryFlowsAlembics copperOre) {
+  public void setCopperOre(@javax.annotation.Nullable ProductFlow copperOre) {
     this.copperOre = copperOre;
   }
 
 
-  public InventoryFlows curedFish(@javax.annotation.Nullable InventoryFlowsAlembics curedFish) {
+  public InventoryFlows curedFish(@javax.annotation.Nullable ProductFlow curedFish) {
     this.curedFish = curedFish;
     return this;
   }
@@ -1150,16 +1150,16 @@ public class InventoryFlows {
    * @return curedFish
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCuredFish() {
+  public ProductFlow getCuredFish() {
     return curedFish;
   }
 
-  public void setCuredFish(@javax.annotation.Nullable InventoryFlowsAlembics curedFish) {
+  public void setCuredFish(@javax.annotation.Nullable ProductFlow curedFish) {
     this.curedFish = curedFish;
   }
 
 
-  public InventoryFlows curedMeat(@javax.annotation.Nullable InventoryFlowsAlembics curedMeat) {
+  public InventoryFlows curedMeat(@javax.annotation.Nullable ProductFlow curedMeat) {
     this.curedMeat = curedMeat;
     return this;
   }
@@ -1169,16 +1169,16 @@ public class InventoryFlows {
    * @return curedMeat
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getCuredMeat() {
+  public ProductFlow getCuredMeat() {
     return curedMeat;
   }
 
-  public void setCuredMeat(@javax.annotation.Nullable InventoryFlowsAlembics curedMeat) {
+  public void setCuredMeat(@javax.annotation.Nullable ProductFlow curedMeat) {
     this.curedMeat = curedMeat;
   }
 
 
-  public InventoryFlows dye(@javax.annotation.Nullable InventoryFlowsAlembics dye) {
+  public InventoryFlows dye(@javax.annotation.Nullable ProductFlow dye) {
     this.dye = dye;
     return this;
   }
@@ -1188,16 +1188,16 @@ public class InventoryFlows {
    * @return dye
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getDye() {
+  public ProductFlow getDye() {
     return dye;
   }
 
-  public void setDye(@javax.annotation.Nullable InventoryFlowsAlembics dye) {
+  public void setDye(@javax.annotation.Nullable ProductFlow dye) {
     this.dye = dye;
   }
 
 
-  public InventoryFlows dyedCloth(@javax.annotation.Nullable InventoryFlowsAlembics dyedCloth) {
+  public InventoryFlows dyedCloth(@javax.annotation.Nullable ProductFlow dyedCloth) {
     this.dyedCloth = dyedCloth;
     return this;
   }
@@ -1207,16 +1207,16 @@ public class InventoryFlows {
    * @return dyedCloth
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getDyedCloth() {
+  public ProductFlow getDyedCloth() {
     return dyedCloth;
   }
 
-  public void setDyedCloth(@javax.annotation.Nullable InventoryFlowsAlembics dyedCloth) {
+  public void setDyedCloth(@javax.annotation.Nullable ProductFlow dyedCloth) {
     this.dyedCloth = dyedCloth;
   }
 
 
-  public InventoryFlows dyedYarn(@javax.annotation.Nullable InventoryFlowsAlembics dyedYarn) {
+  public InventoryFlows dyedYarn(@javax.annotation.Nullable ProductFlow dyedYarn) {
     this.dyedYarn = dyedYarn;
     return this;
   }
@@ -1226,16 +1226,16 @@ public class InventoryFlows {
    * @return dyedYarn
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getDyedYarn() {
+  public ProductFlow getDyedYarn() {
     return dyedYarn;
   }
 
-  public void setDyedYarn(@javax.annotation.Nullable InventoryFlowsAlembics dyedYarn) {
+  public void setDyedYarn(@javax.annotation.Nullable ProductFlow dyedYarn) {
     this.dyedYarn = dyedYarn;
   }
 
 
-  public InventoryFlows firewood(@javax.annotation.Nullable InventoryFlowsAlembics firewood) {
+  public InventoryFlows firewood(@javax.annotation.Nullable ProductFlow firewood) {
     this.firewood = firewood;
     return this;
   }
@@ -1245,16 +1245,16 @@ public class InventoryFlows {
    * @return firewood
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFirewood() {
+  public ProductFlow getFirewood() {
     return firewood;
   }
 
-  public void setFirewood(@javax.annotation.Nullable InventoryFlowsAlembics firewood) {
+  public void setFirewood(@javax.annotation.Nullable ProductFlow firewood) {
     this.firewood = firewood;
   }
 
 
-  public InventoryFlows fish(@javax.annotation.Nullable InventoryFlowsAlembics fish) {
+  public InventoryFlows fish(@javax.annotation.Nullable ProductFlow fish) {
     this.fish = fish;
     return this;
   }
@@ -1264,16 +1264,16 @@ public class InventoryFlows {
    * @return fish
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFish() {
+  public ProductFlow getFish() {
     return fish;
   }
 
-  public void setFish(@javax.annotation.Nullable InventoryFlowsAlembics fish) {
+  public void setFish(@javax.annotation.Nullable ProductFlow fish) {
     this.fish = fish;
   }
 
 
-  public InventoryFlows flaxFibres(@javax.annotation.Nullable InventoryFlowsAlembics flaxFibres) {
+  public InventoryFlows flaxFibres(@javax.annotation.Nullable ProductFlow flaxFibres) {
     this.flaxFibres = flaxFibres;
     return this;
   }
@@ -1283,16 +1283,16 @@ public class InventoryFlows {
    * @return flaxFibres
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFlaxFibres() {
+  public ProductFlow getFlaxFibres() {
     return flaxFibres;
   }
 
-  public void setFlaxFibres(@javax.annotation.Nullable InventoryFlowsAlembics flaxFibres) {
+  public void setFlaxFibres(@javax.annotation.Nullable ProductFlow flaxFibres) {
     this.flaxFibres = flaxFibres;
   }
 
 
-  public InventoryFlows flaxPlants(@javax.annotation.Nullable InventoryFlowsAlembics flaxPlants) {
+  public InventoryFlows flaxPlants(@javax.annotation.Nullable ProductFlow flaxPlants) {
     this.flaxPlants = flaxPlants;
     return this;
   }
@@ -1302,16 +1302,16 @@ public class InventoryFlows {
    * @return flaxPlants
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFlaxPlants() {
+  public ProductFlow getFlaxPlants() {
     return flaxPlants;
   }
 
-  public void setFlaxPlants(@javax.annotation.Nullable InventoryFlowsAlembics flaxPlants) {
+  public void setFlaxPlants(@javax.annotation.Nullable ProductFlow flaxPlants) {
     this.flaxPlants = flaxPlants;
   }
 
 
-  public InventoryFlows fleece(@javax.annotation.Nullable InventoryFlowsAlembics fleece) {
+  public InventoryFlows fleece(@javax.annotation.Nullable ProductFlow fleece) {
     this.fleece = fleece;
     return this;
   }
@@ -1321,16 +1321,16 @@ public class InventoryFlows {
    * @return fleece
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFleece() {
+  public ProductFlow getFleece() {
     return fleece;
   }
 
-  public void setFleece(@javax.annotation.Nullable InventoryFlowsAlembics fleece) {
+  public void setFleece(@javax.annotation.Nullable ProductFlow fleece) {
     this.fleece = fleece;
   }
 
 
-  public InventoryFlows flour(@javax.annotation.Nullable InventoryFlowsAlembics flour) {
+  public InventoryFlows flour(@javax.annotation.Nullable ProductFlow flour) {
     this.flour = flour;
     return this;
   }
@@ -1340,16 +1340,16 @@ public class InventoryFlows {
    * @return flour
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFlour() {
+  public ProductFlow getFlour() {
     return flour;
   }
 
-  public void setFlour(@javax.annotation.Nullable InventoryFlowsAlembics flour) {
+  public void setFlour(@javax.annotation.Nullable ProductFlow flour) {
     this.flour = flour;
   }
 
 
-  public InventoryFlows furniture(@javax.annotation.Nullable InventoryFlowsAlembics furniture) {
+  public InventoryFlows furniture(@javax.annotation.Nullable ProductFlow furniture) {
     this.furniture = furniture;
     return this;
   }
@@ -1359,16 +1359,16 @@ public class InventoryFlows {
    * @return furniture
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getFurniture() {
+  public ProductFlow getFurniture() {
     return furniture;
   }
 
-  public void setFurniture(@javax.annotation.Nullable InventoryFlowsAlembics furniture) {
+  public void setFurniture(@javax.annotation.Nullable ProductFlow furniture) {
     this.furniture = furniture;
   }
 
 
-  public InventoryFlows garments(@javax.annotation.Nullable InventoryFlowsAlembics garments) {
+  public InventoryFlows garments(@javax.annotation.Nullable ProductFlow garments) {
     this.garments = garments;
     return this;
   }
@@ -1378,16 +1378,16 @@ public class InventoryFlows {
    * @return garments
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGarments() {
+  public ProductFlow getGarments() {
     return garments;
   }
 
-  public void setGarments(@javax.annotation.Nullable InventoryFlowsAlembics garments) {
+  public void setGarments(@javax.annotation.Nullable ProductFlow garments) {
     this.garments = garments;
   }
 
 
-  public InventoryFlows gears(@javax.annotation.Nullable InventoryFlowsAlembics gears) {
+  public InventoryFlows gears(@javax.annotation.Nullable ProductFlow gears) {
     this.gears = gears;
     return this;
   }
@@ -1397,16 +1397,16 @@ public class InventoryFlows {
    * @return gears
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGears() {
+  public ProductFlow getGears() {
     return gears;
   }
 
-  public void setGears(@javax.annotation.Nullable InventoryFlowsAlembics gears) {
+  public void setGears(@javax.annotation.Nullable ProductFlow gears) {
     this.gears = gears;
   }
 
 
-  public InventoryFlows glass(@javax.annotation.Nullable InventoryFlowsAlembics glass) {
+  public InventoryFlows glass(@javax.annotation.Nullable ProductFlow glass) {
     this.glass = glass;
     return this;
   }
@@ -1416,16 +1416,16 @@ public class InventoryFlows {
    * @return glass
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGlass() {
+  public ProductFlow getGlass() {
     return glass;
   }
 
-  public void setGlass(@javax.annotation.Nullable InventoryFlowsAlembics glass) {
+  public void setGlass(@javax.annotation.Nullable ProductFlow glass) {
     this.glass = glass;
   }
 
 
-  public InventoryFlows glassware(@javax.annotation.Nullable InventoryFlowsAlembics glassware) {
+  public InventoryFlows glassware(@javax.annotation.Nullable ProductFlow glassware) {
     this.glassware = glassware;
     return this;
   }
@@ -1435,16 +1435,16 @@ public class InventoryFlows {
    * @return glassware
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGlassware() {
+  public ProductFlow getGlassware() {
     return glassware;
   }
 
-  public void setGlassware(@javax.annotation.Nullable InventoryFlowsAlembics glassware) {
+  public void setGlassware(@javax.annotation.Nullable ProductFlow glassware) {
     this.glassware = glassware;
   }
 
 
-  public InventoryFlows goldBars(@javax.annotation.Nullable InventoryFlowsAlembics goldBars) {
+  public InventoryFlows goldBars(@javax.annotation.Nullable ProductFlow goldBars) {
     this.goldBars = goldBars;
     return this;
   }
@@ -1454,16 +1454,16 @@ public class InventoryFlows {
    * @return goldBars
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGoldBars() {
+  public ProductFlow getGoldBars() {
     return goldBars;
   }
 
-  public void setGoldBars(@javax.annotation.Nullable InventoryFlowsAlembics goldBars) {
+  public void setGoldBars(@javax.annotation.Nullable ProductFlow goldBars) {
     this.goldBars = goldBars;
   }
 
 
-  public InventoryFlows goldOre(@javax.annotation.Nullable InventoryFlowsAlembics goldOre) {
+  public InventoryFlows goldOre(@javax.annotation.Nullable ProductFlow goldOre) {
     this.goldOre = goldOre;
     return this;
   }
@@ -1473,16 +1473,16 @@ public class InventoryFlows {
    * @return goldOre
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGoldOre() {
+  public ProductFlow getGoldOre() {
     return goldOre;
   }
 
-  public void setGoldOre(@javax.annotation.Nullable InventoryFlowsAlembics goldOre) {
+  public void setGoldOre(@javax.annotation.Nullable ProductFlow goldOre) {
     this.goldOre = goldOre;
   }
 
 
-  public InventoryFlows grain(@javax.annotation.Nullable InventoryFlowsAlembics grain) {
+  public InventoryFlows grain(@javax.annotation.Nullable ProductFlow grain) {
     this.grain = grain;
     return this;
   }
@@ -1492,16 +1492,16 @@ public class InventoryFlows {
    * @return grain
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGrain() {
+  public ProductFlow getGrain() {
     return grain;
   }
 
-  public void setGrain(@javax.annotation.Nullable InventoryFlowsAlembics grain) {
+  public void setGrain(@javax.annotation.Nullable ProductFlow grain) {
     this.grain = grain;
   }
 
 
-  public InventoryFlows grindstones(@javax.annotation.Nullable InventoryFlowsAlembics grindstones) {
+  public InventoryFlows grindstones(@javax.annotation.Nullable ProductFlow grindstones) {
     this.grindstones = grindstones;
     return this;
   }
@@ -1511,16 +1511,16 @@ public class InventoryFlows {
    * @return grindstones
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getGrindstones() {
+  public ProductFlow getGrindstones() {
     return grindstones;
   }
 
-  public void setGrindstones(@javax.annotation.Nullable InventoryFlowsAlembics grindstones) {
+  public void setGrindstones(@javax.annotation.Nullable ProductFlow grindstones) {
     this.grindstones = grindstones;
   }
 
 
-  public InventoryFlows ham(@javax.annotation.Nullable InventoryFlowsAlembics ham) {
+  public InventoryFlows ham(@javax.annotation.Nullable ProductFlow ham) {
     this.ham = ham;
     return this;
   }
@@ -1530,16 +1530,16 @@ public class InventoryFlows {
    * @return ham
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHam() {
+  public ProductFlow getHam() {
     return ham;
   }
 
-  public void setHam(@javax.annotation.Nullable InventoryFlowsAlembics ham) {
+  public void setHam(@javax.annotation.Nullable ProductFlow ham) {
     this.ham = ham;
   }
 
 
-  public InventoryFlows harnesses(@javax.annotation.Nullable InventoryFlowsAlembics harnesses) {
+  public InventoryFlows harnesses(@javax.annotation.Nullable ProductFlow harnesses) {
     this.harnesses = harnesses;
     return this;
   }
@@ -1549,16 +1549,16 @@ public class InventoryFlows {
    * @return harnesses
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHarnesses() {
+  public ProductFlow getHarnesses() {
     return harnesses;
   }
 
-  public void setHarnesses(@javax.annotation.Nullable InventoryFlowsAlembics harnesses) {
+  public void setHarnesses(@javax.annotation.Nullable ProductFlow harnesses) {
     this.harnesses = harnesses;
   }
 
 
-  public InventoryFlows herbs(@javax.annotation.Nullable InventoryFlowsAlembics herbs) {
+  public InventoryFlows herbs(@javax.annotation.Nullable ProductFlow herbs) {
     this.herbs = herbs;
     return this;
   }
@@ -1568,16 +1568,16 @@ public class InventoryFlows {
    * @return herbs
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHerbs() {
+  public ProductFlow getHerbs() {
     return herbs;
   }
 
-  public void setHerbs(@javax.annotation.Nullable InventoryFlowsAlembics herbs) {
+  public void setHerbs(@javax.annotation.Nullable ProductFlow herbs) {
     this.herbs = herbs;
   }
 
 
-  public InventoryFlows hides(@javax.annotation.Nullable InventoryFlowsAlembics hides) {
+  public InventoryFlows hides(@javax.annotation.Nullable ProductFlow hides) {
     this.hides = hides;
     return this;
   }
@@ -1587,16 +1587,16 @@ public class InventoryFlows {
    * @return hides
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHides() {
+  public ProductFlow getHides() {
     return hides;
   }
 
-  public void setHides(@javax.annotation.Nullable InventoryFlowsAlembics hides) {
+  public void setHides(@javax.annotation.Nullable ProductFlow hides) {
     this.hides = hides;
   }
 
 
-  public InventoryFlows hinges(@javax.annotation.Nullable InventoryFlowsAlembics hinges) {
+  public InventoryFlows hinges(@javax.annotation.Nullable ProductFlow hinges) {
     this.hinges = hinges;
     return this;
   }
@@ -1606,16 +1606,16 @@ public class InventoryFlows {
    * @return hinges
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHinges() {
+  public ProductFlow getHinges() {
     return hinges;
   }
 
-  public void setHinges(@javax.annotation.Nullable InventoryFlowsAlembics hinges) {
+  public void setHinges(@javax.annotation.Nullable ProductFlow hinges) {
     this.hinges = hinges;
   }
 
 
-  public InventoryFlows honey(@javax.annotation.Nullable InventoryFlowsAlembics honey) {
+  public InventoryFlows honey(@javax.annotation.Nullable ProductFlow honey) {
     this.honey = honey;
     return this;
   }
@@ -1625,16 +1625,16 @@ public class InventoryFlows {
    * @return honey
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHoney() {
+  public ProductFlow getHoney() {
     return honey;
   }
 
-  public void setHoney(@javax.annotation.Nullable InventoryFlowsAlembics honey) {
+  public void setHoney(@javax.annotation.Nullable ProductFlow honey) {
     this.honey = honey;
   }
 
 
-  public InventoryFlows hopBeer(@javax.annotation.Nullable InventoryFlowsAlembics hopBeer) {
+  public InventoryFlows hopBeer(@javax.annotation.Nullable ProductFlow hopBeer) {
     this.hopBeer = hopBeer;
     return this;
   }
@@ -1644,16 +1644,16 @@ public class InventoryFlows {
    * @return hopBeer
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getHopBeer() {
+  public ProductFlow getHopBeer() {
     return hopBeer;
   }
 
-  public void setHopBeer(@javax.annotation.Nullable InventoryFlowsAlembics hopBeer) {
+  public void setHopBeer(@javax.annotation.Nullable ProductFlow hopBeer) {
     this.hopBeer = hopBeer;
   }
 
 
-  public InventoryFlows ironOre(@javax.annotation.Nullable InventoryFlowsAlembics ironOre) {
+  public InventoryFlows ironOre(@javax.annotation.Nullable ProductFlow ironOre) {
     this.ironOre = ironOre;
     return this;
   }
@@ -1663,16 +1663,16 @@ public class InventoryFlows {
    * @return ironOre
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getIronOre() {
+  public ProductFlow getIronOre() {
     return ironOre;
   }
 
-  public void setIronOre(@javax.annotation.Nullable InventoryFlowsAlembics ironOre) {
+  public void setIronOre(@javax.annotation.Nullable ProductFlow ironOre) {
     this.ironOre = ironOre;
   }
 
 
-  public InventoryFlows jewellery(@javax.annotation.Nullable InventoryFlowsAlembics jewellery) {
+  public InventoryFlows jewellery(@javax.annotation.Nullable ProductFlow jewellery) {
     this.jewellery = jewellery;
     return this;
   }
@@ -1682,16 +1682,16 @@ public class InventoryFlows {
    * @return jewellery
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getJewellery() {
+  public ProductFlow getJewellery() {
     return jewellery;
   }
 
-  public void setJewellery(@javax.annotation.Nullable InventoryFlowsAlembics jewellery) {
+  public void setJewellery(@javax.annotation.Nullable ProductFlow jewellery) {
     this.jewellery = jewellery;
   }
 
 
-  public InventoryFlows labour(@javax.annotation.Nullable InventoryFlowsAlembics labour) {
+  public InventoryFlows labour(@javax.annotation.Nullable ProductFlow labour) {
     this.labour = labour;
     return this;
   }
@@ -1701,16 +1701,16 @@ public class InventoryFlows {
    * @return labour
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLabour() {
+  public ProductFlow getLabour() {
     return labour;
   }
 
-  public void setLabour(@javax.annotation.Nullable InventoryFlowsAlembics labour) {
+  public void setLabour(@javax.annotation.Nullable ProductFlow labour) {
     this.labour = labour;
   }
 
 
-  public InventoryFlows lathes(@javax.annotation.Nullable InventoryFlowsAlembics lathes) {
+  public InventoryFlows lathes(@javax.annotation.Nullable ProductFlow lathes) {
     this.lathes = lathes;
     return this;
   }
@@ -1720,16 +1720,16 @@ public class InventoryFlows {
    * @return lathes
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLathes() {
+  public ProductFlow getLathes() {
     return lathes;
   }
 
-  public void setLathes(@javax.annotation.Nullable InventoryFlowsAlembics lathes) {
+  public void setLathes(@javax.annotation.Nullable ProductFlow lathes) {
     this.lathes = lathes;
   }
 
 
-  public InventoryFlows leadBars(@javax.annotation.Nullable InventoryFlowsAlembics leadBars) {
+  public InventoryFlows leadBars(@javax.annotation.Nullable ProductFlow leadBars) {
     this.leadBars = leadBars;
     return this;
   }
@@ -1739,16 +1739,16 @@ public class InventoryFlows {
    * @return leadBars
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLeadBars() {
+  public ProductFlow getLeadBars() {
     return leadBars;
   }
 
-  public void setLeadBars(@javax.annotation.Nullable InventoryFlowsAlembics leadBars) {
+  public void setLeadBars(@javax.annotation.Nullable ProductFlow leadBars) {
     this.leadBars = leadBars;
   }
 
 
-  public InventoryFlows leadOre(@javax.annotation.Nullable InventoryFlowsAlembics leadOre) {
+  public InventoryFlows leadOre(@javax.annotation.Nullable ProductFlow leadOre) {
     this.leadOre = leadOre;
     return this;
   }
@@ -1758,16 +1758,16 @@ public class InventoryFlows {
    * @return leadOre
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLeadOre() {
+  public ProductFlow getLeadOre() {
     return leadOre;
   }
 
-  public void setLeadOre(@javax.annotation.Nullable InventoryFlowsAlembics leadOre) {
+  public void setLeadOre(@javax.annotation.Nullable ProductFlow leadOre) {
     this.leadOre = leadOre;
   }
 
 
-  public InventoryFlows leather(@javax.annotation.Nullable InventoryFlowsAlembics leather) {
+  public InventoryFlows leather(@javax.annotation.Nullable ProductFlow leather) {
     this.leather = leather;
     return this;
   }
@@ -1777,16 +1777,16 @@ public class InventoryFlows {
    * @return leather
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLeather() {
+  public ProductFlow getLeather() {
     return leather;
   }
 
-  public void setLeather(@javax.annotation.Nullable InventoryFlowsAlembics leather) {
+  public void setLeather(@javax.annotation.Nullable ProductFlow leather) {
     this.leather = leather;
   }
 
 
-  public InventoryFlows lightArmour(@javax.annotation.Nullable InventoryFlowsAlembics lightArmour) {
+  public InventoryFlows lightArmour(@javax.annotation.Nullable ProductFlow lightArmour) {
     this.lightArmour = lightArmour;
     return this;
   }
@@ -1796,16 +1796,16 @@ public class InventoryFlows {
    * @return lightArmour
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLightArmour() {
+  public ProductFlow getLightArmour() {
     return lightArmour;
   }
 
-  public void setLightArmour(@javax.annotation.Nullable InventoryFlowsAlembics lightArmour) {
+  public void setLightArmour(@javax.annotation.Nullable ProductFlow lightArmour) {
     this.lightArmour = lightArmour;
   }
 
 
-  public InventoryFlows limestone(@javax.annotation.Nullable InventoryFlowsAlembics limestone) {
+  public InventoryFlows limestone(@javax.annotation.Nullable ProductFlow limestone) {
     this.limestone = limestone;
     return this;
   }
@@ -1815,16 +1815,16 @@ public class InventoryFlows {
    * @return limestone
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLimestone() {
+  public ProductFlow getLimestone() {
     return limestone;
   }
 
-  public void setLimestone(@javax.annotation.Nullable InventoryFlowsAlembics limestone) {
+  public void setLimestone(@javax.annotation.Nullable ProductFlow limestone) {
     this.limestone = limestone;
   }
 
 
-  public InventoryFlows lodging(@javax.annotation.Nullable InventoryFlowsAlembics lodging) {
+  public InventoryFlows lodging(@javax.annotation.Nullable ProductFlow lodging) {
     this.lodging = lodging;
     return this;
   }
@@ -1834,16 +1834,16 @@ public class InventoryFlows {
    * @return lodging
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLodging() {
+  public ProductFlow getLodging() {
     return lodging;
   }
 
-  public void setLodging(@javax.annotation.Nullable InventoryFlowsAlembics lodging) {
+  public void setLodging(@javax.annotation.Nullable ProductFlow lodging) {
     this.lodging = lodging;
   }
 
 
-  public InventoryFlows logs(@javax.annotation.Nullable InventoryFlowsAlembics logs) {
+  public InventoryFlows logs(@javax.annotation.Nullable ProductFlow logs) {
     this.logs = logs;
     return this;
   }
@@ -1853,16 +1853,16 @@ public class InventoryFlows {
    * @return logs
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLogs() {
+  public ProductFlow getLogs() {
     return logs;
   }
 
-  public void setLogs(@javax.annotation.Nullable InventoryFlowsAlembics logs) {
+  public void setLogs(@javax.annotation.Nullable ProductFlow logs) {
     this.logs = logs;
   }
 
 
-  public InventoryFlows looms(@javax.annotation.Nullable InventoryFlowsAlembics looms) {
+  public InventoryFlows looms(@javax.annotation.Nullable ProductFlow looms) {
     this.looms = looms;
     return this;
   }
@@ -1872,16 +1872,16 @@ public class InventoryFlows {
    * @return looms
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getLooms() {
+  public ProductFlow getLooms() {
     return looms;
   }
 
-  public void setLooms(@javax.annotation.Nullable InventoryFlowsAlembics looms) {
+  public void setLooms(@javax.annotation.Nullable ProductFlow looms) {
     this.looms = looms;
   }
 
 
-  public InventoryFlows malt(@javax.annotation.Nullable InventoryFlowsAlembics malt) {
+  public InventoryFlows malt(@javax.annotation.Nullable ProductFlow malt) {
     this.malt = malt;
     return this;
   }
@@ -1891,16 +1891,16 @@ public class InventoryFlows {
    * @return malt
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getMalt() {
+  public ProductFlow getMalt() {
     return malt;
   }
 
-  public void setMalt(@javax.annotation.Nullable InventoryFlowsAlembics malt) {
+  public void setMalt(@javax.annotation.Nullable ProductFlow malt) {
     this.malt = malt;
   }
 
 
-  public InventoryFlows manure(@javax.annotation.Nullable InventoryFlowsAlembics manure) {
+  public InventoryFlows manure(@javax.annotation.Nullable ProductFlow manure) {
     this.manure = manure;
     return this;
   }
@@ -1910,16 +1910,16 @@ public class InventoryFlows {
    * @return manure
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getManure() {
+  public ProductFlow getManure() {
     return manure;
   }
 
-  public void setManure(@javax.annotation.Nullable InventoryFlowsAlembics manure) {
+  public void setManure(@javax.annotation.Nullable ProductFlow manure) {
     this.manure = manure;
   }
 
 
-  public InventoryFlows meat(@javax.annotation.Nullable InventoryFlowsAlembics meat) {
+  public InventoryFlows meat(@javax.annotation.Nullable ProductFlow meat) {
     this.meat = meat;
     return this;
   }
@@ -1929,16 +1929,16 @@ public class InventoryFlows {
    * @return meat
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getMeat() {
+  public ProductFlow getMeat() {
     return meat;
   }
 
-  public void setMeat(@javax.annotation.Nullable InventoryFlowsAlembics meat) {
+  public void setMeat(@javax.annotation.Nullable ProductFlow meat) {
     this.meat = meat;
   }
 
 
-  public InventoryFlows medicine(@javax.annotation.Nullable InventoryFlowsAlembics medicine) {
+  public InventoryFlows medicine(@javax.annotation.Nullable ProductFlow medicine) {
     this.medicine = medicine;
     return this;
   }
@@ -1948,16 +1948,16 @@ public class InventoryFlows {
    * @return medicine
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getMedicine() {
+  public ProductFlow getMedicine() {
     return medicine;
   }
 
-  public void setMedicine(@javax.annotation.Nullable InventoryFlowsAlembics medicine) {
+  public void setMedicine(@javax.annotation.Nullable ProductFlow medicine) {
     this.medicine = medicine;
   }
 
 
-  public InventoryFlows milk(@javax.annotation.Nullable InventoryFlowsAlembics milk) {
+  public InventoryFlows milk(@javax.annotation.Nullable ProductFlow milk) {
     this.milk = milk;
     return this;
   }
@@ -1967,16 +1967,16 @@ public class InventoryFlows {
    * @return milk
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getMilk() {
+  public ProductFlow getMilk() {
     return milk;
   }
 
-  public void setMilk(@javax.annotation.Nullable InventoryFlowsAlembics milk) {
+  public void setMilk(@javax.annotation.Nullable ProductFlow milk) {
     this.milk = milk;
   }
 
 
-  public InventoryFlows mouldboards(@javax.annotation.Nullable InventoryFlowsAlembics mouldboards) {
+  public InventoryFlows mouldboards(@javax.annotation.Nullable ProductFlow mouldboards) {
     this.mouldboards = mouldboards;
     return this;
   }
@@ -1986,16 +1986,16 @@ public class InventoryFlows {
    * @return mouldboards
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getMouldboards() {
+  public ProductFlow getMouldboards() {
     return mouldboards;
   }
 
-  public void setMouldboards(@javax.annotation.Nullable InventoryFlowsAlembics mouldboards) {
+  public void setMouldboards(@javax.annotation.Nullable ProductFlow mouldboards) {
     this.mouldboards = mouldboards;
   }
 
 
-  public InventoryFlows nails(@javax.annotation.Nullable InventoryFlowsAlembics nails) {
+  public InventoryFlows nails(@javax.annotation.Nullable ProductFlow nails) {
     this.nails = nails;
     return this;
   }
@@ -2005,16 +2005,16 @@ public class InventoryFlows {
    * @return nails
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getNails() {
+  public ProductFlow getNails() {
     return nails;
   }
 
-  public void setNails(@javax.annotation.Nullable InventoryFlowsAlembics nails) {
+  public void setNails(@javax.annotation.Nullable ProductFlow nails) {
     this.nails = nails;
   }
 
 
-  public InventoryFlows nets(@javax.annotation.Nullable InventoryFlowsAlembics nets) {
+  public InventoryFlows nets(@javax.annotation.Nullable ProductFlow nets) {
     this.nets = nets;
     return this;
   }
@@ -2024,16 +2024,16 @@ public class InventoryFlows {
    * @return nets
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getNets() {
+  public ProductFlow getNets() {
     return nets;
   }
 
-  public void setNets(@javax.annotation.Nullable InventoryFlowsAlembics nets) {
+  public void setNets(@javax.annotation.Nullable ProductFlow nets) {
     this.nets = nets;
   }
 
 
-  public InventoryFlows oxPower(@javax.annotation.Nullable InventoryFlowsAlembics oxPower) {
+  public InventoryFlows oxPower(@javax.annotation.Nullable ProductFlow oxPower) {
     this.oxPower = oxPower;
     return this;
   }
@@ -2043,16 +2043,16 @@ public class InventoryFlows {
    * @return oxPower
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getOxPower() {
+  public ProductFlow getOxPower() {
     return oxPower;
   }
 
-  public void setOxPower(@javax.annotation.Nullable InventoryFlowsAlembics oxPower) {
+  public void setOxPower(@javax.annotation.Nullable ProductFlow oxPower) {
     this.oxPower = oxPower;
   }
 
 
-  public InventoryFlows paper(@javax.annotation.Nullable InventoryFlowsAlembics paper) {
+  public InventoryFlows paper(@javax.annotation.Nullable ProductFlow paper) {
     this.paper = paper;
     return this;
   }
@@ -2062,16 +2062,16 @@ public class InventoryFlows {
    * @return paper
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPaper() {
+  public ProductFlow getPaper() {
     return paper;
   }
 
-  public void setPaper(@javax.annotation.Nullable InventoryFlowsAlembics paper) {
+  public void setPaper(@javax.annotation.Nullable ProductFlow paper) {
     this.paper = paper;
   }
 
 
-  public InventoryFlows pasties(@javax.annotation.Nullable InventoryFlowsAlembics pasties) {
+  public InventoryFlows pasties(@javax.annotation.Nullable ProductFlow pasties) {
     this.pasties = pasties;
     return this;
   }
@@ -2081,16 +2081,16 @@ public class InventoryFlows {
    * @return pasties
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPasties() {
+  public ProductFlow getPasties() {
     return pasties;
   }
 
-  public void setPasties(@javax.annotation.Nullable InventoryFlowsAlembics pasties) {
+  public void setPasties(@javax.annotation.Nullable ProductFlow pasties) {
     this.pasties = pasties;
   }
 
 
-  public InventoryFlows pickaxes(@javax.annotation.Nullable InventoryFlowsAlembics pickaxes) {
+  public InventoryFlows pickaxes(@javax.annotation.Nullable ProductFlow pickaxes) {
     this.pickaxes = pickaxes;
     return this;
   }
@@ -2100,16 +2100,16 @@ public class InventoryFlows {
    * @return pickaxes
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPickaxes() {
+  public ProductFlow getPickaxes() {
     return pickaxes;
   }
 
-  public void setPickaxes(@javax.annotation.Nullable InventoryFlowsAlembics pickaxes) {
+  public void setPickaxes(@javax.annotation.Nullable ProductFlow pickaxes) {
     this.pickaxes = pickaxes;
   }
 
 
-  public InventoryFlows pies(@javax.annotation.Nullable InventoryFlowsAlembics pies) {
+  public InventoryFlows pies(@javax.annotation.Nullable ProductFlow pies) {
     this.pies = pies;
     return this;
   }
@@ -2119,16 +2119,16 @@ public class InventoryFlows {
    * @return pies
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPies() {
+  public ProductFlow getPies() {
     return pies;
   }
 
-  public void setPies(@javax.annotation.Nullable InventoryFlowsAlembics pies) {
+  public void setPies(@javax.annotation.Nullable ProductFlow pies) {
     this.pies = pies;
   }
 
 
-  public InventoryFlows plateArmour(@javax.annotation.Nullable InventoryFlowsAlembics plateArmour) {
+  public InventoryFlows plateArmour(@javax.annotation.Nullable ProductFlow plateArmour) {
     this.plateArmour = plateArmour;
     return this;
   }
@@ -2138,16 +2138,16 @@ public class InventoryFlows {
    * @return plateArmour
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPlateArmour() {
+  public ProductFlow getPlateArmour() {
     return plateArmour;
   }
 
-  public void setPlateArmour(@javax.annotation.Nullable InventoryFlowsAlembics plateArmour) {
+  public void setPlateArmour(@javax.annotation.Nullable ProductFlow plateArmour) {
     this.plateArmour = plateArmour;
   }
 
 
-  public InventoryFlows ploughs(@javax.annotation.Nullable InventoryFlowsAlembics ploughs) {
+  public InventoryFlows ploughs(@javax.annotation.Nullable ProductFlow ploughs) {
     this.ploughs = ploughs;
     return this;
   }
@@ -2157,16 +2157,16 @@ public class InventoryFlows {
    * @return ploughs
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPloughs() {
+  public ProductFlow getPloughs() {
     return ploughs;
   }
 
-  public void setPloughs(@javax.annotation.Nullable InventoryFlowsAlembics ploughs) {
+  public void setPloughs(@javax.annotation.Nullable ProductFlow ploughs) {
     this.ploughs = ploughs;
   }
 
 
-  public InventoryFlows premiumArmour(@javax.annotation.Nullable InventoryFlowsAlembics premiumArmour) {
+  public InventoryFlows premiumArmour(@javax.annotation.Nullable ProductFlow premiumArmour) {
     this.premiumArmour = premiumArmour;
     return this;
   }
@@ -2176,16 +2176,16 @@ public class InventoryFlows {
    * @return premiumArmour
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumArmour() {
+  public ProductFlow getPremiumArmour() {
     return premiumArmour;
   }
 
-  public void setPremiumArmour(@javax.annotation.Nullable InventoryFlowsAlembics premiumArmour) {
+  public void setPremiumArmour(@javax.annotation.Nullable ProductFlow premiumArmour) {
     this.premiumArmour = premiumArmour;
   }
 
 
-  public InventoryFlows premiumAxes(@javax.annotation.Nullable InventoryFlowsAlembics premiumAxes) {
+  public InventoryFlows premiumAxes(@javax.annotation.Nullable ProductFlow premiumAxes) {
     this.premiumAxes = premiumAxes;
     return this;
   }
@@ -2195,16 +2195,16 @@ public class InventoryFlows {
    * @return premiumAxes
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumAxes() {
+  public ProductFlow getPremiumAxes() {
     return premiumAxes;
   }
 
-  public void setPremiumAxes(@javax.annotation.Nullable InventoryFlowsAlembics premiumAxes) {
+  public void setPremiumAxes(@javax.annotation.Nullable ProductFlow premiumAxes) {
     this.premiumAxes = premiumAxes;
   }
 
 
-  public InventoryFlows premiumCheese(@javax.annotation.Nullable InventoryFlowsAlembics premiumCheese) {
+  public InventoryFlows premiumCheese(@javax.annotation.Nullable ProductFlow premiumCheese) {
     this.premiumCheese = premiumCheese;
     return this;
   }
@@ -2214,16 +2214,16 @@ public class InventoryFlows {
    * @return premiumCheese
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumCheese() {
+  public ProductFlow getPremiumCheese() {
     return premiumCheese;
   }
 
-  public void setPremiumCheese(@javax.annotation.Nullable InventoryFlowsAlembics premiumCheese) {
+  public void setPremiumCheese(@javax.annotation.Nullable ProductFlow premiumCheese) {
     this.premiumCheese = premiumCheese;
   }
 
 
-  public InventoryFlows premiumCloth(@javax.annotation.Nullable InventoryFlowsAlembics premiumCloth) {
+  public InventoryFlows premiumCloth(@javax.annotation.Nullable ProductFlow premiumCloth) {
     this.premiumCloth = premiumCloth;
     return this;
   }
@@ -2233,16 +2233,16 @@ public class InventoryFlows {
    * @return premiumCloth
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumCloth() {
+  public ProductFlow getPremiumCloth() {
     return premiumCloth;
   }
 
-  public void setPremiumCloth(@javax.annotation.Nullable InventoryFlowsAlembics premiumCloth) {
+  public void setPremiumCloth(@javax.annotation.Nullable ProductFlow premiumCloth) {
     this.premiumCloth = premiumCloth;
   }
 
 
-  public InventoryFlows premiumDye(@javax.annotation.Nullable InventoryFlowsAlembics premiumDye) {
+  public InventoryFlows premiumDye(@javax.annotation.Nullable ProductFlow premiumDye) {
     this.premiumDye = premiumDye;
     return this;
   }
@@ -2252,16 +2252,16 @@ public class InventoryFlows {
    * @return premiumDye
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumDye() {
+  public ProductFlow getPremiumDye() {
     return premiumDye;
   }
 
-  public void setPremiumDye(@javax.annotation.Nullable InventoryFlowsAlembics premiumDye) {
+  public void setPremiumDye(@javax.annotation.Nullable ProductFlow premiumDye) {
     this.premiumDye = premiumDye;
   }
 
 
-  public InventoryFlows premiumGarments(@javax.annotation.Nullable InventoryFlowsAlembics premiumGarments) {
+  public InventoryFlows premiumGarments(@javax.annotation.Nullable ProductFlow premiumGarments) {
     this.premiumGarments = premiumGarments;
     return this;
   }
@@ -2271,16 +2271,16 @@ public class InventoryFlows {
    * @return premiumGarments
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumGarments() {
+  public ProductFlow getPremiumGarments() {
     return premiumGarments;
   }
 
-  public void setPremiumGarments(@javax.annotation.Nullable InventoryFlowsAlembics premiumGarments) {
+  public void setPremiumGarments(@javax.annotation.Nullable ProductFlow premiumGarments) {
     this.premiumGarments = premiumGarments;
   }
 
 
-  public InventoryFlows premiumGlassware(@javax.annotation.Nullable InventoryFlowsAlembics premiumGlassware) {
+  public InventoryFlows premiumGlassware(@javax.annotation.Nullable ProductFlow premiumGlassware) {
     this.premiumGlassware = premiumGlassware;
     return this;
   }
@@ -2290,16 +2290,16 @@ public class InventoryFlows {
    * @return premiumGlassware
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumGlassware() {
+  public ProductFlow getPremiumGlassware() {
     return premiumGlassware;
   }
 
-  public void setPremiumGlassware(@javax.annotation.Nullable InventoryFlowsAlembics premiumGlassware) {
+  public void setPremiumGlassware(@javax.annotation.Nullable ProductFlow premiumGlassware) {
     this.premiumGlassware = premiumGlassware;
   }
 
 
-  public InventoryFlows premiumHam(@javax.annotation.Nullable InventoryFlowsAlembics premiumHam) {
+  public InventoryFlows premiumHam(@javax.annotation.Nullable ProductFlow premiumHam) {
     this.premiumHam = premiumHam;
     return this;
   }
@@ -2309,16 +2309,16 @@ public class InventoryFlows {
    * @return premiumHam
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumHam() {
+  public ProductFlow getPremiumHam() {
     return premiumHam;
   }
 
-  public void setPremiumHam(@javax.annotation.Nullable InventoryFlowsAlembics premiumHam) {
+  public void setPremiumHam(@javax.annotation.Nullable ProductFlow premiumHam) {
     this.premiumHam = premiumHam;
   }
 
 
-  public InventoryFlows premiumSails(@javax.annotation.Nullable InventoryFlowsAlembics premiumSails) {
+  public InventoryFlows premiumSails(@javax.annotation.Nullable ProductFlow premiumSails) {
     this.premiumSails = premiumSails;
     return this;
   }
@@ -2328,16 +2328,16 @@ public class InventoryFlows {
    * @return premiumSails
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumSails() {
+  public ProductFlow getPremiumSails() {
     return premiumSails;
   }
 
-  public void setPremiumSails(@javax.annotation.Nullable InventoryFlowsAlembics premiumSails) {
+  public void setPremiumSails(@javax.annotation.Nullable ProductFlow premiumSails) {
     this.premiumSails = premiumSails;
   }
 
 
-  public InventoryFlows premiumSteel(@javax.annotation.Nullable InventoryFlowsAlembics premiumSteel) {
+  public InventoryFlows premiumSteel(@javax.annotation.Nullable ProductFlow premiumSteel) {
     this.premiumSteel = premiumSteel;
     return this;
   }
@@ -2347,16 +2347,16 @@ public class InventoryFlows {
    * @return premiumSteel
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumSteel() {
+  public ProductFlow getPremiumSteel() {
     return premiumSteel;
   }
 
-  public void setPremiumSteel(@javax.annotation.Nullable InventoryFlowsAlembics premiumSteel) {
+  public void setPremiumSteel(@javax.annotation.Nullable ProductFlow premiumSteel) {
     this.premiumSteel = premiumSteel;
   }
 
 
-  public InventoryFlows premiumSwords(@javax.annotation.Nullable InventoryFlowsAlembics premiumSwords) {
+  public InventoryFlows premiumSwords(@javax.annotation.Nullable ProductFlow premiumSwords) {
     this.premiumSwords = premiumSwords;
     return this;
   }
@@ -2366,16 +2366,16 @@ public class InventoryFlows {
    * @return premiumSwords
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getPremiumSwords() {
+  public ProductFlow getPremiumSwords() {
     return premiumSwords;
   }
 
-  public void setPremiumSwords(@javax.annotation.Nullable InventoryFlowsAlembics premiumSwords) {
+  public void setPremiumSwords(@javax.annotation.Nullable ProductFlow premiumSwords) {
     this.premiumSwords = premiumSwords;
   }
 
 
-  public InventoryFlows protection(@javax.annotation.Nullable InventoryFlowsAlembics protection) {
+  public InventoryFlows protection(@javax.annotation.Nullable ProductFlow protection) {
     this.protection = protection;
     return this;
   }
@@ -2385,16 +2385,16 @@ public class InventoryFlows {
    * @return protection
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getProtection() {
+  public ProductFlow getProtection() {
     return protection;
   }
 
-  public void setProtection(@javax.annotation.Nullable InventoryFlowsAlembics protection) {
+  public void setProtection(@javax.annotation.Nullable ProductFlow protection) {
     this.protection = protection;
   }
 
 
-  public InventoryFlows rawCloth(@javax.annotation.Nullable InventoryFlowsAlembics rawCloth) {
+  public InventoryFlows rawCloth(@javax.annotation.Nullable ProductFlow rawCloth) {
     this.rawCloth = rawCloth;
     return this;
   }
@@ -2404,16 +2404,16 @@ public class InventoryFlows {
    * @return rawCloth
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getRawCloth() {
+  public ProductFlow getRawCloth() {
     return rawCloth;
   }
 
-  public void setRawCloth(@javax.annotation.Nullable InventoryFlowsAlembics rawCloth) {
+  public void setRawCloth(@javax.annotation.Nullable ProductFlow rawCloth) {
     this.rawCloth = rawCloth;
   }
 
 
-  public InventoryFlows resin(@javax.annotation.Nullable InventoryFlowsAlembics resin) {
+  public InventoryFlows resin(@javax.annotation.Nullable ProductFlow resin) {
     this.resin = resin;
     return this;
   }
@@ -2423,16 +2423,16 @@ public class InventoryFlows {
    * @return resin
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getResin() {
+  public ProductFlow getResin() {
     return resin;
   }
 
-  public void setResin(@javax.annotation.Nullable InventoryFlowsAlembics resin) {
+  public void setResin(@javax.annotation.Nullable ProductFlow resin) {
     this.resin = resin;
   }
 
 
-  public InventoryFlows rope(@javax.annotation.Nullable InventoryFlowsAlembics rope) {
+  public InventoryFlows rope(@javax.annotation.Nullable ProductFlow rope) {
     this.rope = rope;
     return this;
   }
@@ -2442,16 +2442,16 @@ public class InventoryFlows {
    * @return rope
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getRope() {
+  public ProductFlow getRope() {
     return rope;
   }
 
-  public void setRope(@javax.annotation.Nullable InventoryFlowsAlembics rope) {
+  public void setRope(@javax.annotation.Nullable ProductFlow rope) {
     this.rope = rope;
   }
 
 
-  public InventoryFlows sails(@javax.annotation.Nullable InventoryFlowsAlembics sails) {
+  public InventoryFlows sails(@javax.annotation.Nullable ProductFlow sails) {
     this.sails = sails;
     return this;
   }
@@ -2461,16 +2461,16 @@ public class InventoryFlows {
    * @return sails
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSails() {
+  public ProductFlow getSails() {
     return sails;
   }
 
-  public void setSails(@javax.annotation.Nullable InventoryFlowsAlembics sails) {
+  public void setSails(@javax.annotation.Nullable ProductFlow sails) {
     this.sails = sails;
   }
 
 
-  public InventoryFlows salt(@javax.annotation.Nullable InventoryFlowsAlembics salt) {
+  public InventoryFlows salt(@javax.annotation.Nullable ProductFlow salt) {
     this.salt = salt;
     return this;
   }
@@ -2480,16 +2480,16 @@ public class InventoryFlows {
    * @return salt
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSalt() {
+  public ProductFlow getSalt() {
     return salt;
   }
 
-  public void setSalt(@javax.annotation.Nullable InventoryFlowsAlembics salt) {
+  public void setSalt(@javax.annotation.Nullable ProductFlow salt) {
     this.salt = salt;
   }
 
 
-  public InventoryFlows sculptures(@javax.annotation.Nullable InventoryFlowsAlembics sculptures) {
+  public InventoryFlows sculptures(@javax.annotation.Nullable ProductFlow sculptures) {
     this.sculptures = sculptures;
     return this;
   }
@@ -2499,16 +2499,16 @@ public class InventoryFlows {
    * @return sculptures
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSculptures() {
+  public ProductFlow getSculptures() {
     return sculptures;
   }
 
-  public void setSculptures(@javax.annotation.Nullable InventoryFlowsAlembics sculptures) {
+  public void setSculptures(@javax.annotation.Nullable ProductFlow sculptures) {
     this.sculptures = sculptures;
   }
 
 
-  public InventoryFlows scythes(@javax.annotation.Nullable InventoryFlowsAlembics scythes) {
+  public InventoryFlows scythes(@javax.annotation.Nullable ProductFlow scythes) {
     this.scythes = scythes;
     return this;
   }
@@ -2518,16 +2518,16 @@ public class InventoryFlows {
    * @return scythes
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getScythes() {
+  public ProductFlow getScythes() {
     return scythes;
   }
 
-  public void setScythes(@javax.annotation.Nullable InventoryFlowsAlembics scythes) {
+  public void setScythes(@javax.annotation.Nullable ProductFlow scythes) {
     this.scythes = scythes;
   }
 
 
-  public InventoryFlows silverBars(@javax.annotation.Nullable InventoryFlowsAlembics silverBars) {
+  public InventoryFlows silverBars(@javax.annotation.Nullable ProductFlow silverBars) {
     this.silverBars = silverBars;
     return this;
   }
@@ -2537,16 +2537,16 @@ public class InventoryFlows {
    * @return silverBars
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSilverBars() {
+  public ProductFlow getSilverBars() {
     return silverBars;
   }
 
-  public void setSilverBars(@javax.annotation.Nullable InventoryFlowsAlembics silverBars) {
+  public void setSilverBars(@javax.annotation.Nullable ProductFlow silverBars) {
     this.silverBars = silverBars;
   }
 
 
-  public InventoryFlows silverOre(@javax.annotation.Nullable InventoryFlowsAlembics silverOre) {
+  public InventoryFlows silverOre(@javax.annotation.Nullable ProductFlow silverOre) {
     this.silverOre = silverOre;
     return this;
   }
@@ -2556,16 +2556,16 @@ public class InventoryFlows {
    * @return silverOre
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSilverOre() {
+  public ProductFlow getSilverOre() {
     return silverOre;
   }
 
-  public void setSilverOre(@javax.annotation.Nullable InventoryFlowsAlembics silverOre) {
+  public void setSilverOre(@javax.annotation.Nullable ProductFlow silverOre) {
     this.silverOre = silverOre;
   }
 
 
-  public InventoryFlows slakedLime(@javax.annotation.Nullable InventoryFlowsAlembics slakedLime) {
+  public InventoryFlows slakedLime(@javax.annotation.Nullable ProductFlow slakedLime) {
     this.slakedLime = slakedLime;
     return this;
   }
@@ -2575,16 +2575,16 @@ public class InventoryFlows {
    * @return slakedLime
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSlakedLime() {
+  public ProductFlow getSlakedLime() {
     return slakedLime;
   }
 
-  public void setSlakedLime(@javax.annotation.Nullable InventoryFlowsAlembics slakedLime) {
+  public void setSlakedLime(@javax.annotation.Nullable ProductFlow slakedLime) {
     this.slakedLime = slakedLime;
   }
 
 
-  public InventoryFlows spinningWheels(@javax.annotation.Nullable InventoryFlowsAlembics spinningWheels) {
+  public InventoryFlows spinningWheels(@javax.annotation.Nullable ProductFlow spinningWheels) {
     this.spinningWheels = spinningWheels;
     return this;
   }
@@ -2594,16 +2594,16 @@ public class InventoryFlows {
    * @return spinningWheels
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSpinningWheels() {
+  public ProductFlow getSpinningWheels() {
     return spinningWheels;
   }
 
-  public void setSpinningWheels(@javax.annotation.Nullable InventoryFlowsAlembics spinningWheels) {
+  public void setSpinningWheels(@javax.annotation.Nullable ProductFlow spinningWheels) {
     this.spinningWheels = spinningWheels;
   }
 
 
-  public InventoryFlows spirits(@javax.annotation.Nullable InventoryFlowsAlembics spirits) {
+  public InventoryFlows spirits(@javax.annotation.Nullable ProductFlow spirits) {
     this.spirits = spirits;
     return this;
   }
@@ -2613,16 +2613,16 @@ public class InventoryFlows {
    * @return spirits
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSpirits() {
+  public ProductFlow getSpirits() {
     return spirits;
   }
 
-  public void setSpirits(@javax.annotation.Nullable InventoryFlowsAlembics spirits) {
+  public void setSpirits(@javax.annotation.Nullable ProductFlow spirits) {
     this.spirits = spirits;
   }
 
 
-  public InventoryFlows steelIngots(@javax.annotation.Nullable InventoryFlowsAlembics steelIngots) {
+  public InventoryFlows steelIngots(@javax.annotation.Nullable ProductFlow steelIngots) {
     this.steelIngots = steelIngots;
     return this;
   }
@@ -2632,16 +2632,16 @@ public class InventoryFlows {
    * @return steelIngots
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSteelIngots() {
+  public ProductFlow getSteelIngots() {
     return steelIngots;
   }
 
-  public void setSteelIngots(@javax.annotation.Nullable InventoryFlowsAlembics steelIngots) {
+  public void setSteelIngots(@javax.annotation.Nullable ProductFlow steelIngots) {
     this.steelIngots = steelIngots;
   }
 
 
-  public InventoryFlows stockfish(@javax.annotation.Nullable InventoryFlowsAlembics stockfish) {
+  public InventoryFlows stockfish(@javax.annotation.Nullable ProductFlow stockfish) {
     this.stockfish = stockfish;
     return this;
   }
@@ -2651,16 +2651,16 @@ public class InventoryFlows {
    * @return stockfish
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getStockfish() {
+  public ProductFlow getStockfish() {
     return stockfish;
   }
 
-  public void setStockfish(@javax.annotation.Nullable InventoryFlowsAlembics stockfish) {
+  public void setStockfish(@javax.annotation.Nullable ProductFlow stockfish) {
     this.stockfish = stockfish;
   }
 
 
-  public InventoryFlows swords(@javax.annotation.Nullable InventoryFlowsAlembics swords) {
+  public InventoryFlows swords(@javax.annotation.Nullable ProductFlow swords) {
     this.swords = swords;
     return this;
   }
@@ -2670,16 +2670,16 @@ public class InventoryFlows {
    * @return swords
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getSwords() {
+  public ProductFlow getSwords() {
     return swords;
   }
 
-  public void setSwords(@javax.annotation.Nullable InventoryFlowsAlembics swords) {
+  public void setSwords(@javax.annotation.Nullable ProductFlow swords) {
     this.swords = swords;
   }
 
 
-  public InventoryFlows tackles(@javax.annotation.Nullable InventoryFlowsAlembics tackles) {
+  public InventoryFlows tackles(@javax.annotation.Nullable ProductFlow tackles) {
     this.tackles = tackles;
     return this;
   }
@@ -2689,16 +2689,16 @@ public class InventoryFlows {
    * @return tackles
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTackles() {
+  public ProductFlow getTackles() {
     return tackles;
   }
 
-  public void setTackles(@javax.annotation.Nullable InventoryFlowsAlembics tackles) {
+  public void setTackles(@javax.annotation.Nullable ProductFlow tackles) {
     this.tackles = tackles;
   }
 
 
-  public InventoryFlows tapestries(@javax.annotation.Nullable InventoryFlowsAlembics tapestries) {
+  public InventoryFlows tapestries(@javax.annotation.Nullable ProductFlow tapestries) {
     this.tapestries = tapestries;
     return this;
   }
@@ -2708,16 +2708,16 @@ public class InventoryFlows {
    * @return tapestries
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTapestries() {
+  public ProductFlow getTapestries() {
     return tapestries;
   }
 
-  public void setTapestries(@javax.annotation.Nullable InventoryFlowsAlembics tapestries) {
+  public void setTapestries(@javax.annotation.Nullable ProductFlow tapestries) {
     this.tapestries = tapestries;
   }
 
 
-  public InventoryFlows tar(@javax.annotation.Nullable InventoryFlowsAlembics tar) {
+  public InventoryFlows tar(@javax.annotation.Nullable ProductFlow tar) {
     this.tar = tar;
     return this;
   }
@@ -2727,16 +2727,16 @@ public class InventoryFlows {
    * @return tar
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTar() {
+  public ProductFlow getTar() {
     return tar;
   }
 
-  public void setTar(@javax.annotation.Nullable InventoryFlowsAlembics tar) {
+  public void setTar(@javax.annotation.Nullable ProductFlow tar) {
     this.tar = tar;
   }
 
 
-  public InventoryFlows thread(@javax.annotation.Nullable InventoryFlowsAlembics thread) {
+  public InventoryFlows thread(@javax.annotation.Nullable ProductFlow thread) {
     this.thread = thread;
     return this;
   }
@@ -2746,16 +2746,16 @@ public class InventoryFlows {
    * @return thread
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getThread() {
+  public ProductFlow getThread() {
     return thread;
   }
 
-  public void setThread(@javax.annotation.Nullable InventoryFlowsAlembics thread) {
+  public void setThread(@javax.annotation.Nullable ProductFlow thread) {
     this.thread = thread;
   }
 
 
-  public InventoryFlows tiles(@javax.annotation.Nullable InventoryFlowsAlembics tiles) {
+  public InventoryFlows tiles(@javax.annotation.Nullable ProductFlow tiles) {
     this.tiles = tiles;
     return this;
   }
@@ -2765,16 +2765,16 @@ public class InventoryFlows {
    * @return tiles
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTiles() {
+  public ProductFlow getTiles() {
     return tiles;
   }
 
-  public void setTiles(@javax.annotation.Nullable InventoryFlowsAlembics tiles) {
+  public void setTiles(@javax.annotation.Nullable ProductFlow tiles) {
     this.tiles = tiles;
   }
 
 
-  public InventoryFlows timber(@javax.annotation.Nullable InventoryFlowsAlembics timber) {
+  public InventoryFlows timber(@javax.annotation.Nullable ProductFlow timber) {
     this.timber = timber;
     return this;
   }
@@ -2784,16 +2784,16 @@ public class InventoryFlows {
    * @return timber
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTimber() {
+  public ProductFlow getTimber() {
     return timber;
   }
 
-  public void setTimber(@javax.annotation.Nullable InventoryFlowsAlembics timber) {
+  public void setTimber(@javax.annotation.Nullable ProductFlow timber) {
     this.timber = timber;
   }
 
 
-  public InventoryFlows tinIngots(@javax.annotation.Nullable InventoryFlowsAlembics tinIngots) {
+  public InventoryFlows tinIngots(@javax.annotation.Nullable ProductFlow tinIngots) {
     this.tinIngots = tinIngots;
     return this;
   }
@@ -2803,16 +2803,16 @@ public class InventoryFlows {
    * @return tinIngots
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTinIngots() {
+  public ProductFlow getTinIngots() {
     return tinIngots;
   }
 
-  public void setTinIngots(@javax.annotation.Nullable InventoryFlowsAlembics tinIngots) {
+  public void setTinIngots(@javax.annotation.Nullable ProductFlow tinIngots) {
     this.tinIngots = tinIngots;
   }
 
 
-  public InventoryFlows tinOre(@javax.annotation.Nullable InventoryFlowsAlembics tinOre) {
+  public InventoryFlows tinOre(@javax.annotation.Nullable ProductFlow tinOre) {
     this.tinOre = tinOre;
     return this;
   }
@@ -2822,16 +2822,16 @@ public class InventoryFlows {
    * @return tinOre
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTinOre() {
+  public ProductFlow getTinOre() {
     return tinOre;
   }
 
-  public void setTinOre(@javax.annotation.Nullable InventoryFlowsAlembics tinOre) {
+  public void setTinOre(@javax.annotation.Nullable ProductFlow tinOre) {
     this.tinOre = tinOre;
   }
 
 
-  public InventoryFlows tools(@javax.annotation.Nullable InventoryFlowsAlembics tools) {
+  public InventoryFlows tools(@javax.annotation.Nullable ProductFlow tools) {
     this.tools = tools;
     return this;
   }
@@ -2841,16 +2841,16 @@ public class InventoryFlows {
    * @return tools
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getTools() {
+  public ProductFlow getTools() {
     return tools;
   }
 
-  public void setTools(@javax.annotation.Nullable InventoryFlowsAlembics tools) {
+  public void setTools(@javax.annotation.Nullable ProductFlow tools) {
     this.tools = tools;
   }
 
 
-  public InventoryFlows wax(@javax.annotation.Nullable InventoryFlowsAlembics wax) {
+  public InventoryFlows wax(@javax.annotation.Nullable ProductFlow wax) {
     this.wax = wax;
     return this;
   }
@@ -2860,16 +2860,16 @@ public class InventoryFlows {
    * @return wax
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getWax() {
+  public ProductFlow getWax() {
     return wax;
   }
 
-  public void setWax(@javax.annotation.Nullable InventoryFlowsAlembics wax) {
+  public void setWax(@javax.annotation.Nullable ProductFlow wax) {
     this.wax = wax;
   }
 
 
-  public InventoryFlows wheels(@javax.annotation.Nullable InventoryFlowsAlembics wheels) {
+  public InventoryFlows wheels(@javax.annotation.Nullable ProductFlow wheels) {
     this.wheels = wheels;
     return this;
   }
@@ -2879,16 +2879,16 @@ public class InventoryFlows {
    * @return wheels
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getWheels() {
+  public ProductFlow getWheels() {
     return wheels;
   }
 
-  public void setWheels(@javax.annotation.Nullable InventoryFlowsAlembics wheels) {
+  public void setWheels(@javax.annotation.Nullable ProductFlow wheels) {
     this.wheels = wheels;
   }
 
 
-  public InventoryFlows windows(@javax.annotation.Nullable InventoryFlowsAlembics windows) {
+  public InventoryFlows windows(@javax.annotation.Nullable ProductFlow windows) {
     this.windows = windows;
     return this;
   }
@@ -2898,16 +2898,16 @@ public class InventoryFlows {
    * @return windows
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getWindows() {
+  public ProductFlow getWindows() {
     return windows;
   }
 
-  public void setWindows(@javax.annotation.Nullable InventoryFlowsAlembics windows) {
+  public void setWindows(@javax.annotation.Nullable ProductFlow windows) {
     this.windows = windows;
   }
 
 
-  public InventoryFlows wine(@javax.annotation.Nullable InventoryFlowsAlembics wine) {
+  public InventoryFlows wine(@javax.annotation.Nullable ProductFlow wine) {
     this.wine = wine;
     return this;
   }
@@ -2917,16 +2917,16 @@ public class InventoryFlows {
    * @return wine
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getWine() {
+  public ProductFlow getWine() {
     return wine;
   }
 
-  public void setWine(@javax.annotation.Nullable InventoryFlowsAlembics wine) {
+  public void setWine(@javax.annotation.Nullable ProductFlow wine) {
     this.wine = wine;
   }
 
 
-  public InventoryFlows wool(@javax.annotation.Nullable InventoryFlowsAlembics wool) {
+  public InventoryFlows wool(@javax.annotation.Nullable ProductFlow wool) {
     this.wool = wool;
     return this;
   }
@@ -2936,16 +2936,16 @@ public class InventoryFlows {
    * @return wool
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getWool() {
+  public ProductFlow getWool() {
     return wool;
   }
 
-  public void setWool(@javax.annotation.Nullable InventoryFlowsAlembics wool) {
+  public void setWool(@javax.annotation.Nullable ProductFlow wool) {
     this.wool = wool;
   }
 
 
-  public InventoryFlows wroughtIron(@javax.annotation.Nullable InventoryFlowsAlembics wroughtIron) {
+  public InventoryFlows wroughtIron(@javax.annotation.Nullable ProductFlow wroughtIron) {
     this.wroughtIron = wroughtIron;
     return this;
   }
@@ -2955,16 +2955,16 @@ public class InventoryFlows {
    * @return wroughtIron
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getWroughtIron() {
+  public ProductFlow getWroughtIron() {
     return wroughtIron;
   }
 
-  public void setWroughtIron(@javax.annotation.Nullable InventoryFlowsAlembics wroughtIron) {
+  public void setWroughtIron(@javax.annotation.Nullable ProductFlow wroughtIron) {
     this.wroughtIron = wroughtIron;
   }
 
 
-  public InventoryFlows yarn(@javax.annotation.Nullable InventoryFlowsAlembics yarn) {
+  public InventoryFlows yarn(@javax.annotation.Nullable ProductFlow yarn) {
     this.yarn = yarn;
     return this;
   }
@@ -2974,11 +2974,11 @@ public class InventoryFlows {
    * @return yarn
    */
   @javax.annotation.Nullable
-  public InventoryFlowsAlembics getYarn() {
+  public ProductFlow getYarn() {
     return yarn;
   }
 
-  public void setYarn(@javax.annotation.Nullable InventoryFlowsAlembics yarn) {
+  public void setYarn(@javax.annotation.Nullable ProductFlow yarn) {
     this.yarn = yarn;
   }
 
@@ -3309,491 +3309,491 @@ public class InventoryFlows {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `alembics`
       if (jsonObj.get("alembics") != null && !jsonObj.get("alembics").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("alembics"));
+        ProductFlow.validateJsonElement(jsonObj.get("alembics"));
       }
       // validate the optional field `arms`
       if (jsonObj.get("arms") != null && !jsonObj.get("arms").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("arms"));
+        ProductFlow.validateJsonElement(jsonObj.get("arms"));
       }
       // validate the optional field `axes`
       if (jsonObj.get("axes") != null && !jsonObj.get("axes").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("axes"));
+        ProductFlow.validateJsonElement(jsonObj.get("axes"));
       }
       // validate the optional field `beer`
       if (jsonObj.get("beer") != null && !jsonObj.get("beer").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("beer"));
+        ProductFlow.validateJsonElement(jsonObj.get("beer"));
       }
       // validate the optional field `bellows`
       if (jsonObj.get("bellows") != null && !jsonObj.get("bellows").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("bellows"));
+        ProductFlow.validateJsonElement(jsonObj.get("bellows"));
       }
       // validate the optional field `bells`
       if (jsonObj.get("bells") != null && !jsonObj.get("bells").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("bells"));
+        ProductFlow.validateJsonElement(jsonObj.get("bells"));
       }
       // validate the optional field `belts`
       if (jsonObj.get("belts") != null && !jsonObj.get("belts").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("belts"));
+        ProductFlow.validateJsonElement(jsonObj.get("belts"));
       }
       // validate the optional field `blades`
       if (jsonObj.get("blades") != null && !jsonObj.get("blades").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("blades"));
+        ProductFlow.validateJsonElement(jsonObj.get("blades"));
       }
       // validate the optional field `books`
       if (jsonObj.get("books") != null && !jsonObj.get("books").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("books"));
+        ProductFlow.validateJsonElement(jsonObj.get("books"));
       }
       // validate the optional field `bread`
       if (jsonObj.get("bread") != null && !jsonObj.get("bread").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("bread"));
+        ProductFlow.validateJsonElement(jsonObj.get("bread"));
       }
       // validate the optional field `bronze ingots`
       if (jsonObj.get("bronze ingots") != null && !jsonObj.get("bronze ingots").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("bronze ingots"));
+        ProductFlow.validateJsonElement(jsonObj.get("bronze ingots"));
       }
       // validate the optional field `butter`
       if (jsonObj.get("butter") != null && !jsonObj.get("butter").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("butter"));
+        ProductFlow.validateJsonElement(jsonObj.get("butter"));
       }
       // validate the optional field `candles`
       if (jsonObj.get("candles") != null && !jsonObj.get("candles").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("candles"));
+        ProductFlow.validateJsonElement(jsonObj.get("candles"));
       }
       // validate the optional field `carting`
       if (jsonObj.get("carting") != null && !jsonObj.get("carting").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("carting"));
+        ProductFlow.validateJsonElement(jsonObj.get("carting"));
       }
       // validate the optional field `casks`
       if (jsonObj.get("casks") != null && !jsonObj.get("casks").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("casks"));
+        ProductFlow.validateJsonElement(jsonObj.get("casks"));
       }
       // validate the optional field `cattle`
       if (jsonObj.get("cattle") != null && !jsonObj.get("cattle").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("cattle"));
+        ProductFlow.validateJsonElement(jsonObj.get("cattle"));
       }
       // validate the optional field `charcoal`
       if (jsonObj.get("charcoal") != null && !jsonObj.get("charcoal").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("charcoal"));
+        ProductFlow.validateJsonElement(jsonObj.get("charcoal"));
       }
       // validate the optional field `cheese`
       if (jsonObj.get("cheese") != null && !jsonObj.get("cheese").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("cheese"));
+        ProductFlow.validateJsonElement(jsonObj.get("cheese"));
       }
       // validate the optional field `chisels`
       if (jsonObj.get("chisels") != null && !jsonObj.get("chisels").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("chisels"));
+        ProductFlow.validateJsonElement(jsonObj.get("chisels"));
       }
       // validate the optional field `clay`
       if (jsonObj.get("clay") != null && !jsonObj.get("clay").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("clay"));
+        ProductFlow.validateJsonElement(jsonObj.get("clay"));
       }
       // validate the optional field `cloth`
       if (jsonObj.get("cloth") != null && !jsonObj.get("cloth").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("cloth"));
+        ProductFlow.validateJsonElement(jsonObj.get("cloth"));
       }
       // validate the optional field `coats`
       if (jsonObj.get("coats") != null && !jsonObj.get("coats").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("coats"));
+        ProductFlow.validateJsonElement(jsonObj.get("coats"));
       }
       // validate the optional field `cookware`
       if (jsonObj.get("cookware") != null && !jsonObj.get("cookware").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("cookware"));
+        ProductFlow.validateJsonElement(jsonObj.get("cookware"));
       }
       // validate the optional field `copper ingots`
       if (jsonObj.get("copper ingots") != null && !jsonObj.get("copper ingots").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("copper ingots"));
+        ProductFlow.validateJsonElement(jsonObj.get("copper ingots"));
       }
       // validate the optional field `copper ore`
       if (jsonObj.get("copper ore") != null && !jsonObj.get("copper ore").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("copper ore"));
+        ProductFlow.validateJsonElement(jsonObj.get("copper ore"));
       }
       // validate the optional field `cured fish`
       if (jsonObj.get("cured fish") != null && !jsonObj.get("cured fish").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("cured fish"));
+        ProductFlow.validateJsonElement(jsonObj.get("cured fish"));
       }
       // validate the optional field `cured meat`
       if (jsonObj.get("cured meat") != null && !jsonObj.get("cured meat").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("cured meat"));
+        ProductFlow.validateJsonElement(jsonObj.get("cured meat"));
       }
       // validate the optional field `dye`
       if (jsonObj.get("dye") != null && !jsonObj.get("dye").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("dye"));
+        ProductFlow.validateJsonElement(jsonObj.get("dye"));
       }
       // validate the optional field `dyed cloth`
       if (jsonObj.get("dyed cloth") != null && !jsonObj.get("dyed cloth").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("dyed cloth"));
+        ProductFlow.validateJsonElement(jsonObj.get("dyed cloth"));
       }
       // validate the optional field `dyed yarn`
       if (jsonObj.get("dyed yarn") != null && !jsonObj.get("dyed yarn").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("dyed yarn"));
+        ProductFlow.validateJsonElement(jsonObj.get("dyed yarn"));
       }
       // validate the optional field `firewood`
       if (jsonObj.get("firewood") != null && !jsonObj.get("firewood").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("firewood"));
+        ProductFlow.validateJsonElement(jsonObj.get("firewood"));
       }
       // validate the optional field `fish`
       if (jsonObj.get("fish") != null && !jsonObj.get("fish").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("fish"));
+        ProductFlow.validateJsonElement(jsonObj.get("fish"));
       }
       // validate the optional field `flax fibres`
       if (jsonObj.get("flax fibres") != null && !jsonObj.get("flax fibres").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("flax fibres"));
+        ProductFlow.validateJsonElement(jsonObj.get("flax fibres"));
       }
       // validate the optional field `flax plants`
       if (jsonObj.get("flax plants") != null && !jsonObj.get("flax plants").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("flax plants"));
+        ProductFlow.validateJsonElement(jsonObj.get("flax plants"));
       }
       // validate the optional field `fleece`
       if (jsonObj.get("fleece") != null && !jsonObj.get("fleece").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("fleece"));
+        ProductFlow.validateJsonElement(jsonObj.get("fleece"));
       }
       // validate the optional field `flour`
       if (jsonObj.get("flour") != null && !jsonObj.get("flour").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("flour"));
+        ProductFlow.validateJsonElement(jsonObj.get("flour"));
       }
       // validate the optional field `furniture`
       if (jsonObj.get("furniture") != null && !jsonObj.get("furniture").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("furniture"));
+        ProductFlow.validateJsonElement(jsonObj.get("furniture"));
       }
       // validate the optional field `garments`
       if (jsonObj.get("garments") != null && !jsonObj.get("garments").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("garments"));
+        ProductFlow.validateJsonElement(jsonObj.get("garments"));
       }
       // validate the optional field `gears`
       if (jsonObj.get("gears") != null && !jsonObj.get("gears").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("gears"));
+        ProductFlow.validateJsonElement(jsonObj.get("gears"));
       }
       // validate the optional field `glass`
       if (jsonObj.get("glass") != null && !jsonObj.get("glass").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("glass"));
+        ProductFlow.validateJsonElement(jsonObj.get("glass"));
       }
       // validate the optional field `glassware`
       if (jsonObj.get("glassware") != null && !jsonObj.get("glassware").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("glassware"));
+        ProductFlow.validateJsonElement(jsonObj.get("glassware"));
       }
       // validate the optional field `gold bars`
       if (jsonObj.get("gold bars") != null && !jsonObj.get("gold bars").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("gold bars"));
+        ProductFlow.validateJsonElement(jsonObj.get("gold bars"));
       }
       // validate the optional field `gold ore`
       if (jsonObj.get("gold ore") != null && !jsonObj.get("gold ore").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("gold ore"));
+        ProductFlow.validateJsonElement(jsonObj.get("gold ore"));
       }
       // validate the optional field `grain`
       if (jsonObj.get("grain") != null && !jsonObj.get("grain").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("grain"));
+        ProductFlow.validateJsonElement(jsonObj.get("grain"));
       }
       // validate the optional field `grindstones`
       if (jsonObj.get("grindstones") != null && !jsonObj.get("grindstones").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("grindstones"));
+        ProductFlow.validateJsonElement(jsonObj.get("grindstones"));
       }
       // validate the optional field `ham`
       if (jsonObj.get("ham") != null && !jsonObj.get("ham").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("ham"));
+        ProductFlow.validateJsonElement(jsonObj.get("ham"));
       }
       // validate the optional field `harnesses`
       if (jsonObj.get("harnesses") != null && !jsonObj.get("harnesses").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("harnesses"));
+        ProductFlow.validateJsonElement(jsonObj.get("harnesses"));
       }
       // validate the optional field `herbs`
       if (jsonObj.get("herbs") != null && !jsonObj.get("herbs").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("herbs"));
+        ProductFlow.validateJsonElement(jsonObj.get("herbs"));
       }
       // validate the optional field `hides`
       if (jsonObj.get("hides") != null && !jsonObj.get("hides").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("hides"));
+        ProductFlow.validateJsonElement(jsonObj.get("hides"));
       }
       // validate the optional field `hinges`
       if (jsonObj.get("hinges") != null && !jsonObj.get("hinges").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("hinges"));
+        ProductFlow.validateJsonElement(jsonObj.get("hinges"));
       }
       // validate the optional field `honey`
       if (jsonObj.get("honey") != null && !jsonObj.get("honey").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("honey"));
+        ProductFlow.validateJsonElement(jsonObj.get("honey"));
       }
       // validate the optional field `hop beer`
       if (jsonObj.get("hop beer") != null && !jsonObj.get("hop beer").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("hop beer"));
+        ProductFlow.validateJsonElement(jsonObj.get("hop beer"));
       }
       // validate the optional field `iron ore`
       if (jsonObj.get("iron ore") != null && !jsonObj.get("iron ore").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("iron ore"));
+        ProductFlow.validateJsonElement(jsonObj.get("iron ore"));
       }
       // validate the optional field `jewellery`
       if (jsonObj.get("jewellery") != null && !jsonObj.get("jewellery").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("jewellery"));
+        ProductFlow.validateJsonElement(jsonObj.get("jewellery"));
       }
       // validate the optional field `labour`
       if (jsonObj.get("labour") != null && !jsonObj.get("labour").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("labour"));
+        ProductFlow.validateJsonElement(jsonObj.get("labour"));
       }
       // validate the optional field `lathes`
       if (jsonObj.get("lathes") != null && !jsonObj.get("lathes").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("lathes"));
+        ProductFlow.validateJsonElement(jsonObj.get("lathes"));
       }
       // validate the optional field `lead bars`
       if (jsonObj.get("lead bars") != null && !jsonObj.get("lead bars").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("lead bars"));
+        ProductFlow.validateJsonElement(jsonObj.get("lead bars"));
       }
       // validate the optional field `lead ore`
       if (jsonObj.get("lead ore") != null && !jsonObj.get("lead ore").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("lead ore"));
+        ProductFlow.validateJsonElement(jsonObj.get("lead ore"));
       }
       // validate the optional field `leather`
       if (jsonObj.get("leather") != null && !jsonObj.get("leather").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("leather"));
+        ProductFlow.validateJsonElement(jsonObj.get("leather"));
       }
       // validate the optional field `light armour`
       if (jsonObj.get("light armour") != null && !jsonObj.get("light armour").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("light armour"));
+        ProductFlow.validateJsonElement(jsonObj.get("light armour"));
       }
       // validate the optional field `limestone`
       if (jsonObj.get("limestone") != null && !jsonObj.get("limestone").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("limestone"));
+        ProductFlow.validateJsonElement(jsonObj.get("limestone"));
       }
       // validate the optional field `lodging`
       if (jsonObj.get("lodging") != null && !jsonObj.get("lodging").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("lodging"));
+        ProductFlow.validateJsonElement(jsonObj.get("lodging"));
       }
       // validate the optional field `logs`
       if (jsonObj.get("logs") != null && !jsonObj.get("logs").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("logs"));
+        ProductFlow.validateJsonElement(jsonObj.get("logs"));
       }
       // validate the optional field `looms`
       if (jsonObj.get("looms") != null && !jsonObj.get("looms").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("looms"));
+        ProductFlow.validateJsonElement(jsonObj.get("looms"));
       }
       // validate the optional field `malt`
       if (jsonObj.get("malt") != null && !jsonObj.get("malt").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("malt"));
+        ProductFlow.validateJsonElement(jsonObj.get("malt"));
       }
       // validate the optional field `manure`
       if (jsonObj.get("manure") != null && !jsonObj.get("manure").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("manure"));
+        ProductFlow.validateJsonElement(jsonObj.get("manure"));
       }
       // validate the optional field `meat`
       if (jsonObj.get("meat") != null && !jsonObj.get("meat").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("meat"));
+        ProductFlow.validateJsonElement(jsonObj.get("meat"));
       }
       // validate the optional field `medicine`
       if (jsonObj.get("medicine") != null && !jsonObj.get("medicine").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("medicine"));
+        ProductFlow.validateJsonElement(jsonObj.get("medicine"));
       }
       // validate the optional field `milk`
       if (jsonObj.get("milk") != null && !jsonObj.get("milk").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("milk"));
+        ProductFlow.validateJsonElement(jsonObj.get("milk"));
       }
       // validate the optional field `mouldboards`
       if (jsonObj.get("mouldboards") != null && !jsonObj.get("mouldboards").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("mouldboards"));
+        ProductFlow.validateJsonElement(jsonObj.get("mouldboards"));
       }
       // validate the optional field `nails`
       if (jsonObj.get("nails") != null && !jsonObj.get("nails").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("nails"));
+        ProductFlow.validateJsonElement(jsonObj.get("nails"));
       }
       // validate the optional field `nets`
       if (jsonObj.get("nets") != null && !jsonObj.get("nets").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("nets"));
+        ProductFlow.validateJsonElement(jsonObj.get("nets"));
       }
       // validate the optional field `ox power`
       if (jsonObj.get("ox power") != null && !jsonObj.get("ox power").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("ox power"));
+        ProductFlow.validateJsonElement(jsonObj.get("ox power"));
       }
       // validate the optional field `paper`
       if (jsonObj.get("paper") != null && !jsonObj.get("paper").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("paper"));
+        ProductFlow.validateJsonElement(jsonObj.get("paper"));
       }
       // validate the optional field `pasties`
       if (jsonObj.get("pasties") != null && !jsonObj.get("pasties").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("pasties"));
+        ProductFlow.validateJsonElement(jsonObj.get("pasties"));
       }
       // validate the optional field `pickaxes`
       if (jsonObj.get("pickaxes") != null && !jsonObj.get("pickaxes").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("pickaxes"));
+        ProductFlow.validateJsonElement(jsonObj.get("pickaxes"));
       }
       // validate the optional field `pies`
       if (jsonObj.get("pies") != null && !jsonObj.get("pies").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("pies"));
+        ProductFlow.validateJsonElement(jsonObj.get("pies"));
       }
       // validate the optional field `plate armour`
       if (jsonObj.get("plate armour") != null && !jsonObj.get("plate armour").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("plate armour"));
+        ProductFlow.validateJsonElement(jsonObj.get("plate armour"));
       }
       // validate the optional field `ploughs`
       if (jsonObj.get("ploughs") != null && !jsonObj.get("ploughs").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("ploughs"));
+        ProductFlow.validateJsonElement(jsonObj.get("ploughs"));
       }
       // validate the optional field `premium armour`
       if (jsonObj.get("premium armour") != null && !jsonObj.get("premium armour").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium armour"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium armour"));
       }
       // validate the optional field `premium axes`
       if (jsonObj.get("premium axes") != null && !jsonObj.get("premium axes").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium axes"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium axes"));
       }
       // validate the optional field `premium cheese`
       if (jsonObj.get("premium cheese") != null && !jsonObj.get("premium cheese").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium cheese"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium cheese"));
       }
       // validate the optional field `premium cloth`
       if (jsonObj.get("premium cloth") != null && !jsonObj.get("premium cloth").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium cloth"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium cloth"));
       }
       // validate the optional field `premium dye`
       if (jsonObj.get("premium dye") != null && !jsonObj.get("premium dye").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium dye"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium dye"));
       }
       // validate the optional field `premium garments`
       if (jsonObj.get("premium garments") != null && !jsonObj.get("premium garments").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium garments"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium garments"));
       }
       // validate the optional field `premium glassware`
       if (jsonObj.get("premium glassware") != null && !jsonObj.get("premium glassware").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium glassware"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium glassware"));
       }
       // validate the optional field `premium ham`
       if (jsonObj.get("premium ham") != null && !jsonObj.get("premium ham").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium ham"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium ham"));
       }
       // validate the optional field `premium sails`
       if (jsonObj.get("premium sails") != null && !jsonObj.get("premium sails").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium sails"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium sails"));
       }
       // validate the optional field `premium steel`
       if (jsonObj.get("premium steel") != null && !jsonObj.get("premium steel").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium steel"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium steel"));
       }
       // validate the optional field `premium swords`
       if (jsonObj.get("premium swords") != null && !jsonObj.get("premium swords").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("premium swords"));
+        ProductFlow.validateJsonElement(jsonObj.get("premium swords"));
       }
       // validate the optional field `protection`
       if (jsonObj.get("protection") != null && !jsonObj.get("protection").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("protection"));
+        ProductFlow.validateJsonElement(jsonObj.get("protection"));
       }
       // validate the optional field `raw cloth`
       if (jsonObj.get("raw cloth") != null && !jsonObj.get("raw cloth").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("raw cloth"));
+        ProductFlow.validateJsonElement(jsonObj.get("raw cloth"));
       }
       // validate the optional field `resin`
       if (jsonObj.get("resin") != null && !jsonObj.get("resin").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("resin"));
+        ProductFlow.validateJsonElement(jsonObj.get("resin"));
       }
       // validate the optional field `rope`
       if (jsonObj.get("rope") != null && !jsonObj.get("rope").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("rope"));
+        ProductFlow.validateJsonElement(jsonObj.get("rope"));
       }
       // validate the optional field `sails`
       if (jsonObj.get("sails") != null && !jsonObj.get("sails").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("sails"));
+        ProductFlow.validateJsonElement(jsonObj.get("sails"));
       }
       // validate the optional field `salt`
       if (jsonObj.get("salt") != null && !jsonObj.get("salt").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("salt"));
+        ProductFlow.validateJsonElement(jsonObj.get("salt"));
       }
       // validate the optional field `sculptures`
       if (jsonObj.get("sculptures") != null && !jsonObj.get("sculptures").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("sculptures"));
+        ProductFlow.validateJsonElement(jsonObj.get("sculptures"));
       }
       // validate the optional field `scythes`
       if (jsonObj.get("scythes") != null && !jsonObj.get("scythes").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("scythes"));
+        ProductFlow.validateJsonElement(jsonObj.get("scythes"));
       }
       // validate the optional field `silver bars`
       if (jsonObj.get("silver bars") != null && !jsonObj.get("silver bars").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("silver bars"));
+        ProductFlow.validateJsonElement(jsonObj.get("silver bars"));
       }
       // validate the optional field `silver ore`
       if (jsonObj.get("silver ore") != null && !jsonObj.get("silver ore").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("silver ore"));
+        ProductFlow.validateJsonElement(jsonObj.get("silver ore"));
       }
       // validate the optional field `slaked lime`
       if (jsonObj.get("slaked lime") != null && !jsonObj.get("slaked lime").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("slaked lime"));
+        ProductFlow.validateJsonElement(jsonObj.get("slaked lime"));
       }
       // validate the optional field `spinning wheels`
       if (jsonObj.get("spinning wheels") != null && !jsonObj.get("spinning wheels").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("spinning wheels"));
+        ProductFlow.validateJsonElement(jsonObj.get("spinning wheels"));
       }
       // validate the optional field `spirits`
       if (jsonObj.get("spirits") != null && !jsonObj.get("spirits").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("spirits"));
+        ProductFlow.validateJsonElement(jsonObj.get("spirits"));
       }
       // validate the optional field `steel ingots`
       if (jsonObj.get("steel ingots") != null && !jsonObj.get("steel ingots").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("steel ingots"));
+        ProductFlow.validateJsonElement(jsonObj.get("steel ingots"));
       }
       // validate the optional field `stockfish`
       if (jsonObj.get("stockfish") != null && !jsonObj.get("stockfish").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("stockfish"));
+        ProductFlow.validateJsonElement(jsonObj.get("stockfish"));
       }
       // validate the optional field `swords`
       if (jsonObj.get("swords") != null && !jsonObj.get("swords").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("swords"));
+        ProductFlow.validateJsonElement(jsonObj.get("swords"));
       }
       // validate the optional field `tackles`
       if (jsonObj.get("tackles") != null && !jsonObj.get("tackles").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tackles"));
+        ProductFlow.validateJsonElement(jsonObj.get("tackles"));
       }
       // validate the optional field `tapestries`
       if (jsonObj.get("tapestries") != null && !jsonObj.get("tapestries").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tapestries"));
+        ProductFlow.validateJsonElement(jsonObj.get("tapestries"));
       }
       // validate the optional field `tar`
       if (jsonObj.get("tar") != null && !jsonObj.get("tar").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tar"));
+        ProductFlow.validateJsonElement(jsonObj.get("tar"));
       }
       // validate the optional field `thread`
       if (jsonObj.get("thread") != null && !jsonObj.get("thread").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("thread"));
+        ProductFlow.validateJsonElement(jsonObj.get("thread"));
       }
       // validate the optional field `tiles`
       if (jsonObj.get("tiles") != null && !jsonObj.get("tiles").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tiles"));
+        ProductFlow.validateJsonElement(jsonObj.get("tiles"));
       }
       // validate the optional field `timber`
       if (jsonObj.get("timber") != null && !jsonObj.get("timber").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("timber"));
+        ProductFlow.validateJsonElement(jsonObj.get("timber"));
       }
       // validate the optional field `tin ingots`
       if (jsonObj.get("tin ingots") != null && !jsonObj.get("tin ingots").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tin ingots"));
+        ProductFlow.validateJsonElement(jsonObj.get("tin ingots"));
       }
       // validate the optional field `tin ore`
       if (jsonObj.get("tin ore") != null && !jsonObj.get("tin ore").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tin ore"));
+        ProductFlow.validateJsonElement(jsonObj.get("tin ore"));
       }
       // validate the optional field `tools`
       if (jsonObj.get("tools") != null && !jsonObj.get("tools").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("tools"));
+        ProductFlow.validateJsonElement(jsonObj.get("tools"));
       }
       // validate the optional field `wax`
       if (jsonObj.get("wax") != null && !jsonObj.get("wax").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("wax"));
+        ProductFlow.validateJsonElement(jsonObj.get("wax"));
       }
       // validate the optional field `wheels`
       if (jsonObj.get("wheels") != null && !jsonObj.get("wheels").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("wheels"));
+        ProductFlow.validateJsonElement(jsonObj.get("wheels"));
       }
       // validate the optional field `windows`
       if (jsonObj.get("windows") != null && !jsonObj.get("windows").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("windows"));
+        ProductFlow.validateJsonElement(jsonObj.get("windows"));
       }
       // validate the optional field `wine`
       if (jsonObj.get("wine") != null && !jsonObj.get("wine").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("wine"));
+        ProductFlow.validateJsonElement(jsonObj.get("wine"));
       }
       // validate the optional field `wool`
       if (jsonObj.get("wool") != null && !jsonObj.get("wool").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("wool"));
+        ProductFlow.validateJsonElement(jsonObj.get("wool"));
       }
       // validate the optional field `wrought iron`
       if (jsonObj.get("wrought iron") != null && !jsonObj.get("wrought iron").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("wrought iron"));
+        ProductFlow.validateJsonElement(jsonObj.get("wrought iron"));
       }
       // validate the optional field `yarn`
       if (jsonObj.get("yarn") != null && !jsonObj.get("yarn").isJsonNull()) {
-        InventoryFlowsAlembics.validateJsonElement(jsonObj.get("yarn"));
+        ProductFlow.validateJsonElement(jsonObj.get("yarn"));
       }
   }
 

@@ -24,8 +24,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.HouseholdCaps;
-import org.openapitools.client.model.HouseholdPrestigeImpactsInner;
 import org.openapitools.client.model.HouseholdSustenance;
+import org.openapitools.client.model.PrestigeImpact;
 import org.openapitools.client.model.Specialization;
 import org.openapitools.client.model.Worker;
 
@@ -55,7 +55,7 @@ import org.openapitools.client.JSON;
 /**
  * Household
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class Household {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -100,7 +100,7 @@ public class Household {
   public static final String SERIALIZED_NAME_PRESTIGE_IMPACTS = "prestige_impacts";
   @SerializedName(SERIALIZED_NAME_PRESTIGE_IMPACTS)
   @javax.annotation.Nullable
-  private List<HouseholdPrestigeImpactsInner> prestigeImpacts = new ArrayList<>();
+  private List<PrestigeImpact> prestigeImpacts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LEGACY = "legacy";
   @SerializedName(SERIALIZED_NAME_LEGACY)
@@ -295,12 +295,12 @@ public class Household {
   }
 
 
-  public Household prestigeImpacts(@javax.annotation.Nullable List<HouseholdPrestigeImpactsInner> prestigeImpacts) {
+  public Household prestigeImpacts(@javax.annotation.Nullable List<PrestigeImpact> prestigeImpacts) {
     this.prestigeImpacts = prestigeImpacts;
     return this;
   }
 
-  public Household addPrestigeImpactsItem(HouseholdPrestigeImpactsInner prestigeImpactsItem) {
+  public Household addPrestigeImpactsItem(PrestigeImpact prestigeImpactsItem) {
     if (this.prestigeImpacts == null) {
       this.prestigeImpacts = new ArrayList<>();
     }
@@ -313,11 +313,11 @@ public class Household {
    * @return prestigeImpacts
    */
   @javax.annotation.Nullable
-  public List<HouseholdPrestigeImpactsInner> getPrestigeImpacts() {
+  public List<PrestigeImpact> getPrestigeImpacts() {
     return prestigeImpacts;
   }
 
-  public void setPrestigeImpacts(@javax.annotation.Nullable List<HouseholdPrestigeImpactsInner> prestigeImpacts) {
+  public void setPrestigeImpacts(@javax.annotation.Nullable List<PrestigeImpact> prestigeImpacts) {
     this.prestigeImpacts = prestigeImpacts;
   }
 
@@ -586,7 +586,7 @@ public class Household {
 
           // validate the optional field `prestige_impacts` (array)
           for (int i = 0; i < jsonArrayprestigeImpacts.size(); i++) {
-            HouseholdPrestigeImpactsInner.validateJsonElement(jsonArrayprestigeImpacts.get(i));
+            PrestigeImpact.validateJsonElement(jsonArrayprestigeImpacts.get(i));
           };
         }
       }

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.ProductFlow();
+    instance = new mercatoriojs.ProductFlow();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,91 +50,13 @@
   describe('ProductFlow', function() {
     it('should create an instance of ProductFlow', function() {
       // uncomment below and update the code to test ProductFlow
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be.a(mercatorio-js.ProductFlow);
+      //var instance = new mercatoriojs.ProductFlow();
+      //expect(instance).to.be.a(mercatoriojs.ProductFlow);
     });
 
-    it('should have the property production (base name: "production")', function() {
-      // uncomment below and update the code to test the property production
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property productionCost (base name: "production_cost")', function() {
-      // uncomment below and update the code to test the property productionCost
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property consumption (base name: "consumption")', function() {
-      // uncomment below and update the code to test the property consumption
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property consumptionCost (base name: "consumption_cost")', function() {
-      // uncomment below and update the code to test the property consumptionCost
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property _import (base name: "import")', function() {
-      // uncomment below and update the code to test the property _import
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property importCost (base name: "import_cost")', function() {
-      // uncomment below and update the code to test the property importCost
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property _export (base name: "export")', function() {
-      // uncomment below and update the code to test the property _export
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property exportValue (base name: "export_value")', function() {
-      // uncomment below and update the code to test the property exportValue
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property exportCost (base name: "export_cost")', function() {
-      // uncomment below and update the code to test the property exportCost
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property inbound (base name: "inbound")', function() {
-      // uncomment below and update the code to test the property inbound
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property inboundCost (base name: "inbound_cost")', function() {
-      // uncomment below and update the code to test the property inboundCost
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property outbound (base name: "outbound")', function() {
-      // uncomment below and update the code to test the property outbound
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property outboundValue (base name: "outbound_value")', function() {
-      // uncomment below and update the code to test the property outboundValue
-      //var instance = new mercatorio-js.ProductFlow();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property outboundCost (base name: "outbound_cost")', function() {
-      // uncomment below and update the code to test the property outboundCost
-      //var instance = new mercatorio-js.ProductFlow();
+    it('should have the property projection (base name: "projection")', function() {
+      // uncomment below and update the code to test the property projection
+      //var instance = new mercatoriojs.ProductFlow();
       //expect(instance).to.be();
     });
 

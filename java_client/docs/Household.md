@@ -15,7 +15,7 @@
 |**accountId** | **String** |  |  [optional] |
 |**businessIds** | **List&lt;String&gt;** |  |  [optional] |
 |**prestige** | **String** |  |  [optional] |
-|**prestigeImpacts** | [**List&lt;HouseholdPrestigeImpactsInner&gt;**](HouseholdPrestigeImpactsInner.md) |  |  [optional] |
+|**prestigeImpacts** | [**List&lt;PrestigeImpact&gt;**](PrestigeImpact.md) |  |  [optional] |
 |**legacy** | **String** |  |  [optional] |
 |**workers** | [**List&lt;Worker&gt;**](Worker.md) |  |  [optional] |
 |**specialization** | [**Specialization**](Specialization.md) |  |  [optional] |

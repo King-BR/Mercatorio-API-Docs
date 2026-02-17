@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.Specialization();
+    instance = new mercatoriojs.Specialization();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('Specialization', function() {
     it('should create an instance of Specialization', function() {
       // uncomment below and update the code to test Specialization
-      //var instance = new mercatorio-js.Specialization();
-      //expect(instance).to.be.a(mercatorio-js.Specialization);
+      //var instance = new mercatoriojs.Specialization();
+      //expect(instance).to.be.a(mercatoriojs.Specialization);
     });
 
     it('should have the property points (base name: "points")', function() {
       // uncomment below and update the code to test the property points
-      //var instance = new mercatorio-js.Specialization();
+      //var instance = new mercatoriojs.Specialization();
       //expect(instance).to.be();
     });
 

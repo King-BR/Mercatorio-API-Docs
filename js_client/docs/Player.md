@@ -1,4 +1,4 @@
-# mercatorio-js.Player
+# mercatoriojs.Player
 
 ## Properties
 

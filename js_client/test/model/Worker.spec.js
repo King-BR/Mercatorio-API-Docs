@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.Worker();
+    instance = new mercatoriojs.Worker();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Worker', function() {
     it('should create an instance of Worker', function() {
       // uncomment below and update the code to test Worker
-      //var instance = new mercatorio-js.Worker();
-      //expect(instance).to.be.a(mercatorio-js.Worker);
+      //var instance = new mercatoriojs.Worker();
+      //expect(instance).to.be.a(mercatoriojs.Worker);
     });
 
     it('should have the property assignment (base name: "assignment")', function() {
       // uncomment below and update the code to test the property assignment
-      //var instance = new mercatorio-js.Worker();
+      //var instance = new mercatoriojs.Worker();
       //expect(instance).to.be();
     });
 
     it('should have the property capacity (base name: "capacity")', function() {
       // uncomment below and update the code to test the property capacity
-      //var instance = new mercatorio-js.Worker();
+      //var instance = new mercatoriojs.Worker();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new mercatorio-js.Worker();
+      //var instance = new mercatoriojs.Worker();
       //expect(instance).to.be();
     });
 
     it('should have the property skills (base name: "skills")', function() {
       // uncomment below and update the code to test the property skills
-      //var instance = new mercatorio-js.Worker();
+      //var instance = new mercatoriojs.Worker();
       //expect(instance).to.be();
     });
 

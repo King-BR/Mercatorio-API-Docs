@@ -14,8 +14,8 @@
 import ApiClient from '../ApiClient';
 import BuildingConstruction from './BuildingConstruction';
 import BuildingDeliveryCost from './BuildingDeliveryCost';
-import BuildingLocation from './BuildingLocation';
 import BuildingProducer from './BuildingProducer';
+import Location from './Location';
 
 /**
  * The Building model module.
@@ -73,13 +73,13 @@ class Building {
                 obj['owner_id'] = ApiClient.convertToType(data['owner_id'], 'String');
             }
             if (data.hasOwnProperty('location')) {
-                obj['location'] = BuildingLocation.constructFromObject(data['location']);
+                obj['location'] = Location.constructFromObject(data['location']);
             }
             if (data.hasOwnProperty('sublocation')) {
-                obj['sublocation'] = BuildingLocation.constructFromObject(data['sublocation']);
+                obj['sublocation'] = Location.constructFromObject(data['sublocation']);
             }
             if (data.hasOwnProperty('land')) {
-                obj['land'] = ApiClient.convertToType(data['land'], [BuildingLocation]);
+                obj['land'] = ApiClient.convertToType(data['land'], [Location]);
             }
             if (data.hasOwnProperty('delivery_cost')) {
                 obj['delivery_cost'] = BuildingDeliveryCost.constructFromObject(data['delivery_cost']);
@@ -132,11 +132,11 @@ class Building {
         }
         // validate the optional field `location`
         if (data['location']) { // data not null
-          BuildingLocation.validateJSON(data['location']);
+          Location.validateJSON(data['location']);
         }
         // validate the optional field `sublocation`
         if (data['sublocation']) { // data not null
-          BuildingLocation.validateJSON(data['sublocation']);
+          Location.validateJSON(data['sublocation']);
         }
         if (data['land']) { // data not null
             // ensure the json data is an array
@@ -145,7 +145,7 @@ class Building {
             }
             // validate the optional field `land` (array)
             for (const item of data['land']) {
-                BuildingLocation.validateJSON(item);
+                Location.validateJSON(item);
             };
         }
         // validate the optional field `delivery_cost`
@@ -213,17 +213,17 @@ Building.prototype['town_id'] = undefined;
 Building.prototype['owner_id'] = undefined;
 
 /**
- * @member {module:model/BuildingLocation} location
+ * @member {module:model/Location} location
  */
 Building.prototype['location'] = undefined;
 
 /**
- * @member {module:model/BuildingLocation} sublocation
+ * @member {module:model/Location} sublocation
  */
 Building.prototype['sublocation'] = undefined;
 
 /**
- * @member {Array.<module:model/BuildingLocation>} land
+ * @member {Array.<module:model/Location>} land
  */
 Building.prototype['land'] = undefined;
 

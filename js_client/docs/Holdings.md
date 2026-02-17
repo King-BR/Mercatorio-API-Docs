@@ -1,4 +1,4 @@
-# mercatorio-js.Holdings
+# mercatoriojs.Holdings
 
 ## Properties
 

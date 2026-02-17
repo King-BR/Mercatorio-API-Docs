@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.Player();
+    instance = new mercatoriojs.Player();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('Player', function() {
     it('should create an instance of Player', function() {
       // uncomment below and update the code to test Player
-      //var instance = new mercatorio-js.Player();
-      //expect(instance).to.be.a(mercatorio-js.Player);
+      //var instance = new mercatoriojs.Player();
+      //expect(instance).to.be.a(mercatoriojs.Player);
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 
     it('should have the property household (base name: "household")', function() {
       // uncomment below and update the code to test the property household
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 
     it('should have the property discordId (base name: "discord_id")', function() {
       // uncomment below and update the code to test the property discordId
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 
     it('should have the property bonusPoints (base name: "bonus_points")', function() {
       // uncomment below and update the code to test the property bonusPoints
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 
     it('should have the property active (base name: "active")', function() {
       // uncomment below and update the code to test the property active
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 
     it('should have the property activity (base name: "activity")', function() {
       // uncomment below and update the code to test the property activity
-      //var instance = new mercatorio-js.Player();
+      //var instance = new mercatoriojs.Player();
       //expect(instance).to.be();
     });
 

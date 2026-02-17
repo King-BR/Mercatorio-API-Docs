@@ -1,10 +1,10 @@
-# mercatorio-js.InventoryPastFlows
+# mercatoriojs.InventoryPastFlows
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**alembics** | [**ProductFlow**](ProductFlow.md) |  | [optional] 
+**alembics** | [**ProductPastFlow**](ProductPastFlow.md) |  | [optional] 
 **arms** | [**ProductFlow**](ProductFlow.md) |  | [optional] 
 **axes** | [**ProductFlow**](ProductFlow.md) |  | [optional] 
 **beer** | [**ProductFlow**](ProductFlow.md) |  | [optional] 

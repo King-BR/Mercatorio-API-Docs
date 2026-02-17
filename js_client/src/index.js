@@ -15,32 +15,32 @@
 import ApiClient from './ApiClient';
 import Building from './model/Building';
 import BuildingConstruction from './model/BuildingConstruction';
-import BuildingConstructionSettings from './model/BuildingConstructionSettings';
 import BuildingDeliveryCost from './model/BuildingDeliveryCost';
-import BuildingLocation from './model/BuildingLocation';
+import BuildingPreviousOperation from './model/BuildingPreviousOperation';
 import BuildingProducer from './model/BuildingProducer';
-import BuildingProducerPreviousOperation from './model/BuildingProducerPreviousOperation';
+import ConstructionSettings from './model/ConstructionSettings';
 import Error from './model/Error';
 import Holdings from './model/Holdings';
 import Household from './model/Household';
 import HouseholdCaps from './model/HouseholdCaps';
-import HouseholdPrestigeImpactsInner from './model/HouseholdPrestigeImpactsInner';
 import HouseholdSustenance from './model/HouseholdSustenance';
 import Inventory from './model/Inventory';
 import InventoryAccount from './model/InventoryAccount';
 import InventoryAssets from './model/InventoryAssets';
-import InventoryAssetsAlembics from './model/InventoryAssetsAlembics';
 import InventoryFlows from './model/InventoryFlows';
-import InventoryFlowsAlembics from './model/InventoryFlowsAlembics';
 import InventoryPastFlows from './model/InventoryPastFlows';
+import Location from './model/Location';
 import Player from './model/Player';
 import PlayerActivity from './model/PlayerActivity';
 import PlayerSettings from './model/PlayerSettings';
 import PlayerSettingsEmail from './model/PlayerSettingsEmail';
 import PlayerSettingsNotifications from './model/PlayerSettingsNotifications';
+import PrestigeImpact from './model/PrestigeImpact';
+import ProductAsset from './model/ProductAsset';
 import ProductFlow from './model/ProductFlow';
 import ProductHolding from './model/ProductHolding';
 import ProductManager from './model/ProductManager';
+import ProductPastFlow from './model/ProductPastFlow';
 import Specialization from './model/Specialization';
 import SpecializationPoints from './model/SpecializationPoints';
 import Worker from './model/Worker';
@@ -54,9 +54,9 @@ import DefaultApi from './api/DefaultApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var mercatorio-js = require('index'); // See note below*.
-* var xxxSvc = new mercatorio-js.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new mercatorio-js.Yyy(); // Construct a model instance.
+* var mercatoriojs = require('index'); // See note below*.
+* var xxxSvc = new mercatoriojs.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new mercatoriojs.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -68,8 +68,8 @@ import DefaultApi from './api/DefaultApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new mercatorio-js.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new mercatorio-js.Yyy(); // Construct a model instance.
+* var xxxSvc = new mercatoriojs.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new mercatoriojs.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -99,22 +99,16 @@ export {
     BuildingConstruction,
 
     /**
-     * The BuildingConstructionSettings model constructor.
-     * @property {module:model/BuildingConstructionSettings}
-     */
-    BuildingConstructionSettings,
-
-    /**
      * The BuildingDeliveryCost model constructor.
      * @property {module:model/BuildingDeliveryCost}
      */
     BuildingDeliveryCost,
 
     /**
-     * The BuildingLocation model constructor.
-     * @property {module:model/BuildingLocation}
+     * The BuildingPreviousOperation model constructor.
+     * @property {module:model/BuildingPreviousOperation}
      */
-    BuildingLocation,
+    BuildingPreviousOperation,
 
     /**
      * The BuildingProducer model constructor.
@@ -123,10 +117,10 @@ export {
     BuildingProducer,
 
     /**
-     * The BuildingProducerPreviousOperation model constructor.
-     * @property {module:model/BuildingProducerPreviousOperation}
+     * The ConstructionSettings model constructor.
+     * @property {module:model/ConstructionSettings}
      */
-    BuildingProducerPreviousOperation,
+    ConstructionSettings,
 
     /**
      * The Error model constructor.
@@ -153,12 +147,6 @@ export {
     HouseholdCaps,
 
     /**
-     * The HouseholdPrestigeImpactsInner model constructor.
-     * @property {module:model/HouseholdPrestigeImpactsInner}
-     */
-    HouseholdPrestigeImpactsInner,
-
-    /**
      * The HouseholdSustenance model constructor.
      * @property {module:model/HouseholdSustenance}
      */
@@ -183,28 +171,22 @@ export {
     InventoryAssets,
 
     /**
-     * The InventoryAssetsAlembics model constructor.
-     * @property {module:model/InventoryAssetsAlembics}
-     */
-    InventoryAssetsAlembics,
-
-    /**
      * The InventoryFlows model constructor.
      * @property {module:model/InventoryFlows}
      */
     InventoryFlows,
 
     /**
-     * The InventoryFlowsAlembics model constructor.
-     * @property {module:model/InventoryFlowsAlembics}
-     */
-    InventoryFlowsAlembics,
-
-    /**
      * The InventoryPastFlows model constructor.
      * @property {module:model/InventoryPastFlows}
      */
     InventoryPastFlows,
+
+    /**
+     * The Location model constructor.
+     * @property {module:model/Location}
+     */
+    Location,
 
     /**
      * The Player model constructor.
@@ -237,6 +219,18 @@ export {
     PlayerSettingsNotifications,
 
     /**
+     * The PrestigeImpact model constructor.
+     * @property {module:model/PrestigeImpact}
+     */
+    PrestigeImpact,
+
+    /**
+     * The ProductAsset model constructor.
+     * @property {module:model/ProductAsset}
+     */
+    ProductAsset,
+
+    /**
      * The ProductFlow model constructor.
      * @property {module:model/ProductFlow}
      */
@@ -253,6 +247,12 @@ export {
      * @property {module:model/ProductManager}
      */
     ProductManager,
+
+    /**
+     * The ProductPastFlow model constructor.
+     * @property {module:model/ProductPastFlow}
+     */
+    ProductPastFlow,
 
     /**
      * The Specialization model constructor.

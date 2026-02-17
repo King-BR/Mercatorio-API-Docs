@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.SpecializationPoints();
+    instance = new mercatoriojs.SpecializationPoints();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,739 +50,739 @@
   describe('SpecializationPoints', function() {
     it('should create an instance of SpecializationPoints', function() {
       // uncomment below and update the code to test SpecializationPoints
-      //var instance = new mercatorio-js.SpecializationPoints();
-      //expect(instance).to.be.a(mercatorio-js.SpecializationPoints);
+      //var instance = new mercatoriojs.SpecializationPoints();
+      //expect(instance).to.be.a(mercatoriojs.SpecializationPoints);
     });
 
     it('should have the property alembics (base name: "alembics")', function() {
       // uncomment below and update the code to test the property alembics
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property arms (base name: "arms")', function() {
       // uncomment below and update the code to test the property arms
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property axes (base name: "axes")', function() {
       // uncomment below and update the code to test the property axes
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property beer (base name: "beer")', function() {
       // uncomment below and update the code to test the property beer
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property bellows (base name: "bellows")', function() {
       // uncomment below and update the code to test the property bellows
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property bells (base name: "bells")', function() {
       // uncomment below and update the code to test the property bells
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property belts (base name: "belts")', function() {
       // uncomment below and update the code to test the property belts
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property blades (base name: "blades")', function() {
       // uncomment below and update the code to test the property blades
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property books (base name: "books")', function() {
       // uncomment below and update the code to test the property books
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property bread (base name: "bread")', function() {
       // uncomment below and update the code to test the property bread
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property bronzeIngots (base name: "bronze ingots")', function() {
       // uncomment below and update the code to test the property bronzeIngots
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property butter (base name: "butter")', function() {
       // uncomment below and update the code to test the property butter
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property candles (base name: "candles")', function() {
       // uncomment below and update the code to test the property candles
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property carting (base name: "carting")', function() {
       // uncomment below and update the code to test the property carting
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property casks (base name: "casks")', function() {
       // uncomment below and update the code to test the property casks
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property cattle (base name: "cattle")', function() {
       // uncomment below and update the code to test the property cattle
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property charcoal (base name: "charcoal")', function() {
       // uncomment below and update the code to test the property charcoal
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property cheese (base name: "cheese")', function() {
       // uncomment below and update the code to test the property cheese
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property chisels (base name: "chisels")', function() {
       // uncomment below and update the code to test the property chisels
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property clay (base name: "clay")', function() {
       // uncomment below and update the code to test the property clay
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property cloth (base name: "cloth")', function() {
       // uncomment below and update the code to test the property cloth
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property coats (base name: "coats")', function() {
       // uncomment below and update the code to test the property coats
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property cookware (base name: "cookware")', function() {
       // uncomment below and update the code to test the property cookware
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property copperIngots (base name: "copper ingots")', function() {
       // uncomment below and update the code to test the property copperIngots
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property copperOre (base name: "copper ore")', function() {
       // uncomment below and update the code to test the property copperOre
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property curedFish (base name: "cured fish")', function() {
       // uncomment below and update the code to test the property curedFish
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property curedMeat (base name: "cured meat")', function() {
       // uncomment below and update the code to test the property curedMeat
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property dye (base name: "dye")', function() {
       // uncomment below and update the code to test the property dye
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property dyedCloth (base name: "dyed cloth")', function() {
       // uncomment below and update the code to test the property dyedCloth
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property dyedYarn (base name: "dyed yarn")', function() {
       // uncomment below and update the code to test the property dyedYarn
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property firewood (base name: "firewood")', function() {
       // uncomment below and update the code to test the property firewood
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property fish (base name: "fish")', function() {
       // uncomment below and update the code to test the property fish
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property flaxFibres (base name: "flax fibres")', function() {
       // uncomment below and update the code to test the property flaxFibres
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property flaxPlants (base name: "flax plants")', function() {
       // uncomment below and update the code to test the property flaxPlants
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property fleece (base name: "fleece")', function() {
       // uncomment below and update the code to test the property fleece
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property flour (base name: "flour")', function() {
       // uncomment below and update the code to test the property flour
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property furniture (base name: "furniture")', function() {
       // uncomment below and update the code to test the property furniture
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property garments (base name: "garments")', function() {
       // uncomment below and update the code to test the property garments
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property gears (base name: "gears")', function() {
       // uncomment below and update the code to test the property gears
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property glass (base name: "glass")', function() {
       // uncomment below and update the code to test the property glass
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property glassware (base name: "glassware")', function() {
       // uncomment below and update the code to test the property glassware
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property goldBars (base name: "gold bars")', function() {
       // uncomment below and update the code to test the property goldBars
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property goldOre (base name: "gold ore")', function() {
       // uncomment below and update the code to test the property goldOre
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property grain (base name: "grain")', function() {
       // uncomment below and update the code to test the property grain
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property grindstones (base name: "grindstones")', function() {
       // uncomment below and update the code to test the property grindstones
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property ham (base name: "ham")', function() {
       // uncomment below and update the code to test the property ham
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property harnesses (base name: "harnesses")', function() {
       // uncomment below and update the code to test the property harnesses
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property herbs (base name: "herbs")', function() {
       // uncomment below and update the code to test the property herbs
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property hides (base name: "hides")', function() {
       // uncomment below and update the code to test the property hides
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property hinges (base name: "hinges")', function() {
       // uncomment below and update the code to test the property hinges
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property honey (base name: "honey")', function() {
       // uncomment below and update the code to test the property honey
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property hopBeer (base name: "hop beer")', function() {
       // uncomment below and update the code to test the property hopBeer
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property ironOre (base name: "iron ore")', function() {
       // uncomment below and update the code to test the property ironOre
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property jewellery (base name: "jewellery")', function() {
       // uncomment below and update the code to test the property jewellery
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property labour (base name: "labour")', function() {
       // uncomment below and update the code to test the property labour
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property lathes (base name: "lathes")', function() {
       // uncomment below and update the code to test the property lathes
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property leadBars (base name: "lead bars")', function() {
       // uncomment below and update the code to test the property leadBars
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property leadOre (base name: "lead ore")', function() {
       // uncomment below and update the code to test the property leadOre
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property leather (base name: "leather")', function() {
       // uncomment below and update the code to test the property leather
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property lightArmour (base name: "light armour")', function() {
       // uncomment below and update the code to test the property lightArmour
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property limestone (base name: "limestone")', function() {
       // uncomment below and update the code to test the property limestone
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property lodging (base name: "lodging")', function() {
       // uncomment below and update the code to test the property lodging
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property logs (base name: "logs")', function() {
       // uncomment below and update the code to test the property logs
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property looms (base name: "looms")', function() {
       // uncomment below and update the code to test the property looms
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property malt (base name: "malt")', function() {
       // uncomment below and update the code to test the property malt
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property manure (base name: "manure")', function() {
       // uncomment below and update the code to test the property manure
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property meat (base name: "meat")', function() {
       // uncomment below and update the code to test the property meat
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property medicine (base name: "medicine")', function() {
       // uncomment below and update the code to test the property medicine
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property milk (base name: "milk")', function() {
       // uncomment below and update the code to test the property milk
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property mouldboards (base name: "mouldboards")', function() {
       // uncomment below and update the code to test the property mouldboards
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property nails (base name: "nails")', function() {
       // uncomment below and update the code to test the property nails
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property nets (base name: "nets")', function() {
       // uncomment below and update the code to test the property nets
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property oxPower (base name: "ox power")', function() {
       // uncomment below and update the code to test the property oxPower
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property paper (base name: "paper")', function() {
       // uncomment below and update the code to test the property paper
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property pasties (base name: "pasties")', function() {
       // uncomment below and update the code to test the property pasties
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property pickaxes (base name: "pickaxes")', function() {
       // uncomment below and update the code to test the property pickaxes
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property pies (base name: "pies")', function() {
       // uncomment below and update the code to test the property pies
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property plateArmour (base name: "plate armour")', function() {
       // uncomment below and update the code to test the property plateArmour
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property ploughs (base name: "ploughs")', function() {
       // uncomment below and update the code to test the property ploughs
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumArmour (base name: "premium armour")', function() {
       // uncomment below and update the code to test the property premiumArmour
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumAxes (base name: "premium axes")', function() {
       // uncomment below and update the code to test the property premiumAxes
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumCheese (base name: "premium cheese")', function() {
       // uncomment below and update the code to test the property premiumCheese
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumCloth (base name: "premium cloth")', function() {
       // uncomment below and update the code to test the property premiumCloth
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumDye (base name: "premium dye")', function() {
       // uncomment below and update the code to test the property premiumDye
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumGarments (base name: "premium garments")', function() {
       // uncomment below and update the code to test the property premiumGarments
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumGlassware (base name: "premium glassware")', function() {
       // uncomment below and update the code to test the property premiumGlassware
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumHam (base name: "premium ham")', function() {
       // uncomment below and update the code to test the property premiumHam
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumSails (base name: "premium sails")', function() {
       // uncomment below and update the code to test the property premiumSails
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumSteel (base name: "premium steel")', function() {
       // uncomment below and update the code to test the property premiumSteel
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property premiumSwords (base name: "premium swords")', function() {
       // uncomment below and update the code to test the property premiumSwords
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property protection (base name: "protection")', function() {
       // uncomment below and update the code to test the property protection
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property rawCloth (base name: "raw cloth")', function() {
       // uncomment below and update the code to test the property rawCloth
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property resin (base name: "resin")', function() {
       // uncomment below and update the code to test the property resin
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property rope (base name: "rope")', function() {
       // uncomment below and update the code to test the property rope
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property sails (base name: "sails")', function() {
       // uncomment below and update the code to test the property sails
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property salt (base name: "salt")', function() {
       // uncomment below and update the code to test the property salt
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property sculptures (base name: "sculptures")', function() {
       // uncomment below and update the code to test the property sculptures
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property scythes (base name: "scythes")', function() {
       // uncomment below and update the code to test the property scythes
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property silverBars (base name: "silver bars")', function() {
       // uncomment below and update the code to test the property silverBars
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property silverOre (base name: "silver ore")', function() {
       // uncomment below and update the code to test the property silverOre
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property slakedLime (base name: "slaked lime")', function() {
       // uncomment below and update the code to test the property slakedLime
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property spinningWheels (base name: "spinning wheels")', function() {
       // uncomment below and update the code to test the property spinningWheels
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property spirits (base name: "spirits")', function() {
       // uncomment below and update the code to test the property spirits
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property steelIngots (base name: "steel ingots")', function() {
       // uncomment below and update the code to test the property steelIngots
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property stockfish (base name: "stockfish")', function() {
       // uncomment below and update the code to test the property stockfish
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property swords (base name: "swords")', function() {
       // uncomment below and update the code to test the property swords
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tackles (base name: "tackles")', function() {
       // uncomment below and update the code to test the property tackles
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tapestries (base name: "tapestries")', function() {
       // uncomment below and update the code to test the property tapestries
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tar (base name: "tar")', function() {
       // uncomment below and update the code to test the property tar
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property thread (base name: "thread")', function() {
       // uncomment below and update the code to test the property thread
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tiles (base name: "tiles")', function() {
       // uncomment below and update the code to test the property tiles
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property timber (base name: "timber")', function() {
       // uncomment below and update the code to test the property timber
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tinIngots (base name: "tin ingots")', function() {
       // uncomment below and update the code to test the property tinIngots
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tinOre (base name: "tin ore")', function() {
       // uncomment below and update the code to test the property tinOre
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property tools (base name: "tools")', function() {
       // uncomment below and update the code to test the property tools
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property wax (base name: "wax")', function() {
       // uncomment below and update the code to test the property wax
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property wheels (base name: "wheels")', function() {
       // uncomment below and update the code to test the property wheels
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property windows (base name: "windows")', function() {
       // uncomment below and update the code to test the property windows
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property wine (base name: "wine")', function() {
       // uncomment below and update the code to test the property wine
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property wool (base name: "wool")', function() {
       // uncomment below and update the code to test the property wool
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property wroughtIron (base name: "wrought iron")', function() {
       // uncomment below and update the code to test the property wroughtIron
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property yarn (base name: "yarn")', function() {
       // uncomment below and update the code to test the property yarn
-      //var instance = new mercatorio-js.SpecializationPoints();
+      //var instance = new mercatoriojs.SpecializationPoints();
       //expect(instance).to.be();
     });
 

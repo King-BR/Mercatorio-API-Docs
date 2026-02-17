@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.ProductHolding();
+    instance = new mercatoriojs.ProductHolding();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductHolding', function() {
     it('should create an instance of ProductHolding', function() {
       // uncomment below and update the code to test ProductHolding
-      //var instance = new mercatorio-js.ProductHolding();
-      //expect(instance).to.be.a(mercatorio-js.ProductHolding);
+      //var instance = new mercatoriojs.ProductHolding();
+      //expect(instance).to.be.a(mercatoriojs.ProductHolding);
     });
 
     it('should have the property managers (base name: "managers")', function() {
       // uncomment below and update the code to test the property managers
-      //var instance = new mercatorio-js.ProductHolding();
+      //var instance = new mercatoriojs.ProductHolding();
       //expect(instance).to.be();
     });
 
     it('should have the property capacity (base name: "capacity")', function() {
       // uncomment below and update the code to test the property capacity
-      //var instance = new mercatorio-js.ProductHolding();
+      //var instance = new mercatoriojs.ProductHolding();
       //expect(instance).to.be();
     });
 

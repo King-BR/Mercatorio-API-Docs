@@ -1,4 +1,4 @@
-# mercatorio-js.Specialization
+# mercatoriojs.Specialization
 
 ## Properties
 

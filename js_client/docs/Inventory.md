@@ -1,4 +1,4 @@
-# mercatorio-js.Inventory
+# mercatoriojs.Inventory
 
 ## Properties
 

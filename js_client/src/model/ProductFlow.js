@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import ProductPastFlow from './ProductPastFlow';
 
 /**
  * The ProductFlow model module.
@@ -47,47 +48,8 @@ class ProductFlow {
         if (data) {
             obj = obj || new ProductFlow();
 
-            if (data.hasOwnProperty('production')) {
-                obj['production'] = ApiClient.convertToType(data['production'], 'String');
-            }
-            if (data.hasOwnProperty('production_cost')) {
-                obj['production_cost'] = ApiClient.convertToType(data['production_cost'], 'String');
-            }
-            if (data.hasOwnProperty('consumption')) {
-                obj['consumption'] = ApiClient.convertToType(data['consumption'], 'String');
-            }
-            if (data.hasOwnProperty('consumption_cost')) {
-                obj['consumption_cost'] = ApiClient.convertToType(data['consumption_cost'], 'String');
-            }
-            if (data.hasOwnProperty('import')) {
-                obj['import'] = ApiClient.convertToType(data['import'], 'String');
-            }
-            if (data.hasOwnProperty('import_cost')) {
-                obj['import_cost'] = ApiClient.convertToType(data['import_cost'], 'String');
-            }
-            if (data.hasOwnProperty('export')) {
-                obj['export'] = ApiClient.convertToType(data['export'], 'String');
-            }
-            if (data.hasOwnProperty('export_value')) {
-                obj['export_value'] = ApiClient.convertToType(data['export_value'], 'String');
-            }
-            if (data.hasOwnProperty('export_cost')) {
-                obj['export_cost'] = ApiClient.convertToType(data['export_cost'], 'String');
-            }
-            if (data.hasOwnProperty('inbound')) {
-                obj['inbound'] = ApiClient.convertToType(data['inbound'], 'String');
-            }
-            if (data.hasOwnProperty('inbound_cost')) {
-                obj['inbound_cost'] = ApiClient.convertToType(data['inbound_cost'], 'String');
-            }
-            if (data.hasOwnProperty('outbound')) {
-                obj['outbound'] = ApiClient.convertToType(data['outbound'], 'String');
-            }
-            if (data.hasOwnProperty('outbound_value')) {
-                obj['outbound_value'] = ApiClient.convertToType(data['outbound_value'], 'String');
-            }
-            if (data.hasOwnProperty('outbound_cost')) {
-                obj['outbound_cost'] = ApiClient.convertToType(data['outbound_cost'], 'String');
+            if (data.hasOwnProperty('projection')) {
+                obj['projection'] = ProductPastFlow.constructFromObject(data['projection']);
             }
         }
         return obj;
@@ -99,61 +61,9 @@ class ProductFlow {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductFlow</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is a string
-        if (data['production'] && !(typeof data['production'] === 'string' || data['production'] instanceof String)) {
-            throw new Error("Expected the field `production` to be a primitive type in the JSON string but got " + data['production']);
-        }
-        // ensure the json data is a string
-        if (data['production_cost'] && !(typeof data['production_cost'] === 'string' || data['production_cost'] instanceof String)) {
-            throw new Error("Expected the field `production_cost` to be a primitive type in the JSON string but got " + data['production_cost']);
-        }
-        // ensure the json data is a string
-        if (data['consumption'] && !(typeof data['consumption'] === 'string' || data['consumption'] instanceof String)) {
-            throw new Error("Expected the field `consumption` to be a primitive type in the JSON string but got " + data['consumption']);
-        }
-        // ensure the json data is a string
-        if (data['consumption_cost'] && !(typeof data['consumption_cost'] === 'string' || data['consumption_cost'] instanceof String)) {
-            throw new Error("Expected the field `consumption_cost` to be a primitive type in the JSON string but got " + data['consumption_cost']);
-        }
-        // ensure the json data is a string
-        if (data['import'] && !(typeof data['import'] === 'string' || data['import'] instanceof String)) {
-            throw new Error("Expected the field `import` to be a primitive type in the JSON string but got " + data['import']);
-        }
-        // ensure the json data is a string
-        if (data['import_cost'] && !(typeof data['import_cost'] === 'string' || data['import_cost'] instanceof String)) {
-            throw new Error("Expected the field `import_cost` to be a primitive type in the JSON string but got " + data['import_cost']);
-        }
-        // ensure the json data is a string
-        if (data['export'] && !(typeof data['export'] === 'string' || data['export'] instanceof String)) {
-            throw new Error("Expected the field `export` to be a primitive type in the JSON string but got " + data['export']);
-        }
-        // ensure the json data is a string
-        if (data['export_value'] && !(typeof data['export_value'] === 'string' || data['export_value'] instanceof String)) {
-            throw new Error("Expected the field `export_value` to be a primitive type in the JSON string but got " + data['export_value']);
-        }
-        // ensure the json data is a string
-        if (data['export_cost'] && !(typeof data['export_cost'] === 'string' || data['export_cost'] instanceof String)) {
-            throw new Error("Expected the field `export_cost` to be a primitive type in the JSON string but got " + data['export_cost']);
-        }
-        // ensure the json data is a string
-        if (data['inbound'] && !(typeof data['inbound'] === 'string' || data['inbound'] instanceof String)) {
-            throw new Error("Expected the field `inbound` to be a primitive type in the JSON string but got " + data['inbound']);
-        }
-        // ensure the json data is a string
-        if (data['inbound_cost'] && !(typeof data['inbound_cost'] === 'string' || data['inbound_cost'] instanceof String)) {
-            throw new Error("Expected the field `inbound_cost` to be a primitive type in the JSON string but got " + data['inbound_cost']);
-        }
-        // ensure the json data is a string
-        if (data['outbound'] && !(typeof data['outbound'] === 'string' || data['outbound'] instanceof String)) {
-            throw new Error("Expected the field `outbound` to be a primitive type in the JSON string but got " + data['outbound']);
-        }
-        // ensure the json data is a string
-        if (data['outbound_value'] && !(typeof data['outbound_value'] === 'string' || data['outbound_value'] instanceof String)) {
-            throw new Error("Expected the field `outbound_value` to be a primitive type in the JSON string but got " + data['outbound_value']);
-        }
-        // ensure the json data is a string
-        if (data['outbound_cost'] && !(typeof data['outbound_cost'] === 'string' || data['outbound_cost'] instanceof String)) {
-            throw new Error("Expected the field `outbound_cost` to be a primitive type in the JSON string but got " + data['outbound_cost']);
+        // validate the optional field `projection`
+        if (data['projection']) { // data not null
+          ProductPastFlow.validateJSON(data['projection']);
         }
 
         return true;
@@ -165,78 +75,9 @@ class ProductFlow {
 
 
 /**
- * @member {String} production
+ * @member {module:model/ProductPastFlow} projection
  */
-ProductFlow.prototype['production'] = undefined;
-
-/**
- * @member {String} production_cost
- */
-ProductFlow.prototype['production_cost'] = undefined;
-
-/**
- * @member {String} consumption
- */
-ProductFlow.prototype['consumption'] = undefined;
-
-/**
- * @member {String} consumption_cost
- */
-ProductFlow.prototype['consumption_cost'] = undefined;
-
-/**
- * The quantity of the product imported via trade routes.
- * @member {String} import
- */
-ProductFlow.prototype['import'] = undefined;
-
-/**
- * @member {String} import_cost
- */
-ProductFlow.prototype['import_cost'] = undefined;
-
-/**
- * The quantity of the product exported via trade routes.
- * @member {String} export
- */
-ProductFlow.prototype['export'] = undefined;
-
-/**
- * @member {String} export_value
- */
-ProductFlow.prototype['export_value'] = undefined;
-
-/**
- * @member {String} export_cost
- */
-ProductFlow.prototype['export_cost'] = undefined;
-
-/**
- * The quantity of the product imported via contracts.
- * @member {String} inbound
- */
-ProductFlow.prototype['inbound'] = undefined;
-
-/**
- * @member {String} inbound_cost
- */
-ProductFlow.prototype['inbound_cost'] = undefined;
-
-/**
- * The quantity of the product exported via contracts.
- * @member {String} outbound
- */
-ProductFlow.prototype['outbound'] = undefined;
-
-/**
- * @member {String} outbound_value
- */
-ProductFlow.prototype['outbound_value'] = undefined;
-
-/**
- * @member {String} outbound_cost
- */
-ProductFlow.prototype['outbound_cost'] = undefined;
+ProductFlow.prototype['projection'] = undefined;
 
 
 

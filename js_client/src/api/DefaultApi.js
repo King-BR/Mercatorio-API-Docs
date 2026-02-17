@@ -67,7 +67,7 @@ export default class DefaultApi {
       let formParams = {
       };
 
-      let authNames = ['X-Merc-User', 'Bearer-Token'];
+      let authNames = ['Merc_User', 'Bearer_Token'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Building;
@@ -103,7 +103,7 @@ export default class DefaultApi {
       let formParams = {
       };
 
-      let authNames = ['X-Merc-User', 'Bearer-Token'];
+      let authNames = ['Merc_User', 'Bearer_Token'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Player;

@@ -13,7 +13,7 @@
 |**limited** | **Boolean** |  |  [optional] |
 |**settings** | **Object** |  |  [optional] |
 |**recipe** | **String** |  |  [optional] |
-|**previousOperation** | [**BuildingProducerPreviousOperation**](BuildingProducerPreviousOperation.md) |  |  [optional] |
+|**previousOperation** | [**BuildingPreviousOperation**](BuildingPreviousOperation.md) |  |  [optional] |
 |**manager** | **String** |  |  [optional] |
 |**providerId** | **String** |  |  [optional] |
 

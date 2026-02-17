@@ -25,8 +25,8 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.BuildingConstruction;
 import org.openapitools.client.model.BuildingDeliveryCost;
-import org.openapitools.client.model.BuildingLocation;
 import org.openapitools.client.model.BuildingProducer;
+import org.openapitools.client.model.Location;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

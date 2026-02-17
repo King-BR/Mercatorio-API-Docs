@@ -29,17 +29,17 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://play.mercatorio.io/api");
     
-    // Configure API key authorization: X-Merc-User
-    ApiKeyAuth X-Merc-User = (ApiKeyAuth) defaultClient.getAuthentication("X-Merc-User");
-    X-Merc-User.setApiKey("YOUR API KEY");
+    // Configure API key authorization: Merc_User
+    ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+    Merc_User.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //X-Merc-User.setApiKeyPrefix("Token");
+    //Merc_User.setApiKeyPrefix("Token");
 
-    // Configure API key authorization: Bearer-Token
-    ApiKeyAuth Bearer-Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer-Token");
-    Bearer-Token.setApiKey("YOUR API KEY");
+    // Configure API key authorization: Bearer_Token
+    ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+    Bearer_Token.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //Bearer-Token.setApiKeyPrefix("Token");
+    //Bearer_Token.setApiKeyPrefix("Token");
 
     DefaultApi apiInstance = new DefaultApi(defaultClient);
     String buildingID = "buildingID_example"; // String | 
@@ -69,7 +69,7 @@ public class Example {
 
 ### Authorization
 
-[X-Merc-User](../README.md#X-Merc-User), [Bearer-Token](../README.md#Bearer-Token)
+[Merc_User](../README.md#Merc_User), [Bearer_Token](../README.md#Bearer_Token)
 
 ### HTTP request headers
 
@@ -104,17 +104,17 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://play.mercatorio.io/api");
     
-    // Configure API key authorization: X-Merc-User
-    ApiKeyAuth X-Merc-User = (ApiKeyAuth) defaultClient.getAuthentication("X-Merc-User");
-    X-Merc-User.setApiKey("YOUR API KEY");
+    // Configure API key authorization: Merc_User
+    ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+    Merc_User.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //X-Merc-User.setApiKeyPrefix("Token");
+    //Merc_User.setApiKeyPrefix("Token");
 
-    // Configure API key authorization: Bearer-Token
-    ApiKeyAuth Bearer-Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer-Token");
-    Bearer-Token.setApiKey("YOUR API KEY");
+    // Configure API key authorization: Bearer_Token
+    ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+    Bearer_Token.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //Bearer-Token.setApiKeyPrefix("Token");
+    //Bearer_Token.setApiKeyPrefix("Token");
 
     DefaultApi apiInstance = new DefaultApi(defaultClient);
     try {
@@ -140,7 +140,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[X-Merc-User](../README.md#X-Merc-User), [Bearer-Token](../README.md#Bearer-Token)
+[Merc_User](../README.md#Merc_User), [Bearer_Token](../README.md#Bearer_Token)
 
 ### HTTP request headers
 

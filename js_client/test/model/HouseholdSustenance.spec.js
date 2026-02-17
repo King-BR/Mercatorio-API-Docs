@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.HouseholdSustenance();
+    instance = new mercatoriojs.HouseholdSustenance();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('HouseholdSustenance', function() {
     it('should create an instance of HouseholdSustenance', function() {
       // uncomment below and update the code to test HouseholdSustenance
-      //var instance = new mercatorio-js.HouseholdSustenance();
-      //expect(instance).to.be.a(mercatorio-js.HouseholdSustenance);
+      //var instance = new mercatoriojs.HouseholdSustenance();
+      //expect(instance).to.be.a(mercatoriojs.HouseholdSustenance);
     });
 
     it('should have the property reference (base name: "reference")', function() {
       // uncomment below and update the code to test the property reference
-      //var instance = new mercatorio-js.HouseholdSustenance();
+      //var instance = new mercatoriojs.HouseholdSustenance();
       //expect(instance).to.be();
     });
 
     it('should have the property inventory (base name: "inventory")', function() {
       // uncomment below and update the code to test the property inventory
-      //var instance = new mercatorio-js.HouseholdSustenance();
+      //var instance = new mercatoriojs.HouseholdSustenance();
       //expect(instance).to.be();
     });
 
     it('should have the property providerId (base name: "provider_id")', function() {
       // uncomment below and update the code to test the property providerId
-      //var instance = new mercatorio-js.HouseholdSustenance();
+      //var instance = new mercatoriojs.HouseholdSustenance();
       //expect(instance).to.be();
     });
 

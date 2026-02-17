@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.Household();
+    instance = new mercatoriojs.Household();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,97 +50,97 @@
   describe('Household', function() {
     it('should create an instance of Household', function() {
       // uncomment below and update the code to test Household
-      //var instance = new mercatorio-js.Household();
-      //expect(instance).to.be.a(mercatorio-js.Household);
+      //var instance = new mercatoriojs.Household();
+      //expect(instance).to.be.a(mercatoriojs.Household);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property townId (base name: "town_id")', function() {
       // uncomment below and update the code to test the property townId
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property portrait (base name: "portrait")', function() {
       // uncomment below and update the code to test the property portrait
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property gender (base name: "gender")', function() {
       // uncomment below and update the code to test the property gender
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property accountId (base name: "account_id")', function() {
       // uncomment below and update the code to test the property accountId
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property businessIds (base name: "business_ids")', function() {
       // uncomment below and update the code to test the property businessIds
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property prestige (base name: "prestige")', function() {
       // uncomment below and update the code to test the property prestige
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property prestigeImpacts (base name: "prestige_impacts")', function() {
       // uncomment below and update the code to test the property prestigeImpacts
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property legacy (base name: "legacy")', function() {
       // uncomment below and update the code to test the property legacy
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property workers (base name: "workers")', function() {
       // uncomment below and update the code to test the property workers
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property specialization (base name: "specialization")', function() {
       // uncomment below and update the code to test the property specialization
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property operations (base name: "operations")', function() {
       // uncomment below and update the code to test the property operations
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property caps (base name: "caps")', function() {
       // uncomment below and update the code to test the property caps
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 
     it('should have the property sustenance (base name: "sustenance")', function() {
       // uncomment below and update the code to test the property sustenance
-      //var instance = new mercatorio-js.Household();
+      //var instance = new mercatoriojs.Household();
       //expect(instance).to.be();
     });
 

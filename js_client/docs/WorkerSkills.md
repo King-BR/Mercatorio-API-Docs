@@ -1,4 +1,4 @@
-# mercatorio-js.WorkerSkills
+# mercatoriojs.WorkerSkills
 
 ## Properties
 

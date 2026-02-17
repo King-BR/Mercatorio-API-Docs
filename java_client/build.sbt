@@ -1,7 +1,7 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "org.mercatorio-tools",
-    name := "mercatorio-java",
+    organization := "org.mercatorio_tools",
+    name := "mercatorio_java",
     version := "1.0.0",
     scalaVersion := "2.11.12",
     scalacOptions ++= Seq("-feature"),

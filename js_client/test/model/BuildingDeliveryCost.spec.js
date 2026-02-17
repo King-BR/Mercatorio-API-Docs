@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.BuildingDeliveryCost();
+    instance = new mercatoriojs.BuildingDeliveryCost();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('BuildingDeliveryCost', function() {
     it('should create an instance of BuildingDeliveryCost', function() {
       // uncomment below and update the code to test BuildingDeliveryCost
-      //var instance = new mercatorio-js.BuildingDeliveryCost();
-      //expect(instance).to.be.a(mercatorio-js.BuildingDeliveryCost);
+      //var instance = new mercatoriojs.BuildingDeliveryCost();
+      //expect(instance).to.be.a(mercatoriojs.BuildingDeliveryCost);
     });
 
     it('should have the property landDistance (base name: "land_distance")', function() {
       // uncomment below and update the code to test the property landDistance
-      //var instance = new mercatorio-js.BuildingDeliveryCost();
+      //var instance = new mercatoriojs.BuildingDeliveryCost();
       //expect(instance).to.be();
     });
 

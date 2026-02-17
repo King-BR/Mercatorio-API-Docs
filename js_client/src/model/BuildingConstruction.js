@@ -12,9 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import BuildingConstructionSettings from './BuildingConstructionSettings';
-import BuildingLocation from './BuildingLocation';
+import ConstructionSettings from './ConstructionSettings';
 import Inventory from './Inventory';
+import Location from './Location';
 
 /**
  * The BuildingConstruction model module.
@@ -72,13 +72,13 @@ class BuildingConstruction {
                 obj['stage'] = ApiClient.convertToType(data['stage'], 'String');
             }
             if (data.hasOwnProperty('land')) {
-                obj['land'] = ApiClient.convertToType(data['land'], [BuildingLocation]);
+                obj['land'] = ApiClient.convertToType(data['land'], [Location]);
             }
             if (data.hasOwnProperty('provider_id')) {
                 obj['provider_id'] = ApiClient.convertToType(data['provider_id'], 'String');
             }
             if (data.hasOwnProperty('settings')) {
-                obj['settings'] = BuildingConstructionSettings.constructFromObject(data['settings']);
+                obj['settings'] = ConstructionSettings.constructFromObject(data['settings']);
             }
         }
         return obj;
@@ -109,7 +109,7 @@ class BuildingConstruction {
             }
             // validate the optional field `land` (array)
             for (const item of data['land']) {
-                BuildingLocation.validateJSON(item);
+                Location.validateJSON(item);
             };
         }
         // ensure the json data is a string
@@ -118,7 +118,7 @@ class BuildingConstruction {
         }
         // validate the optional field `settings`
         if (data['settings']) { // data not null
-          BuildingConstructionSettings.validateJSON(data['settings']);
+          ConstructionSettings.validateJSON(data['settings']);
         }
 
         return true;
@@ -165,7 +165,7 @@ BuildingConstruction.prototype['progress'] = undefined;
 BuildingConstruction.prototype['stage'] = undefined;
 
 /**
- * @member {Array.<module:model/BuildingLocation>} land
+ * @member {Array.<module:model/Location>} land
  */
 BuildingConstruction.prototype['land'] = undefined;
 
@@ -175,7 +175,7 @@ BuildingConstruction.prototype['land'] = undefined;
 BuildingConstruction.prototype['provider_id'] = undefined;
 
 /**
- * @member {module:model/BuildingConstructionSettings} settings
+ * @member {module:model/ConstructionSettings} settings
  */
 BuildingConstruction.prototype['settings'] = undefined;
 

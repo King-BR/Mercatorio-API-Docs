@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.BuildingProducerPreviousOperation;
+import org.openapitools.client.model.BuildingPreviousOperation;
 import org.openapitools.client.model.Inventory;
 
 import com.google.gson.Gson;
@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * BuildingProducer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class BuildingProducer {
   public static final String SERIALIZED_NAME_REFERENCE = "reference";
   @SerializedName(SERIALIZED_NAME_REFERENCE)
@@ -85,7 +85,7 @@ public class BuildingProducer {
   public static final String SERIALIZED_NAME_PREVIOUS_OPERATION = "previous_operation";
   @SerializedName(SERIALIZED_NAME_PREVIOUS_OPERATION)
   @javax.annotation.Nullable
-  private BuildingProducerPreviousOperation previousOperation;
+  private BuildingPreviousOperation previousOperation;
 
   public static final String SERIALIZED_NAME_MANAGER = "manager";
   @SerializedName(SERIALIZED_NAME_MANAGER)
@@ -214,7 +214,7 @@ public class BuildingProducer {
   }
 
 
-  public BuildingProducer previousOperation(@javax.annotation.Nullable BuildingProducerPreviousOperation previousOperation) {
+  public BuildingProducer previousOperation(@javax.annotation.Nullable BuildingPreviousOperation previousOperation) {
     this.previousOperation = previousOperation;
     return this;
   }
@@ -224,11 +224,11 @@ public class BuildingProducer {
    * @return previousOperation
    */
   @javax.annotation.Nullable
-  public BuildingProducerPreviousOperation getPreviousOperation() {
+  public BuildingPreviousOperation getPreviousOperation() {
     return previousOperation;
   }
 
-  public void setPreviousOperation(@javax.annotation.Nullable BuildingProducerPreviousOperation previousOperation) {
+  public void setPreviousOperation(@javax.annotation.Nullable BuildingPreviousOperation previousOperation) {
     this.previousOperation = previousOperation;
   }
 
@@ -373,7 +373,7 @@ public class BuildingProducer {
       }
       // validate the optional field `previous_operation`
       if (jsonObj.get("previous_operation") != null && !jsonObj.get("previous_operation").isJsonNull()) {
-        BuildingProducerPreviousOperation.validateJsonElement(jsonObj.get("previous_operation"));
+        BuildingPreviousOperation.validateJsonElement(jsonObj.get("previous_operation"));
       }
       if ((jsonObj.get("manager") != null && !jsonObj.get("manager").isJsonNull()) && !jsonObj.get("manager").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `manager` to be a primitive type in the JSON string but got `%s`", jsonObj.get("manager").toString()));

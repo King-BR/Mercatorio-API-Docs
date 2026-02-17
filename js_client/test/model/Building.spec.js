@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.Building();
+    instance = new mercatoriojs.Building();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,97 +50,97 @@
   describe('Building', function() {
     it('should create an instance of Building', function() {
       // uncomment below and update the code to test Building
-      //var instance = new mercatorio-js.Building();
-      //expect(instance).to.be.a(mercatorio-js.Building);
+      //var instance = new mercatoriojs.Building();
+      //expect(instance).to.be.a(mercatoriojs.Building);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property capacity (base name: "capacity")', function() {
       // uncomment below and update the code to test the property capacity
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property townId (base name: "town_id")', function() {
       // uncomment below and update the code to test the property townId
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property ownerId (base name: "owner_id")', function() {
       // uncomment below and update the code to test the property ownerId
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property location (base name: "location")', function() {
       // uncomment below and update the code to test the property location
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property sublocation (base name: "sublocation")', function() {
       // uncomment below and update the code to test the property sublocation
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property land (base name: "land")', function() {
       // uncomment below and update the code to test the property land
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveryCost (base name: "delivery_cost")', function() {
       // uncomment below and update the code to test the property deliveryCost
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property producer (base name: "producer")', function() {
       // uncomment below and update the code to test the property producer
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property construction (base name: "construction")', function() {
       // uncomment below and update the code to test the property construction
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property providerId (base name: "provider_id")', function() {
       // uncomment below and update the code to test the property providerId
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 
     it('should have the property cost (base name: "cost")', function() {
       // uncomment below and update the code to test the property cost
-      //var instance = new mercatorio-js.Building();
+      //var instance = new mercatoriojs.Building();
       //expect(instance).to.be();
     });
 

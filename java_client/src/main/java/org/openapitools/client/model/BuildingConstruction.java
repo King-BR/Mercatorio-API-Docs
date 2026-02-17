@@ -24,9 +24,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.openapitools.client.model.BuildingConstructionSettings;
-import org.openapitools.client.model.BuildingLocation;
+import org.openapitools.client.model.ConstructionSettings;
 import org.openapitools.client.model.Inventory;
+import org.openapitools.client.model.Location;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * BuildingConstruction
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class BuildingConstruction {
   public static final String SERIALIZED_NAME_REFERENCE = "reference";
   @SerializedName(SERIALIZED_NAME_REFERENCE)
@@ -94,7 +94,7 @@ public class BuildingConstruction {
   public static final String SERIALIZED_NAME_LAND = "land";
   @SerializedName(SERIALIZED_NAME_LAND)
   @javax.annotation.Nullable
-  private List<BuildingLocation> land = new ArrayList<>();
+  private List<Location> land = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROVIDER_ID = "provider_id";
   @SerializedName(SERIALIZED_NAME_PROVIDER_ID)
@@ -104,7 +104,7 @@ public class BuildingConstruction {
   public static final String SERIALIZED_NAME_SETTINGS = "settings";
   @SerializedName(SERIALIZED_NAME_SETTINGS)
   @javax.annotation.Nullable
-  private BuildingConstructionSettings settings;
+  private ConstructionSettings settings;
 
   public BuildingConstruction() {
   }
@@ -242,12 +242,12 @@ public class BuildingConstruction {
   }
 
 
-  public BuildingConstruction land(@javax.annotation.Nullable List<BuildingLocation> land) {
+  public BuildingConstruction land(@javax.annotation.Nullable List<Location> land) {
     this.land = land;
     return this;
   }
 
-  public BuildingConstruction addLandItem(BuildingLocation landItem) {
+  public BuildingConstruction addLandItem(Location landItem) {
     if (this.land == null) {
       this.land = new ArrayList<>();
     }
@@ -260,11 +260,11 @@ public class BuildingConstruction {
    * @return land
    */
   @javax.annotation.Nullable
-  public List<BuildingLocation> getLand() {
+  public List<Location> getLand() {
     return land;
   }
 
-  public void setLand(@javax.annotation.Nullable List<BuildingLocation> land) {
+  public void setLand(@javax.annotation.Nullable List<Location> land) {
     this.land = land;
   }
 
@@ -288,7 +288,7 @@ public class BuildingConstruction {
   }
 
 
-  public BuildingConstruction settings(@javax.annotation.Nullable BuildingConstructionSettings settings) {
+  public BuildingConstruction settings(@javax.annotation.Nullable ConstructionSettings settings) {
     this.settings = settings;
     return this;
   }
@@ -298,11 +298,11 @@ public class BuildingConstruction {
    * @return settings
    */
   @javax.annotation.Nullable
-  public BuildingConstructionSettings getSettings() {
+  public ConstructionSettings getSettings() {
     return settings;
   }
 
-  public void setSettings(@javax.annotation.Nullable BuildingConstructionSettings settings) {
+  public void setSettings(@javax.annotation.Nullable ConstructionSettings settings) {
     this.settings = settings;
   }
 
@@ -416,7 +416,7 @@ public class BuildingConstruction {
 
           // validate the optional field `land` (array)
           for (int i = 0; i < jsonArrayland.size(); i++) {
-            BuildingLocation.validateJsonElement(jsonArrayland.get(i));
+            Location.validateJsonElement(jsonArrayland.get(i));
           };
         }
       }
@@ -425,7 +425,7 @@ public class BuildingConstruction {
       }
       // validate the optional field `settings`
       if (jsonObj.get("settings") != null && !jsonObj.get("settings").isJsonNull()) {
-        BuildingConstructionSettings.validateJsonElement(jsonObj.get("settings"));
+        ConstructionSettings.validateJsonElement(jsonObj.get("settings"));
       }
   }
 

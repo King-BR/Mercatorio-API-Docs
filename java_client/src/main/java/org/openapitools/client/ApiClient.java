@@ -101,8 +101,8 @@ public class ApiClient {
         initHttpClient();
 
         // Setup authentications (key: authentication name, value: authentication).
-        authentications.put("Bearer-Token", new ApiKeyAuth("header", "Token"));
-        authentications.put("X-Merc-User", new ApiKeyAuth("header", "X-Merc-User"));
+        authentications.put("Bearer_Token", new ApiKeyAuth("header", "Token"));
+        authentications.put("Merc_User", new ApiKeyAuth("header", "X-Merc-User"));
         // Prevent the authentications from being modified.
         authentications = Collections.unmodifiableMap(authentications);
     }
@@ -118,8 +118,8 @@ public class ApiClient {
         httpClient = client;
 
         // Setup authentications (key: authentication name, value: authentication).
-        authentications.put("Bearer-Token", new ApiKeyAuth("header", "Token"));
-        authentications.put("X-Merc-User", new ApiKeyAuth("header", "X-Merc-User"));
+        authentications.put("Bearer_Token", new ApiKeyAuth("header", "Token"));
+        authentications.put("Merc_User", new ApiKeyAuth("header", "X-Merc-User"));
         // Prevent the authentications from being modified.
         authentications = Collections.unmodifiableMap(authentications);
     }

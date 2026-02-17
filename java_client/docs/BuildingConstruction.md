@@ -14,9 +14,9 @@
 |**totalTime** | **BigDecimal** |  |  [optional] |
 |**progress** | **BigDecimal** |  |  [optional] |
 |**stage** | **String** |  |  [optional] |
-|**land** | [**List&lt;BuildingLocation&gt;**](BuildingLocation.md) |  |  [optional] |
+|**land** | [**List&lt;Location&gt;**](Location.md) |  |  [optional] |
 |**providerId** | **String** |  |  [optional] |
-|**settings** | [**BuildingConstructionSettings**](BuildingConstructionSettings.md) |  |  [optional] |
+|**settings** | [**ConstructionSettings**](ConstructionSettings.md) |  |  [optional] |
 
 
 

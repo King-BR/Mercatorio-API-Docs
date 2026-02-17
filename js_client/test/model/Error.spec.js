@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.mercatorio-js);
+    factory(root.expect, root.mercatoriojs);
   }
-}(this, function(expect, mercatorio-js) {
+}(this, function(expect, mercatoriojs) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new mercatorio-js.Error();
+    instance = new mercatoriojs.Error();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('Error', function() {
     it('should create an instance of Error', function() {
       // uncomment below and update the code to test Error
-      //var instance = new mercatorio-js.Error();
-      //expect(instance).to.be.a(mercatorio-js.Error);
+      //var instance = new mercatoriojs.Error();
+      //expect(instance).to.be.a(mercatoriojs.Error);
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new mercatorio-js.Error();
+      //var instance = new mercatoriojs.Error();
       //expect(instance).to.be();
     });
 

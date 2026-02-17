@@ -23,9 +23,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.openapitools.client.model.BuildingConstructionSettings;
-import org.openapitools.client.model.BuildingLocation;
+import org.openapitools.client.model.ConstructionSettings;
 import org.openapitools.client.model.Inventory;
+import org.openapitools.client.model.Location;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

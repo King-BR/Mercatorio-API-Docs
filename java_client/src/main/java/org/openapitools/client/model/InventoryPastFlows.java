@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.ProductFlow;
+import org.openapitools.client.model.ProductPastFlow;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -50,12 +51,12 @@ import org.openapitools.client.JSON;
 /**
  * InventoryPastFlows
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T00:07:12.329189600-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]", comments = "Generator version: 7.19.0")
 public class InventoryPastFlows {
   public static final String SERIALIZED_NAME_ALEMBICS = "alembics";
   @SerializedName(SERIALIZED_NAME_ALEMBICS)
   @javax.annotation.Nullable
-  private ProductFlow alembics;
+  private ProductPastFlow alembics;
 
   public static final String SERIALIZED_NAME_ARMS = "arms";
   @SerializedName(SERIALIZED_NAME_ARMS)
@@ -665,7 +666,7 @@ public class InventoryPastFlows {
   public InventoryPastFlows() {
   }
 
-  public InventoryPastFlows alembics(@javax.annotation.Nullable ProductFlow alembics) {
+  public InventoryPastFlows alembics(@javax.annotation.Nullable ProductPastFlow alembics) {
     this.alembics = alembics;
     return this;
   }
@@ -675,11 +676,11 @@ public class InventoryPastFlows {
    * @return alembics
    */
   @javax.annotation.Nullable
-  public ProductFlow getAlembics() {
+  public ProductPastFlow getAlembics() {
     return alembics;
   }
 
-  public void setAlembics(@javax.annotation.Nullable ProductFlow alembics) {
+  public void setAlembics(@javax.annotation.Nullable ProductPastFlow alembics) {
     this.alembics = alembics;
   }
 
@@ -3309,7 +3310,7 @@ public class InventoryPastFlows {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `alembics`
       if (jsonObj.get("alembics") != null && !jsonObj.get("alembics").isJsonNull()) {
-        ProductFlow.validateJsonElement(jsonObj.get("alembics"));
+        ProductPastFlow.validateJsonElement(jsonObj.get("alembics"));
       }
       // validate the optional field `arms`
       if (jsonObj.get("arms") != null && !jsonObj.get("arms").isJsonNull()) {

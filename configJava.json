@@ -1,8 +1,8 @@
 {
   "additionalProperties": {
-    "artifactId": "mercatorio-java",
+    "artifactId": "mercatorio_java",
     "artifactDescription": "Mercatorio.java is a library that provides a easier way to interact with the Mercatorio API, allowing developers to make more third party applications and tools for the Mercatorio ecosystem.",
-    "groupId": "org.mercatorio-tools",
+    "groupId": "org.mercatorio_tools",
     "developerEmail": "fernandopach2017@gmail.com",
     "developerName": "King-BR",
     "developerOrganization": "Mercatorio Tools",

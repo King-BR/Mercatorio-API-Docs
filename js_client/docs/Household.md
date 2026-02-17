@@ -1,4 +1,4 @@
-# mercatorio-js.Household
+# mercatoriojs.Household
 
 ## Properties
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **accountId** | **String** |  | [optional] 
 **businessIds** | **[String]** |  | [optional] 
 **prestige** | **String** |  | [optional] 
-**prestigeImpacts** | [**[HouseholdPrestigeImpactsInner]**](HouseholdPrestigeImpactsInner.md) |  | [optional] 
+**prestigeImpacts** | [**[PrestigeImpact]**](PrestigeImpact.md) |  | [optional] 
 **legacy** | **String** |  | [optional] 
 **workers** | [**[Worker]**](Worker.md) |  | [optional] 
 **specialization** | [**Specialization**](Specialization.md) |  | [optional] 

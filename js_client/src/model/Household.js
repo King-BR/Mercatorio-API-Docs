@@ -13,8 +13,8 @@
 
 import ApiClient from '../ApiClient';
 import HouseholdCaps from './HouseholdCaps';
-import HouseholdPrestigeImpactsInner from './HouseholdPrestigeImpactsInner';
 import HouseholdSustenance from './HouseholdSustenance';
+import PrestigeImpact from './PrestigeImpact';
 import Specialization from './Specialization';
 import Worker from './Worker';
 
@@ -77,7 +77,7 @@ class Household {
                 obj['prestige'] = ApiClient.convertToType(data['prestige'], 'String');
             }
             if (data.hasOwnProperty('prestige_impacts')) {
-                obj['prestige_impacts'] = ApiClient.convertToType(data['prestige_impacts'], [HouseholdPrestigeImpactsInner]);
+                obj['prestige_impacts'] = ApiClient.convertToType(data['prestige_impacts'], [PrestigeImpact]);
             }
             if (data.hasOwnProperty('legacy')) {
                 obj['legacy'] = ApiClient.convertToType(data['legacy'], 'String');
@@ -146,7 +146,7 @@ class Household {
             }
             // validate the optional field `prestige_impacts` (array)
             for (const item of data['prestige_impacts']) {
-                HouseholdPrestigeImpactsInner.validateJSON(item);
+                PrestigeImpact.validateJSON(item);
             };
         }
         // ensure the json data is a string
@@ -229,7 +229,7 @@ Household.prototype['business_ids'] = undefined;
 Household.prototype['prestige'] = undefined;
 
 /**
- * @member {Array.<module:model/HouseholdPrestigeImpactsInner>} prestige_impacts
+ * @member {Array.<module:model/PrestigeImpact>} prestige_impacts
  */
 Household.prototype['prestige_impacts'] = undefined;
 

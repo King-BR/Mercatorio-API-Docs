@@ -1,4 +1,4 @@
-# mercatorio-js.Worker
+# mercatoriojs.Worker
 
 ## Properties
 
