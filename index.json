@@ -20,7 +20,7 @@
   "paths": {
     "/player": {
       "get": {
-        "operationId": "playerInfo",
+        "operationId": "player info",
         "responses": {
           "200": {
             "content": {
@@ -58,7 +58,7 @@
     },
     "/buildings/{buildingID}": {
       "get": {
-        "operationId": "buildingInfo",
+        "operationId": "building info",
         "parameters": [
           {
             "explode": false,
@@ -134,11 +134,7 @@
             "$ref": "#/components/schemas/PlayerActivity"
           }
         },
-        "required": [
-          "active",
-          "household",
-          "username"
-        ],
+        "required": ["active", "household", "username"],
         "type": "object"
       },
       "ProductManager": {
@@ -185,9 +181,7 @@
             "$ref": "#/components/schemas/WorkerSkills"
           }
         },
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "type": "object"
       },
       "ProductPastFlow": {
@@ -1926,9 +1920,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "message"
-        ],
+        "required": ["message"],
         "type": "object"
       },
       "PlayerActivity": {
