@@ -990,6 +990,98 @@ ul.nav-tabs {
     }
   }
 };
+    defs["Business"] = {
+  "type" : "object",
+  "properties" : {
+    "account" : {
+      "$ref" : "#/components/schemas/BusinessAccount"
+    },
+    "buildings" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/components/schemas/BusinessBuildings"
+      }
+    },
+    "building_ids" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "reference" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "portrait" : {
+      "type" : "string"
+    },
+    "account_id" : {
+      "type" : "string"
+    },
+    "owner_id" : {
+      "type" : "string"
+    },
+    "transport_ids" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+};
+    defs["BusinessAccount"] = {
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "owner_id" : {
+      "type" : "string"
+    },
+    "assets" : {
+      "$ref" : "#/components/schemas/InventoryAssets"
+    },
+    "_ts" : {
+      "type" : "number"
+    }
+  }
+};
+    defs["BusinessBuildings"] = {
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "number"
+    },
+    "type" : {
+      "type" : "string"
+    }
+  }
+};
+    defs["CommonersTownState"] = {
+  "type" : "object",
+  "properties" : {
+    "migration" : {
+      "type" : "string"
+    },
+    "total" : {
+      "type" : "string"
+    },
+    "prestige" : {
+      "type" : "string"
+    },
+    "health" : {
+      "type" : "string"
+    }
+  }
+};
     defs["ConstructionSettings"] = {
   "type" : "object",
   "properties" : {
@@ -998,6 +1090,37 @@ ul.nav-tabs {
     },
     "pace" : {
       "type" : "number"
+    }
+  }
+};
+    defs["DomainPlot"] = {
+  "type" : "object",
+  "properties" : {
+    "owner_id" : {
+      "type" : "string"
+    },
+    "structure" : {
+      "$ref" : "#/components/schemas/DomainPlotStructure"
+    },
+    "resource" : {
+      "type" : "number"
+    }
+  }
+};
+    defs["DomainPlotStructure"] = {
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string"
+    },
+    "tags" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
     }
   }
 };
@@ -2660,6 +2783,23 @@ ul.nav-tabs {
     }
   }
 };
+    defs["MapRegion"] = {
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "number"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "center" : {
+      "$ref" : "#/components/schemas/Location"
+    },
+    "size" : {
+      "type" : "number"
+    }
+  }
+};
     defs["Player"] = {
   "required" : [ "active", "household", "username" ],
   "type" : "object",
@@ -3385,6 +3525,319 @@ ul.nav-tabs {
     }
   }
 };
+    defs["Town"] = {
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "location" : {
+      "$ref" : "#/components/schemas/Location"
+    },
+    "region" : {
+      "type" : "number"
+    },
+    "capital_id" : {
+      "type" : "string"
+    },
+    "center_ids" : {
+      "type" : "array",
+      "items" : {
+        "type" : "number"
+      }
+    },
+    "domain" : {
+      "$ref" : "#/components/schemas/TownDomain"
+    },
+    "household_ids" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "commoners" : {
+      "$ref" : "#/components/schemas/TownCommoners"
+    },
+    "government" : {
+      "$ref" : "#/components/schemas/TownGovernment"
+    },
+    "church" : {
+      "$ref" : "#/components/schemas/TownChurch"
+    },
+    "navigation_zones" : {
+      "$ref" : "#/components/schemas/TownNavigationZones"
+    },
+    "culture" : {
+      "$ref" : "#/components/schemas/TownCulture"
+    },
+    "state" : {
+      "$ref" : "#/components/schemas/TownState"
+    },
+    "_ts" : {
+      "type" : "number"
+    }
+  }
+};
+    defs["TownChurch"] = {
+  "type" : "object",
+  "properties" : {
+    "contract_ids" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+};
+    defs["TownCommoners"] = {
+  "type" : "object",
+  "properties" : {
+    "account_id" : {
+      "type" : "string"
+    },
+    "count" : {
+      "type" : "number"
+    },
+    "migration" : {
+      "type" : "string"
+    },
+    "income" : {
+      "$ref" : "#/components/schemas/TownCommonersIncome"
+    },
+    "spending" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/components/schemas/TownCommonersSpending"
+      }
+    },
+    "town_state" : {
+      "$ref" : "#/components/schemas/CommonersTownState"
+    }
+  }
+};
+    defs["TownCommonersIncome"] = {
+  "type" : "object",
+  "properties" : {
+    "migration" : {
+      "type" : "string"
+    },
+    "items" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/components/schemas/TownCommonersIncomeItems"
+      }
+    }
+  }
+};
+    defs["TownCommonersIncomeItems"] = {
+  "type" : "object",
+  "properties" : {
+    "product" : {
+      "type" : "string"
+    },
+    "bonus" : {
+      "type" : "string"
+    },
+    "desire" : {
+      "type" : "string"
+    },
+    "request" : {
+      "type" : "string"
+    },
+    "result" : {
+      "type" : "string"
+    },
+    "budget" : {
+      "type" : "string"
+    },
+    "weight" : {
+      "type" : "string"
+    }
+  }
+};
+    defs["TownCommonersSpending"] = {
+  "type" : "object",
+  "properties" : {
+    "name" : {
+      "type" : "string"
+    },
+    "budget" : {
+      "type" : "string"
+    },
+    "satisfaction" : {
+      "type" : "string"
+    },
+    "products" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/components/schemas/TownCommonersIncomeItems"
+      }
+    }
+  }
+};
+    defs["TownCulture"] = {
+  "type" : "object",
+  "properties" : {
+    "nutrition" : {
+      "type" : "string"
+    },
+    "textile" : {
+      "type" : "string"
+    },
+    "crafting" : {
+      "type" : "string"
+    },
+    "forging" : {
+      "type" : "string"
+    },
+    "weaponry" : {
+      "type" : "string"
+    },
+    "maritime" : {
+      "type" : "string"
+    },
+    "mercantile" : {
+      "type" : "string"
+    }
+  }
+};
+    defs["TownDomain"] = {
+  "type" : "object",
+  "properties" : {
+    "PlotID1" : {
+      "$ref" : "#/components/schemas/DomainPlot"
+    },
+    "PlotID2" : {
+      "$ref" : "#/components/schemas/DomainPlot"
+    },
+    "PlotID3" : {
+      "$ref" : "#/components/schemas/DomainPlot"
+    },
+    "PlotID4" : {
+      "$ref" : "#/components/schemas/DomainPlot"
+    },
+    "PlotID5" : {
+      "$ref" : "#/components/schemas/DomainPlot"
+    }
+  }
+};
+    defs["TownGovernment"] = {
+  "type" : "object",
+  "properties" : {
+    "account_id" : {
+      "type" : "string"
+    },
+    "spending" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/components/schemas/TownGovernmentSpending"
+      }
+    },
+    "taxes_collected" : {
+      "$ref" : "#/components/schemas/TownGovernmentTaxesCollected"
+    }
+  }
+};
+    defs["TownGovernmentSpending"] = {
+  "type" : "object",
+  "properties" : {
+    "name" : {
+      "type" : "string"
+    },
+    "migration" : {
+      "type" : "string"
+    },
+    "budget" : {
+      "type" : "string"
+    },
+    "satisfaction" : {
+      "type" : "string"
+    },
+    "products" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/components/schemas/TownCommonersIncomeItems"
+      }
+    }
+  }
+};
+    defs["TownGovernmentTaxesCollected"] = {
+  "type" : "object",
+  "properties" : {
+    "payments" : {
+      "type" : "string"
+    },
+    "land_tax" : {
+      "type" : "string"
+    },
+    "structure_tax" : {
+      "type" : "string"
+    },
+    "delivery_fees" : {
+      "type" : "string"
+    },
+    "transport_fees" : {
+      "type" : "string"
+    }
+  }
+};
+    defs["TownNavigationZones"] = {
+  "type" : "object",
+  "properties" : {
+    "NavigationZoneID1" : {
+      "type" : "number"
+    },
+    "NavigationZoneID2" : {
+      "type" : "number"
+    },
+    "NavigationZoneID3" : {
+      "type" : "number"
+    }
+  }
+};
+    defs["TownSimple"] = {
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "location" : {
+      "$ref" : "#/components/schemas/Location"
+    },
+    "region" : {
+      "type" : "number"
+    },
+    "capital" : {
+      "type" : "boolean"
+    },
+    "satisfaction" : {
+      "type" : "string"
+    },
+    "commoners" : {
+      "type" : "number"
+    }
+  }
+};
+    defs["TownState"] = {
+  "type" : "object",
+  "properties" : {
+    "population" : {
+      "type" : "number"
+    },
+    "total_prestige" : {
+      "type" : "string"
+    },
+    "total_health" : {
+      "type" : "string"
+    }
+  }
+};
     defs["Worker"] = {
   "required" : [ "name" ],
   "type" : "object",
@@ -3459,8 +3912,20 @@ ul.nav-tabs {
                     <li data-group="Default" data-name="buildingInfo" class="">
                       <a href="#api-Default-buildingInfo">buildingInfo</a>
                     </li>
+                    <li data-group="Default" data-name="businessInfo" class="">
+                      <a href="#api-Default-businessInfo">businessInfo</a>
+                    </li>
+                    <li data-group="Default" data-name="mapRegions" class="">
+                      <a href="#api-Default-mapRegions">mapRegions</a>
+                    </li>
                     <li data-group="Default" data-name="playerInfo" class="">
                       <a href="#api-Default-playerInfo">playerInfo</a>
+                    </li>
+                    <li data-group="Default" data-name="townInfo" class="">
+                      <a href="#api-Default-townInfo">townInfo</a>
+                    </li>
+                    <li data-group="Default" data-name="towns" class="">
+                      <a href="#api-Default-towns">towns</a>
                     </li>
           </ul>
         </nav>
@@ -3665,7 +4130,7 @@ api.buildingInfo(buildingID, callback);
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
 using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
+using org.mercatorio_tools.mercatorio_java;
 using Org.OpenAPITools.Model;
 
 namespace Example
@@ -4070,6 +4535,1062 @@ pub fn main() {
                         </article>
                       </div>
                       <hr>
+                    <div id="api-Default-businessInfo">
+                      <article id="api-Default-businessInfo-0" data-group="User" data-name="businessInfo" data-version="0">
+                        <div class="pull-left">
+                          <h1>businessInfo</h1>
+                          <p>Get the business information</p>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                        <p></p>
+                        <p class="marked"></p>
+                        <p></p>
+                        <br />
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/businesses/{businessID}</span></code></pre>
+                        <p>
+                          <h3>Usage and SDK Samples</h3>
+                        </p>
+                        <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active"><a href="#examples-Default-businessInfo-0-curl">Curl</a></li>
+                          <li class=""><a href="#examples-Default-businessInfo-0-java">Java</a></li>
+                          <li class=""><a href="#examples-Default-businessInfo-0-javascript">JavaScript</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="examples-Default-businessInfo-0-curl">
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET \
+-H "X-Merc-User: [[apiKey]]" \
+-H "Token: [[apiKey]]" \
+ -H "Accept: application/json" \
+ "https://play.mercatorio.io/api/businesses/{businessID}"
+</code></pre>
+                          </div>
+                          <div class="tab-pane" id="examples-Default-businessInfo-0-java">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.*;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+import java.io.File;
+import java.util.*;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+        // Configure API key authorization: Merc_User
+        ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+        Merc_User.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Merc_User.setApiKeyPrefix("Token");
+
+        // Configure API key authorization: Bearer_Token
+        ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+        Bearer_Token.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Bearer_Token.setApiKeyPrefix("Token");
+
+        // Create an instance of the API class
+        DefaultApi apiInstance = new DefaultApi();
+        String businessID = businessID_example; // String | 
+
+        try {
+            Business result = apiInstance.businessInfo(businessID);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#businessInfo");
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-businessInfo-0-dart">
+                            <pre class="prettyprint"><code class="language-dart">import 'package:openapi/api.dart';
+
+final api_instance = DefaultApi();
+
+final String businessID = new String(); // String | 
+
+try {
+    final result = await api_instance.businessInfo(businessID);
+    print(result);
+} catch (e) {
+    print('Exception when calling DefaultApi->businessInfo: $e\n');
+}
+
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-businessInfo-0-android">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        DefaultApi apiInstance = new DefaultApi();
+        String businessID = businessID_example; // String | 
+
+        try {
+            Business result = apiInstance.businessInfo(businessID);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#businessInfo");
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                          </div>
+  <!--
+  <div class="tab-pane" id="examples-Default-businessInfo-0-groovy">
+  <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+  </div> -->
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-objc">
+                              <pre class="prettyprint"><code class="language-cpp">Configuration *apiConfig = [Configuration sharedConfig];
+
+// Configure API key authorization: (authentication scheme: Merc_User)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"X-Merc-User"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"X-Merc-User"];
+
+// Configure API key authorization: (authentication scheme: Bearer_Token)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"Token"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"Token"];
+
+
+// Create an instance of the API class
+DefaultApi *apiInstance = [[DefaultApi alloc] init];
+String *businessID = businessID_example; //  (default to null)
+
+// Get the business information
+[apiInstance businessInfoWith:businessID
+              completionHandler: ^(Business output, NSError* error) {
+    if (output) {
+        NSLog(@"%@", output);
+    }
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+}];
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-javascript">
+                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio.js');
+var defaultClient = MercatorioApi.ApiClient.instance;
+
+// Configure API key authorization: Merc_User
+var Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Merc_User.apiKeyPrefix['X-Merc-User'] = "Token";
+
+// Configure API key authorization: Bearer_Token
+var Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer_Token.apiKeyPrefix['Token'] = "Token";
+
+// Create an instance of the API class
+var api = new MercatorioApi.DefaultApi()
+var businessID = businessID_example; // {String} 
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.businessInfo(businessID, callback);
+</code></pre>
+                            </div>
+
+                            <!--<div class="tab-pane" id="examples-Default-businessInfo-0-angular">
+              <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+            </div>-->
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-csharp">
+                              <pre class="prettyprint"><code class="language-cs">using System;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using org.mercatorio_tools.mercatorio_java;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class businessInfoExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Merc_User
+            Configuration.Default.ApiKey.Add("X-Merc-User", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("X-Merc-User", "Bearer");
+            // Configure API key authorization: Bearer_Token
+            Configuration.Default.ApiKey.Add("Token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Token", "Bearer");
+
+            // Create an instance of the API class
+            var apiInstance = new DefaultApi();
+            var businessID = businessID_example;  // String |  (default to null)
+
+            try {
+                // Get the business information
+                Business result = apiInstance.businessInfo(businessID);
+                Debug.WriteLine(result);
+            } catch (Exception e) {
+                Debug.Print("Exception when calling DefaultApi.businessInfo: " + e.Message );
+            }
+        }
+    }
+}
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-php">
+                              <pre class="prettyprint"><code class="language-php"><&#63;php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Merc_User
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Merc-User', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Merc-User', 'Bearer');
+
+// Configure API key authorization: Bearer_Token
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Token', 'Bearer');
+
+// Create an instance of the API class
+$api_instance = new OpenAPITools\Client\Api\DefaultApi();
+$businessID = businessID_example; // String | 
+
+try {
+    $result = $api_instance->businessInfo($businessID);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->businessInfo: ', $e->getMessage(), PHP_EOL;
+}
+?></code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-perl">
+                              <pre class="prettyprint"><code class="language-perl">use Data::Dumper;
+use WWW::OPenAPIClient::Configuration;
+use WWW::OPenAPIClient::DefaultApi;
+
+# Configure API key authorization: Merc_User
+$WWW::OPenAPIClient::Configuration::api_key->{'X-Merc-User'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'X-Merc-User'} = "Bearer";
+
+# Configure API key authorization: Bearer_Token
+$WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'Token'} = "Bearer";
+
+# Create an instance of the API class
+my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
+my $businessID = businessID_example; # String | 
+
+eval {
+    my $result = $api_instance->businessInfo(businessID => $businessID);
+    print Dumper($result);
+};
+if ($@) {
+    warn "Exception when calling DefaultApi->businessInfo: $@\n";
+}</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-python">
+                              <pre class="prettyprint"><code class="language-python">from __future__ import print_statement
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Merc_User
+openapi_client.configuration.api_key['X-Merc-User'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['X-Merc-User'] = 'Bearer'
+
+# Configure API key authorization: Bearer_Token
+openapi_client.configuration.api_key['Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Create an instance of the API class
+api_instance = openapi_client.DefaultApi()
+businessID = businessID_example # String |  (default to null)
+
+try:
+    # Get the business information
+    api_response = api_instance.business_info(businessID)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->businessInfo: %s\n" % e)</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-businessInfo-0-rust">
+                              <pre class="prettyprint"><code class="language-rust">extern crate DefaultApi;
+
+pub fn main() {
+    let businessID = businessID_example; // String
+
+    let mut context = DefaultApi::Context::default();
+    let result = client.businessInfo(businessID, &context).wait();
+
+    println!("{:?}", result);
+}
+</code></pre>
+                            </div>
+                          </div>
+
+                          <h2>Scopes</h2>
+                          <table>
+                            
+                          </table>
+
+                          <h2>Parameters</h2>
+
+                            <div class="methodsubtabletitle">Path parameters</div>
+                            <table id="methodsubtable">
+                                <tr>
+                                  <th width="150px">Name</th>
+                                  <th>Description</th>
+                                </tr>
+                                  <tr><td style="width:150px;">businessID*</td>
+<td>
+
+
+    <div id="d2e199_businessInfo_businessID">
+        <div class="json-schema-view">
+            <div class="primitive">
+                <span class="type">
+                    String
+                </span>
+
+            </div>
+                <div class="inner required">
+                    Required
+                </div>
+        </div>
+    </div>
+</td>
+</tr>
+
+                            </table>
+
+
+
+
+
+                          <h2>Responses</h2>
+                            <h3 id="examples-Default-businessInfo-title-200"></h3>
+                            <p id="examples-Default-businessInfo-description-200" class="marked"></p>
+                            <script>
+                              var responseDefault200_description = `The business corresponding to the businessID used`;
+                              var responseDefault200_description_break = responseDefault200_description.indexOf('\n');
+                              if (responseDefault200_description_break == -1) {
+                                $("#examples-Default-businessInfo-title-200").text("Status: 200 - " + responseDefault200_description);
+                              } else {
+                                $("#examples-Default-businessInfo-title-200").text("Status: 200 - " + responseDefault200_description.substring(0, responseDefault200_description_break));
+                                $("#examples-Default-businessInfo-description-200").html(responseDefault200_description.substring(responseDefault200_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-businessInfo-200" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-businessInfo-200-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-businessInfo-200-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-businessInfo-200-schema">
+                                <div id="responses-Default-businessInfo-schema-200" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "The business corresponding to the businessID used",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Business"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-businessInfo-200-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-businessInfo-schema-200');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-businessInfo-200-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                            <h3 id="examples-Default-businessInfo-title-404"></h3>
+                            <p id="examples-Default-businessInfo-description-404" class="marked"></p>
+                            <script>
+                              var responseDefault404_description = `No business found`;
+                              var responseDefault404_description_break = responseDefault404_description.indexOf('\n');
+                              if (responseDefault404_description_break == -1) {
+                                $("#examples-Default-businessInfo-title-404").text("Status: 404 - " + responseDefault404_description);
+                              } else {
+                                $("#examples-Default-businessInfo-title-404").text("Status: 404 - " + responseDefault404_description.substring(0, responseDefault404_description_break));
+                                $("#examples-Default-businessInfo-description-404").html(responseDefault404_description.substring(responseDefault404_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-businessInfo-404" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-businessInfo-404-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-businessInfo-404-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-businessInfo-404-schema">
+                                <div id="responses-Default-businessInfo-schema-404" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "No business found",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Error"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-businessInfo-404-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-businessInfo-schema-404');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-businessInfo-404-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                            <h3 id="examples-Default-businessInfo-title-500"></h3>
+                            <p id="examples-Default-businessInfo-description-500" class="marked"></p>
+                            <script>
+                              var responseDefault500_description = `Unexpected error`;
+                              var responseDefault500_description_break = responseDefault500_description.indexOf('\n');
+                              if (responseDefault500_description_break == -1) {
+                                $("#examples-Default-businessInfo-title-500").text("Status: 500 - " + responseDefault500_description);
+                              } else {
+                                $("#examples-Default-businessInfo-title-500").text("Status: 500 - " + responseDefault500_description.substring(0, responseDefault500_description_break));
+                                $("#examples-Default-businessInfo-description-500").html(responseDefault500_description.substring(responseDefault500_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-businessInfo-500" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-businessInfo-500-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-businessInfo-500-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-businessInfo-500-schema">
+                                <div id="responses-Default-businessInfo-schema-500" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "Unexpected error",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Error"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-businessInfo-500-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-businessInfo-schema-500');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-businessInfo-500-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                        </article>
+                      </div>
+                      <hr>
+                    <div id="api-Default-mapRegions">
+                      <article id="api-Default-mapRegions-0" data-group="User" data-name="mapRegions" data-version="0">
+                        <div class="pull-left">
+                          <h1>mapRegions</h1>
+                          <p>Get the list of all regions on the map, with their corresponding information</p>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                        <p></p>
+                        <p class="marked"></p>
+                        <p></p>
+                        <br />
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/map/regions</span></code></pre>
+                        <p>
+                          <h3>Usage and SDK Samples</h3>
+                        </p>
+                        <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active"><a href="#examples-Default-mapRegions-0-curl">Curl</a></li>
+                          <li class=""><a href="#examples-Default-mapRegions-0-java">Java</a></li>
+                          <li class=""><a href="#examples-Default-mapRegions-0-javascript">JavaScript</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="examples-Default-mapRegions-0-curl">
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET \
+-H "X-Merc-User: [[apiKey]]" \
+-H "Token: [[apiKey]]" \
+ -H "Accept: application/json" \
+ "https://play.mercatorio.io/api/map/regions"
+</code></pre>
+                          </div>
+                          <div class="tab-pane" id="examples-Default-mapRegions-0-java">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.*;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+import java.io.File;
+import java.util.*;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+        // Configure API key authorization: Merc_User
+        ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+        Merc_User.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Merc_User.setApiKeyPrefix("Token");
+
+        // Configure API key authorization: Bearer_Token
+        ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+        Bearer_Token.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Bearer_Token.setApiKeyPrefix("Token");
+
+        // Create an instance of the API class
+        DefaultApi apiInstance = new DefaultApi();
+
+        try {
+            array[MapRegion] result = apiInstance.mapRegions();
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#mapRegions");
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-mapRegions-0-dart">
+                            <pre class="prettyprint"><code class="language-dart">import 'package:openapi/api.dart';
+
+final api_instance = DefaultApi();
+
+
+try {
+    final result = await api_instance.mapRegions();
+    print(result);
+} catch (e) {
+    print('Exception when calling DefaultApi->mapRegions: $e\n');
+}
+
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-mapRegions-0-android">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        DefaultApi apiInstance = new DefaultApi();
+
+        try {
+            array[MapRegion] result = apiInstance.mapRegions();
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#mapRegions");
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                          </div>
+  <!--
+  <div class="tab-pane" id="examples-Default-mapRegions-0-groovy">
+  <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+  </div> -->
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-objc">
+                              <pre class="prettyprint"><code class="language-cpp">Configuration *apiConfig = [Configuration sharedConfig];
+
+// Configure API key authorization: (authentication scheme: Merc_User)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"X-Merc-User"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"X-Merc-User"];
+
+// Configure API key authorization: (authentication scheme: Bearer_Token)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"Token"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"Token"];
+
+
+// Create an instance of the API class
+DefaultApi *apiInstance = [[DefaultApi alloc] init];
+
+// Get the list of all regions on the map, with their corresponding information
+[apiInstance mapRegionsWithCompletionHandler: 
+              ^(array[MapRegion] output, NSError* error) {
+    if (output) {
+        NSLog(@"%@", output);
+    }
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+}];
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-javascript">
+                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio.js');
+var defaultClient = MercatorioApi.ApiClient.instance;
+
+// Configure API key authorization: Merc_User
+var Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Merc_User.apiKeyPrefix['X-Merc-User'] = "Token";
+
+// Configure API key authorization: Bearer_Token
+var Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer_Token.apiKeyPrefix['Token'] = "Token";
+
+// Create an instance of the API class
+var api = new MercatorioApi.DefaultApi()
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.mapRegions(callback);
+</code></pre>
+                            </div>
+
+                            <!--<div class="tab-pane" id="examples-Default-mapRegions-0-angular">
+              <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+            </div>-->
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-csharp">
+                              <pre class="prettyprint"><code class="language-cs">using System;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using org.mercatorio_tools.mercatorio_java;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class mapRegionsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Merc_User
+            Configuration.Default.ApiKey.Add("X-Merc-User", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("X-Merc-User", "Bearer");
+            // Configure API key authorization: Bearer_Token
+            Configuration.Default.ApiKey.Add("Token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Token", "Bearer");
+
+            // Create an instance of the API class
+            var apiInstance = new DefaultApi();
+
+            try {
+                // Get the list of all regions on the map, with their corresponding information
+                array[MapRegion] result = apiInstance.mapRegions();
+                Debug.WriteLine(result);
+            } catch (Exception e) {
+                Debug.Print("Exception when calling DefaultApi.mapRegions: " + e.Message );
+            }
+        }
+    }
+}
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-php">
+                              <pre class="prettyprint"><code class="language-php"><&#63;php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Merc_User
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Merc-User', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Merc-User', 'Bearer');
+
+// Configure API key authorization: Bearer_Token
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Token', 'Bearer');
+
+// Create an instance of the API class
+$api_instance = new OpenAPITools\Client\Api\DefaultApi();
+
+try {
+    $result = $api_instance->mapRegions();
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->mapRegions: ', $e->getMessage(), PHP_EOL;
+}
+?></code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-perl">
+                              <pre class="prettyprint"><code class="language-perl">use Data::Dumper;
+use WWW::OPenAPIClient::Configuration;
+use WWW::OPenAPIClient::DefaultApi;
+
+# Configure API key authorization: Merc_User
+$WWW::OPenAPIClient::Configuration::api_key->{'X-Merc-User'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'X-Merc-User'} = "Bearer";
+
+# Configure API key authorization: Bearer_Token
+$WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'Token'} = "Bearer";
+
+# Create an instance of the API class
+my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
+
+eval {
+    my $result = $api_instance->mapRegions();
+    print Dumper($result);
+};
+if ($@) {
+    warn "Exception when calling DefaultApi->mapRegions: $@\n";
+}</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-python">
+                              <pre class="prettyprint"><code class="language-python">from __future__ import print_statement
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Merc_User
+openapi_client.configuration.api_key['X-Merc-User'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['X-Merc-User'] = 'Bearer'
+
+# Configure API key authorization: Bearer_Token
+openapi_client.configuration.api_key['Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Create an instance of the API class
+api_instance = openapi_client.DefaultApi()
+
+try:
+    # Get the list of all regions on the map, with their corresponding information
+    api_response = api_instance.map_regions()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->mapRegions: %s\n" % e)</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-mapRegions-0-rust">
+                              <pre class="prettyprint"><code class="language-rust">extern crate DefaultApi;
+
+pub fn main() {
+
+    let mut context = DefaultApi::Context::default();
+    let result = client.mapRegions(&context).wait();
+
+    println!("{:?}", result);
+}
+</code></pre>
+                            </div>
+                          </div>
+
+                          <h2>Scopes</h2>
+                          <table>
+                            
+                          </table>
+
+                          <h2>Parameters</h2>
+
+
+
+
+
+
+                          <h2>Responses</h2>
+                            <h3 id="examples-Default-mapRegions-title-200"></h3>
+                            <p id="examples-Default-mapRegions-description-200" class="marked"></p>
+                            <script>
+                              var responseDefault200_description = `The list of all regions on the map, with their corresponding information`;
+                              var responseDefault200_description_break = responseDefault200_description.indexOf('\n');
+                              if (responseDefault200_description_break == -1) {
+                                $("#examples-Default-mapRegions-title-200").text("Status: 200 - " + responseDefault200_description);
+                              } else {
+                                $("#examples-Default-mapRegions-title-200").text("Status: 200 - " + responseDefault200_description.substring(0, responseDefault200_description_break));
+                                $("#examples-Default-mapRegions-description-200").html(responseDefault200_description.substring(responseDefault200_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-mapRegions-200" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-mapRegions-200-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-mapRegions-200-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-mapRegions-200-schema">
+                                <div id="responses-Default-mapRegions-schema-200" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "The list of all regions on the map, with their corresponding information",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/MapRegions"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-mapRegions-200-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-mapRegions-schema-200');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-mapRegions-200-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                            <h3 id="examples-Default-mapRegions-title-500"></h3>
+                            <p id="examples-Default-mapRegions-description-500" class="marked"></p>
+                            <script>
+                              var responseDefault500_description = `Unexpected error`;
+                              var responseDefault500_description_break = responseDefault500_description.indexOf('\n');
+                              if (responseDefault500_description_break == -1) {
+                                $("#examples-Default-mapRegions-title-500").text("Status: 500 - " + responseDefault500_description);
+                              } else {
+                                $("#examples-Default-mapRegions-title-500").text("Status: 500 - " + responseDefault500_description.substring(0, responseDefault500_description_break));
+                                $("#examples-Default-mapRegions-description-500").html(responseDefault500_description.substring(responseDefault500_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-mapRegions-500" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-mapRegions-500-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-mapRegions-500-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-mapRegions-500-schema">
+                                <div id="responses-Default-mapRegions-schema-500" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "Unexpected error",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Error"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-mapRegions-500-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-mapRegions-schema-500');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-mapRegions-500-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                        </article>
+                      </div>
+                      <hr>
                     <div id="api-Default-playerInfo">
                       <article id="api-Default-playerInfo-0" data-group="User" data-name="playerInfo" data-version="0">
                         <div class="pull-left">
@@ -4090,6 +5611,7 @@ pub fn main() {
                           <li class="active"><a href="#examples-Default-playerInfo-0-curl">Curl</a></li>
                           <li class=""><a href="#examples-Default-playerInfo-0-java">Java</a></li>
                           <li class=""><a href="#examples-Default-playerInfo-0-javascript">JavaScript</a></li>
+                          <li class=""><a href="#examples-Default-playerInfo-0-rust">Rust</a></li>
                         </ul>
 
                         <div class="tab-content">
@@ -4244,7 +5766,7 @@ api.playerInfo(callback);
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
 using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
+using org.mercatorio_tools.mercatorio_java;
 using Org.OpenAPITools.Model;
 
 namespace Example
@@ -4612,6 +6134,1062 @@ pub fn main() {
                                   </script>
                                 </div>
                                 <input id='responses-Default-playerInfo-500-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                        </article>
+                      </div>
+                      <hr>
+                    <div id="api-Default-townInfo">
+                      <article id="api-Default-townInfo-0" data-group="User" data-name="townInfo" data-version="0">
+                        <div class="pull-left">
+                          <h1>townInfo</h1>
+                          <p>Get the information for a specific town</p>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                        <p></p>
+                        <p class="marked"></p>
+                        <p></p>
+                        <br />
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/towns/{townID}</span></code></pre>
+                        <p>
+                          <h3>Usage and SDK Samples</h3>
+                        </p>
+                        <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active"><a href="#examples-Default-townInfo-0-curl">Curl</a></li>
+                          <li class=""><a href="#examples-Default-townInfo-0-java">Java</a></li>
+                          <li class=""><a href="#examples-Default-townInfo-0-javascript">JavaScript</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="examples-Default-townInfo-0-curl">
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET \
+-H "X-Merc-User: [[apiKey]]" \
+-H "Token: [[apiKey]]" \
+ -H "Accept: application/json" \
+ "https://play.mercatorio.io/api/towns/{townID}"
+</code></pre>
+                          </div>
+                          <div class="tab-pane" id="examples-Default-townInfo-0-java">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.*;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+import java.io.File;
+import java.util.*;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+        // Configure API key authorization: Merc_User
+        ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+        Merc_User.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Merc_User.setApiKeyPrefix("Token");
+
+        // Configure API key authorization: Bearer_Token
+        ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+        Bearer_Token.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Bearer_Token.setApiKeyPrefix("Token");
+
+        // Create an instance of the API class
+        DefaultApi apiInstance = new DefaultApi();
+        String townID = townID_example; // String | 
+
+        try {
+            Town result = apiInstance.townInfo(townID);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#townInfo");
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-townInfo-0-dart">
+                            <pre class="prettyprint"><code class="language-dart">import 'package:openapi/api.dart';
+
+final api_instance = DefaultApi();
+
+final String townID = new String(); // String | 
+
+try {
+    final result = await api_instance.townInfo(townID);
+    print(result);
+} catch (e) {
+    print('Exception when calling DefaultApi->townInfo: $e\n');
+}
+
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-townInfo-0-android">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        DefaultApi apiInstance = new DefaultApi();
+        String townID = townID_example; // String | 
+
+        try {
+            Town result = apiInstance.townInfo(townID);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#townInfo");
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                          </div>
+  <!--
+  <div class="tab-pane" id="examples-Default-townInfo-0-groovy">
+  <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+  </div> -->
+                            <div class="tab-pane" id="examples-Default-townInfo-0-objc">
+                              <pre class="prettyprint"><code class="language-cpp">Configuration *apiConfig = [Configuration sharedConfig];
+
+// Configure API key authorization: (authentication scheme: Merc_User)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"X-Merc-User"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"X-Merc-User"];
+
+// Configure API key authorization: (authentication scheme: Bearer_Token)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"Token"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"Token"];
+
+
+// Create an instance of the API class
+DefaultApi *apiInstance = [[DefaultApi alloc] init];
+String *townID = townID_example; //  (default to null)
+
+// Get the information for a specific town
+[apiInstance townInfoWith:townID
+              completionHandler: ^(Town output, NSError* error) {
+    if (output) {
+        NSLog(@"%@", output);
+    }
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+}];
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-townInfo-0-javascript">
+                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio.js');
+var defaultClient = MercatorioApi.ApiClient.instance;
+
+// Configure API key authorization: Merc_User
+var Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Merc_User.apiKeyPrefix['X-Merc-User'] = "Token";
+
+// Configure API key authorization: Bearer_Token
+var Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer_Token.apiKeyPrefix['Token'] = "Token";
+
+// Create an instance of the API class
+var api = new MercatorioApi.DefaultApi()
+var townID = townID_example; // {String} 
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.townInfo(townID, callback);
+</code></pre>
+                            </div>
+
+                            <!--<div class="tab-pane" id="examples-Default-townInfo-0-angular">
+              <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+            </div>-->
+                            <div class="tab-pane" id="examples-Default-townInfo-0-csharp">
+                              <pre class="prettyprint"><code class="language-cs">using System;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using org.mercatorio_tools.mercatorio_java;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class townInfoExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Merc_User
+            Configuration.Default.ApiKey.Add("X-Merc-User", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("X-Merc-User", "Bearer");
+            // Configure API key authorization: Bearer_Token
+            Configuration.Default.ApiKey.Add("Token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Token", "Bearer");
+
+            // Create an instance of the API class
+            var apiInstance = new DefaultApi();
+            var townID = townID_example;  // String |  (default to null)
+
+            try {
+                // Get the information for a specific town
+                Town result = apiInstance.townInfo(townID);
+                Debug.WriteLine(result);
+            } catch (Exception e) {
+                Debug.Print("Exception when calling DefaultApi.townInfo: " + e.Message );
+            }
+        }
+    }
+}
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-townInfo-0-php">
+                              <pre class="prettyprint"><code class="language-php"><&#63;php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Merc_User
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Merc-User', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Merc-User', 'Bearer');
+
+// Configure API key authorization: Bearer_Token
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Token', 'Bearer');
+
+// Create an instance of the API class
+$api_instance = new OpenAPITools\Client\Api\DefaultApi();
+$townID = townID_example; // String | 
+
+try {
+    $result = $api_instance->townInfo($townID);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->townInfo: ', $e->getMessage(), PHP_EOL;
+}
+?></code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-townInfo-0-perl">
+                              <pre class="prettyprint"><code class="language-perl">use Data::Dumper;
+use WWW::OPenAPIClient::Configuration;
+use WWW::OPenAPIClient::DefaultApi;
+
+# Configure API key authorization: Merc_User
+$WWW::OPenAPIClient::Configuration::api_key->{'X-Merc-User'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'X-Merc-User'} = "Bearer";
+
+# Configure API key authorization: Bearer_Token
+$WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'Token'} = "Bearer";
+
+# Create an instance of the API class
+my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
+my $townID = townID_example; # String | 
+
+eval {
+    my $result = $api_instance->townInfo(townID => $townID);
+    print Dumper($result);
+};
+if ($@) {
+    warn "Exception when calling DefaultApi->townInfo: $@\n";
+}</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-townInfo-0-python">
+                              <pre class="prettyprint"><code class="language-python">from __future__ import print_statement
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Merc_User
+openapi_client.configuration.api_key['X-Merc-User'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['X-Merc-User'] = 'Bearer'
+
+# Configure API key authorization: Bearer_Token
+openapi_client.configuration.api_key['Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Create an instance of the API class
+api_instance = openapi_client.DefaultApi()
+townID = townID_example # String |  (default to null)
+
+try:
+    # Get the information for a specific town
+    api_response = api_instance.town_info(townID)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->townInfo: %s\n" % e)</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-townInfo-0-rust">
+                              <pre class="prettyprint"><code class="language-rust">extern crate DefaultApi;
+
+pub fn main() {
+    let townID = townID_example; // String
+
+    let mut context = DefaultApi::Context::default();
+    let result = client.townInfo(townID, &context).wait();
+
+    println!("{:?}", result);
+}
+</code></pre>
+                            </div>
+                          </div>
+
+                          <h2>Scopes</h2>
+                          <table>
+                            
+                          </table>
+
+                          <h2>Parameters</h2>
+
+                            <div class="methodsubtabletitle">Path parameters</div>
+                            <table id="methodsubtable">
+                                <tr>
+                                  <th width="150px">Name</th>
+                                  <th>Description</th>
+                                </tr>
+                                  <tr><td style="width:150px;">townID*</td>
+<td>
+
+
+    <div id="d2e199_townInfo_townID">
+        <div class="json-schema-view">
+            <div class="primitive">
+                <span class="type">
+                    String
+                </span>
+
+            </div>
+                <div class="inner required">
+                    Required
+                </div>
+        </div>
+    </div>
+</td>
+</tr>
+
+                            </table>
+
+
+
+
+
+                          <h2>Responses</h2>
+                            <h3 id="examples-Default-townInfo-title-200"></h3>
+                            <p id="examples-Default-townInfo-description-200" class="marked"></p>
+                            <script>
+                              var responseDefault200_description = `The information for a specific town`;
+                              var responseDefault200_description_break = responseDefault200_description.indexOf('\n');
+                              if (responseDefault200_description_break == -1) {
+                                $("#examples-Default-townInfo-title-200").text("Status: 200 - " + responseDefault200_description);
+                              } else {
+                                $("#examples-Default-townInfo-title-200").text("Status: 200 - " + responseDefault200_description.substring(0, responseDefault200_description_break));
+                                $("#examples-Default-townInfo-description-200").html(responseDefault200_description.substring(responseDefault200_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-townInfo-200" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-townInfo-200-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-townInfo-200-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-townInfo-200-schema">
+                                <div id="responses-Default-townInfo-schema-200" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "The information for a specific town",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Town"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-townInfo-200-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-townInfo-schema-200');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-townInfo-200-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                            <h3 id="examples-Default-townInfo-title-404"></h3>
+                            <p id="examples-Default-townInfo-description-404" class="marked"></p>
+                            <script>
+                              var responseDefault404_description = `No town found`;
+                              var responseDefault404_description_break = responseDefault404_description.indexOf('\n');
+                              if (responseDefault404_description_break == -1) {
+                                $("#examples-Default-townInfo-title-404").text("Status: 404 - " + responseDefault404_description);
+                              } else {
+                                $("#examples-Default-townInfo-title-404").text("Status: 404 - " + responseDefault404_description.substring(0, responseDefault404_description_break));
+                                $("#examples-Default-townInfo-description-404").html(responseDefault404_description.substring(responseDefault404_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-townInfo-404" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-townInfo-404-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-townInfo-404-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-townInfo-404-schema">
+                                <div id="responses-Default-townInfo-schema-404" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "No town found",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Error"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-townInfo-404-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-townInfo-schema-404');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-townInfo-404-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                            <h3 id="examples-Default-townInfo-title-500"></h3>
+                            <p id="examples-Default-townInfo-description-500" class="marked"></p>
+                            <script>
+                              var responseDefault500_description = `Unexpected error`;
+                              var responseDefault500_description_break = responseDefault500_description.indexOf('\n');
+                              if (responseDefault500_description_break == -1) {
+                                $("#examples-Default-townInfo-title-500").text("Status: 500 - " + responseDefault500_description);
+                              } else {
+                                $("#examples-Default-townInfo-title-500").text("Status: 500 - " + responseDefault500_description.substring(0, responseDefault500_description_break));
+                                $("#examples-Default-townInfo-description-500").html(responseDefault500_description.substring(responseDefault500_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-townInfo-500" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-townInfo-500-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-townInfo-500-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-townInfo-500-schema">
+                                <div id="responses-Default-townInfo-schema-500" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "Unexpected error",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Error"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-townInfo-500-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-townInfo-schema-500');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-townInfo-500-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                        </article>
+                      </div>
+                      <hr>
+                    <div id="api-Default-towns">
+                      <article id="api-Default-towns-0" data-group="User" data-name="towns" data-version="0">
+                        <div class="pull-left">
+                          <h1>towns</h1>
+                          <p>Get the list of all towns on the map, with their corresponding information</p>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                        <p></p>
+                        <p class="marked"></p>
+                        <p></p>
+                        <br />
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/towns</span></code></pre>
+                        <p>
+                          <h3>Usage and SDK Samples</h3>
+                        </p>
+                        <ul class="nav nav-tabs nav-tabs-examples">
+                          <li class="active"><a href="#examples-Default-towns-0-curl">Curl</a></li>
+                          <li class=""><a href="#examples-Default-towns-0-java">Java</a></li>
+                          <li class=""><a href="#examples-Default-towns-0-javascript">JavaScript</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="examples-Default-towns-0-curl">
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET \
+-H "X-Merc-User: [[apiKey]]" \
+-H "Token: [[apiKey]]" \
+ -H "Accept: application/json" \
+ "https://play.mercatorio.io/api/towns"
+</code></pre>
+                          </div>
+                          <div class="tab-pane" id="examples-Default-towns-0-java">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.*;
+import org.mercatorio_tools.mercatorio_java.auth.*;
+import org.mercatorio_tools.mercatorio_java.model.*;
+import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+import java.io.File;
+import java.util.*;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+        // Configure API key authorization: Merc_User
+        ApiKeyAuth Merc_User = (ApiKeyAuth) defaultClient.getAuthentication("Merc_User");
+        Merc_User.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Merc_User.setApiKeyPrefix("Token");
+
+        // Configure API key authorization: Bearer_Token
+        ApiKeyAuth Bearer_Token = (ApiKeyAuth) defaultClient.getAuthentication("Bearer_Token");
+        Bearer_Token.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //Bearer_Token.setApiKeyPrefix("Token");
+
+        // Create an instance of the API class
+        DefaultApi apiInstance = new DefaultApi();
+
+        try {
+            array[TownSimple] result = apiInstance.towns();
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#towns");
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-towns-0-dart">
+                            <pre class="prettyprint"><code class="language-dart">import 'package:openapi/api.dart';
+
+final api_instance = DefaultApi();
+
+
+try {
+    final result = await api_instance.towns();
+    print(result);
+} catch (e) {
+    print('Exception when calling DefaultApi->towns: $e\n');
+}
+
+</code></pre>
+                          </div>
+
+                          <div class="tab-pane" id="examples-Default-towns-0-android">
+                            <pre class="prettyprint"><code class="language-java">import org.mercatorio_tools.mercatorio_java.api.DefaultApi;
+
+public class DefaultApiExample {
+    public static void main(String[] args) {
+        DefaultApi apiInstance = new DefaultApi();
+
+        try {
+            array[TownSimple] result = apiInstance.towns();
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling DefaultApi#towns");
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+                          </div>
+  <!--
+  <div class="tab-pane" id="examples-Default-towns-0-groovy">
+  <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+  </div> -->
+                            <div class="tab-pane" id="examples-Default-towns-0-objc">
+                              <pre class="prettyprint"><code class="language-cpp">Configuration *apiConfig = [Configuration sharedConfig];
+
+// Configure API key authorization: (authentication scheme: Merc_User)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"X-Merc-User"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"X-Merc-User"];
+
+// Configure API key authorization: (authentication scheme: Bearer_Token)
+[apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"Token"];
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"Token"];
+
+
+// Create an instance of the API class
+DefaultApi *apiInstance = [[DefaultApi alloc] init];
+
+// Get the list of all towns on the map, with their corresponding information
+[apiInstance townsWithCompletionHandler: 
+              ^(array[TownSimple] output, NSError* error) {
+    if (output) {
+        NSLog(@"%@", output);
+    }
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+}];
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-towns-0-javascript">
+                              <pre class="prettyprint"><code class="language-js">var MercatorioApi = require('mercatorio.js');
+var defaultClient = MercatorioApi.ApiClient.instance;
+
+// Configure API key authorization: Merc_User
+var Merc_User = defaultClient.authentications['Merc_User'];
+Merc_User.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Merc_User.apiKeyPrefix['X-Merc-User'] = "Token";
+
+// Configure API key authorization: Bearer_Token
+var Bearer_Token = defaultClient.authentications['Bearer_Token'];
+Bearer_Token.apiKey = "YOUR API KEY";
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer_Token.apiKeyPrefix['Token'] = "Token";
+
+// Create an instance of the API class
+var api = new MercatorioApi.DefaultApi()
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.towns(callback);
+</code></pre>
+                            </div>
+
+                            <!--<div class="tab-pane" id="examples-Default-towns-0-angular">
+              <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
+            </div>-->
+                            <div class="tab-pane" id="examples-Default-towns-0-csharp">
+                              <pre class="prettyprint"><code class="language-cs">using System;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using org.mercatorio_tools.mercatorio_java;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class townsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: Merc_User
+            Configuration.Default.ApiKey.Add("X-Merc-User", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("X-Merc-User", "Bearer");
+            // Configure API key authorization: Bearer_Token
+            Configuration.Default.ApiKey.Add("Token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("Token", "Bearer");
+
+            // Create an instance of the API class
+            var apiInstance = new DefaultApi();
+
+            try {
+                // Get the list of all towns on the map, with their corresponding information
+                array[TownSimple] result = apiInstance.towns();
+                Debug.WriteLine(result);
+            } catch (Exception e) {
+                Debug.Print("Exception when calling DefaultApi.towns: " + e.Message );
+            }
+        }
+    }
+}
+</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-towns-0-php">
+                              <pre class="prettyprint"><code class="language-php"><&#63;php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Merc_User
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Merc-User', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Merc-User', 'Bearer');
+
+// Configure API key authorization: Bearer_Token
+OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Token', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Token', 'Bearer');
+
+// Create an instance of the API class
+$api_instance = new OpenAPITools\Client\Api\DefaultApi();
+
+try {
+    $result = $api_instance->towns();
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->towns: ', $e->getMessage(), PHP_EOL;
+}
+?></code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-towns-0-perl">
+                              <pre class="prettyprint"><code class="language-perl">use Data::Dumper;
+use WWW::OPenAPIClient::Configuration;
+use WWW::OPenAPIClient::DefaultApi;
+
+# Configure API key authorization: Merc_User
+$WWW::OPenAPIClient::Configuration::api_key->{'X-Merc-User'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'X-Merc-User'} = "Bearer";
+
+# Configure API key authorization: Bearer_Token
+$WWW::OPenAPIClient::Configuration::api_key->{'Token'} = 'YOUR_API_KEY';
+# uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+#$WWW::OPenAPIClient::Configuration::api_key_prefix->{'Token'} = "Bearer";
+
+# Create an instance of the API class
+my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
+
+eval {
+    my $result = $api_instance->towns();
+    print Dumper($result);
+};
+if ($@) {
+    warn "Exception when calling DefaultApi->towns: $@\n";
+}</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-towns-0-python">
+                              <pre class="prettyprint"><code class="language-python">from __future__ import print_statement
+import time
+import openapi_client
+from openapi_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Merc_User
+openapi_client.configuration.api_key['X-Merc-User'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['X-Merc-User'] = 'Bearer'
+
+# Configure API key authorization: Bearer_Token
+openapi_client.configuration.api_key['Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# openapi_client.configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Create an instance of the API class
+api_instance = openapi_client.DefaultApi()
+
+try:
+    # Get the list of all towns on the map, with their corresponding information
+    api_response = api_instance.towns()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->towns: %s\n" % e)</code></pre>
+                            </div>
+
+                            <div class="tab-pane" id="examples-Default-towns-0-rust">
+                              <pre class="prettyprint"><code class="language-rust">extern crate DefaultApi;
+
+pub fn main() {
+
+    let mut context = DefaultApi::Context::default();
+    let result = client.towns(&context).wait();
+
+    println!("{:?}", result);
+}
+</code></pre>
+                            </div>
+                          </div>
+
+                          <h2>Scopes</h2>
+                          <table>
+                            
+                          </table>
+
+                          <h2>Parameters</h2>
+
+
+
+
+
+
+                          <h2>Responses</h2>
+                            <h3 id="examples-Default-towns-title-200"></h3>
+                            <p id="examples-Default-towns-description-200" class="marked"></p>
+                            <script>
+                              var responseDefault200_description = `The list of all towns on the map, with their corresponding information`;
+                              var responseDefault200_description_break = responseDefault200_description.indexOf('\n');
+                              if (responseDefault200_description_break == -1) {
+                                $("#examples-Default-towns-title-200").text("Status: 200 - " + responseDefault200_description);
+                              } else {
+                                $("#examples-Default-towns-title-200").text("Status: 200 - " + responseDefault200_description.substring(0, responseDefault200_description_break));
+                                $("#examples-Default-towns-description-200").html(responseDefault200_description.substring(responseDefault200_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-towns-200" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-towns-200-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-towns-200-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-towns-200-schema">
+                                <div id="responses-Default-towns-schema-200" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "The list of all towns on the map, with their corresponding information",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Towns"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-towns-200-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-towns-schema-200');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-towns-200-schema-data' type='hidden' value=''></input>
+                              </div>
+                            </div>
+                            <h3 id="examples-Default-towns-title-500"></h3>
+                            <p id="examples-Default-towns-description-500" class="marked"></p>
+                            <script>
+                              var responseDefault500_description = `Unexpected error`;
+                              var responseDefault500_description_break = responseDefault500_description.indexOf('\n');
+                              if (responseDefault500_description_break == -1) {
+                                $("#examples-Default-towns-title-500").text("Status: 500 - " + responseDefault500_description);
+                              } else {
+                                $("#examples-Default-towns-title-500").text("Status: 500 - " + responseDefault500_description.substring(0, responseDefault500_description_break));
+                                $("#examples-Default-towns-description-500").html(responseDefault500_description.substring(responseDefault500_description_break));
+                              }
+                            </script>
+
+
+                            <ul id="responses-detail-Default-towns-500" class="nav nav-tabs nav-tabs-examples" >
+                                <li class="active">
+                                  <a data-toggle="tab" href="#responses-Default-towns-500-schema">Schema</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                            <div class="tab-content" id="responses-Default-towns-500-wrapper" style='margin-bottom: 10px;'>
+                              <div class="tab-pane active" id="responses-Default-towns-500-schema">
+                                <div id="responses-Default-towns-schema-500" class="exampleStyle">
+                                  <script>
+                                    $(document).ready(function() {
+                                      var schemaWrapper = {
+  "description" : "Unexpected error",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "$ref" : "#/components/schemas/Error"
+      }
+    }
+  }
+};
+                                      var schema = findNode('schema',schemaWrapper).schema;
+                                      if (!schema) {
+                                        schema = schemaWrapper.schema;
+                                      }
+                                      if (schema == null) {
+                                        return;
+                                      }
+                                      if (schema.$ref != null) {
+                                        schema = defsParser.$refs.get(schema.$ref);
+                                        if (schema.properties != null) {
+                                          Object.keys(schema.properties).forEach( (item) => {
+                                            if (schema.properties[item].$ref != null) {
+                                              schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
+                                            }
+                                          });
+                                        }
+                                      } else if (schema.items != null && schema.items.$ref != null) {
+                                        schema.items = defsParser.$refs.get(schema.items.$ref);
+                                      } else {
+                                        schemaWrapper.definitions = Object.assign({}, defs);
+                                        $RefParser.dereference(schemaWrapper).catch(function(err) {
+                                          console.log(err);
+                                        });
+                                      }
+
+                                      var view = new JSONSchemaView(schema, 3);
+                                      $('#responses-Default-towns-500-schema-data').val(JSON.stringify(schema));
+                                      var result = $('#responses-Default-towns-schema-500');
+                                      result.empty();
+                                      result.append(view.render());
+                                    });
+                                  </script>
+                                </div>
+                                <input id='responses-Default-towns-500-schema-data' type='hidden' value=''></input>
                               </div>
                             </div>
                         </article>
