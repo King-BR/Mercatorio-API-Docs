@@ -28,8 +28,12 @@ import java.io.IOException;
 
 
 import org.openapitools.client.model.Building;
+import org.openapitools.client.model.Business;
 import org.openapitools.client.model.Error;
+import org.openapitools.client.model.MapRegion;
 import org.openapitools.client.model.Player;
+import org.openapitools.client.model.Town;
+import org.openapitools.client.model.TownSimple;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -210,6 +214,262 @@ public class DefaultApi {
         return localVarCall;
     }
     /**
+     * Build call for businessInfo
+     * @param businessID  (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The business corresponding to the businessID used </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No business found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call businessInfoCall(@javax.annotation.Nonnull String businessID, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/businesses/{businessID}"
+            .replace("{" + "businessID" + "}", localVarApiClient.escapeString(businessID.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "Merc_User", "Bearer_Token" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call businessInfoValidateBeforeCall(@javax.annotation.Nonnull String businessID, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'businessID' is set
+        if (businessID == null) {
+            throw new ApiException("Missing the required parameter 'businessID' when calling businessInfo(Async)");
+        }
+
+        return businessInfoCall(businessID, _callback);
+
+    }
+
+    /**
+     * Get the business information
+     * 
+     * @param businessID  (required)
+     * @return Business
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The business corresponding to the businessID used </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No business found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public Business businessInfo(@javax.annotation.Nonnull String businessID) throws ApiException {
+        ApiResponse<Business> localVarResp = businessInfoWithHttpInfo(businessID);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Get the business information
+     * 
+     * @param businessID  (required)
+     * @return ApiResponse&lt;Business&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The business corresponding to the businessID used </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No business found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<Business> businessInfoWithHttpInfo(@javax.annotation.Nonnull String businessID) throws ApiException {
+        okhttp3.Call localVarCall = businessInfoValidateBeforeCall(businessID, null);
+        Type localVarReturnType = new TypeToken<Business>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Get the business information (asynchronously)
+     * 
+     * @param businessID  (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The business corresponding to the businessID used </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No business found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call businessInfoAsync(@javax.annotation.Nonnull String businessID, final ApiCallback<Business> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = businessInfoValidateBeforeCall(businessID, _callback);
+        Type localVarReturnType = new TypeToken<Business>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for mapRegions
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all regions on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call mapRegionsCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/map/regions";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "Merc_User", "Bearer_Token" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call mapRegionsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return mapRegionsCall(_callback);
+
+    }
+
+    /**
+     * Get the list of all regions on the map, with their corresponding information
+     * 
+     * @return List&lt;MapRegion&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all regions on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public List<MapRegion> mapRegions() throws ApiException {
+        ApiResponse<List<MapRegion>> localVarResp = mapRegionsWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * Get the list of all regions on the map, with their corresponding information
+     * 
+     * @return ApiResponse&lt;List&lt;MapRegion&gt;&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all regions on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<List<MapRegion>> mapRegionsWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = mapRegionsValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<List<MapRegion>>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Get the list of all regions on the map, with their corresponding information (asynchronously)
+     * 
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all regions on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call mapRegionsAsync(final ApiCallback<List<MapRegion>> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = mapRegionsValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<List<MapRegion>>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for playerInfo
      * @param _callback Callback for upload/download progress
      * @return Call to execute
@@ -331,6 +591,262 @@ public class DefaultApi {
 
         okhttp3.Call localVarCall = playerInfoValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<Player>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for townInfo
+     * @param townID  (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The information for a specific town </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No town found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call townInfoCall(@javax.annotation.Nonnull String townID, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/towns/{townID}"
+            .replace("{" + "townID" + "}", localVarApiClient.escapeString(townID.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "Merc_User", "Bearer_Token" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call townInfoValidateBeforeCall(@javax.annotation.Nonnull String townID, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'townID' is set
+        if (townID == null) {
+            throw new ApiException("Missing the required parameter 'townID' when calling townInfo(Async)");
+        }
+
+        return townInfoCall(townID, _callback);
+
+    }
+
+    /**
+     * Get the information for a specific town
+     * 
+     * @param townID  (required)
+     * @return Town
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The information for a specific town </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No town found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public Town townInfo(@javax.annotation.Nonnull String townID) throws ApiException {
+        ApiResponse<Town> localVarResp = townInfoWithHttpInfo(townID);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Get the information for a specific town
+     * 
+     * @param townID  (required)
+     * @return ApiResponse&lt;Town&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The information for a specific town </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No town found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<Town> townInfoWithHttpInfo(@javax.annotation.Nonnull String townID) throws ApiException {
+        okhttp3.Call localVarCall = townInfoValidateBeforeCall(townID, null);
+        Type localVarReturnType = new TypeToken<Town>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Get the information for a specific town (asynchronously)
+     * 
+     * @param townID  (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The information for a specific town </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No town found </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call townInfoAsync(@javax.annotation.Nonnull String townID, final ApiCallback<Town> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = townInfoValidateBeforeCall(townID, _callback);
+        Type localVarReturnType = new TypeToken<Town>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for towns
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all towns on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call townsCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/towns";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "Merc_User", "Bearer_Token" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call townsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return townsCall(_callback);
+
+    }
+
+    /**
+     * Get the list of all towns on the map, with their corresponding information
+     * 
+     * @return List&lt;TownSimple&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all towns on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public List<TownSimple> towns() throws ApiException {
+        ApiResponse<List<TownSimple>> localVarResp = townsWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * Get the list of all towns on the map, with their corresponding information
+     * 
+     * @return ApiResponse&lt;List&lt;TownSimple&gt;&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all towns on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<List<TownSimple>> townsWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = townsValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<List<TownSimple>>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Get the list of all towns on the map, with their corresponding information (asynchronously)
+     * 
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> The list of all towns on the map, with their corresponding information </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Unexpected error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call townsAsync(final ApiCallback<List<TownSimple>> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = townsValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<List<TownSimple>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -14,8 +14,12 @@
 
 import ApiClient from "../ApiClient";
 import Building from '../model/Building';
+import Business from '../model/Business';
 import Error from '../model/Error';
+import MapRegion from '../model/MapRegion';
 import Player from '../model/Player';
+import Town from '../model/Town';
+import TownSimple from '../model/TownSimple';
 
 /**
 * Default service.
@@ -79,6 +83,84 @@ export default class DefaultApi {
     }
 
     /**
+     * Callback function to receive the result of the businessInfo operation.
+     * @callback module:api/DefaultApi~businessInfoCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/Business} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get the business information
+     * @param {String} businessID 
+     * @param {module:api/DefaultApi~businessInfoCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/Business}
+     */
+    businessInfo(businessID, callback) {
+      let postBody = null;
+      // verify the required parameter 'businessID' is set
+      if (businessID === undefined || businessID === null) {
+        throw new Error("Missing the required parameter 'businessID' when calling businessInfo");
+      }
+
+      let pathParams = {
+        'businessID': businessID
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Merc_User', 'Bearer_Token'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = Business;
+      return this.apiClient.callApi(
+        '/businesses/{businessID}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the mapRegions operation.
+     * @callback module:api/DefaultApi~mapRegionsCallback
+     * @param {String} error Error message, if any.
+     * @param {Array.<module:model/MapRegion>} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get the list of all regions on the map, with their corresponding information
+     * @param {module:api/DefaultApi~mapRegionsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:model/MapRegion>}
+     */
+    mapRegions(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Merc_User', 'Bearer_Token'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = [MapRegion];
+      return this.apiClient.callApi(
+        '/map/regions', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the playerInfo operation.
      * @callback module:api/DefaultApi~playerInfoCallback
      * @param {String} error Error message, if any.
@@ -109,6 +191,84 @@ export default class DefaultApi {
       let returnType = Player;
       return this.apiClient.callApi(
         '/player', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the townInfo operation.
+     * @callback module:api/DefaultApi~townInfoCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/Town} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get the information for a specific town
+     * @param {String} townID 
+     * @param {module:api/DefaultApi~townInfoCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/Town}
+     */
+    townInfo(townID, callback) {
+      let postBody = null;
+      // verify the required parameter 'townID' is set
+      if (townID === undefined || townID === null) {
+        throw new Error("Missing the required parameter 'townID' when calling townInfo");
+      }
+
+      let pathParams = {
+        'townID': townID
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Merc_User', 'Bearer_Token'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = Town;
+      return this.apiClient.callApi(
+        '/towns/{townID}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the towns operation.
+     * @callback module:api/DefaultApi~townsCallback
+     * @param {String} error Error message, if any.
+     * @param {Array.<module:model/TownSimple>} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get the list of all towns on the map, with their corresponding information
+     * @param {module:api/DefaultApi~townsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:model/TownSimple>}
+     */
+    towns(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Merc_User', 'Bearer_Token'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = [TownSimple];
+      return this.apiClient.callApi(
+        '/towns', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

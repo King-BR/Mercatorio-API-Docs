@@ -58,10 +58,50 @@
         done();
       });
     });
+    describe('businessInfo', function() {
+      it('should call businessInfo successfully', function(done) {
+        //uncomment below and update the code to test businessInfo
+        //instance.businessInfo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('mapRegions', function() {
+      it('should call mapRegions successfully', function(done) {
+        //uncomment below and update the code to test mapRegions
+        //instance.mapRegions(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('playerInfo', function() {
       it('should call playerInfo successfully', function(done) {
         //uncomment below and update the code to test playerInfo
         //instance.playerInfo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('townInfo', function() {
+      it('should call townInfo successfully', function(done) {
+        //uncomment below and update the code to test townInfo
+        //instance.townInfo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('towns', function() {
+      it('should call towns successfully', function(done) {
+        //uncomment below and update the code to test towns
+        //instance.towns(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

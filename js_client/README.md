@@ -133,7 +133,11 @@ All URIs are relative to *https://play.mercatorio.io/api*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *mercatoriojs.DefaultApi* | [**buildingInfo**](docs/DefaultApi.md#buildingInfo) | **GET** /buildings/{buildingID} | Get the building information
+*mercatoriojs.DefaultApi* | [**businessInfo**](docs/DefaultApi.md#businessInfo) | **GET** /businesses/{businessID} | Get the business information
+*mercatoriojs.DefaultApi* | [**mapRegions**](docs/DefaultApi.md#mapRegions) | **GET** /map/regions | Get the list of all regions on the map, with their corresponding information
 *mercatoriojs.DefaultApi* | [**playerInfo**](docs/DefaultApi.md#playerInfo) | **GET** /player | Get the player information
+*mercatoriojs.DefaultApi* | [**townInfo**](docs/DefaultApi.md#townInfo) | **GET** /towns/{townID} | Get the information for a specific town
+*mercatoriojs.DefaultApi* | [**towns**](docs/DefaultApi.md#towns) | **GET** /towns | Get the list of all towns on the map, with their corresponding information
 
 
 ## Documentation for Models
@@ -143,7 +147,13 @@ Class | Method | HTTP request | Description
  - [mercatoriojs.BuildingDeliveryCost](docs/BuildingDeliveryCost.md)
  - [mercatoriojs.BuildingPreviousOperation](docs/BuildingPreviousOperation.md)
  - [mercatoriojs.BuildingProducer](docs/BuildingProducer.md)
+ - [mercatoriojs.Business](docs/Business.md)
+ - [mercatoriojs.BusinessAccount](docs/BusinessAccount.md)
+ - [mercatoriojs.BusinessBuildings](docs/BusinessBuildings.md)
+ - [mercatoriojs.CommonersTownState](docs/CommonersTownState.md)
  - [mercatoriojs.ConstructionSettings](docs/ConstructionSettings.md)
+ - [mercatoriojs.DomainPlot](docs/DomainPlot.md)
+ - [mercatoriojs.DomainPlotStructure](docs/DomainPlotStructure.md)
  - [mercatoriojs.Error](docs/Error.md)
  - [mercatoriojs.Holdings](docs/Holdings.md)
  - [mercatoriojs.Household](docs/Household.md)
@@ -155,6 +165,7 @@ Class | Method | HTTP request | Description
  - [mercatoriojs.InventoryFlows](docs/InventoryFlows.md)
  - [mercatoriojs.InventoryPastFlows](docs/InventoryPastFlows.md)
  - [mercatoriojs.Location](docs/Location.md)
+ - [mercatoriojs.MapRegion](docs/MapRegion.md)
  - [mercatoriojs.Player](docs/Player.md)
  - [mercatoriojs.PlayerActivity](docs/PlayerActivity.md)
  - [mercatoriojs.PlayerSettings](docs/PlayerSettings.md)
@@ -168,6 +179,20 @@ Class | Method | HTTP request | Description
  - [mercatoriojs.ProductPastFlow](docs/ProductPastFlow.md)
  - [mercatoriojs.Specialization](docs/Specialization.md)
  - [mercatoriojs.SpecializationPoints](docs/SpecializationPoints.md)
+ - [mercatoriojs.Town](docs/Town.md)
+ - [mercatoriojs.TownChurch](docs/TownChurch.md)
+ - [mercatoriojs.TownCommoners](docs/TownCommoners.md)
+ - [mercatoriojs.TownCommonersIncome](docs/TownCommonersIncome.md)
+ - [mercatoriojs.TownCommonersIncomeItems](docs/TownCommonersIncomeItems.md)
+ - [mercatoriojs.TownCommonersSpending](docs/TownCommonersSpending.md)
+ - [mercatoriojs.TownCulture](docs/TownCulture.md)
+ - [mercatoriojs.TownDomain](docs/TownDomain.md)
+ - [mercatoriojs.TownGovernment](docs/TownGovernment.md)
+ - [mercatoriojs.TownGovernmentSpending](docs/TownGovernmentSpending.md)
+ - [mercatoriojs.TownGovernmentTaxesCollected](docs/TownGovernmentTaxesCollected.md)
+ - [mercatoriojs.TownNavigationZones](docs/TownNavigationZones.md)
+ - [mercatoriojs.TownSimple](docs/TownSimple.md)
+ - [mercatoriojs.TownState](docs/TownState.md)
  - [mercatoriojs.Worker](docs/Worker.md)
  - [mercatoriojs.WorkerSkills](docs/WorkerSkills.md)
 

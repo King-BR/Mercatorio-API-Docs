@@ -2,7 +2,7 @@
 
 Mercatorio API
 - API version: 1.0.0
-  - Build date: 2026-02-17T01:19:29.594938500-03:00[America/Fortaleza]
+  - Build date: 2026-02-17T16:48:14.721213200-03:00[America/Fortaleza]
   - Generator version: 7.19.0
 
 API to interact with the game of Mercatorio
@@ -129,7 +129,11 @@ All URIs are relative to *https://play.mercatorio.io/api*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *DefaultApi* | [**buildingInfo**](docs/DefaultApi.md#buildingInfo) | **GET** /buildings/{buildingID} | Get the building information
+*DefaultApi* | [**businessInfo**](docs/DefaultApi.md#businessInfo) | **GET** /businesses/{businessID} | Get the business information
+*DefaultApi* | [**mapRegions**](docs/DefaultApi.md#mapRegions) | **GET** /map/regions | Get the list of all regions on the map, with their corresponding information
 *DefaultApi* | [**playerInfo**](docs/DefaultApi.md#playerInfo) | **GET** /player | Get the player information
+*DefaultApi* | [**townInfo**](docs/DefaultApi.md#townInfo) | **GET** /towns/{townID} | Get the information for a specific town
+*DefaultApi* | [**towns**](docs/DefaultApi.md#towns) | **GET** /towns | Get the list of all towns on the map, with their corresponding information
 
 
 ## Documentation for Models
@@ -139,7 +143,13 @@ Class | Method | HTTP request | Description
  - [BuildingDeliveryCost](docs/BuildingDeliveryCost.md)
  - [BuildingPreviousOperation](docs/BuildingPreviousOperation.md)
  - [BuildingProducer](docs/BuildingProducer.md)
+ - [Business](docs/Business.md)
+ - [BusinessAccount](docs/BusinessAccount.md)
+ - [BusinessBuildings](docs/BusinessBuildings.md)
+ - [CommonersTownState](docs/CommonersTownState.md)
  - [ConstructionSettings](docs/ConstructionSettings.md)
+ - [DomainPlot](docs/DomainPlot.md)
+ - [DomainPlotStructure](docs/DomainPlotStructure.md)
  - [Error](docs/Error.md)
  - [Holdings](docs/Holdings.md)
  - [Household](docs/Household.md)
@@ -151,6 +161,7 @@ Class | Method | HTTP request | Description
  - [InventoryFlows](docs/InventoryFlows.md)
  - [InventoryPastFlows](docs/InventoryPastFlows.md)
  - [Location](docs/Location.md)
+ - [MapRegion](docs/MapRegion.md)
  - [Player](docs/Player.md)
  - [PlayerActivity](docs/PlayerActivity.md)
  - [PlayerSettings](docs/PlayerSettings.md)
@@ -164,6 +175,20 @@ Class | Method | HTTP request | Description
  - [ProductPastFlow](docs/ProductPastFlow.md)
  - [Specialization](docs/Specialization.md)
  - [SpecializationPoints](docs/SpecializationPoints.md)
+ - [Town](docs/Town.md)
+ - [TownChurch](docs/TownChurch.md)
+ - [TownCommoners](docs/TownCommoners.md)
+ - [TownCommonersIncome](docs/TownCommonersIncome.md)
+ - [TownCommonersIncomeItems](docs/TownCommonersIncomeItems.md)
+ - [TownCommonersSpending](docs/TownCommonersSpending.md)
+ - [TownCulture](docs/TownCulture.md)
+ - [TownDomain](docs/TownDomain.md)
+ - [TownGovernment](docs/TownGovernment.md)
+ - [TownGovernmentSpending](docs/TownGovernmentSpending.md)
+ - [TownGovernmentTaxesCollected](docs/TownGovernmentTaxesCollected.md)
+ - [TownNavigationZones](docs/TownNavigationZones.md)
+ - [TownSimple](docs/TownSimple.md)
+ - [TownState](docs/TownState.md)
  - [Worker](docs/Worker.md)
  - [WorkerSkills](docs/WorkerSkills.md)
 

@@ -68,6 +68,112 @@ paths:
       summary: Get the building information
       x-accepts:
       - application/json
+  /businesses/{businessID}:
+    get:
+      operationId: businessInfo
+      parameters:
+      - explode: false
+        in: path
+        name: businessID
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Business"
+          description: The business corresponding to the businessID used
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+          description: No business found
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+          description: Unexpected error
+      summary: Get the business information
+      x-accepts:
+      - application/json
+  /map/regions:
+    get:
+      operationId: mapRegions
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MapRegions"
+          description: "The list of all regions on the map, with their corresponding\
+            \ information"
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+          description: Unexpected error
+      summary: "Get the list of all regions on the map, with their corresponding information"
+      x-accepts:
+      - application/json
+  /towns:
+    get:
+      operationId: towns
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Towns"
+          description: "The list of all towns on the map, with their corresponding\
+            \ information"
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+          description: Unexpected error
+      summary: "Get the list of all towns on the map, with their corresponding information"
+      x-accepts:
+      - application/json
+  /towns/{townID}:
+    get:
+      operationId: townInfo
+      parameters:
+      - explode: false
+        in: path
+        name: townID
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Town"
+          description: The information for a specific town
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+          description: No town found
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+          description: Unexpected error
+      summary: Get the information for a specific town
+      x-accepts:
+      - application/json
 components:
   schemas:
     Player:
@@ -42535,16 +42641,6 @@ components:
         unit_cost:
           type: string
       type: object
-    Location:
-      example:
-        x: 6.027456183070403
-        "y": 1.4658129805029452
-      properties:
-        x:
-          type: number
-        "y":
-          type: number
-      type: object
     BuildingDeliveryCost:
       example:
         land_distance: 5.962133916683182
@@ -48235,6 +48331,905 @@ components:
         pace:
           type: number
       type: object
+    MapRegions:
+      items:
+        $ref: "#/components/schemas/MapRegion"
+      type: array
+    Business:
+      example:
+        reference: reference
+        account_id: account_id
+        owner_id: owner_id
+        buildings:
+        - id: 6.027456183070403
+          type: type
+        - id: 6.027456183070403
+          type: type
+        name: name
+        building_ids:
+        - building_ids
+        - building_ids
+        id: id
+        portrait: portrait
+        transport_ids:
+        - transport_ids
+        - transport_ids
+        account:
+          assets:
+            blades:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            harnesses:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            axes:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            bellows:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            cheese:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            cured meat:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tiles:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            coats:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            flour:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tackles:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            timber:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium swords:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            plate armour:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            beer:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            gears:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium cloth:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            sails:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            slaked lime:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            flax fibres:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            nails:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            silver bars:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            milk:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            mouldboards:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            cattle:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            spirits:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            leather:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            malt:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            books:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            raw cloth:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            spinning wheels:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            pickaxes:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium garments:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            wine:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium glassware:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tin ingots:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            bells:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            manure:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            nets:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tin ore:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            protection:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tools:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            clay:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            labour:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            pasties:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            light armour:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            pies:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            copper ore:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            belts:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            casks:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            gold bars:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            bread:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            salt:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            medicine:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            gold ore:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            dyed yarn:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            alembics:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            garments:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            dye:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            glassware:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            fish:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            charcoal:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium axes:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            yarn:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium cheese:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            sculptures:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            wheels:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            wool:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            chisels:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            lead bars:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            wrought iron:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            ox power:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            grindstones:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium ham:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            silver ore:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium sails:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            furniture:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            ham:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            limestone:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            firewood:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            steel ingots:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            cured fish:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            grain:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            hides:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            logs:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            glass:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tar:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            cookware:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            copper ingots:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            resin:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            arms:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium armour:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            cloth:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            rope:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            ploughs:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            carting:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            candles:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            tapestries:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            herbs:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            lathes:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            looms:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            paper:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium steel:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            honey:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            hinges:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            iron ore:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            lodging:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            premium dye:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            dyed cloth:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            butter:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            fleece:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            swords:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            thread:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            windows:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            wax:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            bronze ingots:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            flax plants:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            scythes:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            jewellery:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            stockfish:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            lead ore:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            meat:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+            hop beer:
+              balance: balance
+              reserved: reserved
+              unit_cost: unit_cost
+              capacity: capacity
+          owner_id: owner_id
+          name: name
+          id: id
+          _ts: 0.8008281904610115
+      properties:
+        account:
+          $ref: "#/components/schemas/BusinessAccount"
+        buildings:
+          items:
+            $ref: "#/components/schemas/BusinessBuildings"
+          type: array
+        building_ids:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        reference:
+          type: string
+        name:
+          type: string
+        portrait:
+          type: string
+        account_id:
+          type: string
+        owner_id:
+          type: string
+        transport_ids:
+          items:
+            type: string
+          type: array
+      type: object
+    Towns:
+      items:
+        $ref: "#/components/schemas/TownSimple"
+      type: array
+    Town:
+      example:
+        navigation_zones:
+          NavigationZoneID3: 7.061401241503109
+          NavigationZoneID1: 5.637376656633329
+          NavigationZoneID2: 2.3021358869347655
+        church:
+          contract_ids:
+          - contract_ids
+          - contract_ids
+        center_ids:
+        - 6.027456183070403
+        - 6.027456183070403
+        commoners:
+          income:
+            migration: migration
+            items:
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+          account_id: account_id
+          spending:
+          - name: name
+            satisfaction: satisfaction
+            budget: budget
+            products:
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+          - name: name
+            satisfaction: satisfaction
+            budget: budget
+            products:
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+          town_state:
+            total: total
+            migration: migration
+            health: health
+            prestige: prestige
+          count: 5.962133916683182
+          migration: migration
+        capital_id: capital_id
+        household_ids:
+        - household_ids
+        - household_ids
+        government:
+          account_id: account_id
+          spending:
+          - name: name
+            migration: migration
+            satisfaction: satisfaction
+            budget: budget
+            products:
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+          - name: name
+            migration: migration
+            satisfaction: satisfaction
+            budget: budget
+            products:
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+            - result: result
+              request: request
+              product: product
+              desire: desire
+              bonus: bonus
+              weight: weight
+              budget: budget
+          taxes_collected:
+            transport_fees: transport_fees
+            delivery_fees: delivery_fees
+            payments: payments
+            land_tax: land_tax
+            structure_tax: structure_tax
+        culture:
+          nutrition: nutrition
+          crafting: crafting
+          weaponry: weaponry
+          textile: textile
+          forging: forging
+          maritime: maritime
+          mercantile: mercantile
+        domain:
+          PlotID5:
+            resource: 1.4658129805029452
+            owner_id: owner_id
+            structure:
+              id: id
+              type: type
+              tags:
+              - tags
+              - tags
+          PlotID4:
+            resource: 1.4658129805029452
+            owner_id: owner_id
+            structure:
+              id: id
+              type: type
+              tags:
+              - tags
+              - tags
+          PlotID3:
+            resource: 1.4658129805029452
+            owner_id: owner_id
+            structure:
+              id: id
+              type: type
+              tags:
+              - tags
+              - tags
+          PlotID2:
+            resource: 1.4658129805029452
+            owner_id: owner_id
+            structure:
+              id: id
+              type: type
+              tags:
+              - tags
+              - tags
+          PlotID1:
+            resource: 1.4658129805029452
+            owner_id: owner_id
+            structure:
+              id: id
+              type: type
+              tags:
+              - tags
+              - tags
+        name: name
+        location:
+          x: 6.027456183070403
+          "y": 1.4658129805029452
+        id: id
+        state:
+          total_health: total_health
+          total_prestige: total_prestige
+          population: 9.301444243932576
+        region: 0.8008281904610115
+        _ts: 3.616076749251911
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        location:
+          $ref: "#/components/schemas/Location"
+        region:
+          type: number
+        capital_id:
+          type: string
+        center_ids:
+          items:
+            type: number
+          type: array
+        domain:
+          $ref: "#/components/schemas/TownDomain"
+        household_ids:
+          items:
+            type: string
+          type: array
+        commoners:
+          $ref: "#/components/schemas/TownCommoners"
+        government:
+          $ref: "#/components/schemas/TownGovernment"
+        church:
+          $ref: "#/components/schemas/TownChurch"
+        navigation_zones:
+          $ref: "#/components/schemas/TownNavigationZones"
+        culture:
+          $ref: "#/components/schemas/TownCulture"
+        state:
+          $ref: "#/components/schemas/TownState"
+        _ts:
+          type: number
+      type: object
     BuildingConstruction:
       example:
         reference: reference
@@ -53901,6 +54896,1147 @@ components:
           type: string
         settings:
           $ref: "#/components/schemas/ConstructionSettings"
+      type: object
+    Location:
+      example:
+        x: 6.027456183070403
+        "y": 1.4658129805029452
+      properties:
+        x:
+          type: number
+        "y":
+          type: number
+      type: object
+    MapRegion:
+      example:
+        size: 6.027456183070403
+        center:
+          x: 6.027456183070403
+          "y": 1.4658129805029452
+        name: name
+        id: 0.8008281904610115
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        center:
+          $ref: "#/components/schemas/Location"
+        size:
+          type: number
+      type: object
+    BusinessAccount:
+      example:
+        assets:
+          blades:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          harnesses:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          axes:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          bellows:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          cheese:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          cured meat:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tiles:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          coats:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          flour:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tackles:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          timber:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium swords:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          plate armour:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          beer:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          gears:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium cloth:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          sails:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          slaked lime:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          flax fibres:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          nails:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          silver bars:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          milk:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          mouldboards:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          cattle:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          spirits:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          leather:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          malt:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          books:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          raw cloth:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          spinning wheels:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          pickaxes:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium garments:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          wine:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium glassware:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tin ingots:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          bells:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          manure:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          nets:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tin ore:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          protection:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tools:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          clay:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          labour:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          pasties:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          light armour:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          pies:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          copper ore:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          belts:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          casks:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          gold bars:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          bread:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          salt:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          medicine:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          gold ore:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          dyed yarn:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          alembics:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          garments:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          dye:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          glassware:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          fish:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          charcoal:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium axes:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          yarn:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium cheese:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          sculptures:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          wheels:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          wool:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          chisels:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          lead bars:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          wrought iron:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          ox power:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          grindstones:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium ham:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          silver ore:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium sails:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          furniture:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          ham:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          limestone:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          firewood:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          steel ingots:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          cured fish:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          grain:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          hides:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          logs:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          glass:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tar:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          cookware:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          copper ingots:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          resin:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          arms:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium armour:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          cloth:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          rope:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          ploughs:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          carting:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          candles:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          tapestries:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          herbs:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          lathes:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          looms:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          paper:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium steel:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          honey:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          hinges:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          iron ore:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          lodging:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          premium dye:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          dyed cloth:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          butter:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          fleece:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          swords:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          thread:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          windows:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          wax:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          bronze ingots:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          flax plants:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          scythes:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          jewellery:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          stockfish:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          lead ore:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          meat:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+          hop beer:
+            balance: balance
+            reserved: reserved
+            unit_cost: unit_cost
+            capacity: capacity
+        owner_id: owner_id
+        name: name
+        id: id
+        _ts: 0.8008281904610115
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        owner_id:
+          type: string
+        assets:
+          $ref: "#/components/schemas/InventoryAssets"
+        _ts:
+          type: number
+      type: object
+    BusinessBuildings:
+      example:
+        id: 6.027456183070403
+        type: type
+      properties:
+        id:
+          type: number
+        type:
+          type: string
+      type: object
+    TownSimple:
+      example:
+        capital: true
+        name: name
+        location:
+          x: 6.027456183070403
+          "y": 1.4658129805029452
+        id: id
+        commoners: 6.027456183070403
+        region: 0.8008281904610115
+        satisfaction: satisfaction
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        location:
+          $ref: "#/components/schemas/Location"
+        region:
+          type: number
+        capital:
+          type: boolean
+        satisfaction:
+          type: string
+        commoners:
+          type: number
+      type: object
+    DomainPlotStructure:
+      example:
+        id: id
+        type: type
+        tags:
+        - tags
+        - tags
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        tags:
+          items:
+            type: string
+          type: array
+      type: object
+    DomainPlot:
+      example:
+        resource: 1.4658129805029452
+        owner_id: owner_id
+        structure:
+          id: id
+          type: type
+          tags:
+          - tags
+          - tags
+      properties:
+        owner_id:
+          type: string
+        structure:
+          $ref: "#/components/schemas/DomainPlotStructure"
+        resource:
+          type: number
+      type: object
+    TownDomain:
+      example:
+        PlotID5:
+          resource: 1.4658129805029452
+          owner_id: owner_id
+          structure:
+            id: id
+            type: type
+            tags:
+            - tags
+            - tags
+        PlotID4:
+          resource: 1.4658129805029452
+          owner_id: owner_id
+          structure:
+            id: id
+            type: type
+            tags:
+            - tags
+            - tags
+        PlotID3:
+          resource: 1.4658129805029452
+          owner_id: owner_id
+          structure:
+            id: id
+            type: type
+            tags:
+            - tags
+            - tags
+        PlotID2:
+          resource: 1.4658129805029452
+          owner_id: owner_id
+          structure:
+            id: id
+            type: type
+            tags:
+            - tags
+            - tags
+        PlotID1:
+          resource: 1.4658129805029452
+          owner_id: owner_id
+          structure:
+            id: id
+            type: type
+            tags:
+            - tags
+            - tags
+      properties:
+        PlotID1:
+          $ref: "#/components/schemas/DomainPlot"
+        PlotID2:
+          $ref: "#/components/schemas/DomainPlot"
+        PlotID3:
+          $ref: "#/components/schemas/DomainPlot"
+        PlotID4:
+          $ref: "#/components/schemas/DomainPlot"
+        PlotID5:
+          $ref: "#/components/schemas/DomainPlot"
+      type: object
+    TownCommonersIncomeItems:
+      example:
+        result: result
+        request: request
+        product: product
+        desire: desire
+        bonus: bonus
+        weight: weight
+        budget: budget
+      properties:
+        product:
+          type: string
+        bonus:
+          type: string
+        desire:
+          type: string
+        request:
+          type: string
+        result:
+          type: string
+        budget:
+          type: string
+        weight:
+          type: string
+      type: object
+    TownCommonersIncome:
+      example:
+        migration: migration
+        items:
+        - result: result
+          request: request
+          product: product
+          desire: desire
+          bonus: bonus
+          weight: weight
+          budget: budget
+        - result: result
+          request: request
+          product: product
+          desire: desire
+          bonus: bonus
+          weight: weight
+          budget: budget
+      properties:
+        migration:
+          type: string
+        items:
+          items:
+            $ref: "#/components/schemas/TownCommonersIncomeItems"
+          type: array
+      type: object
+    TownCommonersSpending:
+      example:
+        name: name
+        satisfaction: satisfaction
+        budget: budget
+        products:
+        - result: result
+          request: request
+          product: product
+          desire: desire
+          bonus: bonus
+          weight: weight
+          budget: budget
+        - result: result
+          request: request
+          product: product
+          desire: desire
+          bonus: bonus
+          weight: weight
+          budget: budget
+      properties:
+        name:
+          type: string
+        budget:
+          type: string
+        satisfaction:
+          type: string
+        products:
+          items:
+            $ref: "#/components/schemas/TownCommonersIncomeItems"
+          type: array
+      type: object
+    CommonersTownState:
+      example:
+        total: total
+        migration: migration
+        health: health
+        prestige: prestige
+      properties:
+        migration:
+          type: string
+        total:
+          type: string
+        prestige:
+          type: string
+        health:
+          type: string
+      type: object
+    TownCommoners:
+      example:
+        income:
+          migration: migration
+          items:
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+        account_id: account_id
+        spending:
+        - name: name
+          satisfaction: satisfaction
+          budget: budget
+          products:
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+        - name: name
+          satisfaction: satisfaction
+          budget: budget
+          products:
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+        town_state:
+          total: total
+          migration: migration
+          health: health
+          prestige: prestige
+        count: 5.962133916683182
+        migration: migration
+      properties:
+        account_id:
+          type: string
+        count:
+          type: number
+        migration:
+          type: string
+        income:
+          $ref: "#/components/schemas/TownCommonersIncome"
+        spending:
+          items:
+            $ref: "#/components/schemas/TownCommonersSpending"
+          type: array
+        town_state:
+          $ref: "#/components/schemas/CommonersTownState"
+      type: object
+    TownGovernmentSpending:
+      example:
+        name: name
+        migration: migration
+        satisfaction: satisfaction
+        budget: budget
+        products:
+        - result: result
+          request: request
+          product: product
+          desire: desire
+          bonus: bonus
+          weight: weight
+          budget: budget
+        - result: result
+          request: request
+          product: product
+          desire: desire
+          bonus: bonus
+          weight: weight
+          budget: budget
+      properties:
+        name:
+          type: string
+        migration:
+          type: string
+        budget:
+          type: string
+        satisfaction:
+          type: string
+        products:
+          items:
+            $ref: "#/components/schemas/TownCommonersIncomeItems"
+          type: array
+      type: object
+    TownGovernmentTaxesCollected:
+      example:
+        transport_fees: transport_fees
+        delivery_fees: delivery_fees
+        payments: payments
+        land_tax: land_tax
+        structure_tax: structure_tax
+      properties:
+        payments:
+          type: string
+        land_tax:
+          type: string
+        structure_tax:
+          type: string
+        delivery_fees:
+          type: string
+        transport_fees:
+          type: string
+      type: object
+    TownGovernment:
+      example:
+        account_id: account_id
+        spending:
+        - name: name
+          migration: migration
+          satisfaction: satisfaction
+          budget: budget
+          products:
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+        - name: name
+          migration: migration
+          satisfaction: satisfaction
+          budget: budget
+          products:
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+          - result: result
+            request: request
+            product: product
+            desire: desire
+            bonus: bonus
+            weight: weight
+            budget: budget
+        taxes_collected:
+          transport_fees: transport_fees
+          delivery_fees: delivery_fees
+          payments: payments
+          land_tax: land_tax
+          structure_tax: structure_tax
+      properties:
+        account_id:
+          type: string
+        spending:
+          items:
+            $ref: "#/components/schemas/TownGovernmentSpending"
+          type: array
+        taxes_collected:
+          $ref: "#/components/schemas/TownGovernmentTaxesCollected"
+      type: object
+    TownChurch:
+      example:
+        contract_ids:
+        - contract_ids
+        - contract_ids
+      properties:
+        contract_ids:
+          items:
+            type: string
+          type: array
+      type: object
+    TownNavigationZones:
+      example:
+        NavigationZoneID3: 7.061401241503109
+        NavigationZoneID1: 5.637376656633329
+        NavigationZoneID2: 2.3021358869347655
+      properties:
+        NavigationZoneID1:
+          type: number
+        NavigationZoneID2:
+          type: number
+        NavigationZoneID3:
+          type: number
+      type: object
+    TownCulture:
+      example:
+        nutrition: nutrition
+        crafting: crafting
+        weaponry: weaponry
+        textile: textile
+        forging: forging
+        maritime: maritime
+        mercantile: mercantile
+      properties:
+        nutrition:
+          type: string
+        textile:
+          type: string
+        crafting:
+          type: string
+        forging:
+          type: string
+        weaponry:
+          type: string
+        maritime:
+          type: string
+        mercantile:
+          type: string
+      type: object
+    TownState:
+      example:
+        total_health: total_health
+        total_prestige: total_prestige
+        population: 9.301444243932576
+      properties:
+        population:
+          type: number
+        total_prestige:
+          type: string
+        total_health:
+          type: string
       type: object
   securitySchemes:
     Bearer_Token:

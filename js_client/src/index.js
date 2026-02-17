@@ -18,7 +18,13 @@ import BuildingConstruction from './model/BuildingConstruction';
 import BuildingDeliveryCost from './model/BuildingDeliveryCost';
 import BuildingPreviousOperation from './model/BuildingPreviousOperation';
 import BuildingProducer from './model/BuildingProducer';
+import Business from './model/Business';
+import BusinessAccount from './model/BusinessAccount';
+import BusinessBuildings from './model/BusinessBuildings';
+import CommonersTownState from './model/CommonersTownState';
 import ConstructionSettings from './model/ConstructionSettings';
+import DomainPlot from './model/DomainPlot';
+import DomainPlotStructure from './model/DomainPlotStructure';
 import Error from './model/Error';
 import Holdings from './model/Holdings';
 import Household from './model/Household';
@@ -30,6 +36,7 @@ import InventoryAssets from './model/InventoryAssets';
 import InventoryFlows from './model/InventoryFlows';
 import InventoryPastFlows from './model/InventoryPastFlows';
 import Location from './model/Location';
+import MapRegion from './model/MapRegion';
 import Player from './model/Player';
 import PlayerActivity from './model/PlayerActivity';
 import PlayerSettings from './model/PlayerSettings';
@@ -43,6 +50,20 @@ import ProductManager from './model/ProductManager';
 import ProductPastFlow from './model/ProductPastFlow';
 import Specialization from './model/Specialization';
 import SpecializationPoints from './model/SpecializationPoints';
+import Town from './model/Town';
+import TownChurch from './model/TownChurch';
+import TownCommoners from './model/TownCommoners';
+import TownCommonersIncome from './model/TownCommonersIncome';
+import TownCommonersIncomeItems from './model/TownCommonersIncomeItems';
+import TownCommonersSpending from './model/TownCommonersSpending';
+import TownCulture from './model/TownCulture';
+import TownDomain from './model/TownDomain';
+import TownGovernment from './model/TownGovernment';
+import TownGovernmentSpending from './model/TownGovernmentSpending';
+import TownGovernmentTaxesCollected from './model/TownGovernmentTaxesCollected';
+import TownNavigationZones from './model/TownNavigationZones';
+import TownSimple from './model/TownSimple';
+import TownState from './model/TownState';
 import Worker from './model/Worker';
 import WorkerSkills from './model/WorkerSkills';
 import DefaultApi from './api/DefaultApi';
@@ -117,10 +138,46 @@ export {
     BuildingProducer,
 
     /**
+     * The Business model constructor.
+     * @property {module:model/Business}
+     */
+    Business,
+
+    /**
+     * The BusinessAccount model constructor.
+     * @property {module:model/BusinessAccount}
+     */
+    BusinessAccount,
+
+    /**
+     * The BusinessBuildings model constructor.
+     * @property {module:model/BusinessBuildings}
+     */
+    BusinessBuildings,
+
+    /**
+     * The CommonersTownState model constructor.
+     * @property {module:model/CommonersTownState}
+     */
+    CommonersTownState,
+
+    /**
      * The ConstructionSettings model constructor.
      * @property {module:model/ConstructionSettings}
      */
     ConstructionSettings,
+
+    /**
+     * The DomainPlot model constructor.
+     * @property {module:model/DomainPlot}
+     */
+    DomainPlot,
+
+    /**
+     * The DomainPlotStructure model constructor.
+     * @property {module:model/DomainPlotStructure}
+     */
+    DomainPlotStructure,
 
     /**
      * The Error model constructor.
@@ -187,6 +244,12 @@ export {
      * @property {module:model/Location}
      */
     Location,
+
+    /**
+     * The MapRegion model constructor.
+     * @property {module:model/MapRegion}
+     */
+    MapRegion,
 
     /**
      * The Player model constructor.
@@ -265,6 +328,90 @@ export {
      * @property {module:model/SpecializationPoints}
      */
     SpecializationPoints,
+
+    /**
+     * The Town model constructor.
+     * @property {module:model/Town}
+     */
+    Town,
+
+    /**
+     * The TownChurch model constructor.
+     * @property {module:model/TownChurch}
+     */
+    TownChurch,
+
+    /**
+     * The TownCommoners model constructor.
+     * @property {module:model/TownCommoners}
+     */
+    TownCommoners,
+
+    /**
+     * The TownCommonersIncome model constructor.
+     * @property {module:model/TownCommonersIncome}
+     */
+    TownCommonersIncome,
+
+    /**
+     * The TownCommonersIncomeItems model constructor.
+     * @property {module:model/TownCommonersIncomeItems}
+     */
+    TownCommonersIncomeItems,
+
+    /**
+     * The TownCommonersSpending model constructor.
+     * @property {module:model/TownCommonersSpending}
+     */
+    TownCommonersSpending,
+
+    /**
+     * The TownCulture model constructor.
+     * @property {module:model/TownCulture}
+     */
+    TownCulture,
+
+    /**
+     * The TownDomain model constructor.
+     * @property {module:model/TownDomain}
+     */
+    TownDomain,
+
+    /**
+     * The TownGovernment model constructor.
+     * @property {module:model/TownGovernment}
+     */
+    TownGovernment,
+
+    /**
+     * The TownGovernmentSpending model constructor.
+     * @property {module:model/TownGovernmentSpending}
+     */
+    TownGovernmentSpending,
+
+    /**
+     * The TownGovernmentTaxesCollected model constructor.
+     * @property {module:model/TownGovernmentTaxesCollected}
+     */
+    TownGovernmentTaxesCollected,
+
+    /**
+     * The TownNavigationZones model constructor.
+     * @property {module:model/TownNavigationZones}
+     */
+    TownNavigationZones,
+
+    /**
+     * The TownSimple model constructor.
+     * @property {module:model/TownSimple}
+     */
+    TownSimple,
+
+    /**
+     * The TownState model constructor.
+     * @property {module:model/TownState}
+     */
+    TownState,
 
     /**
      * The Worker model constructor.

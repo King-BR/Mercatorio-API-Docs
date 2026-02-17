@@ -15,8 +15,12 @@ package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.Building;
+import org.openapitools.client.model.Business;
 import org.openapitools.client.model.Error;
+import org.openapitools.client.model.MapRegion;
 import org.openapitools.client.model.Player;
+import org.openapitools.client.model.Town;
+import org.openapitools.client.model.TownSimple;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -46,6 +50,29 @@ public class DefaultApiTest {
     }
 
     /**
+     * Get the business information
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void businessInfoTest() throws ApiException {
+        String businessID = null;
+        Business response = api.businessInfo(businessID);
+        // TODO: test validations
+    }
+
+    /**
+     * Get the list of all regions on the map, with their corresponding information
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void mapRegionsTest() throws ApiException {
+        List<MapRegion> response = api.mapRegions();
+        // TODO: test validations
+    }
+
+    /**
      * Get the player information
      *
      * @throws ApiException if the Api call fails
@@ -53,6 +80,29 @@ public class DefaultApiTest {
     @Test
     public void playerInfoTest() throws ApiException {
         Player response = api.playerInfo();
+        // TODO: test validations
+    }
+
+    /**
+     * Get the information for a specific town
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void townInfoTest() throws ApiException {
+        String townID = null;
+        Town response = api.townInfo(townID);
+        // TODO: test validations
+    }
+
+    /**
+     * Get the list of all towns on the map, with their corresponding information
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void townsTest() throws ApiException {
+        List<TownSimple> response = api.towns();
         // TODO: test validations
     }
 
