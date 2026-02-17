@@ -131,10 +131,14 @@
             "type": "boolean"
           },
           "activity": {
-            "$ref": "#/components/schemas/Player_activity"
+            "$ref": "#/components/schemas/PlayerActivity"
           }
         },
-        "required": ["active", "household", "username"],
+        "required": [
+          "active",
+          "household",
+          "username"
+        ],
         "type": "object"
       },
       "ProductManager": {
@@ -178,13 +182,15 @@
             "type": "string"
           },
           "skills": {
-            "$ref": "#/components/schemas/Worker_skills"
+            "$ref": "#/components/schemas/WorkerSkills"
           }
         },
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "type": "object"
       },
-      "ProductFlow": {
+      "ProductPastFlow": {
         "nullable": true,
         "properties": {
           "production": {
@@ -254,370 +260,370 @@
         "nullable": true,
         "properties": {
           "alembics": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "arms": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "axes": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "beer": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "bellows": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "bells": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "belts": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "blades": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "books": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "bread": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "bronze ingots": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "butter": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "candles": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "carting": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "casks": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "cattle": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "charcoal": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "cheese": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "chisels": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "clay": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "cloth": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "coats": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "cookware": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "copper ingots": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "copper ore": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "cured fish": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "cured meat": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "dye": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "dyed cloth": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "dyed yarn": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "firewood": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "fish": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "flax fibres": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "flax plants": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "fleece": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "flour": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "furniture": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "garments": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "gears": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "glass": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "glassware": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "gold bars": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "gold ore": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "grain": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "grindstones": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "ham": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "harnesses": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "herbs": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "hides": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "hinges": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "honey": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "hop beer": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "iron ore": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "jewellery": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "labour": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "lathes": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "lead bars": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "lead ore": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "leather": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "light armour": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "limestone": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "lodging": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "logs": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "looms": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "malt": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "manure": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "meat": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "medicine": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "milk": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "mouldboards": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "nails": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "nets": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "ox power": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "paper": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "pasties": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "pickaxes": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "pies": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "plate armour": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "ploughs": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium armour": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium axes": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium cheese": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium cloth": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium dye": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium garments": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium glassware": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium ham": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium sails": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium steel": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "premium swords": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "protection": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "raw cloth": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "resin": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "rope": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "sails": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "salt": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "sculptures": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "scythes": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "silver bars": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "silver ore": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "slaked lime": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "spinning wheels": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "spirits": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "steel ingots": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "stockfish": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "swords": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tackles": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tapestries": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tar": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "thread": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tiles": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "timber": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tin ingots": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tin ore": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "tools": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "wax": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "wheels": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "windows": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "wine": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "wool": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "wrought iron": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           },
           "yarn": {
-            "$ref": "#/components/schemas/InventoryFlows_alembics"
+            "$ref": "#/components/schemas/ProductFlow"
           }
         },
         "type": "object"
@@ -626,7 +632,7 @@
         "nullable": true,
         "properties": {
           "alembics": {
-            "$ref": "#/components/schemas/ProductFlow"
+            "$ref": "#/components/schemas/ProductPastFlow"
           },
           "arms": {
             "$ref": "#/components/schemas/ProductFlow"
@@ -997,7 +1003,7 @@
       "Inventory": {
         "properties": {
           "account": {
-            "$ref": "#/components/schemas/Inventory_account"
+            "$ref": "#/components/schemas/InventoryAccount"
           },
           "capacity": {
             "type": "number"
@@ -1025,7 +1031,7 @@
       "Specialization": {
         "properties": {
           "points": {
-            "$ref": "#/components/schemas/Specialization_points"
+            "$ref": "#/components/schemas/SpecializationPoints"
           }
         },
         "type": "object"
@@ -1061,7 +1067,7 @@
           },
           "prestige_impacts": {
             "items": {
-              "$ref": "#/components/schemas/Household_prestige_impacts_inner"
+              "$ref": "#/components/schemas/PrestigeImpact"
             },
             "type": "array"
           },
@@ -1084,10 +1090,10 @@
             "type": "array"
           },
           "caps": {
-            "$ref": "#/components/schemas/Household_caps"
+            "$ref": "#/components/schemas/HouseholdCaps"
           },
           "sustenance": {
-            "$ref": "#/components/schemas/Household_sustenance"
+            "$ref": "#/components/schemas/HouseholdSustenance"
           }
         },
         "type": "object"
@@ -1098,10 +1104,10 @@
             "type": "number"
           },
           "notifications": {
-            "$ref": "#/components/schemas/PlayerSettings_notifications"
+            "$ref": "#/components/schemas/PlayerSettingsNotifications"
           },
           "email": {
-            "$ref": "#/components/schemas/PlayerSettings_email"
+            "$ref": "#/components/schemas/PlayerSettingsEmail"
           }
         },
         "type": "object"
@@ -1109,370 +1115,370 @@
       "InventoryAssets": {
         "properties": {
           "alembics": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "arms": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "axes": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "beer": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "bellows": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "bells": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "belts": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "blades": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "books": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "bread": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "bronze ingots": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "butter": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "candles": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "carting": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "casks": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "cattle": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "charcoal": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "cheese": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "chisels": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "clay": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "cloth": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "coats": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "cookware": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "copper ingots": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "copper ore": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "cured fish": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "cured meat": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "dye": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "dyed cloth": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "dyed yarn": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "firewood": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "fish": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "flax fibres": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "flax plants": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "fleece": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "flour": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "furniture": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "garments": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "gears": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "glass": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "glassware": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "gold bars": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "gold ore": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "grain": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "grindstones": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "ham": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "harnesses": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "herbs": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "hides": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "hinges": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "honey": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "hop beer": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "iron ore": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "jewellery": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "labour": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "lathes": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "lead bars": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "lead ore": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "leather": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "light armour": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "limestone": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "lodging": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "logs": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "looms": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "malt": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "manure": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "meat": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "medicine": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "milk": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "mouldboards": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "nails": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "nets": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "ox power": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "paper": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "pasties": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "pickaxes": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "pies": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "plate armour": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "ploughs": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium armour": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium axes": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium cheese": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium cloth": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium dye": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium garments": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium glassware": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium ham": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium sails": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium steel": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "premium swords": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "protection": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "raw cloth": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "resin": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "rope": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "sails": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "salt": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "sculptures": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "scythes": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "silver bars": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "silver ore": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "slaked lime": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "spinning wheels": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "spirits": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "steel ingots": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "stockfish": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "swords": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tackles": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tapestries": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tar": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "thread": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tiles": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "timber": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tin ingots": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tin ore": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "tools": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "wax": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "wheels": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "windows": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "wine": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "wool": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "wrought iron": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           },
           "yarn": {
-            "$ref": "#/components/schemas/InventoryAssets_alembics"
+            "$ref": "#/components/schemas/ProductAsset"
           }
         },
         "type": "object"
@@ -1884,25 +1890,25 @@
             "type": "string"
           },
           "location": {
-            "$ref": "#/components/schemas/Building_location"
+            "$ref": "#/components/schemas/Location"
           },
           "sublocation": {
-            "$ref": "#/components/schemas/Building_location"
+            "$ref": "#/components/schemas/Location"
           },
           "land": {
             "items": {
-              "$ref": "#/components/schemas/Building_location"
+              "$ref": "#/components/schemas/Location"
             },
             "type": "array"
           },
           "delivery_cost": {
-            "$ref": "#/components/schemas/Building_delivery_cost"
+            "$ref": "#/components/schemas/BuildingDeliveryCost"
           },
           "producer": {
-            "$ref": "#/components/schemas/Building_producer"
+            "$ref": "#/components/schemas/BuildingProducer"
           },
           "construction": {
-            "$ref": "#/components/schemas/Building_construction"
+            "$ref": "#/components/schemas/BuildingConstruction"
           },
           "provider_id": {
             "type": "string"
@@ -1920,10 +1926,12 @@
             "type": "string"
           }
         },
-        "required": ["message"],
+        "required": [
+          "message"
+        ],
         "type": "object"
       },
-      "Player_activity": {
+      "PlayerActivity": {
         "properties": {
           "score": {
             "type": "number"
@@ -1934,7 +1942,7 @@
         },
         "type": "object"
       },
-      "Worker_skills": {
+      "WorkerSkills": {
         "properties": {
           "nutrition": {
             "nullable": true,
@@ -1967,16 +1975,16 @@
         },
         "type": "object"
       },
-      "InventoryFlows_alembics": {
+      "ProductFlow": {
         "nullable": true,
         "properties": {
           "projection": {
-            "$ref": "#/components/schemas/ProductFlow"
+            "$ref": "#/components/schemas/ProductPastFlow"
           }
         },
         "type": "object"
       },
-      "Inventory_account": {
+      "InventoryAccount": {
         "properties": {
           "id": {
             "type": "string"
@@ -2004,7 +2012,7 @@
         },
         "type": "object"
       },
-      "Specialization_points": {
+      "SpecializationPoints": {
         "properties": {
           "alembics": {
             "nullable": true,
@@ -2497,7 +2505,7 @@
         },
         "type": "object"
       },
-      "Household_prestige_impacts_inner": {
+      "PrestigeImpact": {
         "properties": {
           "factor": {
             "type": "string"
@@ -2508,7 +2516,7 @@
         },
         "type": "object"
       },
-      "Household_caps": {
+      "HouseholdCaps": {
         "properties": {
           "transports": {
             "type": "number"
@@ -2528,7 +2536,7 @@
         },
         "type": "object"
       },
-      "Household_sustenance": {
+      "HouseholdSustenance": {
         "properties": {
           "reference": {
             "type": "string"
@@ -2542,7 +2550,7 @@
         },
         "type": "object"
       },
-      "PlayerSettings_notifications": {
+      "PlayerSettingsNotifications": {
         "properties": {
           "discord": {
             "type": "boolean"
@@ -2554,7 +2562,7 @@
         },
         "type": "object"
       },
-      "PlayerSettings_email": {
+      "PlayerSettingsEmail": {
         "properties": {
           "season_notifications": {
             "type": "boolean"
@@ -2568,7 +2576,7 @@
         },
         "type": "object"
       },
-      "InventoryAssets_alembics": {
+      "ProductAsset": {
         "nullable": true,
         "properties": {
           "balance": {
@@ -2586,7 +2594,7 @@
         },
         "type": "object"
       },
-      "Building_location": {
+      "Location": {
         "properties": {
           "x": {
             "type": "number"
@@ -2597,7 +2605,7 @@
         },
         "type": "object"
       },
-      "Building_delivery_cost": {
+      "BuildingDeliveryCost": {
         "properties": {
           "land_distance": {
             "type": "number"
@@ -2605,7 +2613,7 @@
         },
         "type": "object"
       },
-      "Building_producer_previous_operation": {
+      "BuildingPreviousOperation": {
         "properties": {
           "target": {
             "type": "string"
@@ -2619,7 +2627,7 @@
         },
         "type": "object"
       },
-      "Building_producer": {
+      "BuildingProducer": {
         "properties": {
           "reference": {
             "type": "string"
@@ -2641,7 +2649,7 @@
             "type": "string"
           },
           "previous_operation": {
-            "$ref": "#/components/schemas/Building_producer_previous_operation"
+            "$ref": "#/components/schemas/BuildingPreviousOperation"
           },
           "manager": {
             "type": "string"
@@ -2652,7 +2660,7 @@
         },
         "type": "object"
       },
-      "Building_construction_settings": {
+      "ConstructionSettings": {
         "properties": {
           "honour_low_stock": {
             "type": "boolean"
@@ -2663,7 +2671,7 @@
         },
         "type": "object"
       },
-      "Building_construction": {
+      "BuildingConstruction": {
         "properties": {
           "reference": {
             "type": "string"
@@ -2688,7 +2696,7 @@
           },
           "land": {
             "items": {
-              "$ref": "#/components/schemas/Building_location"
+              "$ref": "#/components/schemas/Location"
             },
             "type": "array"
           },
@@ -2696,7 +2704,7 @@
             "type": "string"
           },
           "settings": {
-            "$ref": "#/components/schemas/Building_construction_settings"
+            "$ref": "#/components/schemas/ConstructionSettings"
           }
         },
         "type": "object"
